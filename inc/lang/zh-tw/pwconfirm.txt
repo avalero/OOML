@@ -1,0 +1,13 @@
+@FULLNAME@ 您好！
+
+有人為您在 @DOKUWIKIURL@ 註冊的使用者 @TITLE@ 請求新密碼
+
+如果您沒有請求新密碼，請忽略這封郵件。
+
+要確認使用新密碼，請拜訪以下的連結。
+
+@CONFIRM@
+
+--
+本信件由以下 DokuWiki 站台產生：
+@DOKUWIKIURL@

@@ -1,0 +1,17 @@
+דף בDokuWiki נוסף או שונה. להלן הפרטים:
+
+תאריך        : @DATE@
+דפדפן     : @BROWSER@
+כתובת ה־IP&rlm;  : @IPADDRESS@
+שם המארח    : @HOSTNAME@
+המהדורה הישנה: @OLDPAGE@
+המהדורה החדשה: @NEWPAGE@
+תקציר העריכה: @SUMMARY@
+משתמש        : @USER@
+
+@DIFF@
+
+-- 
+
+דף זה נוצר ע״י ה־DokuWiki הזמין בכתובת
+@DOKUWIKIURL@

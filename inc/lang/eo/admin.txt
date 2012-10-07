@@ -1,0 +1,3 @@
+====== Administro ======
+
+Sube vi povas trovi liston de administraj taskoj disponeblaj en DokuWiki.
