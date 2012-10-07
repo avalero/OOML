@@ -1,3 +1,0 @@
-====== Gestion de l'abonnement ======
-
-Cette page vous permet de gérer vos abonnements à la page ou à la catégorie courantes
