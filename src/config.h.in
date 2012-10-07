@@ -1,0 +1,10 @@
+#ifndef OOML_CONFIG_H
+#define OOML_CONFIG_H
+
+// define dxf path
+#define DXF_PATH "@OOML_DATA_DIR@/dxf"
+#define DXF_INSTALLED_PATH "@CMAKE_INSTALL_PREFIX@include/ooml/data/dxf"
+
+
+
+#endif // OOML_CONFIG_H

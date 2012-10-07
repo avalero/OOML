@@ -1,0 +1,21 @@
+v2.0
+====
++ Optimized + /  * operators for avoiding unrequired nesting.
++ Optimized translate decorator for avoiding unrequired nesting.
++ 2D Shapes.
++ Rotate Extrude.
++ Minkowski Operator
++ Polygons
++ translate vs. translatedCopy
++ rotate vs. rotatedCopy
++ Mirror
++ Arduino UNO Part
++ Futaba S3003 Part
++ 9V Battery Part
++ Rotate arround one point
+
+
+- Scenario
+- Movement
+- Import OpenSCAD
+- Extrude DXF
