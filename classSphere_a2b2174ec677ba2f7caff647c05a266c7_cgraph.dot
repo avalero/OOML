@@ -1,0 +1,11 @@
+digraph "Sphere::Sphere"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Sphere::Sphere",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="SphereObject::create",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSphereObject.html#a5dc4048fbf6cacc20597f5facab1069d",tooltip="Creates a Sphere Component."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="ObjectDecorator::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74",tooltip="Get the internally hold pointer. Const version."];
+}

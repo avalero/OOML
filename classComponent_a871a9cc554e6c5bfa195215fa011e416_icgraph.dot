@@ -1,0 +1,28 @@
+digraph "Component::translatedCopy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Component::translatedCopy",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="RoundedCube::RoundedCube",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRoundedCube.html#ad0ba2fd7d94c9b93a559bb36ab5787bf",tooltip="Constructor."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="RoundedTablet::RoundedTablet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRoundedTablet.html#acb7bd8292117dbfba2b14e928a5f1d1e",tooltip="Constructor."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="ArduinoUNO::getBoard",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classArduinoUNO.html#a2765f8e142d0668f66270d15dfb30296",tooltip="returns a component only with the board"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="ArduinoUNO::build",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classArduinoUNO.html#a3f36db05b8094951b6a0372fae99e390",tooltip="Build the piece."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="BatteryHolder::build",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBatteryHolder.html#a31b5756aae7816ef88986302ec12303c",tooltip="Build the piece."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Bearing::build",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBearing.html#acf031144883f9a2eb8db860d3391547e",tooltip="Build the piece."];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="FutabaS3003::getCrown",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classFutabaS3003.html#abe872aedc329d45bf8956ba1c1a1cbaf",tooltip="returns a component only with the crown"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="FutabaS3003::build",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classFutabaS3003.html#a780e4ad25476f3d7962675c1b5e4fb03",tooltip="Build the piece."];
+  Node8 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="FutabaWheel::build",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classFutabaWheel.html#a6dc7222f040225cbea58a7f52ab51bc1",tooltip="Build the piece."];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="SharpIRSensor::build",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSharpIRSensor.html#a9358ae89493f89e94ecf763fa4f2f542",tooltip="Build the piece."];
+}

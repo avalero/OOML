@@ -1,0 +1,11 @@
+digraph "ScaleDecorator::create"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="ScaleDecorator::create",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Component::scaledCopy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#aedfec2802a485ab9d0b6536cfaf72393",tooltip="Scale the component."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Component::scale",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#a2ac4e80605acebdce055cc0d4a247f04",tooltip="Scale the component."];
+}

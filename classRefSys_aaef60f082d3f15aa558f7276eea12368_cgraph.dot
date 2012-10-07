@@ -1,0 +1,13 @@
+digraph "RefSys::rotateEulerZXZ"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="RefSys::rotateEulerZXZ",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="RotationalMatrix::rotate\lEulerZXZ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRotationalMatrix.html#a791b7409dde52402e1a5728602590a93",tooltip="Applies an Euler rotation around z, x&#39;, z&#39;&#39; Applies three rotations around z, x&#39; and z&#39;&#39;..."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="RotationalMatrix::rotateZ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRotationalMatrix.html#a22d975b459aa676f92fccfdeedbf8878",tooltip="Applies a rotation around current z axis Applies a rotation around current z axis."];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="RotationalMatrix::rotateX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRotationalMatrix.html#a65c817d036afdd0a623a555d983170d6",tooltip="Applies a rotation around current x axis Applies a rotation around current x axis."];
+}

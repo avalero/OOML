@@ -1,0 +1,18 @@
+digraph "RoundedCylinder::RoundedCylinder"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="RoundedCylinder::Rounded\lCylinder",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Component::translate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#ad6dc21a828b8eebedf66f7e27a80799d",tooltip="Translate the component."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="TranslateDecorator\l::create",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTranslateDecorator.html#a1dcad9f08c75e2cfe13718aea9012f88",tooltip="Default factory method."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="SharedPtr::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSharedPtr.html#ac747048e189c896c11f0b436d02fc5e1",tooltip="Gets the pointer hold."];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="ObjectDecorator::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74",tooltip="Get the internally hold pointer. Const version."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="MinkowskiDecorator\l::create",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMinkowskiDecorator.html#ae16f45ced2d272d00497c3bfc9b29b59",tooltip="Default factory method."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

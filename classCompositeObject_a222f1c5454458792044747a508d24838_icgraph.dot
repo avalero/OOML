@@ -1,0 +1,11 @@
+digraph "CompositeObject::addObject"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CompositeObject::addObject",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CompositeComponent\l::addComponent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCompositeComponent.html#a363f11dbc32188c3d004964d24c39c4e",tooltip="Adds a component to the composite."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CompositeComponent\l::operator\<\<",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCompositeComponent.html#a7b4aa18a4fc79a68475a045b39df2073",tooltip="Adds a component with insertor syntax."];
+}

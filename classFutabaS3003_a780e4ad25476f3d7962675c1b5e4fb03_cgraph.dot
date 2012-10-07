@@ -1,0 +1,38 @@
+digraph "FutabaS3003::build"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="FutabaS3003::build",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="FutabaS3003::getCrown",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classFutabaS3003.html#abe872aedc329d45bf8956ba1c1a1cbaf",tooltip="returns a component only with the crown"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Component::translate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#ad6dc21a828b8eebedf66f7e27a80799d",tooltip="Translate the component."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="TranslateDecorator\l::create",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTranslateDecorator.html#a1dcad9f08c75e2cfe13718aea9012f88",tooltip="Default factory method."];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="SharedPtr::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSharedPtr.html#ac747048e189c896c11f0b436d02fc5e1",tooltip="Gets the pointer hold."];
+  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="ObjectDecorator::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74",tooltip="Get the internally hold pointer. Const version."];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Component::rotateAround",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#a17bc2b6b67bc327c215dece2dc453f34",tooltip="Rotate the component."];
+  Node7 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="RotateDecorator::create",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRotateDecorator.html#a1c259b6b8731e985a46a7f985c1ae511",tooltip="Default factory method."];
+  Node2 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Component::mirroredCopy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#a1abb3d3715c1d355bb9fc6956173e23b",tooltip="Mirror the component."];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="MirrorDecorator::create",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMirrorDecorator.html#a59ad3b851b84060d05e540250aaec086",tooltip="Default factory method."];
+  Node2 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Component::translatedCopy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#a871a9cc554e6c5bfa195215fa011e416",tooltip="Translate the component."];
+  Node11 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Component::rotatedCopy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#ad922120003c681501476f0b483a8943c",tooltip="Rotate the component."];
+  Node12 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="Component::color",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#a2a09a1cc2732ab4ab42c10d36f6b8b6d",tooltip="Color the component."];
+  Node13 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="ColorDecorator::create",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classColorDecorator.html#a74543bab1e3775280099b43d9d124c6a",tooltip="Default factory method."];
+}

@@ -1,0 +1,11 @@
+digraph "Point2D::operator+"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Point2D::operator+",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Point2D::getX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoint2D.html#a37277873b2c83c1fe8739e0502e5792a",tooltip="Get the x component."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Point2D::getY",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoint2D.html#a865b357b19838c4ca153fd3665391e48",tooltip="Get the y component."];
+}

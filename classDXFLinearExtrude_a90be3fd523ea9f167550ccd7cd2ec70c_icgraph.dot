@@ -1,0 +1,9 @@
+digraph "DXFLinearExtrude::create"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="DXFLinearExtrude::create",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Component::linearExtrude\lFromDXF",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#aa6d56c61d71058811f19f26a70d684e8",tooltip="Linear extrude an DXF filename."];
+}

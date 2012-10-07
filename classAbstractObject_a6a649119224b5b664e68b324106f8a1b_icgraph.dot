@@ -1,0 +1,11 @@
+digraph "AbstractObject::genScad"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AbstractObject::genScad",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="MinkowskiDecorator\l::genScad",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMinkowskiDecorator.html#abb80cb38e65aba6f2e6b82258e1d3539",tooltip="Generate SCAD output for this object."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="ObjectDecorator::genScad",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classObjectDecorator.html#a24d2b99d71b6d3dcbb5394a4ff75f6cd",tooltip="Generate SCAD output for this object."];
+}
