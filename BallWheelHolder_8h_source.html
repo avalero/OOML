@@ -7,12 +7,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -28,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">OOML
-   &#160;<span id="projectnumber">2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">Library</div>
   </td>
@@ -68,29 +62,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('BallWheelHolder_8h_source.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -99,12 +79,17 @@ $(document).ready(function(){initNavTree('BallWheelHolder_8h_source.html','');})
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_74468c6aa5627e796dac9600ce6ada7d.html">parts</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">BallWheelHolder.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**********************************************************************</span></div>
+<a href="BallWheelHolder_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**********************************************************************</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This code is part of the OOML project</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Treviño</span></div>
@@ -144,27 +129,27 @@ $(document).ready(function(){initNavTree('BallWheelHolder_8h_source.html','');})
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OOMLParts_EXP_DEC __declspec(dllimport)</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OOMLParts_EXP_DEC</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="BallWheelHolder_8h.html#a083e38a97ac2f599d03ae16c34bb16a8">   41</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OOMLParts_EXP_DEC</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &lt;core/AbstractPart.h&gt;</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &lt;components/Sphere.h&gt;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="AbstractPart_8h.html">core/AbstractPart.h</a>&gt;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Sphere_8h.html">components/Sphere.h</a>&gt;</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="classBallWheelHolder.html">   52</a></span>&#160;<span class="keyword">class </span>OOMLParts_EXP_DEC <a class="code" href="classBallWheelHolder.html" title="Ball Wheel Holder primitive object.">BallWheelHolder</a> : <span class="keyword">public</span> <a class="code" href="classAbstractPart.html" title="Color decorator.">AbstractPart</a></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="classBallWheelHolder.html">   52</a></span>&#160;<span class="keyword">class </span><a class="code" href="BallWheelHolder_8h.html#a083e38a97ac2f599d03ae16c34bb16a8">OOMLParts_EXP_DEC</a> <a class="code" href="classBallWheelHolder.html" title="Ball Wheel Holder primitive object.">BallWheelHolder</a> : <span class="keyword">public</span> <a class="code" href="classAbstractPart.html" title="Color decorator.">AbstractPart</a></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="structBallWheelHolder_1_1Data.html">   55</a></span>&#160;         <span class="keyword">struct </span><a class="code" href="structBallWheelHolder_1_1Data.html">Data</a>{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                  <span class="keywordtype">double</span> radius; <span class="comment">// = 17/2;</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                  <span class="keywordtype">double</span> wallThickness; <span class="comment">// = 2.5;</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                  <span class="keywordtype">double</span> gapWidth; <span class="comment">// = 5;</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                  <span class="keywordtype">double</span> height; <span class="comment">//&lt;! Height from ball to base</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                  <span class="keywordtype">double</span> holeSize; <span class="comment">// = 3</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                  <span class="keywordtype">double</span> baseHeight;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                  <span class="keywordtype">double</span> baseWidth;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                  <span class="keywordtype">double</span> baseThickness; <span class="comment">// = 3;</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                  <span class="keywordtype">double</span> effectiveRadius;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                  <span class="keywordtype">double</span> totalHeight;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                  <span class="keywordtype">double</span> radius_inc; <span class="comment">// = 0.5</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="code" href="structBallWheelHolder_1_1Data.html#a87ad4a78cd1fcc713a7481c43bdbebdd">   56</a></span>&#160;                  <span class="keywordtype">double</span> <a class="code" href="structBallWheelHolder_1_1Data.html#a87ad4a78cd1fcc713a7481c43bdbebdd">radius</a>; <span class="comment">// = 17/2;</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="structBallWheelHolder_1_1Data.html#af3bd018d509cd1554fb9d3b739614d8d">   57</a></span>&#160;                  <span class="keywordtype">double</span> <a class="code" href="structBallWheelHolder_1_1Data.html#af3bd018d509cd1554fb9d3b739614d8d">wallThickness</a>; <span class="comment">// = 2.5;</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="structBallWheelHolder_1_1Data.html#a4fa69624f16dd40802804435a78e2304">   58</a></span>&#160;                  <span class="keywordtype">double</span> <a class="code" href="structBallWheelHolder_1_1Data.html#a4fa69624f16dd40802804435a78e2304">gapWidth</a>; <span class="comment">// = 5;</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="code" href="structBallWheelHolder_1_1Data.html#ae21f0c8285f6ba4a6877d74bc3fd814e">   59</a></span>&#160;                  <span class="keywordtype">double</span> <a class="code" href="structBallWheelHolder_1_1Data.html#ae21f0c8285f6ba4a6877d74bc3fd814e">height</a>; <span class="comment">//&lt;! Height from ball to base</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="code" href="structBallWheelHolder_1_1Data.html#aa528e9f89fab87f768246513c2e3f4a6">   60</a></span>&#160;                  <span class="keywordtype">double</span> <a class="code" href="structBallWheelHolder_1_1Data.html#aa528e9f89fab87f768246513c2e3f4a6">holeSize</a>; <span class="comment">// = 3</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="code" href="structBallWheelHolder_1_1Data.html#a14ef11a8cd45c2d1cb08895277a38743">   61</a></span>&#160;                  <span class="keywordtype">double</span> <a class="code" href="structBallWheelHolder_1_1Data.html#a14ef11a8cd45c2d1cb08895277a38743">baseHeight</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="structBallWheelHolder_1_1Data.html#ad18d4e498f18e8f3260fb1764908bbb7">   62</a></span>&#160;                  <span class="keywordtype">double</span> <a class="code" href="structBallWheelHolder_1_1Data.html#ad18d4e498f18e8f3260fb1764908bbb7">baseWidth</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="code" href="structBallWheelHolder_1_1Data.html#ab550dfd30671fba2028261eab399899f">   63</a></span>&#160;                  <span class="keywordtype">double</span> <a class="code" href="structBallWheelHolder_1_1Data.html#ab550dfd30671fba2028261eab399899f">baseThickness</a>; <span class="comment">// = 3;</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="structBallWheelHolder_1_1Data.html#ab56d1cae3fd9fa2ce63dd0a39336b242">   64</a></span>&#160;                  <span class="keywordtype">double</span> <a class="code" href="structBallWheelHolder_1_1Data.html#ab56d1cae3fd9fa2ce63dd0a39336b242">effectiveRadius</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="code" href="structBallWheelHolder_1_1Data.html#a52376b54a28349e25eff5e252ccdede7">   65</a></span>&#160;                  <span class="keywordtype">double</span> <a class="code" href="structBallWheelHolder_1_1Data.html#a52376b54a28349e25eff5e252ccdede7">totalHeight</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="code" href="structBallWheelHolder_1_1Data.html#a5bbdc9404e3b56fed874e3d68fa43847">   66</a></span>&#160;                  <span class="keywordtype">double</span> <a class="code" href="structBallWheelHolder_1_1Data.html#a5bbdc9404e3b56fed874e3d68fa43847">radius_inc</a>; <span class="comment">// = 0.5</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;         };</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">public</span>:</div>
@@ -185,7 +170,7 @@ $(document).ready(function(){initNavTree('BallWheelHolder_8h_source.html','');})
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                 <a class="code" href="classAbstractPart.html#a06732798fd060a805f89e2a9a66e5368" title="Rebuild the part.">rebuild</a>();</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="code" href="classBallWheelHolder.html" title="Ball Wheel Holder primitive object.">BallWheelHolder</a>(<span class="keywordtype">double</span> totalHeight) :</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="code" href="classBallWheelHolder.html#a994d4360c1b8f49c7b2180a031ba9b62">   90</a></span>&#160;        <a class="code" href="classBallWheelHolder.html" title="Ball Wheel Holder primitive object.">BallWheelHolder</a>(<span class="keywordtype">double</span> totalHeight) :</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                 <a class="code" href="classAbstractPart.html" title="Color decorator.">AbstractPart</a>()</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        {</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                 data.radius=8;</div>
@@ -206,11 +191,11 @@ $(document).ready(function(){initNavTree('BallWheelHolder_8h_source.html','');})
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <a class="code" href="classComponent.html" title="Component class.">Component</a> getBall();</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keyword">static</span> <a class="code" href="classComponent.html" title="Component class.">Component</a> create(<span class="keywordtype">double</span> totalHeight=0){</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="code" href="classBallWheelHolder.html#a4aa70ad27086e28557484796371ff554">  114</a></span>&#160;        <span class="keyword">static</span> <a class="code" href="classComponent.html" title="Component class.">Component</a> <a class="code" href="classBallWheelHolder.html#a4aa70ad27086e28557484796371ff554">create</a>(<span class="keywordtype">double</span> totalHeight=0){</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                 <span class="keywordflow">return</span> <a class="code" href="classBallWheelHolder.html" title="Ball Wheel Holder primitive object.">BallWheelHolder</a>(totalHeight);</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        }</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keyword">inline</span> <span class="keyword">const</span> Data getData()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="code" href="classBallWheelHolder.html#a72ea8beebac39efdc7e0e0d2835eb464">  118</a></span>&#160;        <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="structBallWheelHolder_1_1Data.html">Data</a> <a class="code" href="classBallWheelHolder.html#a72ea8beebac39efdc7e0e0d2835eb464">getData</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                 <span class="keywordflow">return</span> data;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        }</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
@@ -219,22 +204,18 @@ $(document).ready(function(){initNavTree('BallWheelHolder_8h_source.html','');})
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        Data data;</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">  134</a></span>&#160;        <a class="code" href="structBallWheelHolder_1_1Data.html">Data</a> <a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>;</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;};</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">#endif // SIMPLEWHEELdata.Hdata.INCLUDED</span></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_74468c6aa5627e796dac9600ce6ada7d.html">parts</a></li><li class="navelem"><b>BallWheelHolder.h</b></li>
-    <li class="footer">Generated on Sun Oct 7 2012 23:29:53 for OOML by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Oct 11 2012 00:27:40 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
 </body>
 </html>

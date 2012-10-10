@@ -7,12 +7,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -28,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">OOML
-   &#160;<span id="projectnumber">2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">Library</div>
   </td>
@@ -80,6 +74,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_vars.html"><span>Variables</span></a></li>
       <li><a href="functions_type.html"><span>Typedefs</span></a></li>
       <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
+      <li><a href="functions_rela.html"><span>Related&#160;Functions</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -104,30 +100,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_0x74.html#index_t"><span>t</span></a></li>
       <li><a href="functions_0x75.html#index_u"><span>u</span></a></li>
       <li><a href="functions_0x76.html#index_v"><span>v</span></a></li>
+      <li><a href="functions_0x77.html#index_w"><span>w</span></a></li>
+      <li><a href="functions_0x78.html#index_x"><span>x</span></a></li>
+      <li><a href="functions_0x79.html#index_y"><span>y</span></a></li>
+      <li><a href="functions_0x7a.html#index_z"><span>z</span></a></li>
       <li><a href="functions_0x7e.html#index_0x7e"><span>~</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('functions_0x62.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -137,7 +123,7 @@ $(document).ready(function(){initNavTree('functions_0x62.html','');});
 </div>
 
 <div class="contents">
-<div class="textblock">Here is a list of all documented class members with links to the class documentation for each member:</div>
+<div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
 <li>BallWheelHolder()
@@ -152,12 +138,21 @@ $(document).ready(function(){initNavTree('functions_0x62.html','');});
 <li>base_sz
 : <a class="el" href="structSharpIRSensor_1_1Data.html#acb2241519f6c641a469934d715964acc">SharpIRSensor::Data</a>
 </li>
+<li>baseHeight
+: <a class="el" href="structBallWheelHolder_1_1Data.html#a14ef11a8cd45c2d1cb08895277a38743">BallWheelHolder::Data</a>
+</li>
+<li>baseThickness
+: <a class="el" href="structBallWheelHolder_1_1Data.html#ab550dfd30671fba2028261eab399899f">BallWheelHolder::Data</a>
+</li>
+<li>baseWidth
+: <a class="el" href="structBallWheelHolder_1_1Data.html#ad18d4e498f18e8f3260fb1764908bbb7">BallWheelHolder::Data</a>
+</li>
 <li>BatteryHolder()
 : <a class="el" href="classBatteryHolder.html#a299b7dd080abb2defb3f4328bea6a806">BatteryHolder</a>
 </li>
 <li>BatteryType
-: <a class="el" href="classFutabaS3003.html#abb8c47808ca69cd9669765476eacd440">FutabaS3003</a>
-, <a class="el" href="classBatteryHolder.html#a05fd25225ae1951e22d60ed931f93821">BatteryHolder</a>
+: <a class="el" href="classBatteryHolder.html#a05fd25225ae1951e22d60ed931f93821">BatteryHolder</a>
+, <a class="el" href="classFutabaS3003.html#abb8c47808ca69cd9669765476eacd440">FutabaS3003</a>
 </li>
 <li>Bearing()
 : <a class="el" href="classBearing.html#a744fe803a504d2fb2d7df1da4c00693a">Bearing</a>
@@ -166,35 +161,32 @@ $(document).ready(function(){initNavTree('functions_0x62.html','');});
 : <a class="el" href="structSeeedUSSensor_1_1Data.html#a67aea5f7a5ad6dccbb38e193629206ed">SeeedUSSensor::Data</a>
 </li>
 <li>build()
-: <a class="el" href="classBatteryHolder.html#a31b5756aae7816ef88986302ec12303c">BatteryHolder</a>
-, <a class="el" href="classBallWheelHolder.html#a5fdc4b7a1f329bf9e136abb14ce79066">BallWheelHolder</a>
-, <a class="el" href="classArduinoUNO.html#a3f36db05b8094951b6a0372fae99e390">ArduinoUNO</a>
-, <a class="el" href="classAbstractPart.html#ab239b352fcd9263304e0bb5543ad1009">AbstractPart</a>
-, <a class="el" href="classAbstractPackage.html#a0afa0938658e85c091ebb6b8518e5dee">AbstractPackage</a>
+: <a class="el" href="classAbstractPackage.html#a0afa0938658e85c091ebb6b8518e5dee">AbstractPackage</a>
 , <a class="el" href="classToroid.html#a1f536ca45b977d2b16caddcfac37e8f2">Toroid</a>
 , <a class="el" href="classPolygonalPrism.html#a3915dd262cd305a5212b01dcb6494d04">PolygonalPrism</a>
 , <a class="el" href="classPolygonalPiramid.html#a9ddd875f2b4d9a878c96cccef7d590b4">PolygonalPiramid</a>
+, <a class="el" href="classBallWheelHolder.html#a5fdc4b7a1f329bf9e136abb14ce79066">BallWheelHolder</a>
+, <a class="el" href="classSeeedUSSensor.html#a2a01659a5ec32083d7681150a7270a2f">SeeedUSSensor</a>
+, <a class="el" href="classNineVoltBattery.html#a47fdf8ed2d4de128b9acae2ced2cb9ef">NineVoltBattery</a>
+, <a class="el" href="classSimpleAxe.html#a097f4e239f719d1590af44f5b4fac825">SimpleAxe</a>
 , <a class="el" href="classFutabaWheel.html#a6dc7222f040225cbea58a7f52ab51bc1">FutabaWheel</a>
 , <a class="el" href="classSharpIRSensor.html#a9358ae89493f89e94ecf763fa4f2f542">SharpIRSensor</a>
 , <a class="el" href="classServoWheel.html#a1c938e0a0aeac4b0cb9f31081cdbcc62">ServoWheel</a>
 , <a class="el" href="classSimpleWheel.html#a33754ed6566c483e50a13e3ab9ea1052">SimpleWheel</a>
-, <a class="el" href="classSeeedUSSensor.html#a2a01659a5ec32083d7681150a7270a2f">SeeedUSSensor</a>
-, <a class="el" href="classSimpleAxe.html#a097f4e239f719d1590af44f5b4fac825">SimpleAxe</a>
+, <a class="el" href="classArduinoUNO.html#a3f36db05b8094951b6a0372fae99e390">ArduinoUNO</a>
+, <a class="el" href="classBatteryHolder.html#a31b5756aae7816ef88986302ec12303c">BatteryHolder</a>
 , <a class="el" href="classFutabaS3003.html#a780e4ad25476f3d7962675c1b5e4fb03">FutabaS3003</a>
-, <a class="el" href="classNineVoltBattery.html#a47fdf8ed2d4de128b9acae2ced2cb9ef">NineVoltBattery</a>
 , <a class="el" href="classLink.html#a446d9d5faac08d76b75255d8f81363fb">Link</a>
+, <a class="el" href="classAbstractPart.html#ab239b352fcd9263304e0bb5543ad1009">AbstractPart</a>
 , <a class="el" href="classBearing.html#acf031144883f9a2eb8db860d3391547e">Bearing</a>
 </li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated on Sun Oct 7 2012 23:29:54 for OOML by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Oct 11 2012 00:27:41 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
 </body>
 </html>

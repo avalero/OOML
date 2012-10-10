@@ -7,12 +7,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -28,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">OOML
-   &#160;<span id="projectnumber">2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">Library</div>
   </td>
@@ -65,27 +59,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('dir_74468c6aa5627e796dac9600ce6ada7d.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -94,6 +73,11 @@ $(document).ready(function(){initNavTree('dir_74468c6aa5627e796dac9600ce6ada7d.h
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_74468c6aa5627e796dac9600ce6ada7d.html">parts</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">parts Directory Reference</div>  </div>
@@ -109,43 +93,39 @@ Directory dependency graph for src/parts/:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="files"></a>
 Files</h2></td></tr>
-<tr class="memitem:ArduinoUNO_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>ArduinoUNO.cpp</b> <a href="ArduinoUNO_8cpp_source.html">[code]</a></td></tr>
-<tr class="memitem:ArduinoUNO_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>ArduinoUNO.h</b> <a href="ArduinoUNO_8h_source.html">[code]</a></td></tr>
-<tr class="memitem:BallWheelHolder_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>BallWheelHolder.cpp</b> <a href="BallWheelHolder_8cpp_source.html">[code]</a></td></tr>
-<tr class="memitem:BallWheelHolder_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>BallWheelHolder.h</b> <a href="BallWheelHolder_8h_source.html">[code]</a></td></tr>
-<tr class="memitem:BatteryHolder_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>BatteryHolder.cpp</b> <a href="BatteryHolder_8cpp_source.html">[code]</a></td></tr>
-<tr class="memitem:BatteryHolder_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>BatteryHolder.h</b> <a href="BatteryHolder_8h_source.html">[code]</a></td></tr>
-<tr class="memitem:Bearing_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>Bearing.cpp</b> <a href="Bearing_8cpp_source.html">[code]</a></td></tr>
-<tr class="memitem:Bearing_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>Bearing.h</b> <a href="Bearing_8h_source.html">[code]</a></td></tr>
-<tr class="memitem:FutabaS3003_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>FutabaS3003.cpp</b> <a href="FutabaS3003_8cpp_source.html">[code]</a></td></tr>
-<tr class="memitem:FutabaS3003_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>FutabaS3003.h</b> <a href="FutabaS3003_8h_source.html">[code]</a></td></tr>
-<tr class="memitem:FutabaWheel_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>FutabaWheel.cpp</b> <a href="FutabaWheel_8cpp_source.html">[code]</a></td></tr>
-<tr class="memitem:FutabaWheel_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>FutabaWheel.h</b> <a href="FutabaWheel_8h_source.html">[code]</a></td></tr>
-<tr class="memitem:Link_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>Link.cpp</b> <a href="Link_8cpp_source.html">[code]</a></td></tr>
-<tr class="memitem:Link_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>Link.h</b> <a href="Link_8h_source.html">[code]</a></td></tr>
-<tr class="memitem:NineVoltBattery_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>NineVoltBattery.cpp</b> <a href="NineVoltBattery_8cpp_source.html">[code]</a></td></tr>
-<tr class="memitem:NineVoltBattery_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>NineVoltBattery.h</b> <a href="NineVoltBattery_8h_source.html">[code]</a></td></tr>
-<tr class="memitem:SeeedUSSensor_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>SeeedUSSensor.cpp</b> <a href="SeeedUSSensor_8cpp_source.html">[code]</a></td></tr>
-<tr class="memitem:SeeedUSSensor_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>SeeedUSSensor.h</b> <a href="SeeedUSSensor_8h_source.html">[code]</a></td></tr>
-<tr class="memitem:ServoWheel_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>ServoWheel.cpp</b> <a href="ServoWheel_8cpp_source.html">[code]</a></td></tr>
-<tr class="memitem:ServoWheel_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>ServoWheel.h</b> <a href="ServoWheel_8h_source.html">[code]</a></td></tr>
-<tr class="memitem:SharpIRSensor_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>SharpIRSensor.cpp</b> <a href="SharpIRSensor_8cpp_source.html">[code]</a></td></tr>
-<tr class="memitem:SharpIRSensor_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>SharpIRSensor.h</b> <a href="SharpIRSensor_8h_source.html">[code]</a></td></tr>
-<tr class="memitem:SimpleAxe_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>SimpleAxe.cpp</b> <a href="SimpleAxe_8cpp_source.html">[code]</a></td></tr>
-<tr class="memitem:SimpleAxe_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>SimpleAxe.h</b> <a href="SimpleAxe_8h_source.html">[code]</a></td></tr>
-<tr class="memitem:SimpleWheel_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>SimpleWheel.cpp</b> <a href="SimpleWheel_8cpp_source.html">[code]</a></td></tr>
-<tr class="memitem:SimpleWheel_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>SimpleWheel.h</b> <a href="SimpleWheel_8h_source.html">[code]</a></td></tr>
+<tr class="memitem:ArduinoUNO_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ArduinoUNO_8cpp.html">ArduinoUNO.cpp</a> <a href="ArduinoUNO_8cpp_source.html">[code]</a></td></tr>
+<tr class="memitem:ArduinoUNO_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ArduinoUNO_8h.html">ArduinoUNO.h</a> <a href="ArduinoUNO_8h_source.html">[code]</a></td></tr>
+<tr class="memitem:BallWheelHolder_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BallWheelHolder_8cpp.html">BallWheelHolder.cpp</a> <a href="BallWheelHolder_8cpp_source.html">[code]</a></td></tr>
+<tr class="memitem:BallWheelHolder_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BallWheelHolder_8h.html">BallWheelHolder.h</a> <a href="BallWheelHolder_8h_source.html">[code]</a></td></tr>
+<tr class="memitem:BatteryHolder_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BatteryHolder_8cpp.html">BatteryHolder.cpp</a> <a href="BatteryHolder_8cpp_source.html">[code]</a></td></tr>
+<tr class="memitem:BatteryHolder_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BatteryHolder_8h.html">BatteryHolder.h</a> <a href="BatteryHolder_8h_source.html">[code]</a></td></tr>
+<tr class="memitem:Bearing_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Bearing_8cpp.html">Bearing.cpp</a> <a href="Bearing_8cpp_source.html">[code]</a></td></tr>
+<tr class="memitem:Bearing_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Bearing_8h.html">Bearing.h</a> <a href="Bearing_8h_source.html">[code]</a></td></tr>
+<tr class="memitem:FutabaS3003_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="FutabaS3003_8cpp.html">FutabaS3003.cpp</a> <a href="FutabaS3003_8cpp_source.html">[code]</a></td></tr>
+<tr class="memitem:FutabaS3003_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="FutabaS3003_8h.html">FutabaS3003.h</a> <a href="FutabaS3003_8h_source.html">[code]</a></td></tr>
+<tr class="memitem:FutabaWheel_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="FutabaWheel_8cpp.html">FutabaWheel.cpp</a> <a href="FutabaWheel_8cpp_source.html">[code]</a></td></tr>
+<tr class="memitem:FutabaWheel_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="FutabaWheel_8h.html">FutabaWheel.h</a> <a href="FutabaWheel_8h_source.html">[code]</a></td></tr>
+<tr class="memitem:Link_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Link_8cpp.html">Link.cpp</a> <a href="Link_8cpp_source.html">[code]</a></td></tr>
+<tr class="memitem:Link_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Link_8h.html">Link.h</a> <a href="Link_8h_source.html">[code]</a></td></tr>
+<tr class="memitem:NineVoltBattery_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="NineVoltBattery_8cpp.html">NineVoltBattery.cpp</a> <a href="NineVoltBattery_8cpp_source.html">[code]</a></td></tr>
+<tr class="memitem:NineVoltBattery_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="NineVoltBattery_8h.html">NineVoltBattery.h</a> <a href="NineVoltBattery_8h_source.html">[code]</a></td></tr>
+<tr class="memitem:SeeedUSSensor_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SeeedUSSensor_8cpp.html">SeeedUSSensor.cpp</a> <a href="SeeedUSSensor_8cpp_source.html">[code]</a></td></tr>
+<tr class="memitem:SeeedUSSensor_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SeeedUSSensor_8h.html">SeeedUSSensor.h</a> <a href="SeeedUSSensor_8h_source.html">[code]</a></td></tr>
+<tr class="memitem:ServoWheel_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ServoWheel_8cpp.html">ServoWheel.cpp</a> <a href="ServoWheel_8cpp_source.html">[code]</a></td></tr>
+<tr class="memitem:ServoWheel_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ServoWheel_8h.html">ServoWheel.h</a> <a href="ServoWheel_8h_source.html">[code]</a></td></tr>
+<tr class="memitem:SharpIRSensor_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SharpIRSensor_8cpp.html">SharpIRSensor.cpp</a> <a href="SharpIRSensor_8cpp_source.html">[code]</a></td></tr>
+<tr class="memitem:SharpIRSensor_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SharpIRSensor_8h.html">SharpIRSensor.h</a> <a href="SharpIRSensor_8h_source.html">[code]</a></td></tr>
+<tr class="memitem:SimpleAxe_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SimpleAxe_8cpp.html">SimpleAxe.cpp</a> <a href="SimpleAxe_8cpp_source.html">[code]</a></td></tr>
+<tr class="memitem:SimpleAxe_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SimpleAxe_8h.html">SimpleAxe.h</a> <a href="SimpleAxe_8h_source.html">[code]</a></td></tr>
+<tr class="memitem:SimpleWheel_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SimpleWheel_8cpp.html">SimpleWheel.cpp</a> <a href="SimpleWheel_8cpp_source.html">[code]</a></td></tr>
+<tr class="memitem:SimpleWheel_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SimpleWheel_8h.html">SimpleWheel.h</a> <a href="SimpleWheel_8h_source.html">[code]</a></td></tr>
 </table>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_74468c6aa5627e796dac9600ce6ada7d.html">parts</a></li>
-    <li class="footer">Generated on Sun Oct 7 2012 23:29:54 for OOML by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Oct 11 2012 00:27:41 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
 </body>
 </html>

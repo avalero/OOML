@@ -7,12 +7,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -28,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">OOML
-   &#160;<span id="projectnumber">2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">Library</div>
   </td>
@@ -68,29 +62,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('Char_8cpp_source.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -99,12 +79,17 @@ $(document).ready(function(){initNavTree('Char_8cpp_source.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_3c4c7c1a85608ccd561c026bec818e51.html">components</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">Char.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**********************************************************************</span></div>
+<a href="Char_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**********************************************************************</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This code is part of the OOML project</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Authors: Alberto Valero-Gomez, Nieves Cubo</span></div>
@@ -134,11 +119,11 @@ $(document).ready(function(){initNavTree('Char_8cpp_source.html','');});
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * PURPOSE.</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> **********************************************************************/</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;Char.h&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;config.h&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Char_8h.html">Char.h</a>&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="config_8h.html">config.h</a>&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;Char::Char(<span class="keywordtype">char</span> character, <span class="keywordtype">double</span> font_size, <span class="keywordtype">double</span> height) :</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="classChar.html#a322dfebbbcf2555857c812940864145e">   35</a></span>&#160;<a class="code" href="classChar.html#a322dfebbbcf2555857c812940864145e">Char::Char</a>(<span class="keywordtype">char</span> character, <span class="keywordtype">double</span> font_size, <span class="keywordtype">double</span> height) :</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classComponent.html" title="Component class.">Component</a>()</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">bool</span> capitalized;</div>
@@ -159,7 +144,7 @@ $(document).ready(function(){initNavTree('Char_8cpp_source.html','');});
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    data._font_size=font_size;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">if</span>(capitalized == <span class="keyword">true</span>){</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">bool</span> exists = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classChar.html#a35488a4f20b505c18ad22451d689046b">exists</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">bool</span> exists_installed = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">string</span> file_path=<span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="comment">//check whether the file exists in the installed dir</span></div>
@@ -167,7 +152,7 @@ $(document).ready(function(){initNavTree('Char_8cpp_source.html','');});
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            stringstream dxf;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            dxf &lt;&lt; DXF_INSTALLED_PATH &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; character &lt;&lt; <span class="stringliteral">&quot;.dxf&quot;</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            dxf &lt;&lt; <a class="code" href="config_8h.html#a960f4da066dfe1f36d44f188a4159512">DXF_INSTALLED_PATH</a> &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; character &lt;&lt; <span class="stringliteral">&quot;.dxf&quot;</span>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordtype">string</span> dxf_file = dxf.str();</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            ifstream ifile(dxf_file.c_str());</div>
@@ -180,7 +165,7 @@ $(document).ready(function(){initNavTree('Char_8cpp_source.html','');});
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="comment">//check whether the file exists **but not installed**</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        {</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            stringstream dxf;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            dxf &lt;&lt; DXF_PATH &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; character &lt;&lt; <span class="stringliteral">&quot;.dxf&quot;</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            dxf &lt;&lt; <a class="code" href="config_8h.html#a016cd9ce5cfdb1d2068172cbb62624a8">DXF_PATH</a> &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; character &lt;&lt; <span class="stringliteral">&quot;.dxf&quot;</span>;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordtype">string</span> dxf_file = dxf.str();</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            ifstream ifile(dxf_file.c_str());</div>
@@ -193,18 +178,18 @@ $(document).ready(function(){initNavTree('Char_8cpp_source.html','');});
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">if</span> (exists_installed || exists){</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <a class="code" href="classComponent.html" title="Component class.">Component</a> myChar(<a class="code" href="classComponent.html#aa6d56c61d71058811f19f26a70d684e8" title="Linear extrude an DXF filename.">Component::linearExtrudeFromDXF</a>(file_path,height ));  <span class="comment">//A-Z y 0-9</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            myChar.scale(font_size/183.7, font_size/183.7,0);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keyword">set</span>(myChar.get());</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            myChar.<a class="code" href="classComponent.html#a2ac4e80605acebdce055cc0d4a247f04" title="Scale the component.">scale</a>(font_size/183.7, font_size/183.7,0);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keyword">set</span>(myChar.<a class="code" href="classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version.">get</a>());</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }<span class="keywordflow">else</span>{ <span class="comment">//capitalized = false</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordtype">bool</span> exists = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classChar.html#a35488a4f20b505c18ad22451d689046b">exists</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordtype">bool</span> exists_installed = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordtype">string</span> file_path=<span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="comment">//check whether the file exists in the installed dir</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        {</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            stringstream dxf;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            dxf &lt;&lt; DXF_INSTALLED_PATH &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; character &lt;&lt; <span class="stringliteral">&quot;m.dxf&quot;</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            dxf &lt;&lt; <a class="code" href="config_8h.html#a960f4da066dfe1f36d44f188a4159512">DXF_INSTALLED_PATH</a> &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; character &lt;&lt; <span class="stringliteral">&quot;m.dxf&quot;</span>;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keywordtype">string</span> dxf_file = dxf.str();</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            ifstream ifile(dxf_file.c_str());</div>
@@ -218,7 +203,7 @@ $(document).ready(function(){initNavTree('Char_8cpp_source.html','');});
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="comment">//check whether the file exists **but not installed**</span></div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        {</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            stringstream dxf;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            dxf &lt;&lt; DXF_PATH &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; character &lt;&lt; <span class="stringliteral">&quot;m.dxf&quot;</span>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            dxf &lt;&lt; <a class="code" href="config_8h.html#a016cd9ce5cfdb1d2068172cbb62624a8">DXF_PATH</a> &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; character &lt;&lt; <span class="stringliteral">&quot;m.dxf&quot;</span>;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keywordtype">string</span> dxf_file = dxf.str();</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            ifstream ifile(dxf_file.c_str());</div>
@@ -232,8 +217,8 @@ $(document).ready(function(){initNavTree('Char_8cpp_source.html','');});
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">if</span> (exists_installed || exists){</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <a class="code" href="classComponent.html" title="Component class.">Component</a> myChar(<a class="code" href="classComponent.html#aa6d56c61d71058811f19f26a70d684e8" title="Linear extrude an DXF filename.">Component::linearExtrudeFromDXF</a>(file_path,height ));  <span class="comment">//a-Z y 0-9</span></div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            data._created=<span class="keyword">true</span>;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            myChar.scale(font_size/145, font_size/145,0);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="keyword">set</span>(myChar.get());</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            myChar.<a class="code" href="classComponent.html#a2ac4e80605acebdce055cc0d4a247f04" title="Scale the component.">scale</a>(font_size/145, font_size/145,0);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="keyword">set</span>(myChar.<a class="code" href="classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version.">get</a>());</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        }<span class="keywordflow">else</span>{</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            cerr &lt;&lt; <span class="stringliteral">&quot;dxf file with &quot;</span> &lt;&lt; data._character &lt;&lt; <span class="stringliteral">&quot; letter does not exist&quot;</span> &lt;&lt; endl;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            data._created = <span class="keyword">false</span>;</div>
@@ -241,15 +226,11 @@ $(document).ready(function(){initNavTree('Char_8cpp_source.html','');});
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    }</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_3c4c7c1a85608ccd561c026bec818e51.html">components</a></li><li class="navelem"><b>Char.cpp</b></li>
-    <li class="footer">Generated on Sun Oct 7 2012 23:29:53 for OOML by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Oct 11 2012 00:27:40 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
 </body>
 </html>

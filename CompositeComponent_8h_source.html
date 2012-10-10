@@ -7,12 +7,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -28,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">OOML
-   &#160;<span id="projectnumber">2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">Library</div>
   </td>
@@ -68,29 +62,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('CompositeComponent_8h_source.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -99,12 +79,17 @@ $(document).ready(function(){initNavTree('CompositeComponent_8h_source.html','')
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">CompositeComponent.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**********************************************************************</span></div>
+<a href="CompositeComponent_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**********************************************************************</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This code is part of the OOML project</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Treviño</span></div>
@@ -144,12 +129,12 @@ $(document).ready(function(){initNavTree('CompositeComponent_8h_source.html','')
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OOMLCore_EXP_DEC __declspec(dllimport)</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OOMLCore_EXP_DEC</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="CompositeComponent_8h.html#ad88ad115d074664d76d5560dafacc35b">   41</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OOMLCore_EXP_DEC</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &lt;core/Component.h&gt;</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &lt;core/CompositeObject.h&gt;</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &lt;core/IndentWriter.h&gt;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Component_8h.html">core/Component.h</a>&gt;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="CompositeObject_8h.html">core/CompositeObject.h</a>&gt;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="IndentWriter_8h.html">core/IndentWriter.h</a>&gt;</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
@@ -159,11 +144,11 @@ $(document).ready(function(){initNavTree('CompositeComponent_8h_source.html','')
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="classCompositeComponent.html#a9bb852ad49261fd2be5898769867ae7a">   62</a></span>&#160;        <a class="code" href="classCompositeComponent.html#a9bb852ad49261fd2be5898769867ae7a" title="Default constructor.">CompositeComponent</a>() :</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <a class="code" href="classComponent.html" title="Component class.">Component</a>(),</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                _decoratedComposite(0)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                <a class="code" href="classCompositeComponent.html#af75dbdaa66f7f0b0d7137b777a4f9ccc">_decoratedComposite</a>(0)</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        {}</div>
 <div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="classCompositeComponent.html#afdb805ea6dca0ee4558a2c90c0c2e74c">   71</a></span>&#160;        <a class="code" href="classCompositeComponent.html#a9bb852ad49261fd2be5898769867ae7a" title="Default constructor.">CompositeComponent</a>(<a class="code" href="classSharedPtr.html" title="Object pointer.">SharedPtr&lt;CompositeObject&gt;</a> <span class="keyword">const</span>&amp; decorated) :</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                 <a class="code" href="classComponent.html" title="Component class.">Component</a>(),</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                _decoratedComposite(0)</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <a class="code" href="classCompositeComponent.html#af75dbdaa66f7f0b0d7137b777a4f9ccc">_decoratedComposite</a>(0)</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        {</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                <span class="keyword">set</span>(<a class="code" href="classSharedPtr.html">SharedPtr&lt;AbstractObject&gt;</a>(decorated));</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
@@ -180,11 +165,11 @@ $(document).ready(function(){initNavTree('CompositeComponent_8h_source.html','')
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
 <div class="line"><a name="l00108"></a><span class="lineno"><a class="code" href="classCompositeComponent.html#a363f11dbc32188c3d004964d24c39c4e">  108</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCompositeComponent.html#a363f11dbc32188c3d004964d24c39c4e" title="Adds a component to the composite.">addComponent</a>(<a class="code" href="classComponent.html" title="Component class.">Component</a> <span class="keyword">const</span>&amp; component)</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        {</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                _decoratedComposite-&gt;<a class="code" href="classCompositeObject.html#a222f1c5454458792044747a508d24838" title="Adds an object to the composite.">addObject</a>(component.<a class="code" href="classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version.">get</a>());</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <a class="code" href="classCompositeComponent.html#af75dbdaa66f7f0b0d7137b777a4f9ccc">_decoratedComposite</a>-&gt;<a class="code" href="classCompositeObject.html#a222f1c5454458792044747a508d24838" title="Adds an object to the composite.">addObject</a>(component.<a class="code" href="classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version.">get</a>());</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        }</div>
 <div class="line"><a name="l00119"></a><span class="lineno"><a class="code" href="classCompositeComponent.html#aad3ae67db63ae0f754daba2977f494a1">  119</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCompositeComponent.html#aad3ae67db63ae0f754daba2977f494a1" title="Removes a component from the composite.">removeComponent</a>(<a class="code" href="classComponent.html" title="Component class.">Component</a> <span class="keyword">const</span>&amp; component)</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        {</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                _decoratedComposite-&gt;<a class="code" href="classCompositeObject.html#af3f80de065394e5dc5f0f2de928e19bb" title="Removes an object from the composite.">removeObject</a>(component.<a class="code" href="classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version.">get</a>());</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                <a class="code" href="classCompositeComponent.html#af75dbdaa66f7f0b0d7137b777a4f9ccc">_decoratedComposite</a>-&gt;<a class="code" href="classCompositeObject.html#af3f80de065394e5dc5f0f2de928e19bb" title="Removes an object from the composite.">removeObject</a>(component.<a class="code" href="classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version.">get</a>());</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        }</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
 <div class="line"><a name="l00131"></a><span class="lineno"><a class="code" href="classCompositeComponent.html#a7b4aa18a4fc79a68475a045b39df2073">  131</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classCompositeComponent.html" title="Composite component interface.">CompositeComponent</a> &amp; <a class="code" href="classCompositeComponent.html#a7b4aa18a4fc79a68475a045b39df2073" title="Adds a component with insertor syntax.">operator&lt;&lt;</a>(<a class="code" href="classComponent.html" title="Component class.">Component</a> <span class="keyword">const</span>&amp; component)</div>
@@ -201,11 +186,11 @@ $(document).ready(function(){initNavTree('CompositeComponent_8h_source.html','')
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <a class="code" href="classCompositeObject.html" title="Composite object interface.">CompositeObject</a> * _decoratedComposite; </div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="code" href="classCompositeComponent.html#af75dbdaa66f7f0b0d7137b777a4f9ccc">  150</a></span>&#160;        <a class="code" href="classCompositeObject.html" title="Composite object interface.">CompositeObject</a> * <a class="code" href="classCompositeComponent.html#af75dbdaa66f7f0b0d7137b777a4f9ccc">_decoratedComposite</a>; </div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keywordtype">void</span> updatePointer()</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        {</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                _decoratedComposite = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="classCompositeObject.html" title="Composite object interface.">CompositeObject</a> *<span class="keyword">&gt;</span>(<span class="keyword">get</span>().<span class="keyword">get</span>());</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                <a class="code" href="classCompositeComponent.html#af75dbdaa66f7f0b0d7137b777a4f9ccc">_decoratedComposite</a> = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="classCompositeObject.html" title="Composite object interface.">CompositeObject</a> *<span class="keyword">&gt;</span>(<span class="keyword">get</span>().<span class="keyword">get</span>());</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                <span class="comment">// TODO: Check for problems...</span></div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        }</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
@@ -214,15 +199,11 @@ $(document).ready(function(){initNavTree('CompositeComponent_8h_source.html','')
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">#endif // COMPOSITECOMPONENT_H_INCLUDED</span></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><b>CompositeComponent.h</b></li>
-    <li class="footer">Generated on Sun Oct 7 2012 23:29:53 for OOML by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Oct 11 2012 00:27:40 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
 </body>
 </html>

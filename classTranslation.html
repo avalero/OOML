@@ -7,12 +7,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -28,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">OOML
-   &#160;<span id="projectnumber">2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">Library</div>
   </td>
@@ -73,27 +67,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classTranslation.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -102,6 +81,7 @@ $(document).ready(function(){initNavTree('classTranslation.html','');});
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -119,31 +99,121 @@ $(document).ready(function(){initNavTree('classTranslation.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a19a6742a807888b66b0a402469bbf588"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19a6742a807888b66b0a402469bbf588"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTranslation.html#a19a6742a807888b66b0a402469bbf588">Translation</a> ()</td></tr>
-<tr class="memdesc:a19a6742a807888b66b0a402469bbf588"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br/></td></tr>
-<tr class="memitem:aed20e68821dd74f76cc4799426bff04d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed20e68821dd74f76cc4799426bff04d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Translation</b> (double x, double y, double z)</td></tr>
+<tr class="memitem:a19a6742a807888b66b0a402469bbf588"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTranslation.html#a19a6742a807888b66b0a402469bbf588">Translation</a> ()</td></tr>
+<tr class="memdesc:a19a6742a807888b66b0a402469bbf588"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a19a6742a807888b66b0a402469bbf588"></a><br/></td></tr>
+<tr class="memitem:aed20e68821dd74f76cc4799426bff04d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTranslation.html#aed20e68821dd74f76cc4799426bff04d">Translation</a> (double <a class="el" href="classTranslation.html#a7b3aea7b8380a81367a7c289b7a19af7">x</a>, double <a class="el" href="classTranslation.html#a4080bcfcd8dc16dd59d8e126a4cf3763">y</a>, double <a class="el" href="classTranslation.html#ac87bf35effcf1ab42669b2f6b1d0c0db">z</a>)</td></tr>
 <tr class="memitem:abe5fb303eb1a7114d54bc064e382ebf0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTranslation.html#abe5fb303eb1a7114d54bc064e382ebf0">translate</a> (double tx, double ty, double tz)</td></tr>
 <tr class="memdesc:abe5fb303eb1a7114d54bc064e382ebf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translates the current vector.  <a href="#abe5fb303eb1a7114d54bc064e382ebf0"></a><br/></td></tr>
-<tr class="memitem:a9aba5f07ee3af06cd57ca8177022083c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9aba5f07ee3af06cd57ca8177022083c"></a>
-<a class="el" href="classTranslation.html">Translation</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (<a class="el" href="classTranslation.html">Translation</a> const &amp;rhs) const </td></tr>
+<tr class="memitem:a9aba5f07ee3af06cd57ca8177022083c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTranslation.html">Translation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTranslation.html#a9aba5f07ee3af06cd57ca8177022083c">operator+</a> (<a class="el" href="classTranslation.html">Translation</a> const &amp;rhs) const </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a7b3aea7b8380a81367a7c289b7a19af7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b3aea7b8380a81367a7c289b7a19af7"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>x</b></td></tr>
-<tr class="memitem:a4080bcfcd8dc16dd59d8e126a4cf3763"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4080bcfcd8dc16dd59d8e126a4cf3763"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>y</b></td></tr>
-<tr class="memitem:ac87bf35effcf1ab42669b2f6b1d0c0db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac87bf35effcf1ab42669b2f6b1d0c0db"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>z</b></td></tr>
+<tr class="memitem:a7b3aea7b8380a81367a7c289b7a19af7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTranslation.html#a7b3aea7b8380a81367a7c289b7a19af7">x</a></td></tr>
+<tr class="memitem:a4080bcfcd8dc16dd59d8e126a4cf3763"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTranslation.html#a4080bcfcd8dc16dd59d8e126a4cf3763">y</a></td></tr>
+<tr class="memitem:ac87bf35effcf1ab42669b2f6b1d0c0db"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTranslation.html#ac87bf35effcf1ab42669b2f6b1d0c0db">z</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classTranslation.html" title="Translation Vector.">Translation</a> <a class="el" href="classVector.html" title="Generic vector primitive object.">Vector</a>. </p>
 <p>This class provides a translation vector </p>
 
 <p>Definition at line <a class="el" href="Translation_8h_source.html#l00052">52</a> of file <a class="el" href="Translation_8h_source.html">Translation.h</a>.</p>
-</div><h2>Member Function Documentation</h2>
+</div><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a19a6742a807888b66b0a402469bbf588"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Translation::Translation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default constructor. </p>
+
+<p>Definition at line <a class="el" href="Translation_8h_source.html#l00058">58</a> of file <a class="el" href="Translation_8h_source.html">Translation.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aed20e68821dd74f76cc4799426bff04d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Translation::Translation </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Translation_8h_source.html#l00063">63</a> of file <a class="el" href="Translation_8h_source.html">Translation.h</a>.</p>
+
+</div>
+</div>
+<h2>Member Function Documentation</h2>
+<a class="anchor" id="a9aba5f07ee3af06cd57ca8177022083c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTranslation.html">Translation</a> Translation::operator+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTranslation.html">Translation</a> const &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Translation_8h_source.html#l00079">79</a> of file <a class="el" href="Translation_8h_source.html">Translation.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="abe5fb303eb1a7114d54bc064e382ebf0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -196,19 +266,58 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>z</b></td></tr>
 
 </div>
 </div>
+<h2>Member Data Documentation</h2>
+<a class="anchor" id="a7b3aea7b8380a81367a7c289b7a19af7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Translation::x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Translation_8h_source.html#l00088">88</a> of file <a class="el" href="Translation_8h_source.html">Translation.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4080bcfcd8dc16dd59d8e126a4cf3763"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Translation::y</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Translation_8h_source.html#l00088">88</a> of file <a class="el" href="Translation_8h_source.html">Translation.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac87bf35effcf1ab42669b2f6b1d0c0db"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Translation::z</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Translation_8h_source.html#l00088">88</a> of file <a class="el" href="Translation_8h_source.html">Translation.h</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/core/<a class="el" href="Translation_8h_source.html">Translation.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="classTranslation.html">Translation</a></li>
-    <li class="footer">Generated on Sun Oct 7 2012 23:29:54 for OOML by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Oct 11 2012 00:27:41 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
 </body>
 </html>

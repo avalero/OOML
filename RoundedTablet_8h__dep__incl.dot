@@ -1,0 +1,18 @@
+digraph "src/components/RoundedTablet.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="src/components/RoundedTablet.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="src/components/RoundedTablet.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$RoundedTablet_8cpp.html"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="src/components.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$components_8h.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="src/parts/FutabaS3003.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$FutabaS3003_8cpp.html"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="src/parts/NineVoltBattery.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$NineVoltBattery_8cpp.html"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="src/parts/SeeedUSSensor.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$SeeedUSSensor_8cpp.html"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="src/parts/SharpIRSensor.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$SharpIRSensor_8cpp.html"];
+}

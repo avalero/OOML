@@ -8,4 +8,6 @@ digraph "ScaleDecorator::create"
   Node2 [label="Component::scaledCopy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#aedfec2802a485ab9d0b6536cfaf72393",tooltip="Scale the component."];
   Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node3 [label="Component::scale",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#a2ac4e80605acebdce055cc0d4a247f04",tooltip="Scale the component."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Char::Char",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classChar.html#a322dfebbbcf2555857c812940864145e"];
 }

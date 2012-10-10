@@ -7,12 +7,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -28,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">OOML
-   &#160;<span id="projectnumber">2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">Library</div>
   </td>
@@ -80,6 +74,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_vars.html"><span>Variables</span></a></li>
       <li><a href="functions_type.html"><span>Typedefs</span></a></li>
       <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
+      <li><a href="functions_rela.html"><span>Related&#160;Functions</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -107,26 +103,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     </ul>
   </div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('functions_func_0x72.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -154,6 +136,31 @@ $(document).ready(function(){initNavTree('functions_func_0x72.html','');});
 <li>RegularPrism()
 : <a class="el" href="classRegularPrism.html#aeecb6ee153c829788c847e82f9eca3b0">RegularPrism</a>
 </li>
+<li>relRotate()
+: <a class="el" href="classRefSys.html#a0d9f1e184254e14464040e22da66b2cf">RefSys</a>
+, <a class="el" href="classTransformMatrix.html#a00dc5a7c72440944e3fde54dde9bfb5d">TransformMatrix</a>
+</li>
+<li>relRotateEulerZXZ()
+: <a class="el" href="classRefSys.html#a98574be4d68cc6e691df898596009335">RefSys</a>
+, <a class="el" href="classTransformMatrix.html#aa4a1f915ff428d0e3bb9fa43dd0974b5">TransformMatrix</a>
+</li>
+<li>relRotateEulerZYZ()
+: <a class="el" href="classRefSys.html#a01add4986306de6b3de628504e8536d9">RefSys</a>
+, <a class="el" href="classTransformMatrix.html#a52cd13a210fb835f8c39f82830780d08">TransformMatrix</a>
+</li>
+<li>relRotateX()
+: <a class="el" href="classTransformMatrix.html#a668c9d8f32c295c254075cb8cf2f0d3d">TransformMatrix</a>
+</li>
+<li>relRotateY()
+: <a class="el" href="classTransformMatrix.html#a15e0f3ce5ce669ae2894ec34f68a692e">TransformMatrix</a>
+</li>
+<li>relRotateZ()
+: <a class="el" href="classTransformMatrix.html#a4b15619b5a1a9e1236d25e570b11397a">TransformMatrix</a>
+</li>
+<li>relTranslate()
+: <a class="el" href="classRefSys.html#a8bc078e068e1af5ec562b5789e482cf5">RefSys</a>
+, <a class="el" href="classTransformMatrix.html#af2e8c92afee36a6e24206ffed1398161">TransformMatrix</a>
+</li>
 <li>removeComponent()
 : <a class="el" href="classAbstractPackage.html#af4d9ae1404cf73aab3d3a739b78af62b">AbstractPackage</a>
 , <a class="el" href="classCompositeComponent.html#aad3ae67db63ae0f754daba2977f494a1">CompositeComponent</a>
@@ -168,9 +175,9 @@ $(document).ready(function(){initNavTree('functions_func_0x72.html','');});
 : <a class="el" href="classSharedPtr.html#a89b33f48e659f14f4b0ee18eb3d32f4a">SharedPtr&lt; T &gt;</a>
 </li>
 <li>rotate()
-: <a class="el" href="classComponent.html#a0018c6cd2aee5d5f4349c4b901fa025f">Component</a>
+: <a class="el" href="classComponent.html#a4b843c2debc8bf1947a3c55bb8ede442">Component</a>
 , <a class="el" href="classRefSys.html#abe3f04d24545bf4c085e08d04fe2150a">RefSys</a>
-, <a class="el" href="classComponent.html#a4b843c2debc8bf1947a3c55bb8ede442">Component</a>
+, <a class="el" href="classTransformMatrix.html#a20910983db5e4e0574879dd86b4f8a3e">TransformMatrix</a>
 </li>
 <li>rotateAround()
 : <a class="el" href="classComponent.html#a17bc2b6b67bc327c215dece2dc453f34">Component</a>
@@ -189,13 +196,15 @@ $(document).ready(function(){initNavTree('functions_func_0x72.html','');});
 </li>
 <li>rotateEulerZXZ()
 : <a class="el" href="classComponent.html#a8ce5e794cdbe6d675999921c019e9067">Component</a>
-, <a class="el" href="classRefSys.html#aaef60f082d3f15aa558f7276eea12368">RefSys</a>
 , <a class="el" href="classRotationalMatrix.html#a791b7409dde52402e1a5728602590a93">RotationalMatrix</a>
+, <a class="el" href="classTransformMatrix.html#ae6ad2df1f60c163d35b5fd43846034fb">TransformMatrix</a>
+, <a class="el" href="classRefSys.html#aaef60f082d3f15aa558f7276eea12368">RefSys</a>
 </li>
 <li>rotateEulerZYZ()
 : <a class="el" href="classComponent.html#a841b4b1a8040df25a0dc83c413e90878">Component</a>
 , <a class="el" href="classRefSys.html#a6cd5926ccf484bb4406af8b9251c9895">RefSys</a>
 , <a class="el" href="classRotationalMatrix.html#a5c3409d05d844696cd5be7399eefa5dc">RotationalMatrix</a>
+, <a class="el" href="classTransformMatrix.html#a6ca67ecc63c5f6fd26cca1d0df2033eb">TransformMatrix</a>
 </li>
 <li>rotateExtrudedCopy()
 : <a class="el" href="classComponent2D.html#a198370c81a1f9f00aa14850baf89458f">Component2D</a>
@@ -211,12 +220,15 @@ $(document).ready(function(){initNavTree('functions_func_0x72.html','');});
 </li>
 <li>rotateX()
 : <a class="el" href="classRotationalMatrix.html#a65c817d036afdd0a623a555d983170d6">RotationalMatrix</a>
+, <a class="el" href="classTransformMatrix.html#ad94010aa2da239614efbfb4926d63c04">TransformMatrix</a>
 </li>
 <li>rotateY()
-: <a class="el" href="classRotationalMatrix.html#a6df7dea4bd4f2e5e826f5ffff9c9846b">RotationalMatrix</a>
+: <a class="el" href="classTransformMatrix.html#ac76ffec4c53cd0b70b0bc86a67f95ad0">TransformMatrix</a>
+, <a class="el" href="classRotationalMatrix.html#a6df7dea4bd4f2e5e826f5ffff9c9846b">RotationalMatrix</a>
 </li>
 <li>rotateZ()
 : <a class="el" href="classRotationalMatrix.html#a22d975b459aa676f92fccfdeedbf8878">RotationalMatrix</a>
+, <a class="el" href="classTransformMatrix.html#a4b485e8c3d73e3b687b4859b4cc11408">TransformMatrix</a>
 </li>
 <li>RotationalMatrix()
 : <a class="el" href="classRotationalMatrix.html#a85eb4651cd6364478fb2a69d7b2ee47a">RotationalMatrix</a>
@@ -232,14 +244,11 @@ $(document).ready(function(){initNavTree('functions_func_0x72.html','');});
 </li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated on Sun Oct 7 2012 23:29:54 for OOML by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Oct 11 2012 00:27:41 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
 </body>
 </html>

@@ -7,12 +7,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -28,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">OOML
-   &#160;<span id="projectnumber">2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">Library</div>
   </td>
@@ -74,26 +68,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     </ul>
   </div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classes.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -117,12 +97,12 @@ $(document).ready(function(){initNavTree('classes.html','');});
 <tr><td valign="top"><a class="el" href="classAbstractPackage.html">AbstractPackage</a>&#160;&#160;&#160;</td><td rowspan="2" valign="bottom"><a name="letter_D"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;D&#160;&#160;</div></td></tr></table>
 </td><td valign="top"><a class="el" href="classLinearExtrudeDecorator.html">LinearExtrudeDecorator</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classPolygonalPrism.html">PolygonalPrism</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classSimpleAxe.html">SimpleAxe</a>&#160;&#160;&#160;</td></tr>
 <tr><td valign="top"><a class="el" href="classAbstractPart.html">AbstractPart</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classLink.html">Link</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classPolyhedron.html">Polyhedron</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classSimpleWheel.html">SimpleWheel</a>&#160;&#160;&#160;</td></tr>
-<tr><td valign="top"><a class="el" href="classArduinoUNO.html">ArduinoUNO</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="structBallWheelHolder_1_1Data.html">BallWheelHolder::Data</a>&#160;&#160;&#160;</td><td rowspan="2" valign="bottom"><a name="letter_M"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;M&#160;&#160;</div></td></tr></table>
+<tr><td valign="top"><a class="el" href="classArduinoUNO.html">ArduinoUNO</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="structSharpIRSensor_1_1Data.html">SharpIRSensor::Data</a>&#160;&#160;&#160;</td><td rowspan="2" valign="bottom"><a name="letter_M"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;M&#160;&#160;</div></td></tr></table>
 </td><td rowspan="2" valign="bottom"><a name="letter_R"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;R&#160;&#160;</div></td></tr></table>
 </td><td valign="top"><a class="el" href="classSphere.html">Sphere</a>&#160;&#160;&#160;</td></tr>
 <tr><td rowspan="2" valign="bottom"><a name="letter_B"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;B&#160;&#160;</div></td></tr></table>
-</td><td valign="top"><a class="el" href="structSharpIRSensor_1_1Data.html">SharpIRSensor::Data</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classSphereObject.html">SphereObject</a>&#160;&#160;&#160;</td></tr>
-<tr><td valign="top"><a class="el" href="structSeeedUSSensor_1_1Data.html">SeeedUSSensor::Data</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classMatrix.html">Matrix</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classRefSys.html">RefSys</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classSquare.html">Square</a>&#160;&#160;&#160;</td></tr>
+</td><td valign="top"><a class="el" href="structSeeedUSSensor_1_1Data.html">SeeedUSSensor::Data</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classSphereObject.html">SphereObject</a>&#160;&#160;&#160;</td></tr>
+<tr><td valign="top"><a class="el" href="structBallWheelHolder_1_1Data.html">BallWheelHolder::Data</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classMatrix.html">Matrix</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classRefSys.html">RefSys</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classSquare.html">Square</a>&#160;&#160;&#160;</td></tr>
 <tr><td valign="top"><a class="el" href="classBallWheelHolder.html">BallWheelHolder</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classDifference.html">Difference</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classMinkowskiDecorator.html">MinkowskiDecorator</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classRefSysView.html">RefSysView</a>&#160;&#160;&#160;</td><td rowspan="2" valign="bottom"><a name="letter_T"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;T&#160;&#160;</div></td></tr></table>
 </td></tr>
 <tr><td valign="top"><a class="el" href="classBatteryHolder.html">BatteryHolder</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classDXFLinearExtrude.html">DXFLinearExtrude</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classMirrorDecorator.html">MirrorDecorator</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classRegularPiramid.html">RegularPiramid</a>&#160;&#160;&#160;</td></tr>
@@ -130,34 +110,31 @@ $(document).ready(function(){initNavTree('classes.html','');});
 </td><td valign="top"><a class="el" href="classRegularPrism.html">RegularPrism</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classToroid.html">Toroid</a>&#160;&#160;&#160;</td></tr>
 <tr><td rowspan="2" valign="bottom"><a name="letter_C"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;C&#160;&#160;</div></td></tr></table>
 </td><td rowspan="2" valign="bottom"><a name="letter_F"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;F&#160;&#160;</div></td></tr></table>
-</td><td valign="top"><a class="el" href="classRotateDecorator.html">RotateDecorator</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classTranslateDecorator.html">TranslateDecorator</a>&#160;&#160;&#160;</td></tr>
-<tr><td valign="top"><a class="el" href="classNineVoltBattery.html">NineVoltBattery</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classRotateExtrudeDecorator.html">RotateExtrudeDecorator</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classTranslation.html">Translation</a>&#160;&#160;&#160;</td></tr>
+</td><td valign="top"><a class="el" href="classRotateDecorator.html">RotateDecorator</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classTransformMatrix.html">TransformMatrix</a>&#160;&#160;&#160;</td></tr>
+<tr><td valign="top"><a class="el" href="classNineVoltBattery.html">NineVoltBattery</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classRotateExtrudeDecorator.html">RotateExtrudeDecorator</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classTranslateDecorator.html">TranslateDecorator</a>&#160;&#160;&#160;</td></tr>
 <tr><td valign="top"><a class="el" href="classChar.html">Char</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classFutabaS3003.html">FutabaS3003</a>&#160;&#160;&#160;</td><td rowspan="2" valign="bottom"><a name="letter_O"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;O&#160;&#160;</div></td></tr></table>
-</td><td valign="top"><a class="el" href="classRotationalMatrix.html">RotationalMatrix</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classTriangle3D.html">Triangle3D</a>&#160;&#160;&#160;</td></tr>
-<tr><td valign="top"><a class="el" href="classCircle.html">Circle</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classFutabaWheel.html">FutabaWheel</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classRoundedCube.html">RoundedCube</a>&#160;&#160;&#160;</td><td rowspan="2" valign="bottom"><a name="letter_U"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;U&#160;&#160;</div></td></tr></table>
-</td></tr>
+</td><td valign="top"><a class="el" href="classRotationalMatrix.html">RotationalMatrix</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classTranslation.html">Translation</a>&#160;&#160;&#160;</td></tr>
+<tr><td valign="top"><a class="el" href="classCircle.html">Circle</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classFutabaWheel.html">FutabaWheel</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classRoundedCube.html">RoundedCube</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classTriangle3D.html">Triangle3D</a>&#160;&#160;&#160;</td></tr>
 <tr><td valign="top"><a class="el" href="classColorDecorator.html">ColorDecorator</a>&#160;&#160;&#160;</td><td rowspan="2" valign="bottom"><a name="letter_I"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;I&#160;&#160;</div></td></tr></table>
-</td><td valign="top"><a class="el" href="classObjectDecorator.html">ObjectDecorator</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classRoundedCylinder.html">RoundedCylinder</a>&#160;&#160;&#160;</td></tr>
-<tr><td valign="top"><a class="el" href="classComponent.html">Component</a>&#160;&#160;&#160;</td><td rowspan="2" valign="bottom"><a name="letter_P"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;P&#160;&#160;</div></td></tr></table>
-</td><td valign="top"><a class="el" href="classRoundedTablet.html">RoundedTablet</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classUnion.html">Union</a>&#160;&#160;&#160;</td></tr>
-<tr><td valign="top"><a class="el" href="classComponent2D.html">Component2D</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classImported.html">Imported</a>&#160;&#160;&#160;</td><td rowspan="2" valign="bottom"><a name="letter_S"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;S&#160;&#160;</div></td></tr></table>
-</td><td rowspan="2" valign="bottom"><a name="letter_V"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;V&#160;&#160;</div></td></tr></table>
+</td><td valign="top"><a class="el" href="classObjectDecorator.html">ObjectDecorator</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classRoundedCylinder.html">RoundedCylinder</a>&#160;&#160;&#160;</td><td rowspan="2" valign="bottom"><a name="letter_U"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;U&#160;&#160;</div></td></tr></table>
 </td></tr>
-<tr><td valign="top"><a class="el" href="classCompositeComponent.html">CompositeComponent</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classImportError.html">ImportError</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classPoint2D.html">Point2D</a>&#160;&#160;&#160;</td></tr>
-<tr><td valign="top"><a class="el" href="classCompositeObject.html">CompositeObject</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classIndentBlock.html">IndentBlock</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classPoint3D.html">Point3D</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classScaleDecorator.html">ScaleDecorator</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classVector.html">Vector</a>&#160;&#160;&#160;</td></tr>
-<tr><td valign="top"><a class="el" href="classCube.html">Cube</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classIndentWriter.html">IndentWriter</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classPointIndexMap.html">PointIndexMap</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classSeeedUSSensor.html">SeeedUSSensor</a>&#160;&#160;&#160;</td><td></td></tr>
+<tr><td valign="top"><a class="el" href="classComponent.html">Component</a>&#160;&#160;&#160;</td><td rowspan="2" valign="bottom"><a name="letter_P"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;P&#160;&#160;</div></td></tr></table>
+</td><td valign="top"><a class="el" href="classRoundedTablet.html">RoundedTablet</a>&#160;&#160;&#160;</td></tr>
+<tr><td valign="top"><a class="el" href="classComponent2D.html">Component2D</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classImported.html">Imported</a>&#160;&#160;&#160;</td><td rowspan="2" valign="bottom"><a name="letter_S"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;S&#160;&#160;</div></td></tr></table>
+</td><td valign="top"><a class="el" href="classUnion.html">Union</a>&#160;&#160;&#160;</td></tr>
+<tr><td valign="top"><a class="el" href="classCompositeComponent.html">CompositeComponent</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classImportError.html">ImportError</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classPoint2D.html">Point2D</a>&#160;&#160;&#160;</td><td rowspan="2" valign="bottom"><a name="letter_V"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;V&#160;&#160;</div></td></tr></table>
+</td></tr>
+<tr><td valign="top"><a class="el" href="classCompositeObject.html">CompositeObject</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classIndentBlock.html">IndentBlock</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classPoint3D.html">Point3D</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classScaleDecorator.html">ScaleDecorator</a>&#160;&#160;&#160;</td></tr>
+<tr><td valign="top"><a class="el" href="classCube.html">Cube</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classIndentWriter.html">IndentWriter</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classPointIndexMap.html">PointIndexMap</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classSeeedUSSensor.html">SeeedUSSensor</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classVector.html">Vector</a>&#160;&#160;&#160;</td></tr>
 <tr><td></td><td></td><td></td><td></td><td></td></tr>
 </table>
 <div class="qindex"><a class="qindex" href="#letter_A">A</a>&#160;|&#160;<a class="qindex" href="#letter_B">B</a>&#160;|&#160;<a class="qindex" href="#letter_C">C</a>&#160;|&#160;<a class="qindex" href="#letter_D">D</a>&#160;|&#160;<a class="qindex" href="#letter_F">F</a>&#160;|&#160;<a class="qindex" href="#letter_I">I</a>&#160;|&#160;<a class="qindex" href="#letter_L">L</a>&#160;|&#160;<a class="qindex" href="#letter_M">M</a>&#160;|&#160;<a class="qindex" href="#letter_N">N</a>&#160;|&#160;<a class="qindex" href="#letter_O">O</a>&#160;|&#160;<a class="qindex" href="#letter_P">P</a>&#160;|&#160;<a class="qindex" href="#letter_R">R</a>&#160;|&#160;<a class="qindex" href="#letter_S">S</a>&#160;|&#160;<a class="qindex" href="#letter_T">T</a>&#160;|&#160;<a class="qindex" href="#letter_U">U</a>&#160;|&#160;<a class="qindex" href="#letter_V">V</a></div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated on Sun Oct 7 2012 23:29:54 for OOML by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Oct 11 2012 00:27:41 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
 </body>
 </html>

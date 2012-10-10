@@ -7,12 +7,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -28,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">OOML
-   &#160;<span id="projectnumber">2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">Library</div>
   </td>
@@ -73,27 +67,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('structSeeedUSSensor_1_1Data.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -102,6 +81,11 @@ $(document).ready(function(){initNavTree('structSeeedUSSensor_1_1Data.html','');
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="classSeeedUSSensor.html">SeeedUSSensor</a></li><li class="navelem"><a class="el" href="structSeeedUSSensor_1_1Data.html">Data</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
@@ -110,53 +94,187 @@ $(document).ready(function(){initNavTree('structSeeedUSSensor_1_1Data.html','');
 <div class="title">SeeedUSSensor::Data Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="SeeedUSSensor_8h_source.html">SeeedUSSensor.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a21aed7e57d28e2a95e8ac9a23c94e779"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21aed7e57d28e2a95e8ac9a23c94e779"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSeeedUSSensor_1_1Data.html#a21aed7e57d28e2a95e8ac9a23c94e779">sx</a></td></tr>
-<tr class="memdesc:a21aed7e57d28e2a95e8ac9a23c94e779"><td class="mdescLeft">&#160;</td><td class="mdescRight">x dimension <br/></td></tr>
-<tr class="memitem:a711d02fd2a03b60840ad4d19ff9beaf4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a711d02fd2a03b60840ad4d19ff9beaf4"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSeeedUSSensor_1_1Data.html#a711d02fd2a03b60840ad4d19ff9beaf4">sy</a></td></tr>
-<tr class="memdesc:a711d02fd2a03b60840ad4d19ff9beaf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">y dimension <br/></td></tr>
-<tr class="memitem:a117e777d51ccfc55b880e8d8222ef3de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a117e777d51ccfc55b880e8d8222ef3de"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSeeedUSSensor_1_1Data.html#a117e777d51ccfc55b880e8d8222ef3de">sz</a></td></tr>
-<tr class="memdesc:a117e777d51ccfc55b880e8d8222ef3de"><td class="mdescLeft">&#160;</td><td class="mdescRight">z dimension <br/></td></tr>
-<tr class="memitem:a67aea5f7a5ad6dccbb38e193629206ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67aea5f7a5ad6dccbb38e193629206ed"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSeeedUSSensor_1_1Data.html#a67aea5f7a5ad6dccbb38e193629206ed">board_thickness</a></td></tr>
-<tr class="memdesc:a67aea5f7a5ad6dccbb38e193629206ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">thickness of the board <br/></td></tr>
-<tr class="memitem:a368e0c9e65587a62e96f1c9dd4b879c1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a368e0c9e65587a62e96f1c9dd4b879c1"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSeeedUSSensor_1_1Data.html#a368e0c9e65587a62e96f1c9dd4b879c1">drills_x_dist</a></td></tr>
-<tr class="memdesc:a368e0c9e65587a62e96f1c9dd4b879c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">x distance among drills <br/></td></tr>
-<tr class="memitem:af3de1b38644c92fc7754c21ba511f78a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af3de1b38644c92fc7754c21ba511f78a"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSeeedUSSensor_1_1Data.html#af3de1b38644c92fc7754c21ba511f78a">drills_y_dist</a></td></tr>
-<tr class="memdesc:af3de1b38644c92fc7754c21ba511f78a"><td class="mdescLeft">&#160;</td><td class="mdescRight">y distance among drills <br/></td></tr>
-<tr class="memitem:a121d8c3f19c6bc72cf6e1aba52581de8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a121d8c3f19c6bc72cf6e1aba52581de8"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSeeedUSSensor_1_1Data.html#a121d8c3f19c6bc72cf6e1aba52581de8">drills_radius</a></td></tr>
-<tr class="memdesc:a121d8c3f19c6bc72cf6e1aba52581de8"><td class="mdescLeft">&#160;</td><td class="mdescRight">drills radius <br/></td></tr>
-<tr class="memitem:a04481d137a7ebfe4b37fc389e09ae547"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04481d137a7ebfe4b37fc389e09ae547"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSeeedUSSensor_1_1Data.html#a04481d137a7ebfe4b37fc389e09ae547">sensor_radius</a></td></tr>
-<tr class="memdesc:a04481d137a7ebfe4b37fc389e09ae547"><td class="mdescLeft">&#160;</td><td class="mdescRight">sensor radius <br/></td></tr>
-<tr class="memitem:adfc4681f2709ea341b9af659fe6cd9f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfc4681f2709ea341b9af659fe6cd9f2"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSeeedUSSensor_1_1Data.html#adfc4681f2709ea341b9af659fe6cd9f2">sensor_dist_to_center</a></td></tr>
-<tr class="memdesc:adfc4681f2709ea341b9af659fe6cd9f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">distance between the center of the sensor and center of the board <br/></td></tr>
+<tr class="memitem:a21aed7e57d28e2a95e8ac9a23c94e779"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSeeedUSSensor_1_1Data.html#a21aed7e57d28e2a95e8ac9a23c94e779">sx</a></td></tr>
+<tr class="memdesc:a21aed7e57d28e2a95e8ac9a23c94e779"><td class="mdescLeft">&#160;</td><td class="mdescRight">x dimension  <a href="#a21aed7e57d28e2a95e8ac9a23c94e779"></a><br/></td></tr>
+<tr class="memitem:a711d02fd2a03b60840ad4d19ff9beaf4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSeeedUSSensor_1_1Data.html#a711d02fd2a03b60840ad4d19ff9beaf4">sy</a></td></tr>
+<tr class="memdesc:a711d02fd2a03b60840ad4d19ff9beaf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">y dimension  <a href="#a711d02fd2a03b60840ad4d19ff9beaf4"></a><br/></td></tr>
+<tr class="memitem:a117e777d51ccfc55b880e8d8222ef3de"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSeeedUSSensor_1_1Data.html#a117e777d51ccfc55b880e8d8222ef3de">sz</a></td></tr>
+<tr class="memdesc:a117e777d51ccfc55b880e8d8222ef3de"><td class="mdescLeft">&#160;</td><td class="mdescRight">z dimension  <a href="#a117e777d51ccfc55b880e8d8222ef3de"></a><br/></td></tr>
+<tr class="memitem:a67aea5f7a5ad6dccbb38e193629206ed"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSeeedUSSensor_1_1Data.html#a67aea5f7a5ad6dccbb38e193629206ed">board_thickness</a></td></tr>
+<tr class="memdesc:a67aea5f7a5ad6dccbb38e193629206ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">thickness of the board  <a href="#a67aea5f7a5ad6dccbb38e193629206ed"></a><br/></td></tr>
+<tr class="memitem:a368e0c9e65587a62e96f1c9dd4b879c1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSeeedUSSensor_1_1Data.html#a368e0c9e65587a62e96f1c9dd4b879c1">drills_x_dist</a></td></tr>
+<tr class="memdesc:a368e0c9e65587a62e96f1c9dd4b879c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">x distance among drills  <a href="#a368e0c9e65587a62e96f1c9dd4b879c1"></a><br/></td></tr>
+<tr class="memitem:af3de1b38644c92fc7754c21ba511f78a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSeeedUSSensor_1_1Data.html#af3de1b38644c92fc7754c21ba511f78a">drills_y_dist</a></td></tr>
+<tr class="memdesc:af3de1b38644c92fc7754c21ba511f78a"><td class="mdescLeft">&#160;</td><td class="mdescRight">y distance among drills  <a href="#af3de1b38644c92fc7754c21ba511f78a"></a><br/></td></tr>
+<tr class="memitem:a121d8c3f19c6bc72cf6e1aba52581de8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSeeedUSSensor_1_1Data.html#a121d8c3f19c6bc72cf6e1aba52581de8">drills_radius</a></td></tr>
+<tr class="memdesc:a121d8c3f19c6bc72cf6e1aba52581de8"><td class="mdescLeft">&#160;</td><td class="mdescRight">drills radius  <a href="#a121d8c3f19c6bc72cf6e1aba52581de8"></a><br/></td></tr>
+<tr class="memitem:a04481d137a7ebfe4b37fc389e09ae547"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSeeedUSSensor_1_1Data.html#a04481d137a7ebfe4b37fc389e09ae547">sensor_radius</a></td></tr>
+<tr class="memdesc:a04481d137a7ebfe4b37fc389e09ae547"><td class="mdescLeft">&#160;</td><td class="mdescRight">sensor radius  <a href="#a04481d137a7ebfe4b37fc389e09ae547"></a><br/></td></tr>
+<tr class="memitem:adfc4681f2709ea341b9af659fe6cd9f2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSeeedUSSensor_1_1Data.html#adfc4681f2709ea341b9af659fe6cd9f2">sensor_dist_to_center</a></td></tr>
+<tr class="memdesc:adfc4681f2709ea341b9af659fe6cd9f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">distance between the center of the sensor and center of the board  <a href="#adfc4681f2709ea341b9af659fe6cd9f2"></a><br/></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock">
 <p>Definition at line <a class="el" href="SeeedUSSensor_8h_source.html#l00058">58</a> of file <a class="el" href="SeeedUSSensor_8h_source.html">SeeedUSSensor.h</a>.</p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2>Member Data Documentation</h2>
+<a class="anchor" id="a67aea5f7a5ad6dccbb38e193629206ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SeeedUSSensor::Data::board_thickness</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>thickness of the board </p>
+
+<p>Definition at line <a class="el" href="SeeedUSSensor_8h_source.html#l00063">63</a> of file <a class="el" href="SeeedUSSensor_8h_source.html">SeeedUSSensor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a121d8c3f19c6bc72cf6e1aba52581de8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SeeedUSSensor::Data::drills_radius</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>drills radius </p>
+
+<p>Definition at line <a class="el" href="SeeedUSSensor_8h_source.html#l00066">66</a> of file <a class="el" href="SeeedUSSensor_8h_source.html">SeeedUSSensor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a368e0c9e65587a62e96f1c9dd4b879c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SeeedUSSensor::Data::drills_x_dist</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>x distance among drills </p>
+
+<p>Definition at line <a class="el" href="SeeedUSSensor_8h_source.html#l00064">64</a> of file <a class="el" href="SeeedUSSensor_8h_source.html">SeeedUSSensor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af3de1b38644c92fc7754c21ba511f78a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SeeedUSSensor::Data::drills_y_dist</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>y distance among drills </p>
+
+<p>Definition at line <a class="el" href="SeeedUSSensor_8h_source.html#l00065">65</a> of file <a class="el" href="SeeedUSSensor_8h_source.html">SeeedUSSensor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adfc4681f2709ea341b9af659fe6cd9f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SeeedUSSensor::Data::sensor_dist_to_center</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>distance between the center of the sensor and center of the board </p>
+
+<p>Definition at line <a class="el" href="SeeedUSSensor_8h_source.html#l00068">68</a> of file <a class="el" href="SeeedUSSensor_8h_source.html">SeeedUSSensor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a04481d137a7ebfe4b37fc389e09ae547"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SeeedUSSensor::Data::sensor_radius</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sensor radius </p>
+
+<p>Definition at line <a class="el" href="SeeedUSSensor_8h_source.html#l00067">67</a> of file <a class="el" href="SeeedUSSensor_8h_source.html">SeeedUSSensor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a21aed7e57d28e2a95e8ac9a23c94e779"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SeeedUSSensor::Data::sx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>x dimension </p>
+
+<p>Definition at line <a class="el" href="SeeedUSSensor_8h_source.html#l00059">59</a> of file <a class="el" href="SeeedUSSensor_8h_source.html">SeeedUSSensor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a711d02fd2a03b60840ad4d19ff9beaf4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SeeedUSSensor::Data::sy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>y dimension </p>
+
+<p>Definition at line <a class="el" href="SeeedUSSensor_8h_source.html#l00060">60</a> of file <a class="el" href="SeeedUSSensor_8h_source.html">SeeedUSSensor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a117e777d51ccfc55b880e8d8222ef3de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SeeedUSSensor::Data::sz</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>z dimension </p>
+
+<p>Definition at line <a class="el" href="SeeedUSSensor_8h_source.html#l00061">61</a> of file <a class="el" href="SeeedUSSensor_8h_source.html">SeeedUSSensor.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/parts/<a class="el" href="SeeedUSSensor_8h_source.html">SeeedUSSensor.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="classSeeedUSSensor.html">SeeedUSSensor</a></li><li class="navelem"><a class="el" href="structSeeedUSSensor_1_1Data.html">Data</a></li>
-    <li class="footer">Generated on Sun Oct 7 2012 23:29:54 for OOML by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Oct 11 2012 00:27:41 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
 </body>
 </html>

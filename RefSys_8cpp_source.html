@@ -7,12 +7,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -28,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">OOML
-   &#160;<span id="projectnumber">2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">Library</div>
   </td>
@@ -68,29 +62,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('RefSys_8cpp_source.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -99,12 +79,17 @@ $(document).ready(function(){initNavTree('RefSys_8cpp_source.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">RefSys.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**********************************************************************</span></div>
+<a href="RefSys_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**********************************************************************</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This code is part of the OOML project</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Trevio</span></div>
@@ -134,37 +119,50 @@ $(document).ready(function(){initNavTree('RefSys_8cpp_source.html','');});
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * PURPOSE.</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> **********************************************************************/</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;RefSys.h&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;Union.h&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;IndentWriter.h&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="RefSys_8h.html">RefSys.h</a>&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Union_8h.html">Union.h</a>&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="IndentWriter_8h.html">IndentWriter.h</a>&quot;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="classRefSys.html#a5dcfc5412f6f1bc3328c4c5b414251ad">   37</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classRefSys.html#a5dcfc5412f6f1bc3328c4c5b414251ad" title="Translates the origin of the reference system This methods translated the origin of the reference sys...">RefSys::translate</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> z){</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    _origin = _origin + <a class="code" href="classTranslation.html" title="Translation Vector.">Translation</a>(x,y,z);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    _trans.<a class="code" href="classTransformMatrix.html#ae2b5dc7c41da84953f791e12e0b22964" title="performs a translation">translate</a>(x,y,z);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="classRefSys.html#abe3f04d24545bf4c085e08d04fe2150a">   41</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classRefSys.html#abe3f04d24545bf4c085e08d04fe2150a" title="Rotates the reference system This methods rotates the reference system The origin is kept unmoved...">RefSys::rotate</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> z){</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    _rot.<a class="code" href="classRotationalMatrix.html#a66de01c0e617a05cfb0e57d88dc8c372" title="Applies a Roll-Pitch-Yaw rotation around x, y, z Applies three rotations around the fixed reference s...">rotateFixedXYZ</a>(x,y,z);</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="classRefSys.html#a0d9f1e184254e14464040e22da66b2cf">   41</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classRefSys.html#a0d9f1e184254e14464040e22da66b2cf" title="Rotates the reference system This methods rotates the reference system The origin is kept unmoved...">RefSys::relRotate</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> z){</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    _trans.<a class="code" href="classTransformMatrix.html#a00dc5a7c72440944e3fde54dde9bfb5d" title="Applies a Roll-Pitch-Yaw rotation around x, y, z Applies three rotations around the fixed reference s...">relRotate</a>(x,y,z);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="classRefSys.html#a6cd5926ccf484bb4406af8b9251c9895">   45</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classRefSys.html#a6cd5926ccf484bb4406af8b9251c9895" title="Rotates the reference system This methods rotates the reference system with the Euler ZYZ angles...">RefSys::rotateEulerZYZ</a>(<span class="keywordtype">double</span> z, <span class="keywordtype">double</span> yp, <span class="keywordtype">double</span> zpp){</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    _rot.<a class="code" href="classRotationalMatrix.html#a5c3409d05d844696cd5be7399eefa5dc" title="Applies an Euler rotation around z, y&#39;, z&#39;&#39; Applies three rotations around z, x&#39; and z&#39;&#39;...">rotateEulerZYZ</a>(z,yp,zpp);</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="classRefSys.html#a8bc078e068e1af5ec562b5789e482cf5">   45</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classRefSys.html#a8bc078e068e1af5ec562b5789e482cf5" title="Translates the origin of the reference system This methods translated the origin of the reference sys...">RefSys::relTranslate</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> z){</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    _trans.<a class="code" href="classTransformMatrix.html#af2e8c92afee36a6e24206ffed1398161" title="performs a translation">relTranslate</a>(x,y,z);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="classRefSys.html#aaef60f082d3f15aa558f7276eea12368">   49</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classRefSys.html#aaef60f082d3f15aa558f7276eea12368" title="Rotates the reference system This methods rotates the reference system with the Euler ZXZ angles...">RefSys::rotateEulerZXZ</a>(<span class="keywordtype">double</span> z, <span class="keywordtype">double</span> xp, <span class="keywordtype">double</span> zpp){</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    _rot.<a class="code" href="classRotationalMatrix.html#a791b7409dde52402e1a5728602590a93" title="Applies an Euler rotation around z, x&#39;, z&#39;&#39; Applies three rotations around z, x&#39; and z&#39;&#39;...">rotateEulerZXZ</a>(z,xp,zpp);</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="classRefSys.html#abe3f04d24545bf4c085e08d04fe2150a">   49</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classRefSys.html#abe3f04d24545bf4c085e08d04fe2150a" title="Rotates the reference system This methods rotates the reference system The origin is kept unmoved...">RefSys::rotate</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> z){</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    _trans.<a class="code" href="classTransformMatrix.html#a20910983db5e4e0574879dd86b4f8a3e" title="Applies a Roll-Pitch-Yaw rotation around x, y, z Applies three rotations around the fixed reference s...">rotate</a>(x,y,z);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="classRefSys.html#a6cd5926ccf484bb4406af8b9251c9895">   53</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classRefSys.html#a6cd5926ccf484bb4406af8b9251c9895" title="Rotates the reference system This methods rotates the reference system with the Euler ZYZ angles...">RefSys::rotateEulerZYZ</a>(<span class="keywordtype">double</span> z, <span class="keywordtype">double</span> yp, <span class="keywordtype">double</span> zpp){</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    _trans.<a class="code" href="classTransformMatrix.html#a6ca67ecc63c5f6fd26cca1d0df2033eb" title="Applies an Euler rotation around z, y&#39;, z&#39;&#39; Applies three rotations around z, x&#39; and z&#39;&#39;...">rotateEulerZYZ</a>(z,yp,zpp);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="classRefSys.html#aaef60f082d3f15aa558f7276eea12368">   57</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classRefSys.html#aaef60f082d3f15aa558f7276eea12368" title="Rotates the reference system This methods rotates the reference system with the Euler ZXZ angles...">RefSys::rotateEulerZXZ</a>(<span class="keywordtype">double</span> z, <span class="keywordtype">double</span> xp, <span class="keywordtype">double</span> zpp){</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    _trans.<a class="code" href="classTransformMatrix.html#ae6ad2df1f60c163d35b5fd43846034fb" title="Applies an Euler rotation around z, x&#39;, z&#39;&#39; Applies three rotations around z, x&#39; and z&#39;&#39;...">rotateEulerZXZ</a>(z,xp,zpp);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="classRefSys.html#a01add4986306de6b3de628504e8536d9">   62</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classRefSys.html#a01add4986306de6b3de628504e8536d9" title="Rotates the reference system This methods rotates the reference system with the Euler ZYZ angles...">RefSys::relRotateEulerZYZ</a>(<span class="keywordtype">double</span> z, <span class="keywordtype">double</span> yp, <span class="keywordtype">double</span> zpp){</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    _trans.<a class="code" href="classTransformMatrix.html#a52cd13a210fb835f8c39f82830780d08" title="Applies an Euler rotation around z, y&#39;, z&#39;&#39; Applies three rotations around z, x&#39; and z&#39;&#39;...">relRotateEulerZYZ</a>(z,yp,zpp);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="code" href="classRefSys.html#a98574be4d68cc6e691df898596009335">   66</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classRefSys.html#a98574be4d68cc6e691df898596009335" title="Rotates the reference system This methods rotates the reference system with the Euler ZXZ angles...">RefSys::relRotateEulerZXZ</a>(<span class="keywordtype">double</span> z, <span class="keywordtype">double</span> xp, <span class="keywordtype">double</span> zpp){</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    _trans.<a class="code" href="classTransformMatrix.html#aa4a1f915ff428d0e3bb9fa43dd0974b5" title="Applies an Euler rotation around z, x&#39;, z&#39;&#39; Applies three rotations around z, x&#39; and z&#39;&#39;...">relRotateEulerZXZ</a>(z,xp,zpp);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><b>RefSys.cpp</b></li>
-    <li class="footer">Generated on Sun Oct 7 2012 23:29:53 for OOML by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Oct 11 2012 00:27:40 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
 </body>
 </html>

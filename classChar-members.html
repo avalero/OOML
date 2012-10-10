@@ -7,12 +7,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -28,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">OOML
-   &#160;<span id="projectnumber">2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">Library</div>
   </td>
@@ -73,27 +67,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classChar.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -102,6 +81,7 @@ $(document).ready(function(){initNavTree('classChar.html','');});
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">Char Member List</div>  </div>
@@ -110,12 +90,12 @@ $(document).ready(function(){initNavTree('classChar.html','');});
 
 <p>This is the complete list of members for <a class="el" href="classChar.html">Char</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0"class="even"><td class="entry"><b>_links</b> (defined in <a class="el" href="classAbstractObject.html">AbstractObject</a>)</td><td class="entry"><a class="el" href="classAbstractObject.html">AbstractObject</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classAbstractObject.html#a9f5c5d48dfb61408a6ce957a336c84b8">_links</a></td><td class="entry"><a class="el" href="classAbstractObject.html">AbstractObject</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classAbstractObject.html#a79f41d63e86bc236556d963b560fef29">AbstractObject</a>()</td><td class="entry"><a class="el" href="classAbstractObject.html">AbstractObject</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classAbstractObject.html#afeb1ed691f3127374a16d0a3297f6917">addLink</a>(RefSys rs)</td><td class="entry"><a class="el" href="classAbstractObject.html">AbstractObject</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classAbstractObject.html#a6de1fc0280f41f68a486d255b4ec5444">addLinks</a>(Links l)</td><td class="entry"><a class="el" href="classAbstractObject.html">AbstractObject</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classComponent.html#a229e816c0585cc4452b0200e0e842d1c">attach</a>(int link_base, Component &amp;attachment, int link_attach=0)</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>Char</b>(char character, double font_size, double height) (defined in <a class="el" href="classChar.html">Char</a>)</td><td class="entry"><a class="el" href="classChar.html">Char</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classChar.html#a322dfebbbcf2555857c812940864145e">Char</a>(char character, double font_size, double height)</td><td class="entry"><a class="el" href="classChar.html">Char</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classComponent.html#a2a09a1cc2732ab4ab42c10d36f6b8b6d">color</a>(double r, double g, double b, double a=1.0)</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classComponent.html#a7c8f07f5f4b51b3b5a0df49e62c8869c">coloredCopy</a>(double r, double g, double b, double a=1.0) const </td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classComponent.html#a8775db6d1a2c1afc2e77cd3c8f39da6f">Component</a>()</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -123,10 +103,10 @@ $(document).ready(function(){initNavTree('classChar.html','');});
   <tr class="even"><td class="entry"><a class="el" href="classComponent.html#ae32e78850821b3e1b7d50b1f72839060">Component</a>(Component const &amp;other)</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classAbstractObject.html#a94d1df7f574fbcaab883fd06c3f54370">debug</a>(std::string const &amp;str) const </td><td class="entry"><a class="el" href="classAbstractObject.html">AbstractObject</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classAbstractObject.html#ab90692ac8dcea8b39c4f1f45d301fa40">debugMode</a>()</td><td class="entry"><a class="el" href="classAbstractObject.html">AbstractObject</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>exists</b>() (defined in <a class="el" href="classChar.html">Char</a>)</td><td class="entry"><a class="el" href="classChar.html">Char</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classChar.html#a35488a4f20b505c18ad22451d689046b">exists</a>()</td><td class="entry"><a class="el" href="classChar.html">Char</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classObjectDecorator.html#a24d2b99d71b6d3dcbb5394a4ff75f6cd">genScad</a>(IndentWriter &amp;writer) const </td><td class="entry"><a class="el" href="classObjectDecorator.html">ObjectDecorator</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74">get</a>() const </td><td class="entry"><a class="el" href="classObjectDecorator.html">ObjectDecorator</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"class="even"><td class="entry"><b>getData</b>() (defined in <a class="el" href="classChar.html">Char</a>)</td><td class="entry"><a class="el" href="classChar.html">Char</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classChar.html#a5700b0e4912e237a61862e5dd855f1bd">getData</a>()</td><td class="entry"><a class="el" href="classChar.html">Char</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classAbstractObject.html#a8ccb370b1bd2d4a08f35dfadb8532c21">getLink</a>(int id) const </td><td class="entry"><a class="el" href="classAbstractObject.html">AbstractObject</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classAbstractObject.html#a5aabc9bc5d049d0320092d8f8b1cb93e">getLinks</a>() const </td><td class="entry"><a class="el" href="classAbstractObject.html">AbstractObject</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classComponent.html#ad852e5610c08ef185a620e07467eccd6">getRef</a>() const </td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -147,7 +127,7 @@ $(document).ready(function(){initNavTree('classChar.html','');});
   <tr class="even"><td class="entry"><a class="el" href="classComponent.html#a17bc2b6b67bc327c215dece2dc453f34">rotateAround</a>(double ax, double ay, double az, double tx, double ty, double tz)</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classComponent.html#ad922120003c681501476f0b483a8943c">rotatedCopy</a>(double vx, double vy, double vz, double a) const </td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classComponent.html#ad428061d4b1fbb0095b70cba6d8a5fd4">rotatedCopy</a>(double ax, double ay, double az) const </td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>rotatedCopy</b>(RotationalMatrix rot) const  (defined in <a class="el" href="classComponent.html">Component</a>)</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classComponent.html#a8dd330613261b7e69280fb7666ae869b">rotatedCopy</a>(RotationalMatrix rot) const </td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classComponent.html#ab274194213390b91a710465d7c7c12ea">rotatedEulerZXZCopy</a>(double az, double axp, double azpp) const </td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classComponent.html#a0ec11e37ac626ea7ea2ce8019a828a16">rotatedEulerZYZCopy</a>(double az, double ayp, double azpp) const </td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classComponent.html#a8ce5e794cdbe6d675999921c019e9067">rotateEulerZXZ</a>(double az, double axp, double azpp)</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -164,14 +144,11 @@ $(document).ready(function(){initNavTree('classChar.html','');});
   <tr><td class="entry"><a class="el" href="classComponent.html#a2e9aa4348314d981f05f67397ad2f872">~Component</a>()</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classObjectDecorator.html#aedcac70cbc0f724bd574cb8f3db6ec10">~ObjectDecorator</a>()</td><td class="entry"><a class="el" href="classObjectDecorator.html">ObjectDecorator</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated on Sun Oct 7 2012 23:29:53 for OOML by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Oct 11 2012 00:27:41 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
 </body>
 </html>

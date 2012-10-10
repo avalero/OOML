@@ -7,12 +7,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -28,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">OOML
-   &#160;<span id="projectnumber">2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">Library</div>
   </td>
@@ -80,6 +74,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_vars.html"><span>Variables</span></a></li>
       <li><a href="functions_type.html"><span>Typedefs</span></a></li>
       <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
+      <li><a href="functions_rela.html"><span>Related&#160;Functions</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -104,30 +100,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_0x74.html#index_t"><span>t</span></a></li>
       <li><a href="functions_0x75.html#index_u"><span>u</span></a></li>
       <li><a href="functions_0x76.html#index_v"><span>v</span></a></li>
+      <li><a href="functions_0x77.html#index_w"><span>w</span></a></li>
+      <li><a href="functions_0x78.html#index_x"><span>x</span></a></li>
+      <li><a href="functions_0x79.html#index_y"><span>y</span></a></li>
+      <li><a href="functions_0x7a.html#index_z"><span>z</span></a></li>
       <li><a href="functions_0x7e.html#index_0x7e"><span>~</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('functions_0x70.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -137,7 +123,7 @@ $(document).ready(function(){initNavTree('functions_0x70.html','');});
 </div>
 
 <div class="contents">
-<div class="textblock">Here is a list of all documented class members with links to the class documentation for each member:</div>
+<div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
 <li>Point2D()
@@ -162,47 +148,48 @@ $(document).ready(function(){initNavTree('functions_0x70.html','');});
 : <a class="el" href="classPolygonalPrism.html#ade8a8f3727734f69193ce138551e0bc7">PolygonalPrism</a>
 </li>
 <li>printAst()
-: <a class="el" href="classMirrorDecorator.html#ae48d47aa965d17031b548c328bbe48a7">MirrorDecorator</a>
+: <a class="el" href="classPoint2D.html#abac7b2474c65b79f816ab97ffa77a2e4">Point2D</a>
+, <a class="el" href="classPolyhedron.html#a0411c4717e2fd172e96d7dde3367833c">Polyhedron</a>
+, <a class="el" href="classMirrorDecorator.html#ae48d47aa965d17031b548c328bbe48a7">MirrorDecorator</a>
 , <a class="el" href="classMinkowskiDecorator.html#a6bcbe1402ca3da15628f4b5e3a11bb3c">MinkowskiDecorator</a>
 , <a class="el" href="classLinearExtrudeDecorator.html#a512ee6101421f4ff5c49e5f35a5f418d">LinearExtrudeDecorator</a>
 , <a class="el" href="classIntersection.html#ad879f65c5f1796a08e57549b872495ce">Intersection</a>
 , <a class="el" href="classImported.html#a714c411cda66a8614ec6ec700f8e8f7f">Imported</a>
 , <a class="el" href="classDXFRotateExtrude.html#a857c47ac402501bff18802d8d8f5691a">DXFRotateExtrude</a>
 , <a class="el" href="classDXFLinearExtrude.html#a2c0a3633127ac1031111420d4f107901">DXFLinearExtrude</a>
-, <a class="el" href="classDifference.html#acdd9e74cda4da9d8f1935d10b6113c3d">Difference</a>
+, <a class="el" href="classSphereObject.html#a58bf6869c4a839c0090f11d9c74ca952">SphereObject</a>
 , <a class="el" href="classCylinderObject.html#a4bdc2799cca1d06069264cb7c4908be0">CylinderObject</a>
 , <a class="el" href="classCubeObject.html#adad0d6a645d924aad8d68b157c7efa4b">CubeObject</a>
 , <a class="el" href="classCompositeObject.html#a3b9bacb529e5fa72661afbc50f2c75cb">CompositeObject</a>
 , <a class="el" href="classColorDecorator.html#a5cb0b350902df15fce867ecb9d65b7b2">ColorDecorator</a>
 , <a class="el" href="classAbstractPart.html#a7e727cef5226332b9eebe55ae67787ab">AbstractPart</a>
 , <a class="el" href="classAbstractObject.html#afe4637952e9d1dd3af11d29010beaa9d">AbstractObject</a>
-, <a class="el" href="classSquare.html#ad87b6b9f2a14d98ed41cdc2198267c50">Square</a>
 , <a class="el" href="classCircle.html#a6adde65df5003cd8ec3b656e5360687b">Circle</a>
-, <a class="el" href="classPoint3D.html#aed1c4e3f3a36553b28344d7c4dcffa18">Point3D</a>
-, <a class="el" href="classScaleDecorator.html#a80b342c4f48f2fdbd937d3be81aa5e38">ScaleDecorator</a>
-, <a class="el" href="classRotateDecorator.html#ac61d5171deb30023aa4e961dce4424d7">RotateDecorator</a>
-, <a class="el" href="classUnion.html#a8aeb2982b0e0ef6ce23aca783384d6ba">Union</a>
-, <a class="el" href="classPolyhedron.html#a0411c4717e2fd172e96d7dde3367833c">Polyhedron</a>
-, <a class="el" href="classTranslateDecorator.html#aacd8cf2c8a9dce26faf10af1443c0561">TranslateDecorator</a>
-, <a class="el" href="classSphereObject.html#a58bf6869c4a839c0090f11d9c74ca952">SphereObject</a>
-, <a class="el" href="classVector.html#a69d5cda7f076aafbbbff4b06f4452cf4">Vector&lt; T &gt;</a>
-, <a class="el" href="classPoint2D.html#abac7b2474c65b79f816ab97ffa77a2e4">Point2D</a>
-, <a class="el" href="classPointIndexMap.html#af21953521b19c81f856c5fc3622f46b1">PointIndexMap&lt; T &gt;</a>
-, <a class="el" href="classPolygon2D.html#a9024ae139f1597b78bf0aad3ce73ed5f">Polygon2D</a>
-, <a class="el" href="classRotateExtrudeDecorator.html#a1b3c224d1be380a8056fd89c5f90b0d9">RotateExtrudeDecorator</a>
 , <a class="el" href="classObjectDecorator.html#a95f501ab7e9704d91983931949f77073">ObjectDecorator</a>
 , <a class="el" href="classPolygon.html#af5d52c5849c03ea03c077ef5b387f630">Polygon&lt; T &gt;</a>
+, <a class="el" href="classTranslateDecorator.html#aacd8cf2c8a9dce26faf10af1443c0561">TranslateDecorator</a>
+, <a class="el" href="classScaleDecorator.html#a80b342c4f48f2fdbd937d3be81aa5e38">ScaleDecorator</a>
+, <a class="el" href="classDifference.html#acdd9e74cda4da9d8f1935d10b6113c3d">Difference</a>
+, <a class="el" href="classRotateExtrudeDecorator.html#a1b3c224d1be380a8056fd89c5f90b0d9">RotateExtrudeDecorator</a>
+, <a class="el" href="classVector.html#a69d5cda7f076aafbbbff4b06f4452cf4">Vector&lt; T &gt;</a>
+, <a class="el" href="classSquare.html#ad87b6b9f2a14d98ed41cdc2198267c50">Square</a>
+, <a class="el" href="classUnion.html#a8aeb2982b0e0ef6ce23aca783384d6ba">Union</a>
+, <a class="el" href="classPointIndexMap.html#af21953521b19c81f856c5fc3622f46b1">PointIndexMap&lt; T &gt;</a>
+, <a class="el" href="classPolygon2D.html#a9024ae139f1597b78bf0aad3ce73ed5f">Polygon2D</a>
+, <a class="el" href="classRotateDecorator.html#ac61d5171deb30023aa4e961dce4424d7">RotateDecorator</a>
+, <a class="el" href="classPoint3D.html#aed1c4e3f3a36553b28344d7c4dcffa18">Point3D</a>
+</li>
+<li>printMatrix()
+: <a class="el" href="classTransformMatrix.html#a6b2e93bc63356094c43d41323048d12a">TransformMatrix</a>
+, <a class="el" href="classRotationalMatrix.html#a0bedbe19e7af075c802c916fae67d487">RotationalMatrix</a>
 </li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated on Sun Oct 7 2012 23:29:54 for OOML by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Oct 11 2012 00:27:41 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
 </body>
 </html>

@@ -7,12 +7,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -28,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">OOML
-   &#160;<span id="projectnumber">2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">Library</div>
   </td>
@@ -80,6 +74,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_vars.html"><span>Variables</span></a></li>
       <li><a href="functions_type.html"><span>Typedefs</span></a></li>
       <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
+      <li><a href="functions_rela.html"><span>Related&#160;Functions</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -107,26 +103,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     </ul>
   </div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('functions_func_0x6f.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -144,12 +126,15 @@ $(document).ready(function(){initNavTree('functions_func_0x6f.html','');});
 </li>
 <li>operator*()
 : <a class="el" href="classSharedPtr.html#ab18d00fe94dfa00e2c5500f150231371">SharedPtr&lt; T &gt;</a>
+, <a class="el" href="classTransformMatrix.html#a17e7b1b55650e17a98c703fdc59ebe02">TransformMatrix</a>
+, <a class="el" href="classRotationalMatrix.html#a9086d683251ae99e0bd71b1dd7361ba3">RotationalMatrix</a>
 </li>
 <li>operator+()
-: <a class="el" href="classMatrix.html#a2a384dadfff8414f9b36b86518fe34d6">Matrix&lt; T, ROWS, COLUMNS &gt;</a>
-, <a class="el" href="classPoint2D.html#ab8aaaa2c85675e152581df7c99974906">Point2D</a>
-, <a class="el" href="classPoint3D.html#aace0be0d5f96f2b590c4779d6fa69ad0">Point3D</a>
+: <a class="el" href="classPoint3D.html#aace0be0d5f96f2b590c4779d6fa69ad0">Point3D</a>
+, <a class="el" href="classTranslation.html#a9aba5f07ee3af06cd57ca8177022083c">Translation</a>
 , <a class="el" href="classVector.html#a29b5b81103bf853f84f3336c891050e4">Vector&lt; T &gt;</a>
+, <a class="el" href="classMatrix.html#a2a384dadfff8414f9b36b86518fe34d6">Matrix&lt; T, ROWS, COLUMNS &gt;</a>
+, <a class="el" href="classPoint2D.html#ab8aaaa2c85675e152581df7c99974906">Point2D</a>
 </li>
 <li>operator-()
 : <a class="el" href="classMatrix.html#a9c84d09ac0b6736e88ebb5550451ff7e">Matrix&lt; T, ROWS, COLUMNS &gt;</a>
@@ -162,44 +147,42 @@ $(document).ready(function(){initNavTree('functions_func_0x6f.html','');});
 </li>
 <li>operator&lt;()
 : <a class="el" href="classPoint2D.html#a31b54c22e618edbc20bdb68f074878ca">Point2D</a>
+, <a class="el" href="classPoint3D.html#a6b4f3bf62f384fbc55d7260a61b68d5f">Point3D</a>
 , <a class="el" href="classSharedPtr.html#a60e5cdb35cc6f35dda0535cf32f3515b">SharedPtr&lt; T &gt;</a>
 </li>
 <li>operator&lt;&lt;()
-: <a class="el" href="classCompositeObject.html#abea6cea21b15c9db077332a70ff2a3ce">CompositeObject</a>
+: <a class="el" href="classPolygon2D.html#aed8348946cbde228c9320404d9d0fef5">Polygon2D</a>
+, <a class="el" href="classCompositeComponent.html#a7b4aa18a4fc79a68475a045b39df2073">CompositeComponent</a>
+, <a class="el" href="classCompositeObject.html#abea6cea21b15c9db077332a70ff2a3ce">CompositeObject</a>
 , <a class="el" href="classPointIndexMap.html#afdb7992b7a1286e4d89cb99335f871dc">PointIndexMap&lt; T &gt;</a>
 , <a class="el" href="classPolygon.html#aa34c064278f38cca2ca245a379317e89">Polygon&lt; T &gt;</a>
-, <a class="el" href="classPolygon2D.html#aed8348946cbde228c9320404d9d0fef5">Polygon2D</a>
 , <a class="el" href="classPolyhedron.html#a5b0aca00bf1c19f45f19d76aef4c9d66">Polyhedron</a>
-, <a class="el" href="classCompositeComponent.html#a7b4aa18a4fc79a68475a045b39df2073">CompositeComponent</a>
 </li>
 <li>operator=()
 : <a class="el" href="classCompositeComponent.html#ae69dab768390f0bf8d726e744c365a78">CompositeComponent</a>
-, <a class="el" href="classSharedPtr.html#aa3743231869315d985dff4912ecf87e7">SharedPtr&lt; T &gt;</a>
-, <a class="el" href="classPolygon.html#aa2323b72c3a17188d27b5434c3e0b3d3">Polygon&lt; T &gt;</a>
-, <a class="el" href="classAbstractPart.html#af600eb74c6e4fc4699592c15c1df3d6b">AbstractPart</a>
 , <a class="el" href="classPointIndexMap.html#a191c9ba4ce3a246b405f119f6d6cea91">PointIndexMap&lt; T &gt;</a>
-, <a class="el" href="classPoint2D.html#a897b247639e7b7f2e89e06cdfdfaa7c2">Point2D</a>
-, <a class="el" href="classVector.html#a94a8881e6b507839bb12e76e98fdb9ef">Vector&lt; T &gt;</a>
 , <a class="el" href="classPoint3D.html#afefc82ade4e0fa76841d7bf69fcf80ba">Point3D</a>
-, <a class="el" href="classComponent.html#a77773539ba9f9eb322b7ba88c61dcaf6">Component</a>
+, <a class="el" href="classSharedPtr.html#aa3743231869315d985dff4912ecf87e7">SharedPtr&lt; T &gt;</a>
+, <a class="el" href="classPoint2D.html#a897b247639e7b7f2e89e06cdfdfaa7c2">Point2D</a>
+, <a class="el" href="classPolygon.html#aa2323b72c3a17188d27b5434c3e0b3d3">Polygon&lt; T &gt;</a>
 , <a class="el" href="classRefSys.html#ad2258b26fe885bedd866cf3d74e1ce67">RefSys</a>
+, <a class="el" href="classVector.html#a94a8881e6b507839bb12e76e98fdb9ef">Vector&lt; T &gt;</a>
+, <a class="el" href="classComponent.html#a77773539ba9f9eb322b7ba88c61dcaf6">Component</a>
 , <a class="el" href="classMatrix.html#a81feacb6ec64e2e9ed3719b96a37d842">Matrix&lt; T, ROWS, COLUMNS &gt;</a>
+, <a class="el" href="classAbstractPart.html#af600eb74c6e4fc4699592c15c1df3d6b">AbstractPart</a>
 </li>
 <li>operator==()
-: <a class="el" href="classPoint2D.html#af8fdba5b39ca95832a8d7e30ff54afd0">Point2D</a>
-, <a class="el" href="classPoint3D.html#abf72de545519b4bb1bf8b2433f7d1174">Point3D</a>
+: <a class="el" href="classPoint3D.html#abf72de545519b4bb1bf8b2433f7d1174">Point3D</a>
+, <a class="el" href="classPoint2D.html#af8fdba5b39ca95832a8d7e30ff54afd0">Point2D</a>
 , <a class="el" href="classSharedPtr.html#ac42cbdd695165b6a982a036aef529fe2">SharedPtr&lt; T &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated on Sun Oct 7 2012 23:29:54 for OOML by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Oct 11 2012 00:27:41 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
 </body>
 </html>

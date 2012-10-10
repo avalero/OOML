@@ -7,12 +7,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -28,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">OOML
-   &#160;<span id="projectnumber">2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">Library</div>
   </td>
@@ -68,29 +62,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('BallWheelHolder_8cpp_source.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -99,12 +79,17 @@ $(document).ready(function(){initNavTree('BallWheelHolder_8cpp_source.html','');
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_74468c6aa5627e796dac9600ce6ada7d.html">parts</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">BallWheelHolder.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**********************************************************************</span></div>
+<a href="BallWheelHolder_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**********************************************************************</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This code is part of the OOML project</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Trevio</span></div>
@@ -134,75 +119,71 @@ $(document).ready(function(){initNavTree('BallWheelHolder_8cpp_source.html','');
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * PURPOSE.</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> **********************************************************************/</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;parts/BallWheelHolder.h&gt;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;components/Cylinder.h&gt;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;components/Sphere.h&gt;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;components/Cube.h&gt;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;core/Difference.h&gt;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;core/Intersection.h&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="BallWheelHolder_8h.html">parts/BallWheelHolder.h</a>&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Cylinder_8h.html">components/Cylinder.h</a>&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Sphere_8h.html">components/Sphere.h</a>&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Cube_8h.html">components/Cube.h</a>&gt;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Difference_8h.html">core/Difference.h</a>&gt;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Intersection_8h.html">core/Intersection.h</a>&gt;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="classBallWheelHolder.html#a5fdc4b7a1f329bf9e136abb14ce79066">   38</a></span>&#160;<a class="code" href="classComponent.html" title="Component class.">Component</a> <a class="code" href="classBallWheelHolder.html#a5fdc4b7a1f329bf9e136abb14ce79066" title="Build the piece.">BallWheelHolder::build</a>()</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;         <span class="comment">// Main Shape</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;         <a class="code" href="classComponent.html" title="Component class.">Component</a> main_shape=<a class="code" href="classCylinder.html" title="Cylinder primitive object.">Cylinder</a>(data.baseHeight/2,data.baseThickness+data.effectiveRadius*1.4,75,<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;         <a class="code" href="classComponent.html" title="Component class.">Component</a> main_shape=<a class="code" href="classCylinder.html" title="Cylinder primitive object.">Cylinder</a>(<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#a14ef11a8cd45c2d1cb08895277a38743">baseHeight</a>/2,<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#ab550dfd30671fba2028261eab399899f">baseThickness</a>+<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#ab56d1cae3fd9fa2ce63dd0a39336b242">effectiveRadius</a>*1.4,75,<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;         <span class="comment">//Cut Out</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;         <a class="code" href="classComponent.html" title="Component class.">Component</a> sphere = <a class="code" href="classSphere.html" title="Sphere primitive object.">Sphere</a>(data.effectiveRadius,80);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;         sphere.<a class="code" href="classComponent.html#ad6dc21a828b8eebedf66f7e27a80799d" title="Translate the component.">translate</a>(0,0,data.effectiveRadius+data.holeSize);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;         <a class="code" href="classComponent.html" title="Component class.">Component</a> sphere = <a class="code" href="classSphere.html" title="Sphere primitive object.">Sphere</a>(<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#ab56d1cae3fd9fa2ce63dd0a39336b242">effectiveRadius</a>,80);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;         sphere.<a class="code" href="classComponent.html#ad6dc21a828b8eebedf66f7e27a80799d" title="Translate the component.">translate</a>(0,0,<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#ab56d1cae3fd9fa2ce63dd0a39336b242">effectiveRadius</a>+<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#aa528e9f89fab87f768246513c2e3f4a6">holeSize</a>);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;         <a class="code" href="classComponent.html" title="Component class.">Component</a> cube=<a class="code" href="classCube.html" title="Cube primitive object.">Cube</a>(data.baseHeight+4,data.gapWidth, 2*data.effectiveRadius,<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;         cube.<a class="code" href="classComponent.html#ad6dc21a828b8eebedf66f7e27a80799d" title="Translate the component.">translate</a>(-data.baseHeight/2-2, -data.gapWidth/2, data.baseThickness);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;         <a class="code" href="classComponent.html" title="Component class.">Component</a> cube=<a class="code" href="classCube.html" title="Cube primitive object.">Cube</a>(<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#a14ef11a8cd45c2d1cb08895277a38743">baseHeight</a>+4,<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#a4fa69624f16dd40802804435a78e2304">gapWidth</a>, 2*<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#ab56d1cae3fd9fa2ce63dd0a39336b242">effectiveRadius</a>,<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;         cube.<a class="code" href="classComponent.html#ad6dc21a828b8eebedf66f7e27a80799d" title="Translate the component.">translate</a>(-<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#a14ef11a8cd45c2d1cb08895277a38743">baseHeight</a>/2-2, -<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#a4fa69624f16dd40802804435a78e2304">gapWidth</a>/2, <a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#ab550dfd30671fba2028261eab399899f">baseThickness</a>);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;         <a class="code" href="classComponent.html" title="Component class.">Component</a> cylinder = <a class="code" href="classCylinder.html" title="Cylinder primitive object.">Cylinder</a>(data.effectiveRadius*0.6,data.baseHeight+4 , 6 , <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;         cylinder.<a class="code" href="classComponent.html#a4b843c2debc8bf1947a3c55bb8ede442" title="Rotate the component.">rotate</a>(0,90,0).<a class="code" href="classComponent.html#ad6dc21a828b8eebedf66f7e27a80799d" title="Translate the component.">translate</a>(-data.baseHeight/2-2,0,data.baseThickness+data.effectiveRadius*1.2);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;         <a class="code" href="classComponent.html" title="Component class.">Component</a> cylinder = <a class="code" href="classCylinder.html" title="Cylinder primitive object.">Cylinder</a>(<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#ab56d1cae3fd9fa2ce63dd0a39336b242">effectiveRadius</a>*0.6,<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#a14ef11a8cd45c2d1cb08895277a38743">baseHeight</a>+4 , 6 , <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;         cylinder.<a class="code" href="classComponent.html#a4b843c2debc8bf1947a3c55bb8ede442" title="Rotate the component.">rotate</a>(0,90,0).<a class="code" href="classComponent.html#ad6dc21a828b8eebedf66f7e27a80799d" title="Translate the component.">translate</a>(-<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#a14ef11a8cd45c2d1cb08895277a38743">baseHeight</a>/2-2,0,<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#ab550dfd30671fba2028261eab399899f">baseThickness</a>+<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#ab56d1cae3fd9fa2ce63dd0a39336b242">effectiveRadius</a>*1.2);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;         <a class="code" href="classComponent.html" title="Component class.">Component</a> cylinder2 = <a class="code" href="classCylinder.html" title="Cylinder primitive object.">Cylinder</a>(data.effectiveRadius*0.85,data.effectiveRadius/2,75,<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;         <a class="code" href="classComponent.html" title="Component class.">Component</a> cylinder2 = <a class="code" href="classCylinder.html" title="Cylinder primitive object.">Cylinder</a>(<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#ab56d1cae3fd9fa2ce63dd0a39336b242">effectiveRadius</a>*0.85,<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#ab56d1cae3fd9fa2ce63dd0a39336b242">effectiveRadius</a>/2,75,<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;         cylinder2.<a class="code" href="classComponent.html#ad6dc21a828b8eebedf66f7e27a80799d" title="Translate the component.">translate</a>(0,0,data.baseThickness);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;         cylinder2.<a class="code" href="classComponent.html#ad6dc21a828b8eebedf66f7e27a80799d" title="Translate the component.">translate</a>(0,0,<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#ab550dfd30671fba2028261eab399899f">baseThickness</a>);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;         <a class="code" href="classComponent.html" title="Component class.">Component</a> cutout = sphere + cube + cylinder + cylinder2;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;         <span class="comment">// Support</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;         <span class="keywordtype">double</span> support_height = data.totalHeight - (data.baseThickness+data.effectiveRadius*1.4);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;         <span class="keywordtype">double</span> support_height = <a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#a52376b54a28349e25eff5e252ccdede7">totalHeight</a> - (<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#ab550dfd30671fba2028261eab399899f">baseThickness</a>+<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#ab56d1cae3fd9fa2ce63dd0a39336b242">effectiveRadius</a>*1.4);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;         <span class="keywordflow">if</span> (support_height &lt; 0){</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                  <a class="code" href="classComponent.html" title="Component class.">Component</a> spherewheelsupport = main_shape - cutout;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                  <span class="keywordflow">return</span> spherewheelsupport;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;         }</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">//else</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;         <a class="code" href="classComponent.html" title="Component class.">Component</a> support = <a class="code" href="classCylinder.html" title="Cylinder primitive object.">Cylinder</a>(data.baseHeight/2,support_height+1,75,<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;         <a class="code" href="classComponent.html" title="Component class.">Component</a> support = <a class="code" href="classCylinder.html" title="Cylinder primitive object.">Cylinder</a>(<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#a14ef11a8cd45c2d1cb08895277a38743">baseHeight</a>/2,support_height+1,75,<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;         <a class="code" href="classComponent.html" title="Component class.">Component</a> spherewheelsupport = support</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                + (main_shape - cutout).<a class="code" href="classComponent.html#ad6dc21a828b8eebedf66f7e27a80799d" title="Translate the component.">translate</a>(0,0,support_height)</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                - <a class="code" href="classCylinder.html" title="Cylinder primitive object.">Cylinder</a>(data.effectiveRadius*0.80,data.totalHeight,75,<span class="keyword">false</span>).<a class="code" href="classComponent.html#ad6dc21a828b8eebedf66f7e27a80799d" title="Translate the component.">translate</a>(0,0,6);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                - <a class="code" href="classCylinder.html" title="Cylinder primitive object.">Cylinder</a>(<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#ab56d1cae3fd9fa2ce63dd0a39336b242">effectiveRadius</a>*0.80,<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#a52376b54a28349e25eff5e252ccdede7">totalHeight</a>,75,<span class="keyword">false</span>).<a class="code" href="classComponent.html#ad6dc21a828b8eebedf66f7e27a80799d" title="Translate the component.">translate</a>(0,0,6);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;         <span class="keywordflow">return</span> spherewheelsupport;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<a class="code" href="classComponent.html" title="Component class.">Component</a> BallWheelHolder::getBall(){</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;         <a class="code" href="classComponent.html" title="Component class.">Component</a> ball = <a class="code" href="classSphere.html" title="Sphere primitive object.">Sphere</a>(data.radius ,100);</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="code" href="classBallWheelHolder.html#aa345c2a64731ffd98a8562c452b9115b">   78</a></span>&#160;<a class="code" href="classComponent.html" title="Component class.">Component</a> <a class="code" href="classBallWheelHolder.html#aa345c2a64731ffd98a8562c452b9115b">BallWheelHolder::getBall</a>(){</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;         <a class="code" href="classComponent.html" title="Component class.">Component</a> ball = <a class="code" href="classSphere.html" title="Sphere primitive object.">Sphere</a>(<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#a87ad4a78cd1fcc713a7481c43bdbebdd">radius</a> ,100);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;         <span class="keywordtype">double</span> support_height = data.totalHeight - (data.baseThickness+data.effectiveRadius*1.4);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;         <span class="keywordtype">double</span> support_height = <a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#a52376b54a28349e25eff5e252ccdede7">totalHeight</a> - (<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#ab550dfd30671fba2028261eab399899f">baseThickness</a>+<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#ab56d1cae3fd9fa2ce63dd0a39336b242">effectiveRadius</a>*1.4);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;         <span class="keywordflow">if</span>(support_height&lt;0)</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                  ball.<a class="code" href="classComponent.html#ad6dc21a828b8eebedf66f7e27a80799d" title="Translate the component.">translate</a>(0,0,data.effectiveRadius+data.holeSize);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                  ball.<a class="code" href="classComponent.html#ad6dc21a828b8eebedf66f7e27a80799d" title="Translate the component.">translate</a>(0,0,<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#ab56d1cae3fd9fa2ce63dd0a39336b242">effectiveRadius</a>+<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#aa528e9f89fab87f768246513c2e3f4a6">holeSize</a>);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;         <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                  ball.<a class="code" href="classComponent.html#ad6dc21a828b8eebedf66f7e27a80799d" title="Translate the component.">translate</a>(0,0,data.effectiveRadius+data.holeSize).<a class="code" href="classComponent.html#ad6dc21a828b8eebedf66f7e27a80799d" title="Translate the component.">translate</a>(0,0,support_height);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                  ball.<a class="code" href="classComponent.html#ad6dc21a828b8eebedf66f7e27a80799d" title="Translate the component.">translate</a>(0,0,<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#ab56d1cae3fd9fa2ce63dd0a39336b242">effectiveRadius</a>+<a class="code" href="classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb">data</a>.<a class="code" href="structBallWheelHolder_1_1Data.html#aa528e9f89fab87f768246513c2e3f4a6">holeSize</a>).<a class="code" href="classComponent.html#ad6dc21a828b8eebedf66f7e27a80799d" title="Translate the component.">translate</a>(0,0,support_height);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;         <span class="keywordflow">return</span> ball;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_74468c6aa5627e796dac9600ce6ada7d.html">parts</a></li><li class="navelem"><b>BallWheelHolder.cpp</b></li>
-    <li class="footer">Generated on Sun Oct 7 2012 23:29:53 for OOML by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Oct 11 2012 00:27:40 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
 </body>
 </html>

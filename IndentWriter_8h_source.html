@@ -7,12 +7,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -28,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">OOML
-   &#160;<span id="projectnumber">2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">Library</div>
   </td>
@@ -68,29 +62,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('IndentWriter_8h_source.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -99,12 +79,17 @@ $(document).ready(function(){initNavTree('IndentWriter_8h_source.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">IndentWriter.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**********************************************************************</span></div>
+<a href="IndentWriter_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**********************************************************************</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This code is part of the OOML project</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Treviño</span></div>
@@ -144,14 +129,14 @@ $(document).ready(function(){initNavTree('IndentWriter_8h_source.html','');});
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OOMLCore_EXP_DEC __declspec(dllimport)</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OOMLCore_EXP_DEC</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="IndentWriter_8h.html#ad88ad115d074664d76d5560dafacc35b">   41</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OOMLCore_EXP_DEC</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="classIndentWriter.html">   53</a></span>&#160;<span class="keyword">class </span>OOMLCore_EXP_DEC <a class="code" href="classIndentWriter.html" title="Indented output writer.">IndentWriter</a> : <span class="keyword">public</span> std::ostream</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="classIndentWriter.html">   53</a></span>&#160;<span class="keyword">class </span><a class="code" href="IndentWriter_8h.html#ad88ad115d074664d76d5560dafacc35b">OOMLCore_EXP_DEC</a> <a class="code" href="classIndentWriter.html" title="Indented output writer.">IndentWriter</a> : <span class="keyword">public</span> std::ostream</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00061"></a><span class="lineno"><a class="code" href="classIndentWriter.html#a776db03b9043017dfffa8bcb00655149">   61</a></span>&#160;        <a class="code" href="classIndentWriter.html" title="Indented output writer.">IndentWriter</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> indent=2) :</div>
@@ -170,7 +155,7 @@ $(document).ready(function(){initNavTree('IndentWriter_8h_source.html','');});
 <div class="line"><a name="l00095"></a><span class="lineno"><a class="code" href="classIndentWriter.html#ac6be5a35f295f587e0d64edee68002ef">   95</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classIndentWriter.html#ac6be5a35f295f587e0d64edee68002ef" title="Dumps the output.">dump</a>(std::ostream&amp; os)<span class="keyword"> const </span>{ _strbuf.dump(os); }</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keyword">class </span>OOMLCore_EXP_DEC IndentStringBuf : <span class="keyword">public</span> std::stringbuf</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keyword">class </span><a class="code" href="IndentWriter_8h.html#ad88ad115d074664d76d5560dafacc35b">OOMLCore_EXP_DEC</a> IndentStringBuf : <span class="keyword">public</span> std::stringbuf</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  {</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      IndentStringBuf(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> indent=2) :</div>
@@ -216,7 +201,7 @@ $(document).ready(function(){initNavTree('IndentWriter_8h_source.html','');});
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        IndentStringBuf _strbuf; </div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;};</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
-<div class="line"><a name="l00173"></a><span class="lineno"><a class="code" href="classIndentBlock.html">  173</a></span>&#160;<span class="keyword">class </span>OOMLCore_EXP_DEC <a class="code" href="classIndentBlock.html" title="Indent block class.">IndentBlock</a></div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="code" href="classIndentBlock.html">  173</a></span>&#160;<span class="keyword">class </span><a class="code" href="IndentWriter_8h.html#ad88ad115d074664d76d5560dafacc35b">OOMLCore_EXP_DEC</a> <a class="code" href="classIndentBlock.html" title="Indent block class.">IndentBlock</a></div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;{</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00181"></a><span class="lineno"><a class="code" href="classIndentBlock.html#aa415976521991fe2fbee463223d10238">  181</a></span>&#160;        <a class="code" href="classIndentBlock.html" title="Indent block class.">IndentBlock</a>(<a class="code" href="classIndentWriter.html" title="Indented output writer.">IndentWriter</a> &amp; writer) :</div>
@@ -232,19 +217,15 @@ $(document).ready(function(){initNavTree('IndentWriter_8h_source.html','');});
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <a class="code" href="classIndentWriter.html" title="Indented output writer.">IndentWriter</a> &amp; _writer; </div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;};</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;OOMLCore_EXP_DEC std::ostream&amp; operator&lt;&lt;(std::ostream &amp; os, <a class="code" href="classIndentWriter.html" title="Indented output writer.">IndentWriter</a> <span class="keyword">const</span>&amp; writer);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<a class="code" href="IndentWriter_8h.html#ad88ad115d074664d76d5560dafacc35b">OOMLCore_EXP_DEC</a> std::ostream&amp; <a class="code" href="AbstractObject_8cpp.html#a108ccd9e6ba8283169366d2f6d47a7cc" title="Generate the SCAD code of the object with insertor syntax.">operator&lt;&lt;</a>(std::ostream &amp; os, <a class="code" href="classIndentWriter.html" title="Indented output writer.">IndentWriter</a> <span class="keyword">const</span>&amp; writer);</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="preprocessor">#endif // INDENTWRITER_H_INCLUDED</span></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><b>IndentWriter.h</b></li>
-    <li class="footer">Generated on Sun Oct 7 2012 23:29:53 for OOML by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Oct 11 2012 00:27:40 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
 </body>
 </html>

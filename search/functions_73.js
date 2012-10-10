@@ -5,7 +5,7 @@ var searchData=
   ['scaledecorator',['ScaleDecorator',['../classScaleDecorator.html#aa56fb48123561849627b8e2811659693',1,'ScaleDecorator::ScaleDecorator()'],['../classScaleDecorator.html#ae9cf16ad12e7b27cac5c6b019a2f4e41',1,'ScaleDecorator::ScaleDecorator(SharedPtr&lt; AbstractObject &gt; const &amp;decorated, double s)'],['../classScaleDecorator.html#a2f8ddc10284887876367db03e0a8b53e',1,'ScaleDecorator::ScaleDecorator(SharedPtr&lt; AbstractObject &gt; const &amp;decorated, double sx, double sy, double sz)']]],
   ['seeedussensor',['SeeedUSSensor',['../classSeeedUSSensor.html#a45e52fa7288b70fc37144a56a4a2261d',1,'SeeedUSSensor']]],
   ['servowheel',['ServoWheel',['../classServoWheel.html#a34383fed97ca15f865e3cae7959686ea',1,'ServoWheel::ServoWheel()'],['../classServoWheel.html#abd88d1f6cfc7108e5f863035f726b92f',1,'ServoWheel::ServoWheel(double radius, double axeRadius, double thickness, double servoRadius, double servoThickness)']]],
-  ['set',['set',['../classCompositeComponent.html#add7fada87bbaf74e74be2c42304c98c4',1,'CompositeComponent::set()'],['../classObjectDecorator.html#a4251489dddda61864e787359e9edd148',1,'ObjectDecorator::set()']]],
+  ['set',['set',['../classCompositeComponent.html#add7fada87bbaf74e74be2c42304c98c4',1,'CompositeComponent::set()'],['../classMatrix.html#a820d3e49ffea766faf310729803e1df1',1,'Matrix::set()'],['../classObjectDecorator.html#a4251489dddda61864e787359e9edd148',1,'ObjectDecorator::set()']]],
   ['setnormal',['setNormal',['../classVector.html#ab40fc77be319fdfdf2ee978d7dc7e3fe',1,'Vector']]],
   ['setpath',['setPath',['../classPolygon2D.html#a2ad166750a3cfb4484eaffc80061a059',1,'Polygon2D']]],
   ['setpose',['setPose',['../classVector.html#a44c30140d9cc1e82a5140049a7083993',1,'Vector']]],

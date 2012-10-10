@@ -8,6 +8,4 @@ digraph "RotationalMatrix::rotateEulerZYZ"
   Node2 [label="Component::rotateEulerZYZ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#a841b4b1a8040df25a0dc83c413e90878",tooltip="Rotate the component with Euler Angles ZY&#39;Z&#39;&#39;."];
   Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node3 [label="Component::rotatedEulerZYZCopy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#a0ec11e37ac626ea7ea2ce8019a828a16",tooltip="Rotate a copy of the component with Euler Angles ZX&#39;Z&#39;&#39;."];
-  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="RefSys::rotateEulerZYZ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRefSys.html#a6cd5926ccf484bb4406af8b9251c9895",tooltip="Rotates the reference system This methods rotates the reference system with the Euler ZYZ angles..."];
 }

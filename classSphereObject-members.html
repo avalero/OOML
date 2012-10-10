@@ -7,12 +7,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -28,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">OOML
-   &#160;<span id="projectnumber">2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">Library</div>
   </td>
@@ -73,27 +67,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classSphereObject.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -102,6 +81,7 @@ $(document).ready(function(){initNavTree('classSphereObject.html','');});
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">SphereObject Member List</div>  </div>
@@ -110,7 +90,7 @@ $(document).ready(function(){initNavTree('classSphereObject.html','');});
 
 <p>This is the complete list of members for <a class="el" href="classSphereObject.html">SphereObject</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0"class="even"><td class="entry"><b>_links</b> (defined in <a class="el" href="classAbstractObject.html">AbstractObject</a>)</td><td class="entry"><a class="el" href="classAbstractObject.html">AbstractObject</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classAbstractObject.html#a9f5c5d48dfb61408a6ce957a336c84b8">_links</a></td><td class="entry"><a class="el" href="classAbstractObject.html">AbstractObject</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classAbstractObject.html#a79f41d63e86bc236556d963b560fef29">AbstractObject</a>()</td><td class="entry"><a class="el" href="classAbstractObject.html">AbstractObject</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classAbstractObject.html#afeb1ed691f3127374a16d0a3297f6917">addLink</a>(RefSys rs)</td><td class="entry"><a class="el" href="classAbstractObject.html">AbstractObject</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classAbstractObject.html#a6de1fc0280f41f68a486d255b4ec5444">addLinks</a>(Links l)</td><td class="entry"><a class="el" href="classAbstractObject.html">AbstractObject</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -120,7 +100,7 @@ $(document).ready(function(){initNavTree('classSphereObject.html','');});
   <tr><td class="entry"><a class="el" href="classSphereObject.html#abc336f3160efba7abbc545b0ac85e75e">genScad</a>(IndentWriter &amp;writer) const </td><td class="entry"><a class="el" href="classSphereObject.html">SphereObject</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classAbstractObject.html#a8ccb370b1bd2d4a08f35dfadb8532c21">getLink</a>(int id) const </td><td class="entry"><a class="el" href="classAbstractObject.html">AbstractObject</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classAbstractObject.html#a5aabc9bc5d049d0320092d8f8b1cb93e">getLinks</a>() const </td><td class="entry"><a class="el" href="classAbstractObject.html">AbstractObject</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"class="even"><td class="entry"><b>getRadius</b>() (defined in <a class="el" href="classSphereObject.html">SphereObject</a>)</td><td class="entry"><a class="el" href="classSphereObject.html">SphereObject</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classSphereObject.html#af06af732b6627d1490bf853ce4f9ea3d">getRadius</a>()</td><td class="entry"><a class="el" href="classSphereObject.html">SphereObject</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classAbstractObject.html#ad6b31861029adf226524bbaf066ec7a6">hasLinks</a>() const </td><td class="entry"><a class="el" href="classAbstractObject.html">AbstractObject</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classSphereObject.html#a58bf6869c4a839c0090f11d9c74ca952">printAst</a>(IndentWriter &amp;writer) const </td><td class="entry"><a class="el" href="classSphereObject.html">SphereObject</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classSphereObject.html#a2f2510b1562ee98a0ef1253f5e1a0127">SphereObject</a>()</td><td class="entry"><a class="el" href="classSphereObject.html">SphereObject</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
@@ -128,14 +108,11 @@ $(document).ready(function(){initNavTree('classSphereObject.html','');});
   <tr><td class="entry"><a class="el" href="classAbstractObject.html#a2d29031f6c5a0384462d5a5adb80fe5b">~AbstractObject</a>()</td><td class="entry"><a class="el" href="classAbstractObject.html">AbstractObject</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classSphereObject.html#ae1bff187f90c73c041a584af828a8f23">~SphereObject</a>()</td><td class="entry"><a class="el" href="classSphereObject.html">SphereObject</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated on Sun Oct 7 2012 23:29:54 for OOML by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Oct 11 2012 00:27:41 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
 </body>
 </html>

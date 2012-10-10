@@ -7,12 +7,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -28,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">OOML
-   &#160;<span id="projectnumber">2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">Library</div>
   </td>
@@ -73,27 +67,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classCubeObject.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -102,6 +81,7 @@ $(document).ready(function(){initNavTree('classCubeObject.html','');});
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -123,14 +103,14 @@ Inheritance diagram for CubeObject:</div>
 <div class="center"><img src="classCubeObject__inherit__graph.png" border="0" usemap="#CubeObject_inherit__map" alt="Inheritance graph"/></div>
 <map name="CubeObject_inherit__map" id="CubeObject_inherit__map">
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for CubeObject:</div>
 <div class="dyncontent">
 <div class="center"><img src="classCubeObject__coll__graph.png" border="0" usemap="#CubeObject_coll__map" alt="Collaboration graph"/></div>
 <map name="CubeObject_coll__map" id="CubeObject_coll__map">
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -138,26 +118,20 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:afcdb60ac4fce2ad5e93e756d0784d242"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate SCAD output for this object.  <a href="#afcdb60ac4fce2ad5e93e756d0784d242"></a><br/></td></tr>
 <tr class="memitem:adad0d6a645d924aad8d68b157c7efa4b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCubeObject.html#adad0d6a645d924aad8d68b157c7efa4b">printAst</a> (<a class="el" href="classIndentWriter.html">IndentWriter</a> &amp;writer) const </td></tr>
 <tr class="memdesc:adad0d6a645d924aad8d68b157c7efa4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate AST output for this object.  <a href="#adad0d6a645d924aad8d68b157c7efa4b"></a><br/></td></tr>
-<tr class="memitem:a0ee74e7a14b12c7cae14eec4f71a7839"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ee74e7a14b12c7cae14eec4f71a7839"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getX</b> ()</td></tr>
-<tr class="memitem:aebc7f1fa2b35f9fb62e2bc6dd69af678"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aebc7f1fa2b35f9fb62e2bc6dd69af678"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getY</b> ()</td></tr>
-<tr class="memitem:a569c078d16222dfd8cdd7fa17d29d6b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a569c078d16222dfd8cdd7fa17d29d6b7"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getZ</b> ()</td></tr>
+<tr class="memitem:a0ee74e7a14b12c7cae14eec4f71a7839"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCubeObject.html#a0ee74e7a14b12c7cae14eec4f71a7839">getX</a> ()</td></tr>
+<tr class="memitem:aebc7f1fa2b35f9fb62e2bc6dd69af678"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCubeObject.html#aebc7f1fa2b35f9fb62e2bc6dd69af678">getY</a> ()</td></tr>
+<tr class="memitem:a569c078d16222dfd8cdd7fa17d29d6b7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCubeObject.html#a569c078d16222dfd8cdd7fa17d29d6b7">getZ</a> ()</td></tr>
 <tr class="inherit_header pub_methods_classAbstractObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classAbstractObject')"><img src="closed.png" alt="-"/>&nbsp;Public Member Functions inherited from <a class="el" href="classAbstractObject.html">AbstractObject</a></td></tr>
-<tr class="memitem:a79f41d63e86bc236556d963b560fef29 inherit pub_methods_classAbstractObject"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a79f41d63e86bc236556d963b560fef29"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractObject.html#a79f41d63e86bc236556d963b560fef29">AbstractObject</a> ()</td></tr>
-<tr class="memdesc:a79f41d63e86bc236556d963b560fef29 inherit pub_methods_classAbstractObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br/></td></tr>
-<tr class="memitem:a2d29031f6c5a0384462d5a5adb80fe5b inherit pub_methods_classAbstractObject"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d29031f6c5a0384462d5a5adb80fe5b"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractObject.html#a2d29031f6c5a0384462d5a5adb80fe5b">~AbstractObject</a> ()</td></tr>
-<tr class="memdesc:a2d29031f6c5a0384462d5a5adb80fe5b inherit pub_methods_classAbstractObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor. <br/></td></tr>
+<tr class="memitem:a79f41d63e86bc236556d963b560fef29 inherit pub_methods_classAbstractObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractObject.html#a79f41d63e86bc236556d963b560fef29">AbstractObject</a> ()</td></tr>
+<tr class="memdesc:a79f41d63e86bc236556d963b560fef29 inherit pub_methods_classAbstractObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a79f41d63e86bc236556d963b560fef29"></a><br/></td></tr>
+<tr class="memitem:a2d29031f6c5a0384462d5a5adb80fe5b inherit pub_methods_classAbstractObject"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractObject.html#a2d29031f6c5a0384462d5a5adb80fe5b">~AbstractObject</a> ()</td></tr>
+<tr class="memdesc:a2d29031f6c5a0384462d5a5adb80fe5b inherit pub_methods_classAbstractObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor.  <a href="#a2d29031f6c5a0384462d5a5adb80fe5b"></a><br/></td></tr>
 <tr class="memitem:a5aabc9bc5d049d0320092d8f8b1cb93e inherit pub_methods_classAbstractObject"><td class="memItemLeft" align="right" valign="top">Links&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractObject.html#a5aabc9bc5d049d0320092d8f8b1cb93e">getLinks</a> () const </td></tr>
 <tr class="memitem:a8ccb370b1bd2d4a08f35dfadb8532c21 inherit pub_methods_classAbstractObject"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRefSys.html">RefSys</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractObject.html#a8ccb370b1bd2d4a08f35dfadb8532c21">getLink</a> (int id) const </td></tr>
 <tr class="memitem:afeb1ed691f3127374a16d0a3297f6917 inherit pub_methods_classAbstractObject"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractObject.html#afeb1ed691f3127374a16d0a3297f6917">addLink</a> (<a class="el" href="classRefSys.html">RefSys</a> rs)</td></tr>
 <tr class="memdesc:afeb1ed691f3127374a16d0a3297f6917 inherit pub_methods_classAbstractObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a <a class="el" href="classLink.html" title="link primitive object">Link</a> to the system. <a class="el" href="">System of the Link. </a> <a href="#afeb1ed691f3127374a16d0a3297f6917"></a><br/></td></tr>
-<tr class="memitem:a6de1fc0280f41f68a486d255b4ec5444 inherit pub_methods_classAbstractObject"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6de1fc0280f41f68a486d255b4ec5444"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractObject.html#a6de1fc0280f41f68a486d255b4ec5444">addLinks</a> (Links l)</td></tr>
-<tr class="memdesc:a6de1fc0280f41f68a486d255b4ec5444 inherit pub_methods_classAbstractObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a vector of Links to the system.  <a class="el" href="classVector.html" title="Generic vector primitive object.">Vector</a> of Reference Systems of the Links. <br/></td></tr>
+<tr class="memitem:a6de1fc0280f41f68a486d255b4ec5444 inherit pub_methods_classAbstractObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractObject.html#a6de1fc0280f41f68a486d255b4ec5444">addLinks</a> (Links l)</td></tr>
+<tr class="memdesc:a6de1fc0280f41f68a486d255b4ec5444 inherit pub_methods_classAbstractObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a vector of Links to the system.  <a class="el" href="classVector.html" title="Generic vector primitive object.">Vector</a> of Reference Systems of the Links.  <a href="#a6de1fc0280f41f68a486d255b4ec5444"></a><br/></td></tr>
 <tr class="memitem:ad6b31861029adf226524bbaf066ec7a6 inherit pub_methods_classAbstractObject"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractObject.html#ad6b31861029adf226524bbaf066ec7a6">hasLinks</a> () const </td></tr>
 <tr class="memdesc:ad6b31861029adf226524bbaf066ec7a6 inherit pub_methods_classAbstractObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if the Object has links.  <a href="#ad6b31861029adf226524bbaf066ec7a6"></a><br/></td></tr>
 </table><table class="memberdecls">
@@ -173,14 +147,12 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ac26bad5ed255db9dda823fa7a29a318d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac26bad5ed255db9dda823fa7a29a318d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCubeObject.html#ac26bad5ed255db9dda823fa7a29a318d">CubeObject</a> ()</td></tr>
-<tr class="memdesc:ac26bad5ed255db9dda823fa7a29a318d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br/></td></tr>
+<tr class="memitem:ac26bad5ed255db9dda823fa7a29a318d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCubeObject.html#ac26bad5ed255db9dda823fa7a29a318d">CubeObject</a> ()</td></tr>
+<tr class="memdesc:ac26bad5ed255db9dda823fa7a29a318d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#ac26bad5ed255db9dda823fa7a29a318d"></a><br/></td></tr>
 <tr class="memitem:add43d24b88e7d7676b8a95b9f8eb25b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCubeObject.html#add43d24b88e7d7676b8a95b9f8eb25b7">CubeObject</a> (double sx, double sy, double sz, bool center=true)</td></tr>
 <tr class="memdesc:add43d24b88e7d7676b8a95b9f8eb25b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default parametrized constructor.  <a href="#add43d24b88e7d7676b8a95b9f8eb25b7"></a><br/></td></tr>
-<tr class="memitem:a8f47e0579e0f87a638d37fa179cb10ac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f47e0579e0f87a638d37fa179cb10ac"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCubeObject.html#a8f47e0579e0f87a638d37fa179cb10ac">~CubeObject</a> ()</td></tr>
-<tr class="memdesc:a8f47e0579e0f87a638d37fa179cb10ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor. <br/></td></tr>
+<tr class="memitem:a8f47e0579e0f87a638d37fa179cb10ac"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCubeObject.html#a8f47e0579e0f87a638d37fa179cb10ac">~CubeObject</a> ()</td></tr>
+<tr class="memdesc:a8f47e0579e0f87a638d37fa179cb10ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor.  <a href="#a8f47e0579e0f87a638d37fa179cb10ac"></a><br/></td></tr>
 <tr class="inherit_header pro_methods_classAbstractObject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classAbstractObject')"><img src="closed.png" alt="-"/>&nbsp;Protected Member Functions inherited from <a class="el" href="classAbstractObject.html">AbstractObject</a></td></tr>
 <tr class="memitem:a94d1df7f574fbcaab883fd06c3f54370 inherit pro_methods_classAbstractObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractObject.html#a94d1df7f574fbcaab883fd06c3f54370">debug</a> (std::string const &amp;str) const </td></tr>
 <tr class="memdesc:a94d1df7f574fbcaab883fd06c3f54370 inherit pro_methods_classAbstractObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print a debug message.  <a href="#a94d1df7f574fbcaab883fd06c3f54370"></a><br/></td></tr>
@@ -188,8 +160,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="heading"><td colspan="2"><h2><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classAbstractObject"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classAbstractObject')"><img src="closed.png" alt="-"/>&nbsp;Protected Attributes inherited from <a class="el" href="classAbstractObject.html">AbstractObject</a></td></tr>
-<tr class="memitem:a9f5c5d48dfb61408a6ce957a336c84b8 inherit pro_attribs_classAbstractObject"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f5c5d48dfb61408a6ce957a336c84b8"></a>
-Links&#160;</td><td class="memItemRight" valign="bottom"><b>_links</b></td></tr>
+<tr class="memitem:a9f5c5d48dfb61408a6ce957a336c84b8 inherit pro_attribs_classAbstractObject"><td class="memItemLeft" align="right" valign="top">Links&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractObject.html#a9f5c5d48dfb61408a6ce957a336c84b8">_links</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classCube.html" title="Cube primitive object.">Cube</a> primitive object. </p>
@@ -197,6 +168,33 @@ Links&#160;</td><td class="memItemRight" valign="bottom"><b>_links</b></td></tr>
 
 <p>Definition at line <a class="el" href="CubeObject_8h_source.html#l00053">53</a> of file <a class="el" href="CubeObject_8h_source.html">CubeObject.h</a>.</p>
 </div><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ac26bad5ed255db9dda823fa7a29a318d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CubeObject::CubeObject </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default constructor. </p>
+
+<p>Definition at line <a class="el" href="CubeObject_8h_source.html#l00110">110</a> of file <a class="el" href="CubeObject_8h_source.html">CubeObject.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="add43d24b88e7d7676b8a95b9f8eb25b7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -253,6 +251,33 @@ Links&#160;</td><td class="memItemRight" valign="bottom"><b>_links</b></td></tr>
 </dl>
 
 <p>Definition at line <a class="el" href="CubeObject_8h_source.html#l00125">125</a> of file <a class="el" href="CubeObject_8h_source.html">CubeObject.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8f47e0579e0f87a638d37fa179cb10ac"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual CubeObject::~CubeObject </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default destructor. </p>
+
+<p>Definition at line <a class="el" href="CubeObject_8h_source.html#l00135">135</a> of file <a class="el" href="CubeObject_8h_source.html">CubeObject.h</a>.</p>
 
 </div>
 </div>
@@ -409,6 +434,81 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a0ee74e7a14b12c7cae14eec4f71a7839"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CubeObject::getX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="CubeObject_8h_source.html#l00102">102</a> of file <a class="el" href="CubeObject_8h_source.html">CubeObject.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aebc7f1fa2b35f9fb62e2bc6dd69af678"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CubeObject::getY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="CubeObject_8h_source.html#l00103">103</a> of file <a class="el" href="CubeObject_8h_source.html">CubeObject.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a569c078d16222dfd8cdd7fa17d29d6b7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CubeObject::getZ </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="CubeObject_8h_source.html#l00104">104</a> of file <a class="el" href="CubeObject_8h_source.html">CubeObject.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="adad0d6a645d924aad8d68b157c7efa4b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -451,15 +551,11 @@ Here is the caller graph for this function:</div>
 <li>src/core/<a class="el" href="CubeObject_8cpp_source.html">CubeObject.cpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="classCubeObject.html">CubeObject</a></li>
-    <li class="footer">Generated on Sun Oct 7 2012 23:29:53 for OOML by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Oct 11 2012 00:27:41 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
 </body>
 </html>
