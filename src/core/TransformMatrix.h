@@ -28,8 +28,8 @@
  * PURPOSE.
  **********************************************************************/
 
-#ifndef OOML_ROTMATRIX_H_INCLUDED
-#define OOML_ROTMATRIX_H_INCLUDED
+#ifndef OOML_TRANSFORMMATRIX_H_INCLUDED
+#define OOML_TRANSFORMMATRIX_H_INCLUDED
 
 #ifdef WIN32
 #ifdef OOMLCore_EXPORTS
@@ -46,28 +46,28 @@
 #include <utility>
 
 /**
- * \brief Rotational Matrix
+ * \brief Homogeneous Transformation Matrix
  *
- * This class provides a rotational matrix
+ * This class provides a homogeneous transformation matrix
  */
-class OOMLCore_EXP_DEC RotationalMatrix: public Matrix<double,3,3>
+class OOMLCore_EXP_DEC TransformMatrix: public Matrix<double,4,4>
 {
 public:
     /**
      * \brief Default constructor.
      */
-    RotationalMatrix() :
-        Matrix<double,3,3>()
+    TransformMatrix() :
+        Matrix<double,4,4>()
     {
-        for (int i=1;i<=3;i++){
+        for (int i=1;i<=4;i++){
             set(i,i,1);
         }
     }
 
     void printMatrix() const{
-        for (int i=1 ; i<=3 ; i++){
+        for (int i=1 ; i<=4 ; i++){
             std::cout << "| ";
-            for (int j=1; j<=3; j++){
+            for (int j=1; j<=4; j++){
 
                 std::cout << get(i,j) << " ";
             }
@@ -75,7 +75,13 @@ public:
         }
     }
 
-    RotationalMatrix & operator*(RotationalMatrix const& matrix);
+    /**
+     * @brief operator *
+     * Multiplies two matrices
+     * @param matrix the matrix to multiply with this
+     * @return the resulting multiplication
+     */
+    TransformMatrix & operator*(TransformMatrix const& matrix);
 
     /**
       * \brief Applies an Euler rotation around z, x', z''
@@ -129,12 +135,32 @@ public:
       * \brief Gets the rotation angles about the fixed axes x,y,z.
       * Obtains the rotation angles about the fixed x,y,z
       * (Roll,Pich,Yaw).
-      * \param x rotation (in degrees) around initial fixed x axis
-      * \param y rotation (in degrees) around initial fixed y axis
-      * \param z rotation (in degrees) around initial fixed z axis
+      * \param x rotation (in degrees) around initial fixed x
+      * \param y rotation (in degrees) around initial fixed y
+      * \param z rotation (in degrees) around initial fixed z
       */
     void getGlobalXYZAngles(double &x, double &y, double &z);
 
+    /**
+      * \brief Gets the translation wrt. the fixed axes x,y,z.
+      * Obtains the rotation angles about the fixed x,y,z
+      * (Roll,Pich,Yaw).
+      * \param x translation wrt. the initial fixed x
+      * \param y translation wrt. the initial fixed y
+      * \param z translation wrt. the initial fixed z
+      */
+    void getGlobalTranslation(double &x, double &y, double &z);
+
+    /**
+     * @brief performs a translation
+     * @param x Translation with respect to the x axis
+     * @param y Translation with respect to the y axis
+     * @param z Translation with respect to the z axis
+     */
+    void translate(double x, double y, double z);
+
+
+
 };
 
-#endif // REFSYS_H_INCLUDED
+#endif

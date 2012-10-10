@@ -310,7 +310,7 @@ public:
     Component & rotate(RotationalMatrix rot)
     {
         double ax, ay, az;
-        rot.getXYZAngles(ax,ay,az);
+        rot.getGlobalXYZAngles(ax,ay,az);
         set(RotateDecorator::create(get(), ax, ay, az));
         return *this;
     }
@@ -318,7 +318,7 @@ public:
     Component rotatedCopy(RotationalMatrix rot) const
     {
         double ax, ay, az;
-        rot.getXYZAngles(ax,ay,az);
+        rot.getGlobalXYZAngles(ax,ay,az);
         return Component(RotateDecorator::create(get(), ax, ay, az));
     }
 
@@ -340,7 +340,7 @@ public:
         RotationalMatrix rotation;
         rotation.rotateEulerZXZ(az,axp,azpp);
         double x,y,z;
-        rotation.getXYZAngles(x,y,z);
+        rotation.getGlobalXYZAngles(x,y,z);
 
         set(RotateDecorator::create(get(), x, y, z));
         return *this;
@@ -364,7 +364,7 @@ public:
         RotationalMatrix rotation;
         rotation.rotateEulerZXZ(az,axp,azpp);
         double x,y,z;
-        rotation.getXYZAngles(x,y,z);
+        rotation.getGlobalXYZAngles(x,y,z);
 
         return Component(RotateDecorator::create(get(), x, y, z));
     }
@@ -388,7 +388,7 @@ public:
         RotationalMatrix rotation;
         rotation.rotateEulerZYZ(az,ayp,azpp);
         double x,y,z;
-        rotation.getXYZAngles(x,y,z);
+        rotation.getGlobalXYZAngles(x,y,z);
 
         set(RotateDecorator::create(get(), x, y, z));
         return *this;
@@ -412,7 +412,7 @@ public:
         RotationalMatrix rotation;
         rotation.rotateEulerZYZ(az,ayp,azpp);
         double x,y,z;
-        rotation.getXYZAngles(x,y,z);
+        rotation.getGlobalXYZAngles(x,y,z);
 
         return Component(RotateDecorator::create(get(), x, y, z));
     }

@@ -28,16 +28,16 @@
  * PURPOSE.
  **********************************************************************/
 
-#include "RotMatrix.h"
+#include "TransformMatrix.h"
 #include "Math.h"
 
-RotationalMatrix& RotationalMatrix::operator *(RotationalMatrix const & matrix){
-    RotationalMatrix* result = new RotationalMatrix();
+TransformMatrix& TransformMatrix::operator *(TransformMatrix const & matrix){
+    TransformMatrix* result = new TransformMatrix();
 
-    for (int i=1;i<=3;i++){
-        for (int j=1;j<=3;j++){
+    for (int i=1;i<=4;i++){
+        for (int j=1;j<=4;j++){
             double value = 0;
-            for (int k=1;k<=3;k++){
+            for (int k=1;k<=4;k++){
                 value+=get(i,k)*matrix.get(k,j);
             }
             result->set(i,j,value);
@@ -47,19 +47,19 @@ RotationalMatrix& RotationalMatrix::operator *(RotationalMatrix const & matrix){
     return *result;
 }
 
-void RotationalMatrix::rotateEulerZYZ(double z, double yp, double zpp){
+void TransformMatrix::rotateEulerZYZ(double z, double yp, double zpp){
     rotateZ(z);rotateY(yp);rotateZ(zpp);
 }
 
-void RotationalMatrix::rotateEulerZXZ(double z, double xp, double zpp){
+void TransformMatrix::rotateEulerZXZ(double z, double xp, double zpp){
     rotateZ(z);rotateX(xp);rotateZ(zpp);
 }
 
-void RotationalMatrix::rotateFixedXYZ(double x, double y, double z){
+void TransformMatrix::rotateFixedXYZ(double x, double y, double z){
     rotateZ(z);rotateY(y);rotateX(x);
 }
 
-void RotationalMatrix::getGlobalXYZAngles(double &x, double &y, double &z){
+void TransformMatrix::getGlobalXYZAngles(double &x, double &y, double &z){
 
     x = atan2( - get(3,2) , - get(3,3) );
     y = atan2( - get(3,1) , - sqrt( get(3,2)*get(3,2)  + get(3,3)*get(3,3) ) );
@@ -70,13 +70,19 @@ void RotationalMatrix::getGlobalXYZAngles(double &x, double &y, double &z){
     z = rad2deg(z);
 }
 
+void TransformMatrix::getGlobalTranslation(double &x, double &y, double &z){
+    x = get(4,1);
+    y = get(4,2);
+    z = get(4,3);
+}
 
 
-void RotationalMatrix::rotateX(double x){
+
+void TransformMatrix::rotateX(double x){
 
     x = deg2rad(x);
 
-    RotationalMatrix rotation;
+    TransformMatrix rotation;
     //rotation.set(1,1,1);
     rotation.set(2,2,cos(x));
     rotation.set(2,3,-sin(x));
@@ -86,11 +92,11 @@ void RotationalMatrix::rotateX(double x){
     *this = *this * rotation;
 }
 
-void RotationalMatrix::rotateY(double y){
+void TransformMatrix::rotateY(double y){
 
     y = deg2rad(y);
 
-    RotationalMatrix rotation;
+    TransformMatrix rotation;
     rotation.set(1,1,cos(y));
     rotation.set(1,3,sin(y));
     rotation.set(3,1,-sin(y));
@@ -99,11 +105,11 @@ void RotationalMatrix::rotateY(double y){
     *this = *this * rotation;
 }
 
-void RotationalMatrix::rotateZ(double z){
+void TransformMatrix::rotateZ(double z){
 
     z = deg2rad(z);
 
-    RotationalMatrix rotation;
+    TransformMatrix rotation;
     rotation.set(1,1,cos(z));
     rotation.set(1,2,-sin(z));
     rotation.set(2,1,sin(z));
