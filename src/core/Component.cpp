@@ -40,26 +40,29 @@ Component & Component::moveToLink(Component const& base, int link_id){
     RefSys link = base.getLink(link_id);
     Translation translation;
 
-    RotationalMatrix rot = link.getRotMatrix();
-    translation = link.getOrigin();
+    TransformMatrix trans = link.getTransformMatrix();
 
-    //rotate
-    this->rotate(rot);
-    this->translate(translation.x, translation.y, translation.z);
+    double xa, ya, za; trans.getGlobalXYZAngles(xa,ya,za);
+    double x,y,z; trans.getGlobalTranslation(x,y,z);
+
+    //rotate and translate
+    this->rotate(xa,ya,za);
+    this->translate(x, y, z);
 
     return * this;
 }
 
 Component & Component::attach(int link_base, Component & attachment, int link_attach){
     RefSys link = this->getLink(link_base);
-    Translation translation;
 
-    RotationalMatrix rot = link.getRotMatrix();
-    translation = link.getOrigin();
+    TransformMatrix trans = link.getTransformMatrix();
 
-    //rotate
-    attachment.rotate(rot);
-    attachment.translate(translation.x, translation.y, translation.z);
+    double xa, ya, za; trans.getGlobalXYZAngles(xa,ya,za);
+    double x,y,z; trans.getGlobalTranslation(x,y,z);
+
+    //rotate and translate
+    attachment.rotate(xa,ya,za);
+    attachment.translate(x, y, z);
 
     *this = *this + attachment;
 

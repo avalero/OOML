@@ -52,13 +52,13 @@ Component RefSysView::genComponent()
             + y_axis.color(0,1,0)
             + z_axis.color(0,0,1)
             ;
-    RotationalMatrix rot = _refSys.getRotMatrix();
-    double ax,ay,az;
+    TransformMatrix trans = _refSys.getTransformMatrix();
+    double ax,ay,az; trans.getGlobalXYZAngles(ax,ay,az);
+    double x,y,z; trans.getGlobalTranslation(x,y,z);
 
-    rot.getGlobalXYZAngles(ax,ay,az);
 
-    refsysview.rotate(ax,ay,az)
-            .translate(_refSys.getOrigin().x,_refSys.getOrigin().y,_refSys.getOrigin().z);
+
+    refsysview.rotate(ax,ay,az).translate(x,y,z);
 
     return refsysview;
 }

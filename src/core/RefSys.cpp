@@ -35,17 +35,34 @@
 #include <iostream>
 
 void RefSys::translate(double x, double y, double z){
-    _origin = _origin + Translation(x,y,z);
+    _trans.translate(x,y,z);
+}
+
+void RefSys::relRotate(double x, double y, double z){
+    _trans.relRotate(x,y,z);
+}
+
+void RefSys::relTranslate(double x, double y, double z){
+    _trans.relTranslate(x,y,z);
 }
 
 void RefSys::rotate(double x, double y, double z){
-    _rot.rotateFixedXYZ(x,y,z);
+    _trans.rotate(x,y,z);
 }
 
 void RefSys::rotateEulerZYZ(double z, double yp, double zpp){
-    _rot.rotateEulerZYZ(z,yp,zpp);
+    _trans.rotateEulerZYZ(z,yp,zpp);
 }
 
 void RefSys::rotateEulerZXZ(double z, double xp, double zpp){
-    _rot.rotateEulerZXZ(z,xp,zpp);
+    _trans.rotateEulerZXZ(z,xp,zpp);
+}
+
+
+void RefSys::relRotateEulerZYZ(double z, double yp, double zpp){
+    _trans.relRotateEulerZYZ(z,yp,zpp);
+}
+
+void RefSys::relRotateEulerZXZ(double z, double xp, double zpp){
+    _trans.relRotateEulerZXZ(z,xp,zpp);
 }

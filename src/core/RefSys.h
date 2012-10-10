@@ -42,8 +42,8 @@
 #endif
 
 #include <math.h>
+#include "TransformMatrix.h"
 #include "RotMatrix.h"
-#include "Translation.h"
 
 #include <utility>
 
@@ -58,7 +58,7 @@ public:
 	/**
 	 * \brief Default constructor.
 	 */
-    RefSys() : _origin(0,0,0)
+    RefSys()
 	{}
 	/**
 	 * \brief Default parametrized constructor.
@@ -66,14 +66,14 @@ public:
      * \param x origin of the reference system
      * \param y origin of the reference system
      * \param z origin of the reference system
-     * \param a_x first rotation around fixed x axis.
-     * \param a_y second rotation around fixed y axis.
-     * \param a_z third rotation around fized z axis.
+     * \param a_x first rotation around translated fixed x axis.
+     * \param a_y second rotation around translated fixed y axis.
+     * \param a_z third rotation around translated fized z axis.
 	 */
-    RefSys(double x, double y, double z, double a_x=0, double a_y=0, double a_z=0) :
-        _origin(x,y,z)
+    RefSys(double x, double y, double z, double a_x=0, double a_y=0, double a_z=0)
     {
-      _rot.rotateFixedXYZ(a_x,a_y,a_z);
+        _trans.translate(x,y,z);
+        _trans.relRotate(a_x,a_y,a_z);
     }
 	/**
 	 * \brief Default copy constructor.
@@ -81,8 +81,7 @@ public:
 	 * \param other Other object to copy from.
 	 */
     RefSys(RefSys const& other) :
-        _origin(other._origin),
-        _rot(other._rot)
+        _trans(other._trans)
 	{}
 	/**
 	 * \brief Default assignment operator.
@@ -91,8 +90,7 @@ public:
 	 */
     RefSys & operator=(RefSys const& other)
 	{
-        _origin = other._origin;
-        _rot = other._rot;
+        _trans = other._trans;
 
 		return *this;
 	}
@@ -107,9 +105,9 @@ public:
       * \brief Translates the origin of the reference system
       * This methods translated the origin of the reference system
       * The axes are kept parallel to the non translated ref sys.
-      * \param x Translation along x axis.
-      * \param y Translation along y axis.
-      * \param z Translation along z axis.
+      * \param x Translation along the initial fixed x axis.
+      * \param y Translation along y initial fixed y axis.
+      * \param z Translation along z initial fixed z axis.
       */
     void translate(double x, double y, double z);
 
@@ -117,9 +115,9 @@ public:
       * \brief Rotates the reference system
       * This methods rotates the reference system
       * The origin is kept unmoved
-      * \param x Rotation around fixed x axis.
-      * \param y Rotation around fixed y axis.
-      * \param z Rotation around fixed z axis.
+      * \param x Rotation around initial fixed x axis.
+      * \param y Rotation around initial fixed y axis.
+      * \param z Rotation around initial fixed z axis.
       */
     void rotate(double x, double y, double z);
 
@@ -127,21 +125,63 @@ public:
       * \brief Rotates the reference system
       * This methods rotates the reference system with the Euler ZXZ angles.
       * The origin is kept unmoved
-      * \param z Rotation around z axis.
+      * \param z Rotation around the initial z axis.
       * \param xp Rotation around new x' axis.
       * \param zpp Rotation around z'' axis.
       */
+
+
     void rotateEulerZXZ(double z, double xp, double zpp);
 
     /**
       * \brief Rotates the reference system
       * This methods rotates the reference system with the Euler ZYZ angles.
       * The origin is kept unmoved
-      * \param z Rotation around z axis.
+      * \param z Rotation around the initial fixed z axis.
       * \param yp Rotation around new y' axis.
       * \param zpp Rotation around y'' axis.
       */
     void rotateEulerZYZ(double z, double yp, double zpp);
+
+    /**
+      * \brief Translates the origin of the reference system
+      * This methods translated the origin of the reference system
+      * The axes are kept parallel to the non translated ref sys.
+      * \param x Translation along the initial fixed x axis.
+      * \param y Translation along y initial fixed y axis.
+      * \param z Translation along z initial fixed z axis.
+      */
+    void relTranslate(double x, double y, double z);
+
+    /**
+      * \brief Rotates the reference system
+      * This methods rotates the reference system
+      * The origin is kept unmoved
+      * \param x Rotation around the object fixed x axis.
+      * \param y Rotation around the object fixed y axis.
+      * \param z Rotation around the object fixed z axis.
+      */
+    void relRotate(double x, double y, double z);
+
+    /**
+      * \brief Rotates the reference system
+      * This methods rotates the reference system with the Euler ZXZ angles.
+      * The origin is kept unmoved
+      * \param z Rotation around the object z axis.
+      * \param xp Rotation around the object new x' axis.
+      * \param zpp Rotation around the object z'' axis.
+      */
+    void relRotateEulerZXZ(double z, double xp, double zpp);
+
+    /**
+      * \brief Rotates the reference system
+      * This methods rotates the reference system with the Euler ZYZ angles.
+      * The origin is kept unmoved
+      * \param z Rotation around the object z axis.
+      * \param yp Rotation around the object  new y' axis.
+      * \param zpp Rotation around the object  y'' axis.
+      */
+    void relRotateEulerZYZ(double z, double yp, double zpp);
 
     /**
       * \brief Rotates the reference system
@@ -149,15 +189,12 @@ public:
       * The origin is kept unmoved
       * \param rot Rotational Matrix
       */
-    void applyRotation(RotationalMatrix const & rot);
+    //void applyRotation(RotationalMatrix const & rot);
 
-    inline RotationalMatrix getRotMatrix() const {return _rot;}
-
-    inline Translation getOrigin() const {return _origin;}
+    inline TransformMatrix getTransformMatrix() const {return _trans;}
 
 private:
-    Translation _origin; /** Origin of the reference system */
-    RotationalMatrix _rot; /** Rotational Matrix defining the orientation **/
+    TransformMatrix _trans;
 
 };
 

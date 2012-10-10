@@ -1,9 +1,3 @@
-cmake_minimum_required(VERSION 2.8)
-cmake_policy(SET CMP0011 NEW)
-
-# Include runtest function library
-include(runtest)
-
 # Add test executables
 add_executable(writer writer.cpp)
 target_link_libraries(writer OOMLCore)
@@ -47,16 +41,9 @@ target_link_libraries(toroid OOMLCore OOMLComponents)
 # Add test executables
 add_executable(rounded rounded.cpp)
 target_link_libraries(rounded OOMLCore OOMLComponents)
-#install(TARGETS rounded DESTINATION bin)
 
-# Add simple tests for all the targets
-simple_test(writer)
-simple_test(clamps)
-simple_test(sharedptr)
-simple_test(cube)
-simple_test(prism)
-simple_test(regular)
-simple_test(subsystem2D)
-simple_test(toroid)
-simple_test(rounded)
-simple_test(miniSkybot)
+# Add test executables
+add_executable(refsys refsys.cpp)
+target_link_libraries(refsys OOMLCore OOMLComponents)
+
+#install(TARGETS rounded DESTINATION bin)
