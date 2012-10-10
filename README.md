@@ -1,7 +1,7 @@
 OOML
 ====
 
-C++ Object Oriented Mechanis Language
+C++ Object Oriented Mechanics Language
 
 What's the OOML
 ===============
