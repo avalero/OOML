@@ -55,7 +55,7 @@ Component RefSysView::genComponent()
     RotationalMatrix rot = _refSys.getRotMatrix();
     double ax,ay,az;
 
-    rot.getXYZAngles(ax,ay,az);
+    rot.getGlobalXYZAngles(ax,ay,az);
 
     refsysview.rotate(ax,ay,az)
             .translate(_refSys.getOrigin().x,_refSys.getOrigin().y,_refSys.getOrigin().z);

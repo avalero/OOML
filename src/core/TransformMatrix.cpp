@@ -118,3 +118,12 @@ void TransformMatrix::rotateZ(double z){
     *this = *this * rotation;
 
 }
+
+void TransformMatrix::translate(double x, double y, double z){
+    TransformMatrix translation;
+    translation.set(4,1,x);
+    translation.set(4,2,y);
+    translation.set(4,3,z);
+
+    *this = *this * translation;
+}
