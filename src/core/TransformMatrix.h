@@ -189,7 +189,7 @@ public:
       * \param y rotation (in degrees) around initial fixed y
       * \param z rotation (in degrees) around initial fixed z
       */
-    void getGlobalXYZAngles(double &x, double &y, double &z);
+    void getGlobalXYZAngles(double &x, double &y, double &z) const;
 
     /**
       * \brief Gets the translation wrt. the fixed axes x,y,z.
@@ -199,7 +199,7 @@ public:
       * \param y translation wrt. the initial fixed y
       * \param z translation wrt. the initial fixed z
       */
-    void getGlobalTranslation(double &x, double &y, double &z);
+    void getGlobalTranslation(double &x, double &y, double &z) const;
 
     /**
      * @brief performs a translation
@@ -216,6 +216,28 @@ public:
      * @param z Translation with respect to the z axis
      */
     void relTranslate(double x, double y, double z);
+
+    /**
+     * @brief checke if matrix equals identity
+     * @return ture when matrix is identitiy
+     */
+    bool inline isIdentity(){
+        bool id = true;
+        for (int i=1;i<=4;i++){
+            for(int j=1; j<=4;j++){
+                if (i==j)
+                    id = id && (get(i,j)==1);
+                else
+                    id = id && (get(i,j)==0);
+
+                if(!id){
+                    return false;
+                }
+            }
+        }
+
+        return id;
+    }
 
 
 

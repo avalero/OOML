@@ -58,11 +58,9 @@
 #include <core/Polygon.h>
 #include <core/Polygon2D.h>
 #include <core/Polyhedron.h>
-#include <core/RotateDecorator.h>
 #include <core/RotateExtrudeDecorator.h>
 #include <core/ScaleDecorator.h>
 #include <core/SharedPtr.h>
-#include <core/TranslateDecorator.h>
 #include <core/Triangle3D.h>
 #include <core/Union.h>
 #include <core/Vector.h>
@@ -73,5 +71,6 @@
 #include "core/SphereObject.h"
 #include "core/RotMatrix.h"
 #include "core/globalfunctions.h"
+#include "core/transformdecorator.h"
 
 #endif // OOML_CORE_H

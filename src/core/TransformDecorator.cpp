@@ -28,39 +28,29 @@
  * PURPOSE.
  **********************************************************************/
 
-#include <core/RotateDecorator.h>
-#include <core/IndentWriter.h>
+#include "TransformDecorator.h"
+#include "IndentWriter.h"
 
-void RotateDecorator::genScad(IndentWriter& writer) const
+void TransformDecorator::genScad(IndentWriter& writer) const
 {
-	if (_vx == 0.0 && _vy == 0.0 && _vz == 0)
-	{
-		writer << "rotate(a=[" << _ax << ", " << _ay << ", " << _az << "]) {"
-			<< std::endl;
-	}
-	else
-	{
-		writer << "rotate(a=" << _ax << ", v=[" << _vx << ", " << _vy << ", "
-			<< _vz << "]) {" << std::endl;
-	}
-	{
-		IndentBlock block(writer);
-		ObjectDecorator::genScad(writer);
-	}
-	writer << "} // End rotate" << std::endl;
+    double ax, ay, az; _tr.getGlobalXYZAngles(ax,ay,az);
+    double x,y,z;  _tr.getGlobalTranslation(x,y,z);
+    writer << "translate(v=[" << x << ", " << y << ", " << z << "]) {" << std::endl;
+        writer << "rotate([" << ax << "," << ay << "," << az << "]){" <<std::endl;
+            {
+                IndentBlock block(writer);
+                ObjectDecorator::genScad(writer);
+            }
+        writer << "} // End rotate" << std::endl;
+    writer << "} // End translate" << std::endl;
 }
 
-void RotateDecorator::printAst(IndentWriter& writer) const
+void TransformDecorator::printAst(IndentWriter& writer) const
 {
-	if (_vx == 0.0 && _vy == 0.0 && _vz == 0)
-	{
-		writer << "ROTATE(" << _ax << ", " << _ay << ", " << _az << ")"
-			<< std::endl;
-	}
-	else
-	{
-		writer << "ROTATE(" << _ax << ", " << _vx << ", " << _vy << ", "
-			<< _vz << ")" << std::endl;
-	}
+    double ax, ay, az; _tr.getGlobalXYZAngles(ax,ay,az);
+    double x,y,z; _tr.getGlobalTranslation(x,y,z);
+
+    writer << "ROTATE(" << ax << "," << ay << "," << az << "){" <<std::endl;
+    writer << "TRANSLATE(" << x << ", " << y << ", " << z << ")" << std::endl;
 	ObjectDecorator::printAst(writer);
 }

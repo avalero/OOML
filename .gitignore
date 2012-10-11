@@ -2,3 +2,10 @@
 bin/
 # Ignore build directories
 build/
+
+# Ignore lib directories
+lib/
+
+# Ignore files
+CMakeLists.txt.user
+src/config.h

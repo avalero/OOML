@@ -47,9 +47,8 @@
 #include "Imported.h"
 #include "MirrorDecorator.h"
 #include "ObjectDecorator.h"
-#include "RotateDecorator.h"
+#include "TransformDecorator.h"
 #include "ScaleDecorator.h"
-#include "TranslateDecorator.h"
 #include "RotMatrix.h"
 #include "RefSys.h"
 
@@ -233,39 +232,6 @@ public:
       * \return An Union of base and attachment
       */
     Component & attach(int link_base, Component & attachment, int link_attach=0);
-    /**
-   * \brief Rotate the component.
-   *
-   * This method create a copied component, but rotated.
-   *
-   * \param vx Rotation vector x axis component.
-   * \param vy Rotation vector y axis component.
-   * \param vz Rotation vector z axis component.
-   * \param a Rotation angle around the rotation vector.
-   *
-   * \return a rotate decoration of the object.
-   */
-    Component rotatedCopy(double vx, double vy, double vz, double a) const
-    {
-        return Component(RotateDecorator::create(get(), vx, vy, vz, a));
-    }
-    /**
-   * \brief Rotate the component.
-   *
-   * This method rotates the component "in place".
-   *
-   * \param vx Rotation vector x axis component.
-   * \param vy Rotation vector y axis component.
-   * \param vz Rotation vector z axis component.
-   * \param a Rotation angle around the rotation vector.
-   *
-   * \return the component rotate decorated.
-   */
-    Component & rotate(double vx, double vy, double vz, double a)
-    {
-        set(RotateDecorator::create(get(), vx, vy, vz, a));
-        return *this;
-    }
 
     /**
    * \brief Rotate the component.
@@ -280,7 +246,10 @@ public:
    */
     Component rotatedCopy(double ax, double ay, double az) const
     {
-        return Component(RotateDecorator::create(get(), ax, ay, az));
+        TransformMatrix tr;
+        tr.rotate(ax,ay,az);
+        return Component(TransformDecorator::create(get(), tr));
+
     }
     /**
    * \brief Rotate the component.
@@ -295,7 +264,9 @@ public:
    */
     Component & rotate(double ax, double ay, double az)
     {
-        set(RotateDecorator::create(get(), ax, ay, az));
+        TransformMatrix tr;
+        tr.rotate(ax,ay,az);
+        set(TransformDecorator::create(get(), tr));
         return *this;
     }
 
@@ -311,7 +282,9 @@ public:
     {
         double ax, ay, az;
         rot.getGlobalXYZAngles(ax,ay,az);
-        set(RotateDecorator::create(get(), ax, ay, az));
+        TransformMatrix tr;
+        tr.rotate(ax,ay,az);
+        set(TransformDecorator::create(get(), tr));
         return *this;
     }
 
@@ -319,7 +292,9 @@ public:
     {
         double ax, ay, az;
         rot.getGlobalXYZAngles(ax,ay,az);
-        return Component(RotateDecorator::create(get(), ax, ay, az));
+        TransformMatrix tr;
+        tr.rotate(ax,ay,az);
+        return Component(TransformDecorator::create(get(), tr));
     }
 
     /**
@@ -335,14 +310,9 @@ public:
    */
     Component & rotateEulerZXZ(double az, double axp, double azpp)
     {
-        //compute XYZ angles (roll,pitch,yaw)
-
-        RotationalMatrix rotation;
-        rotation.rotateEulerZXZ(az,axp,azpp);
-        double x,y,z;
-        rotation.getGlobalXYZAngles(x,y,z);
-
-        set(RotateDecorator::create(get(), x, y, z));
+        TransformMatrix tr;
+        tr.rotateEulerZXZ(az,axp,azpp);
+        set(TransformDecorator::create(get(), tr));
         return *this;
     }
 
@@ -359,14 +329,10 @@ public:
    */
     Component rotatedEulerZXZCopy(double az, double axp, double azpp) const
     {
-        //compute XYZ angles (roll,pitch,yaw)
+        TransformMatrix tr;
+        tr.rotateEulerZXZ(az,axp,azpp);
+        return Component(TransformDecorator::create(get(), tr));
 
-        RotationalMatrix rotation;
-        rotation.rotateEulerZXZ(az,axp,azpp);
-        double x,y,z;
-        rotation.getGlobalXYZAngles(x,y,z);
-
-        return Component(RotateDecorator::create(get(), x, y, z));
     }
 
     /**
@@ -383,14 +349,9 @@ public:
     Component & rotateEulerZYZ(double az, double ayp, double azpp)
     {
 
-        //compute XYZ angles (roll,pitch,yaw)
-
-        RotationalMatrix rotation;
-        rotation.rotateEulerZYZ(az,ayp,azpp);
-        double x,y,z;
-        rotation.getGlobalXYZAngles(x,y,z);
-
-        set(RotateDecorator::create(get(), x, y, z));
+        TransformMatrix tr;
+        tr.rotateEulerZYZ(az,ayp,azpp);
+        set(TransformDecorator::create(get(), tr));
         return *this;
     }
 
@@ -407,37 +368,11 @@ public:
    */
     Component rotatedEulerZYZCopy(double az, double ayp, double azpp) const
     {
-        //compute XYZ angles (roll,pitch,yaw)
-
-        RotationalMatrix rotation;
-        rotation.rotateEulerZYZ(az,ayp,azpp);
-        double x,y,z;
-        rotation.getGlobalXYZAngles(x,y,z);
-
-        return Component(RotateDecorator::create(get(), x, y, z));
+        TransformMatrix tr;
+        tr.rotateEulerZYZ(az,ayp,azpp);
+        return Component(TransformDecorator::create(get(), tr));
     }
 
-
-    /**
-   * \brief Rotate the component.
-   *
-   * This method rotates the component arround one point.
-   *
-   * \param ax Rotation angle x axis.
-   * \param ay Rotation angle y axis.
-   * \param az Rotation angle z axis.
-   *
-   * \return the component rotate decorated.
-   */
-    Component & rotateAround(double ax, double ay, double az, double tx, double ty, double tz)
-    {
-        set(TranslateDecorator::create(
-                RotateDecorator::create(
-                    TranslateDecorator::create(get(), -tx, -ty, -tz)
-                    , ax, ay, az)
-                , tx, ty, tz));
-        return *this;
-    }
 
     /**
    * \brief Scale the component.
@@ -512,7 +447,9 @@ public:
    */
     Component translatedCopy(double tx, double ty, double tz) const
     {
-        return Component(TranslateDecorator::create(get(), tx, ty, tz));
+        TransformMatrix tr;
+        tr.translate(tx,ty,tz);
+        return Component(TransformDecorator::create(get(), tr));
     }
     /**
    * \brief Translate the component.
@@ -527,7 +464,9 @@ public:
    */
     Component & translate(double tx, double ty, double tz)
     {
-        set(TranslateDecorator::create(get(), tx, ty, tz));
+        TransformMatrix tr;
+        tr.translate(tx,ty,tz);
+        set(TransformDecorator::create(get(), tr));
         return *this;
     }
 

@@ -74,7 +74,7 @@ void TransformMatrix::relRotate(double x, double y, double z){
 }
 
 
-void TransformMatrix::getGlobalXYZAngles(double &x, double &y, double &z){
+void TransformMatrix::getGlobalXYZAngles(double &x, double &y, double &z) const {
 
     x = atan2( - get(3,2) , - get(3,3) );
     y = atan2( - get(3,1) , - sqrt( get(3,2)*get(3,2)  + get(3,3)*get(3,3) ) );
@@ -85,7 +85,7 @@ void TransformMatrix::getGlobalXYZAngles(double &x, double &y, double &z){
     z = rad2deg(z);
 }
 
-void TransformMatrix::getGlobalTranslation(double &x, double &y, double &z){
+void TransformMatrix::getGlobalTranslation(double &x, double &y, double &z) const {
     x = get(1,4);
     y = get(2,4);
     z = get(3,4);

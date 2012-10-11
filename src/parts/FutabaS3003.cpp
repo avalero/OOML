@@ -10,38 +10,7 @@ Component FutabaS3003::getCrown(int type, double height, bool fill_hole)
     //Crown. Three types: rounded, four and six arms.
     Component difference, arm, crown;
 
-            //Four arms type.
-            if(type == FOUR)
-            {
-                difference = Cube(10,20.5,height).translate(10,6,0).rotateAround(0,0,13.392,5,2,0);
 
-                arm = Cube(10,12.5,height).translate(0,6.25,0)
-                      - difference
-                      - difference.mirroredCopy(1,0,0)
-                      + Cylinder(2.5,height,20,true).translate(0,12.5,0);
-
-                crown = Cube(10.2,10.2,height);
-                for(int i=0; i<4; i++)
-                    crown = crown + arm.translatedCopy(0,5,0).rotatedCopy(0,0,90*i);
-            }
-
-            //Six arms type.
-            else if(type == SIX)
-            {
-                difference = Cube(7.5,9.3,height).translate(7.5,4.75,0).rotateAround(0,0,9.717,3.75,0.1,0);
-
-                arm = Cube(7.5,7.4,height).translate(0,3.65,0)
-                      - difference
-                      - difference.mirroredCopy(1,0,0)
-                      + Cylinder(2.5,height,20,true).translate(0,7.4,0);
-
-                crown = Cylinder(7.5,height);
-                for(int i=0; i<6; i++)
-                    crown = crown + arm.translatedCopy(0,6.5,0).rotatedCopy(0,0,60*i);
-            }
-
-            //Rounded type.
-            else
                 crown = Cylinder(10.75,height,30,true);
 
 
