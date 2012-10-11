@@ -13,11 +13,9 @@ int main(int argc, char **argv)
     IndentWriter writer;
 
     RefSysView refsysview;
+    refsysview.translate(10,0,0);
     refsysview.relRotate(0,0,45);
-    refsysview.relRotate(45,0,0);
-    refsysview.relRotate(0,0,45);
-    refsysview.relTranslate(0,0,10);
-    refsysview.rotate(0,0,45);
+    refsysview.relTranslate(10,0,0);
     writer << refsysview;
 
     file << writer;
