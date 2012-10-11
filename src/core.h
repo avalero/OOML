@@ -71,6 +71,6 @@
 #include "core/SphereObject.h"
 #include "core/RotMatrix.h"
 #include "core/globalfunctions.h"
-#include "core/transformdecorator.h"
+#include "core/TransformDecorator.h"
 
 #endif // OOML_CORE_H
