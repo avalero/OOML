@@ -233,7 +233,7 @@ public:
       */
     Component & attach(int link_base, Component & attachment, int link_attach=0);
 
-    /**
+   /**
    * \brief Rotate the component.
    *
    * This method create a copied component, but rotated.
@@ -244,13 +244,20 @@ public:
    *
    * \return a rotate decoration of the object.
    */
-    Component rotatedCopy(double ax, double ay, double az) const
-    {
-        TransformMatrix tr;
-        tr.rotate(ax,ay,az);
-        return Component(TransformDecorator::create(get(), tr));
+    Component rotatedCopy(double ax, double ay, double az) const;
 
-    }
+    /**
+    * \brief Rotate the component around its local reference system.
+    *
+    * This method create a copied component, but rotated around its reference system.
+    *
+    * \param ax Rotation angle around local x axis.
+    * \param ay Rotation angle around local y axis.
+    * \param az Rotation angle around local z axis.
+    *
+    * \return a rotate decoration of the object.
+    */
+     Component relRotatedCopy(double ax, double ay, double az) const;
     /**
    * \brief Rotate the component.
    *
@@ -262,13 +269,20 @@ public:
    *
    * \return the component rotate decorated.
    */
-    Component & rotate(double ax, double ay, double az)
-    {
-        TransformMatrix tr;
-        tr.rotate(ax,ay,az);
-        set(TransformDecorator::create(get(), tr));
-        return *this;
-    }
+    Component & rotate(double ax, double ay, double az);
+
+    /**
+    * \brief Rotate the component around its local reference system.
+    *
+    * This method rotates the component around its reference system.
+    *
+    * \param ax Rotation angle around local x axis.
+    * \param ay Rotation angle around local y axis.
+    * \param az Rotation angle around local z axis.
+    *
+    * \return a rotate decoration of the object.
+    */
+     Component & relRotate(double ax, double ay, double az);
 
     /**
    * \brief Rotate the component.
@@ -278,24 +292,9 @@ public:
    * \param rot Rotation Matrix
    * \return the component rotate decorated.
    */
-    Component & rotate(RotationalMatrix rot)
-    {
-        double ax, ay, az;
-        rot.getGlobalXYZAngles(ax,ay,az);
-        TransformMatrix tr;
-        tr.rotate(ax,ay,az);
-        set(TransformDecorator::create(get(), tr));
-        return *this;
-    }
+    Component & rotate(RotationalMatrix rot);
 
-    Component rotatedCopy(RotationalMatrix rot) const
-    {
-        double ax, ay, az;
-        rot.getGlobalXYZAngles(ax,ay,az);
-        TransformMatrix tr;
-        tr.rotate(ax,ay,az);
-        return Component(TransformDecorator::create(get(), tr));
-    }
+    Component rotatedCopy(RotationalMatrix rot) const ;
 
     /**
    * \brief Rotate the component with Euler Angles ZX'Z''.
@@ -308,13 +307,21 @@ public:
    *
    * \return the component rotate decorated.
    */
-    Component & rotateEulerZXZ(double az, double axp, double azpp)
-    {
-        TransformMatrix tr;
-        tr.rotateEulerZXZ(az,axp,azpp);
-        set(TransformDecorator::create(get(), tr));
-        return *this;
-    }
+    Component & rotateEulerZXZ(double az, double axp, double azpp);
+
+    /**
+   * \brief Rotate the component with Euler Angles ZX'Z'' around its local reference system
+   *
+   * This method rotates the component around its local reference system following the Euler Angles
+   *
+   * \param az Rotation angle z axis.
+   * \param axp Rotation angle x' axis.
+   * \param azpp Rotation angle z'' axis.
+   *
+   * \return the component rotate decorated.
+   */
+    Component & relRotateEulerZXZ(double az, double axp, double azpp);
+
 
     /**
    * \brief Rotate a copy of the component with Euler Angles ZX'Z''
@@ -327,13 +334,21 @@ public:
    *
    * \return a copy of the component rotate decorated.
    */
-    Component rotatedEulerZXZCopy(double az, double axp, double azpp) const
-    {
-        TransformMatrix tr;
-        tr.rotateEulerZXZ(az,axp,azpp);
-        return Component(TransformDecorator::create(get(), tr));
+    Component rotatedEulerZXZCopy(double az, double axp, double azpp) const;
 
-    }
+    /**
+   * \brief Rotate a copy of the component with Euler Angles ZX'Z'' around its local reference system
+   *
+   * Rotate a copy of the component with Euler Angles ZX'Z'' around its local reference system
+   *
+   * \param az Rotation angle z axis.
+   * \param axp Rotation angle x' axis.
+   * \param azpp Rotation angle z'' axis.
+   *
+   * \return a copy of the component rotate decorated.
+   */
+    Component relRotatedEulerZXZCopy(double az, double axp, double azpp) const;
+
 
     /**
    * \brief Rotate the component with Euler Angles ZY'Z''.
@@ -346,14 +361,21 @@ public:
    *
    * \return the component rotate decorated.
    */
-    Component & rotateEulerZYZ(double az, double ayp, double azpp)
-    {
+    Component & rotateEulerZYZ(double az, double ayp, double azpp);
 
-        TransformMatrix tr;
-        tr.rotateEulerZYZ(az,ayp,azpp);
-        set(TransformDecorator::create(get(), tr));
-        return *this;
-    }
+    /**
+   * \brief Rotate the component with Euler Angles ZY'Z'' around its local reference system.
+   *
+   * Rotate the component with Euler Angles ZY'Z'' around its local reference system.
+   *
+   * \param az Rotation angle z axis.
+   * \param ayp Rotation angle y' axis.
+   * \param azpp Rotation angle z'' axis.
+   *
+   * \return the component rotate decorated.
+   */
+    Component & relRotateEulerZYZ(double az, double ayp, double azpp);
+
 
     /**
    * \brief Rotate a copy of the component with Euler Angles ZX'Z''
@@ -366,12 +388,20 @@ public:
    *
    * \return a copy of the component rotate decorated.
    */
-    Component rotatedEulerZYZCopy(double az, double ayp, double azpp) const
-    {
-        TransformMatrix tr;
-        tr.rotateEulerZYZ(az,ayp,azpp);
-        return Component(TransformDecorator::create(get(), tr));
-    }
+    Component rotatedEulerZYZCopy(double az, double ayp, double azpp) const;
+
+    /**
+   * \brief Rotate a copy of the component with Euler Angles ZX'Z'' around its local reference system
+   *
+   * Rotate a copy of the component with Euler Angles ZX'Z'' around its local reference system
+   *
+   * \param az Rotation angle z axis.
+   * \param ayp Rotation angle x' axis.
+   * \param azpp Rotation angle z'' axis.
+   *
+   * \return a copy of the component rotate decorated.
+   */
+    Component relRotatedEulerZYZCopy(double az, double ayp, double azpp) const;
 
 
     /**
@@ -383,10 +413,8 @@ public:
    *
    * \return a scale decoration of the object.
    */
-    Component scaledCopy(double s) const
-    {
-        return Component(ScaleDecorator::create(get(), s));
-    }
+    Component scaledCopy(double s) const;
+
     /**
    * \brief Scale the component.
    *
@@ -396,11 +424,8 @@ public:
    *
    * \return the component scale decorated.
    */
-    Component & scale(double s)
-    {
-        set(ScaleDecorator::create(get(), s));
-        return *this;
-    }
+
+    Component & scale(double s);
 
     /**
    * \brief Scale the component.
@@ -413,10 +438,7 @@ public:
    *
    * \return a scale decoration of the object.
    */
-    Component scaledCopy(double sx, double sy, double sz) const
-    {
-        return Component(ScaleDecorator::create(get(), sx, sy, sz));
-    }
+    Component scaledCopy(double sx, double sy, double sz) const;
     /**
    * \brief Scale the component.
    *
@@ -428,11 +450,7 @@ public:
    *
    * \return the component scale decorated.
    */
-    Component & scale(double sx, double sy, double sz)
-    {
-        set(ScaleDecorator::create(get(), sx, sy, sz));
-        return *this;
-    }
+    Component & scale(double sx, double sy, double sz);
 
     /**
    * \brief Translate the component.
@@ -443,14 +461,23 @@ public:
    * \param ty Translate on the y axis.
    * \param tz Translate on the z axis.
    *
-   * \return a translate decoration of the object.
+   * \return a transform decoration of the object.
    */
-    Component translatedCopy(double tx, double ty, double tz) const
-    {
-        TransformMatrix tr;
-        tr.translate(tx,ty,tz);
-        return Component(TransformDecorator::create(get(), tr));
-    }
+    Component translatedCopy(double tx, double ty, double tz) const;
+
+    /**
+   * \brief Translate the component wrt. to its local reference system
+   *
+   * This method create a copied component, but translated.
+   *
+   * \param tx Translate on the x axis.
+   * \param ty Translate on the y axis.
+   * \param tz Translate on the z axis.
+   *
+   * \return a transfrom decoration of the object.
+   */
+    Component relTranslatedCopy(double tx, double ty, double tz) const;
+
     /**
    * \brief Translate the component.
    *
@@ -462,14 +489,21 @@ public:
    *
    * \return the component translate decorated.
    */
-    Component & translate(double tx, double ty, double tz)
-    {
-        TransformMatrix tr;
-        tr.translate(tx,ty,tz);
-        set(TransformDecorator::create(get(), tr));
-        return *this;
-    }
+    Component & translate(double tx, double ty, double tz);
 
+
+    /**
+   * \brief Translate the component wrt. to its local reference system
+   *
+   * Translate the component wrt. to its local reference system
+   *
+   * \param tx Translate on the x axis.
+   * \param ty Translate on the y axis.
+   * \param tz Translate on the z axis.
+   *
+   * \return the component translate decorated.
+   */
+    Component & relTranslate(double tx, double ty, double tz);
 
     /**
      * \brief Try to cast the decorated pointer to a concrete type.
@@ -479,6 +513,7 @@ public:
      *
      * \return The converted reference of the given type.
      */
+
     template <typename T>
     inline T const& getRef() const
     {

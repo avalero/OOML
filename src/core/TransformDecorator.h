@@ -64,7 +64,7 @@ public:
      *
      * \return a homogeneous transformation decoration of the object.
      */
-    static SharedPtr<AbstractObject> create(SharedPtr<AbstractObject> const& decorated, TransformMatrix tr)
+    static SharedPtr<AbstractObject> create(SharedPtr<AbstractObject> const& decorated, TransformMatrix tr, bool rel=false)
     {
         if (tr.isIdentity())
             return decorated;
@@ -74,7 +74,11 @@ public:
         {
 
             TransformMatrix tr2  = transform->_tr;
-            tr = tr * tr2;
+            if(rel)
+                tr = tr2 * tr;
+            else
+                tr = tr * tr2;
+
             return SharedPtr<AbstractObject>(new TransformDecorator(transform->get(),tr));
         }
         return SharedPtr<AbstractObject>(new TransformDecorator(decorated, tr));
