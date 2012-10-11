@@ -60,21 +60,7 @@ public:
 	 */
     RefSys()
 	{}
-	/**
-	 * \brief Default parametrized constructor.
-	 *
-     * \param x origin of the reference system
-     * \param y origin of the reference system
-     * \param z origin of the reference system
-     * \param a_x first rotation around translated fixed x axis.
-     * \param a_y second rotation around translated fixed y axis.
-     * \param a_z third rotation around translated fized z axis.
-	 */
-    RefSys(double x, double y, double z, double a_x=0, double a_y=0, double a_z=0)
-    {
-        _trans.translate(x,y,z);
-        _trans.relRotate(a_x,a_y,a_z);
-    }
+
 	/**
 	 * \brief Default copy constructor.
 	 *
@@ -94,6 +80,10 @@ public:
 
 		return *this;
 	}
+
+    inline void setTransformationMatrix(TransformMatrix tr){
+        _trans = tr;
+    }
 
 
 	/**

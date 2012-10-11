@@ -31,6 +31,13 @@
 #include "TransformDecorator.h"
 #include "IndentWriter.h"
 
+RefSys TransformDecorator::getRefSys() const{
+    RefSys refsys;
+    refsys.setTransformationMatrix(_tr);
+    return refsys;
+
+}
+
 void TransformDecorator::genScad(IndentWriter& writer) const
 {
     double ax, ay, az; _tr.getGlobalXYZAngles(ax,ay,az);

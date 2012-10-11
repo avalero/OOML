@@ -115,6 +115,8 @@ public:
 	 */
 	virtual void printAst(IndentWriter& writer) const;
 
+    virtual RefSys getRefSys() const;
+
 private:
 	/**
 	 * \brief Default copy constructor.

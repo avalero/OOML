@@ -42,3 +42,7 @@ void ObjectDecorator::printAst(IndentWriter& writer) const
 	if (_decorated.get())
 		_decorated->printAst(writer);
 }
+
+RefSys ObjectDecorator::getRefSys() const{
+    return _decorated.get()->getRefSys();
+}

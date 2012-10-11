@@ -139,6 +139,8 @@ public:
         return (_links.size()>0);
     }
 
+    virtual RefSys getRefSys() const{ return RefSys(); }
+
 protected:
 	/**
 	 * \brief Print a debug message.
@@ -149,8 +151,8 @@ protected:
 
     inline void debug(std::string const& str) const { if (_debugFlag) std::cout << "//-- " << str << std::endl;}
 
-    Links _links;
 
+    Links _links;
 
 private:
 	/**

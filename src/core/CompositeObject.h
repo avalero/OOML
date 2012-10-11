@@ -139,6 +139,8 @@ public:
 	 */
 	virtual void printAst(IndentWriter& writer) const;
 
+    virtual RefSys getRefSys() const;
+
 protected:
 	/** Definition of the vector of objects. */
 	typedef std::vector<SharedPtr<AbstractObject> > Vector;

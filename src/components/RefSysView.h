@@ -82,6 +82,15 @@ public:
         set(genComponent().get());
     }
 
+    RefSysView(Component const & comp)
+    {
+        AbstractObject * object = dynamic_cast<AbstractObject *>(comp.get().get());
+
+        _refSys=object->getRefSys();
+
+        set(genComponent().get());
+    }
+
 
 	/**
 	 * \brief Default destructor.

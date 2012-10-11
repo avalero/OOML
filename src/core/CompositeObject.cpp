@@ -42,3 +42,9 @@ void CompositeObject::printAst(IndentWriter& writer) const
 	for (Vector::const_iterator it = _children.begin(); it != _children.end(); ++it)
 		(*it)->printAst(writer);
 }
+
+RefSys CompositeObject::getRefSys() const {
+
+    return _children[0].get()->getRefSys();
+
+}

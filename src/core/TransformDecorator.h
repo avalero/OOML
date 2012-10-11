@@ -74,10 +74,11 @@ public:
         {
 
             TransformMatrix tr2  = transform->_tr;
-            if(rel)
+            if(rel){
                 tr = tr2 * tr;
-            else
+            }else{
                 tr = tr * tr2;
+            }
 
             return SharedPtr<AbstractObject>(new TransformDecorator(transform->get(),tr));
         }
@@ -105,6 +106,8 @@ public:
      * \param writer An instance of indent writer to write to.
      */
     virtual void printAst(IndentWriter& writer) const;
+
+    virtual RefSys getRefSys() const;
 
 protected:
     /**

@@ -72,7 +72,7 @@ public:
         ObjectDecorator()
     {
         //default link placed in the center of the object
-        _links.push_back(RefSys(0,0,0));}
+        _links.push_back(RefSys());}
     /**
    * \brief Default referenced constructor.
    *
@@ -82,7 +82,7 @@ public:
         ObjectDecorator(decorated)
     {
         //default link placed in the center of the object
-        _links.push_back(RefSys(0,0,0));
+        _links.push_back(RefSys());
     }
     /**
    * \brief Default copy constructor.

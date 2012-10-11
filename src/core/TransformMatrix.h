@@ -84,7 +84,7 @@ public:
     TransformMatrix & operator*(TransformMatrix const& matrix);
 
     /**
-      * \brief Applies an Euler rotation around z, x', z''
+      * \brief Applies an Euler rotation around the initial fixed z, x', z''
       * Applies three rotations around z, x' and z''
       * \param z Rotation (in degrees) around z axis.
       * \param xp Rotation (in degrees) around x' axis.
@@ -93,7 +93,7 @@ public:
     void rotateEulerZXZ(double z,double xp, double zpp);
 
     /**
-      * \brief Applies an Euler rotation around z, y', z''
+      * \brief Applies an Euler rotation around the initial fixed z, y', z''
       * Applies three rotations around z, x' and z''
       * \param z (in degrees) Rotation around z axis.
       * \param yp (in degrees) Rotation around y' axis.
@@ -102,7 +102,7 @@ public:
     void rotateEulerZYZ(double z,double yp, double zpp);
 
     /**
-      * \brief Applies a Roll-Pitch-Yaw rotation around x, y, z
+      * \brief Applies a Roll-Pitch-Yaw rotation around the initial fixed  x, y, z
       * Applies three rotations around the fixed reference system x,y,z
       * \param x Rotation (in degrees) around x axis.
       * \param y Rotation (in degrees) around y axis.
@@ -111,7 +111,7 @@ public:
     void rotate(double x, double y, double z);
 
     /**
-      * \brief Applies an Euler rotation around z, x', z''
+      * \brief Applies an Euler rotation around the local reference system z, x', z''
       * Applies three rotations around z, x' and z''
       * \param z Rotation (in degrees) around z axis.
       * \param xp Rotation (in degrees) around x' axis.
@@ -120,7 +120,7 @@ public:
     void relRotateEulerZXZ(double z,double xp, double zpp);
 
     /**
-      * \brief Applies an Euler rotation around z, y', z''
+      * \brief Applies an Euler rotation around the local reference system  z, y', z''
       * Applies three rotations around z, x' and z''
       * \param z (in degrees) Rotation around z axis.
       * \param yp (in degrees) Rotation around y' axis.
@@ -129,7 +129,7 @@ public:
     void relRotateEulerZYZ(double z,double yp, double zpp);
 
     /**
-      * \brief Applies a Roll-Pitch-Yaw rotation around x, y, z
+      * \brief Applies a Roll-Pitch-Yaw rotation around the local reference system  x, y, z
       * Applies three rotations around the fixed reference system x,y,z
       * \param x Rotation (in degrees) around x axis.
       * \param y Rotation (in degrees) around y axis.
@@ -139,42 +139,42 @@ public:
 
 
     /**
-      * \brief Applies a rotation around current x axis
+      * \brief Applies a rotation around initial fixed x axis
       * Applies a rotation around current x axis
       * \param x Rotation (in degrees) around x axis.
       */
     void rotateX(double x);
 
     /**
-      * \brief Applies a rotation around current y axis
+      * \brief Applies a rotation around initial fixed y axis
       * Applies a rotation around current y axis
       * \param y Rotation (in degrees) around y axis.
       */
     void rotateY(double y);
 
     /**
-      * \brief Applies a rotation around current z axis
+      * \brief Applies a rotation around initial fixed current z axis
       * Applies a rotation around current z axis
       * \param z Rotation (in degrees) around z axis.
       */
     void rotateZ(double z);
 
     /**
-      * \brief Applies a rotation around current x axis
+      * \brief Applies a rotation around current local x axis
       * Applies a rotation around current x axis
       * \param x Rotation (in degrees) around x axis.
       */
     void relRotateX(double x);
 
     /**
-      * \brief Applies a rotation around current y axis
+      * \brief Applies a rotation around current local y axis
       * Applies a rotation around current y axis
       * \param y Rotation (in degrees) around y axis.
       */
     void relRotateY(double y);
 
     /**
-      * \brief Applies a rotation around current z axis
+      * \brief Applies a rotation around current local z axis
       * Applies a rotation around current z axis
       * \param z Rotation (in degrees) around z axis.
       */
