@@ -1,4 +1,4 @@
-/**********************************************************************
+﻿/**********************************************************************
  *
  * This code is part of the OOML project
  * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Trevio
@@ -45,8 +45,8 @@ Component RefSysView::genComponent()
             + Cylinder(1,0,3,10,false).translate(0,0,7);;
     y_axis.rotate(-90,0,0);
 
-    Component z_axis = Cylinder(0.5,10,10,false)
-            + Cylinder(1,0,3,10,false).translate(0,0,10);
+    Component z_axis = Cylinder(0.5,7,10,false)
+            + Cylinder(1,0,3,10,false).translate(0,0,7);
 
     Component refsysview = x_axis.color(1,0,0)
             + y_axis.color(0,1,0)

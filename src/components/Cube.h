@@ -1,7 +1,7 @@
-/**********************************************************************
+﻿/**********************************************************************
  *
  * This code is part of the OOML project
- * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Trevi�o, Nieves Cubo, Mario Almagro
+ * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Treviño, Nieves Cubo, Mario Almagro
  *
  * OOML is licenced under the Common Creative License,
  * Attribution-ShareAlike 3.0

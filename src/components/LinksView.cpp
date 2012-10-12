@@ -28,7 +28,22 @@
  * PURPOSE.
  **********************************************************************/
 
-#include <components/Cube.h>
-#include <core/IndentWriter.h>
+#include "LinksView.h"
+#include "RefSysView.h"
+#include "Cylinder.h"
+#include "../core/Union.h"
+#include "../core/IndentWriter.h"
+
 
 #include <iostream>
+
+Component LinksView::genComponent()
+{
+    CompositeComponent linksview = Union::create();
+
+    for (int i=0; i<_links.size();i++){
+        linksview << RefSysView(_links[i]);
+    }
+
+    return linksview;
+}

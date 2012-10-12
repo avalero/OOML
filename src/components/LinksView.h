@@ -1,7 +1,7 @@
 ﻿/**********************************************************************
  *
  * This code is part of the OOML project
- * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Treviño
+ * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Trevio
  *
  * OOML is licenced under the Common Creative License,
  * Attribution-ShareAlike 3.0
@@ -28,8 +28,8 @@
  * PURPOSE.
  **********************************************************************/
 
-#ifndef OOML_SPHERE_H_INCLUDED
-#define OOML_SPHERE_H_INCLUDED
+#ifndef OOML_LINKSWIEW_H_INCLUDED
+#define OOML_LINKSWIEW_H_INCLUDED
 
 #ifdef WIN32
 #ifdef OOMLComponents_EXPORTS
@@ -41,72 +41,64 @@
 #define OOMLComponents_EXP_DEC
 #endif
 
-#include "../core/Component.h"
+
 #include "../core/IndentWriter.h"
-#include "../core/SphereObject.h"
+#include "../core/RefSys.h"
+#include "../core/Component.h"
+#include <math.h>
+
+#include <utility>
 
 /**
- * \brief Sphere primitive object
+ * \brief 3D point primitive object
  *
- * This class provides a sphere.
+ * This class provides a 3D point.
  */
-class OOMLComponents_EXP_DEC Sphere : public Component
+class OOMLComponents_EXP_DEC LinksView : public Component
 {
 public:
 	/**
-     * \deprecated
-	 * \brief Creates a Sphere Component
-	 *
-	 * Creates a sphere to use in other components.
-	 *
-	 * \param radius Cylinder radius.
-	 * \param faces Number of faces of the rendered cylinder.
-	 * \param center Centered cylinder flag.
-	 *
-	 */
-	static Component create(double radius, unsigned int faces=100, bool center=true)
-	{
-        return SphereObject::create(radius,faces,center);
-	}
-
-	/**
 	 * \brief Default constructor.
 	 */
-	Sphere() :
-        Component(),
-		_radius(1.0),
-		_faces(50),
-		_center(true)
+    LinksView()
     {
-        Component sph = SphereObject::create(_radius,_faces,_center);
-        set(sph.get());
+        _links.clear();
+        _links.resize(0);
+        set(genComponent().get());
     }
 	/**
-	 * \brief Default parametrized constructor.
+     * \brief constructor.
 	 *
-	 * \param radius Cylinder radius.
-	 * \param faces Number of faces of the rendered cylinder.
-	 * \param center Centered cylinder flag.
+     * \param other Build from a RefSys.
 	 */
-	Sphere(double radius, unsigned int faces=100, bool center=true) :
-        Component(),
-		_radius(radius),
-		_faces(faces),
-		_center(center)
+
+    LinksView(Links const & links) :
+        _links(links)
     {
-        Component sph = SphereObject::create(_radius,_faces,_center);
-        set(sph.get());
+        set(genComponent().get());
     }
+
+    LinksView(LinksView const & other):
+        _links(other._links)
+    {
+        set(genComponent().get());
+    }
+
+    LinksView(Component const & comp)
+    {
+        _links=comp.getLinks();
+        set(genComponent().get());
+    }
+
+
 	/**
 	 * \brief Default destructor.
 	 */
-	virtual ~Sphere() {}
+    virtual ~LinksView() {}
 
 private:
-	double _radius; /** Sphere radius. */
-	unsigned int _faces; /** Number of faces of the rendered cylinder. */
-	bool _center; /** Centered cylinder flag. */
+  Links _links;
+  Component genComponent();
 };
 
-
-#endif // SPHERE_H_INCLUDED
+#endif // OOML_LINKSWIEW_H_INCLUDED
