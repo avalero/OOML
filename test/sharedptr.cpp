@@ -1,4 +1,4 @@
-#include <core/SharedPtr.h>
+﻿#include <core/SharedPtr.h>
 
 int main(int argc, char **argv)
 {

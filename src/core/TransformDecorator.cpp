@@ -1,7 +1,7 @@
-/**********************************************************************
+﻿/**********************************************************************
  *
  * This code is part of the OOML project
- * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Trevi�o
+ * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Treviño
  *
  * OOML is licenced under the Common Creative License,
  * Attribution-ShareAlike 3.0
@@ -36,6 +36,32 @@ RefSys TransformDecorator::getRefSys() const{
     refsys.setTransformationMatrix(_tr);
     return refsys;
 
+}
+
+Links TransformDecorator::getLinks() const{
+    double x,y,z; _tr.getGlobalTranslation(x,y,z);
+    double xa, ya, za; _tr.getGlobalXYZAngles(xa,ya,za);
+    Links tr_links(_links.size());
+
+    for (int i=0 ; i<_links.size(); i++){
+        RefSys link =_links[i];
+        link.rotate(xa,ya,za);
+        link.translate(x,y,z);
+        tr_links[i]=link;
+    }
+
+    return tr_links;
+}
+
+RefSys TransformDecorator::getLink(int i) const{
+    double x,y,z; _tr.getGlobalTranslation(x,y,z);
+    double xa, ya, za; _tr.getGlobalXYZAngles(xa,ya,za);
+
+    RefSys link =_links[i];
+    link.rotate(xa,ya,za);
+    link.translate(x,y,z);
+
+    return link;
 }
 
 void TransformDecorator::genScad(IndentWriter& writer) const

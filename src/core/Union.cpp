@@ -1,7 +1,7 @@
-/**********************************************************************
+﻿/**********************************************************************
  *
  * This code is part of the OOML project
- * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Trevi�o
+ * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Treviño
  *
  * OOML is licenced under the Common Creative License,
  * Attribution-ShareAlike 3.0
@@ -55,18 +55,11 @@ void Union::printAst(IndentWriter& writer) const
 Component operator+(Component const& lhs, Component const& rhs)
 {
 	 CompositeComponent result(Union::create());
-
-     //Keep all the links of the children
-     //avoid link 0, which is the default link at the origin
-     if(lhs.hasLinks())
-         for (int i=1; i<lhs.getLinks().size();i++)
-            result.addLink(lhs.getLink(i));
-
-     if (rhs.hasLinks())
-         for (int i=1; i<rhs.getLinks().size();i++)
-            result.addLink(rhs.getLink(i));
-
-
 	 result << lhs.get() << rhs.get();
+
+
+     //keep the links (transformed if neccessary)
+     result.setLinks(lhs.getLinks());
+
 	 return result;
 }

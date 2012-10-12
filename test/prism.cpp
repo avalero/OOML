@@ -1,4 +1,4 @@
-#include <components/PolygonalPrism.h>
+﻿#include <components/PolygonalPrism.h>
 #include <core/IndentWriter.h>
 #include <core/Point2D.h>
 #include <core/Polygon.h>

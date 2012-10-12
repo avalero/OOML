@@ -1,4 +1,4 @@
-#include <components/RegularPiramid.h>
+﻿#include <components/RegularPiramid.h>
 #include <components/RegularPrism.h>
 #include <core/IndentWriter.h>
 

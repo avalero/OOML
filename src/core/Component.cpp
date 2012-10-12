@@ -1,4 +1,4 @@
-/**********************************************************************
+﻿/**********************************************************************
  *
  * This code is part of the OOML project
  * Authors: Alberto Valero-Gomez
@@ -35,11 +35,9 @@
 #include "RotMatrix.h"
 #include "Union.h"
 
-Component & Component::moveToLink(Component const& base, int link_id){
-    //move the object to the link ref sys
-    RefSys link = base.getLink(link_id);
-    Translation translation;
+Component & Component::moveToLink(const Component & base, int link_id){
 
+    RefSys link = base.getLink(link_id);
     TransformMatrix trans = link.getTransformMatrix();
 
     double xa, ya, za; trans.getGlobalXYZAngles(xa,ya,za);
@@ -53,8 +51,8 @@ Component & Component::moveToLink(Component const& base, int link_id){
 }
 
 Component & Component::attach(int link_base, Component & attachment, int link_attach){
-    RefSys link = this->getLink(link_base);
 
+    RefSys link = this->getLink(link_base);
     TransformMatrix trans = link.getTransformMatrix();
 
     double xa, ya, za; trans.getGlobalXYZAngles(xa,ya,za);
@@ -65,7 +63,6 @@ Component & Component::attach(int link_base, Component & attachment, int link_at
     attachment.translate(x, y, z);
 
     *this = *this + attachment;
-
     return *this;
 }
 

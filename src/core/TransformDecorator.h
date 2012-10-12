@@ -1,7 +1,7 @@
-/**********************************************************************
+﻿/**********************************************************************
  *
  * This code is part of the OOML project
- * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Trevi�o
+ * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Treviño
  *
  * OOML is licenced under the Common Creative License,
  * Attribution-ShareAlike 3.0
@@ -108,6 +108,8 @@ public:
     virtual void printAst(IndentWriter& writer) const;
 
     virtual RefSys getRefSys() const;
+    virtual Links getLinks() const;
+    virtual RefSys getLink(int id) const;
 
 protected:
     /**

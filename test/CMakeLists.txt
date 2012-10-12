@@ -50,4 +50,9 @@ target_link_libraries(refsys OOMLCore OOMLComponents)
 add_executable(transform transform.cpp)
 target_link_libraries(transform OOMLCore OOMLComponents OOMLParts)
 
+# Add test executables
+add_executable(attachment attachment.cpp)
+target_link_libraries(attachment OOMLCore OOMLComponents OOMLParts)
+
+
 #install(TARGETS rounded DESTINATION bin)

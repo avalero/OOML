@@ -1,4 +1,4 @@
-#ifndef COMPONENTS_H
+﻿#ifndef COMPONENTS_H
 #define COMPONENTS_H
 
 #include <components/Char.h>
@@ -16,5 +16,6 @@
 #include <components/Square.h>
 #include <components/Toroid.h>
 #include "components/RefSysView.h"
+#include "components/LinksView.h"
 
 #endif // COMPONENTS_H

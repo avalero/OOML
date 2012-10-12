@@ -1,4 +1,4 @@
-/**********************************************************************
+﻿/**********************************************************************
  *
  * This code is part of the OOML project
  * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Trevio, Nieves Cubo, Mario Almagro

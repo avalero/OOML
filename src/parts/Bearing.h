@@ -1,4 +1,4 @@
-#ifndef BEARING_H_INCLUDED
+﻿#ifndef BEARING_H_INCLUDED
 #define BEARING_H_INCLUDED
 
 #ifdef WIN32

@@ -1,7 +1,7 @@
-/**********************************************************************
+﻿/**********************************************************************
  *
  * This code is part of the OOML project
- * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Trevi�o
+ * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Treviño
  *
  * OOML is licenced under the Common Creative License,
  * Attribution-ShareAlike 3.0
@@ -50,6 +50,7 @@
 #include <string>
 #include <vector>
 
+typedef std::vector<RefSys> Links;
 
 /**
  * \brief Abstract object interface.
@@ -58,9 +59,12 @@
  */
 class OOMLCore_EXP_DEC AbstractObject
 {
-    typedef std::vector<RefSys> Links;
+
 
 public:
+
+
+
 	/**
 	 * \brief Default constructor.
 	 */
@@ -101,14 +105,14 @@ public:
     /**
      * \return Returns de vector of links
      */
-    inline Links getLinks() const {
+    virtual inline Links getLinks() const {
         return _links;
     }
 
     /**
       * \return Return link number id
       */
-    inline RefSys getLink(int id) const {
+    virtual inline RefSys getLink(int id) const {
         return _links[id];
     }
 
@@ -120,6 +124,11 @@ public:
     inline int addLink(RefSys rs){
         _links.push_back(rs);
         return (_links.size()-1);
+    }
+
+    inline void setLinks(Links l){
+        _links.clear();
+        _links = l;
     }
 
     /**
@@ -139,9 +148,11 @@ public:
         return (_links.size()>0);
     }
 
-    virtual RefSys getRefSys() const{ return RefSys(); }
+    virtual RefSys getRefSys() const{
+        return RefSys(); }
 
 protected:
+
 	/**
 	 * \brief Print a debug message.
 	 *

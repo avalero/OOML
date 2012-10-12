@@ -1,7 +1,7 @@
-/**********************************************************************
+﻿/**********************************************************************
  *
  * This code is part of the OOML project
- * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Trevi�o
+ * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Treviño
  *
  * OOML is licenced under the Common Creative License,
  * Attribution-ShareAlike 3.0
@@ -44,5 +44,17 @@ void ObjectDecorator::printAst(IndentWriter& writer) const
 }
 
 RefSys ObjectDecorator::getRefSys() const{
-    return _decorated.get()->getRefSys();
+    AbstractObject * object =  dynamic_cast<AbstractObject *>(_decorated.get());
+    return object->getRefSys();
 }
+
+RefSys ObjectDecorator::getLink(int i) const{
+    AbstractObject * object =  dynamic_cast<AbstractObject *>(_decorated.get());
+    return object->getLink(i);
+}
+
+Links ObjectDecorator::getLinks() const{
+    AbstractObject * object =  dynamic_cast<AbstractObject *>(_decorated.get());
+    return object->getLinks();
+}
+

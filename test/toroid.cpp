@@ -1,4 +1,4 @@
-#include <components/Circle.h>
+﻿#include <components/Circle.h>
 #include <components/Toroid.h>
 #include <core/Component.h>
 #include <core/Component2D.h>

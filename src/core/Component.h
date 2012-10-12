@@ -1,7 +1,7 @@
-/**********************************************************************
+﻿/**********************************************************************
  *
  * This code is part of the OOML project
- * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Trevi�o
+ * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Treviño
  *
  * OOML is licenced under the Common Creative License,
  * Attribution-ShareAlike 3.0
@@ -70,9 +70,7 @@ public:
    */
     Component() :
         ObjectDecorator()
-    {
-        //default link placed in the center of the object
-        _links.push_back(RefSys());}
+    {  }
     /**
    * \brief Default referenced constructor.
    *
@@ -80,10 +78,7 @@ public:
    */
     Component(SharedPtr<AbstractObject> const& decorated) :
         ObjectDecorator(decorated)
-    {
-        //default link placed in the center of the object
-        _links.push_back(RefSys());
-    }
+    {    }
     /**
    * \brief Default copy constructor.
    *
@@ -91,7 +86,9 @@ public:
    */
     Component(Component const& other) :
         ObjectDecorator(other.get())
-    {}
+    {
+        _links = other._links;
+    }
     /**
    * \brief Default assignment operator.
    *
@@ -100,6 +97,7 @@ public:
     Component & operator=(Component const& other)
     {
         set(other.get());
+        _links = other._links;
         return *this;
     }
     /**
@@ -233,7 +231,7 @@ public:
       */
     Component & attach(int link_base, Component & attachment, int link_attach=0);
 
-   /**
+    /**
    * \brief Rotate the component.
    *
    * This method create a copied component, but rotated.
@@ -257,7 +255,7 @@ public:
     *
     * \return a rotate decoration of the object.
     */
-     Component relRotatedCopy(double ax, double ay, double az) const;
+    Component relRotatedCopy(double ax, double ay, double az) const;
     /**
    * \brief Rotate the component.
    *
@@ -282,7 +280,7 @@ public:
     *
     * \return a rotate decoration of the object.
     */
-     Component & relRotate(double ax, double ay, double az);
+    Component & relRotate(double ax, double ay, double az);
 
     /**
    * \brief Rotate the component.
@@ -505,6 +503,28 @@ public:
    */
     Component & relTranslate(double tx, double ty, double tz);
 
+    inline virtual RefSys getRefSys() const{
+        AbstractObject* abso = dynamic_cast<AbstractObject*>(this->get().get());
+        return abso->getRefSys();
+    }
+
+    inline int numberOfLinks() const{
+        return _links.size();
+    }
+
+    inline virtual Links getLinks() const{
+
+        AbstractObject* abso = dynamic_cast<AbstractObject*>(this->get().get());
+        abso->setLinks(_links);
+        return abso->getLinks();
+    }
+
+    inline virtual RefSys getLink(int i)const{
+        AbstractObject* abso = dynamic_cast<AbstractObject*>(this->get().get());
+        abso->setLinks(_links);
+        return abso->getLink(i);
+    }
+
     /**
      * \brief Try to cast the decorated pointer to a concrete type.
      *
@@ -513,7 +533,6 @@ public:
      *
      * \return The converted reference of the given type.
      */
-
     template <typename T>
     inline T const& getRef() const
     {

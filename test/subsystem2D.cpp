@@ -1,4 +1,4 @@
-#include <core/Component2D.h>
+﻿#include <core/Component2D.h>
 #include <core/IndentWriter.h>
 #include <core/Point2D.h>
 #include <core/Polygon2D.h>

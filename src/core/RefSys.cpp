@@ -1,4 +1,4 @@
-/**********************************************************************
+﻿/**********************************************************************
  *
  * This code is part of the OOML project
  * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Trevio
@@ -34,35 +34,43 @@
 
 #include <iostream>
 
-void RefSys::translate(double x, double y, double z){
+RefSys RefSys::translate(double x, double y, double z){
     _trans.translate(x,y,z);
+    return *this;
 }
 
-void RefSys::relRotate(double x, double y, double z){
+RefSys RefSys::relRotate(double x, double y, double z){
     _trans.relRotate(x,y,z);
+    return *this;
 }
 
-void RefSys::relTranslate(double x, double y, double z){
+RefSys RefSys::relTranslate(double x, double y, double z){
     _trans.relTranslate(x,y,z);
+    return *this;
 }
 
-void RefSys::rotate(double x, double y, double z){
+RefSys RefSys::rotate(double x, double y, double z){
     _trans.rotate(x,y,z);
+    return *this;
 }
 
-void RefSys::rotateEulerZYZ(double z, double yp, double zpp){
+RefSys RefSys::rotateEulerZYZ(double z, double yp, double zpp){
     _trans.rotateEulerZYZ(z,yp,zpp);
+    return *this;
 }
 
-void RefSys::rotateEulerZXZ(double z, double xp, double zpp){
+RefSys RefSys::rotateEulerZXZ(double z, double xp, double zpp){
     _trans.rotateEulerZXZ(z,xp,zpp);
+    return *this;
 }
 
 
-void RefSys::relRotateEulerZYZ(double z, double yp, double zpp){
+RefSys RefSys::relRotateEulerZYZ(double z, double yp, double zpp){
     _trans.relRotateEulerZYZ(z,yp,zpp);
+    return *this;
 }
 
-void RefSys::relRotateEulerZXZ(double z, double xp, double zpp){
+RefSys RefSys::relRotateEulerZXZ(double z, double xp, double zpp){
     _trans.relRotateEulerZXZ(z,xp,zpp);
+    return *this;
 }

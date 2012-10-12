@@ -1,4 +1,4 @@
-/**********************************************************************
+﻿/**********************************************************************
  *
  * This code is part of the OOML project
  * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Trevio
@@ -69,6 +69,13 @@ public:
     RefSys(RefSys const& other) :
         _trans(other._trans)
 	{}
+
+    RefSys(double x, double y, double z):
+        _trans()
+    {
+        _trans.translate(x,y,z);
+    }
+
 	/**
 	 * \brief Default assignment operator.
 	 *
@@ -99,7 +106,7 @@ public:
       * \param y Translation along y initial fixed y axis.
       * \param z Translation along z initial fixed z axis.
       */
-    void translate(double x, double y, double z);
+    RefSys translate(double x, double y, double z);
 
     /**
       * \brief Rotates the reference system
@@ -109,7 +116,7 @@ public:
       * \param y Rotation around initial fixed y axis.
       * \param z Rotation around initial fixed z axis.
       */
-    void rotate(double x, double y, double z);
+    RefSys rotate(double x, double y, double z);
 
     /**
       * \brief Rotates the reference system
@@ -121,7 +128,7 @@ public:
       */
 
 
-    void rotateEulerZXZ(double z, double xp, double zpp);
+    RefSys rotateEulerZXZ(double z, double xp, double zpp);
 
     /**
       * \brief Rotates the reference system
@@ -131,7 +138,7 @@ public:
       * \param yp Rotation around new y' axis.
       * \param zpp Rotation around y'' axis.
       */
-    void rotateEulerZYZ(double z, double yp, double zpp);
+    RefSys rotateEulerZYZ(double z, double yp, double zpp);
 
     /**
       * \brief Translates the origin of the reference system
@@ -141,7 +148,7 @@ public:
       * \param y Translation along y initial fixed y axis.
       * \param z Translation along z initial fixed z axis.
       */
-    void relTranslate(double x, double y, double z);
+    RefSys relTranslate(double x, double y, double z);
 
     /**
       * \brief Rotates the reference system
@@ -151,7 +158,7 @@ public:
       * \param y Rotation around the object fixed y axis.
       * \param z Rotation around the object fixed z axis.
       */
-    void relRotate(double x, double y, double z);
+    RefSys relRotate(double x, double y, double z);
 
     /**
       * \brief Rotates the reference system
@@ -161,7 +168,7 @@ public:
       * \param xp Rotation around the object new x' axis.
       * \param zpp Rotation around the object z'' axis.
       */
-    void relRotateEulerZXZ(double z, double xp, double zpp);
+    RefSys relRotateEulerZXZ(double z, double xp, double zpp);
 
     /**
       * \brief Rotates the reference system
@@ -171,7 +178,7 @@ public:
       * \param yp Rotation around the object  new y' axis.
       * \param zpp Rotation around the object  y'' axis.
       */
-    void relRotateEulerZYZ(double z, double yp, double zpp);
+    RefSys relRotateEulerZYZ(double z, double yp, double zpp);
 
     /**
       * \brief Rotates the reference system
