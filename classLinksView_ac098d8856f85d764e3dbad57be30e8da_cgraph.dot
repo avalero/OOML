@@ -1,0 +1,13 @@
+digraph "LinksView::LinksView"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="LinksView::LinksView",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Component::getLinks",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#a49bda799c32846b690940adc73ef49a0"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AbstractObject::setLinks",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAbstractObject.html#ab10fcc764ffe95d859beedaaf6b54a7e"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AbstractObject::getLinks",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAbstractObject.html#ab0650b0b0c6fd0e692f976bcc1f3a065"];
+}

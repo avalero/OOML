@@ -12,5 +12,6 @@ var searchData=
   ['indexvector',['IndexVector',['../classPolygon2D.html#a683f61098006f32a77ff30dcb17c13ac',1,'Polygon2D']]],
   ['intersection',['Intersection',['../classIntersection.html',1,'Intersection'],['../classIntersection.html#a67497e3efe2793b23909052eeb82c4f3',1,'Intersection::Intersection()']]],
   ['intersection_2ecpp',['Intersection.cpp',['../Intersection_8cpp.html',1,'']]],
-  ['intersection_2eh',['Intersection.h',['../Intersection_8h.html',1,'']]]
+  ['intersection_2eh',['Intersection.h',['../Intersection_8h.html',1,'']]],
+  ['isidentity',['isIdentity',['../classTransformMatrix.html#ae53e1d2436656a41d8689cd818a05f88',1,'TransformMatrix']]]
 ];

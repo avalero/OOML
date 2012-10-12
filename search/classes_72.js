@@ -4,7 +4,6 @@ var searchData=
   ['refsysview',['RefSysView',['../classRefSysView.html',1,'']]],
   ['regularpiramid',['RegularPiramid',['../classRegularPiramid.html',1,'']]],
   ['regularprism',['RegularPrism',['../classRegularPrism.html',1,'']]],
-  ['rotatedecorator',['RotateDecorator',['../classRotateDecorator.html',1,'']]],
   ['rotateextrudedecorator',['RotateExtrudeDecorator',['../classRotateExtrudeDecorator.html',1,'']]],
   ['rotationalmatrix',['RotationalMatrix',['../classRotationalMatrix.html',1,'']]],
   ['roundedcube',['RoundedCube',['../classRoundedCube.html',1,'']]],

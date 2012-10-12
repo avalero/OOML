@@ -100,30 +100,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab21ef0a5571b846e587a3da945c0889f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRefSys.html#ab21ef0a5571b846e587a3da945c0889f">RefSys</a> ()</td></tr>
 <tr class="memdesc:ab21ef0a5571b846e587a3da945c0889f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#ab21ef0a5571b846e587a3da945c0889f"></a><br/></td></tr>
-<tr class="memitem:a641efcba85c99b217c4c0bd7746bf474"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRefSys.html#a641efcba85c99b217c4c0bd7746bf474">RefSys</a> (double x, double y, double z, double a_x=0, double a_y=0, double a_z=0)</td></tr>
-<tr class="memdesc:a641efcba85c99b217c4c0bd7746bf474"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default parametrized constructor.  <a href="#a641efcba85c99b217c4c0bd7746bf474"></a><br/></td></tr>
 <tr class="memitem:a93dd96d2170e63a5b1eeb9e429cfcc51"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRefSys.html#a93dd96d2170e63a5b1eeb9e429cfcc51">RefSys</a> (<a class="el" href="classRefSys.html">RefSys</a> const &amp;other)</td></tr>
 <tr class="memdesc:a93dd96d2170e63a5b1eeb9e429cfcc51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default copy constructor.  <a href="#a93dd96d2170e63a5b1eeb9e429cfcc51"></a><br/></td></tr>
+<tr class="memitem:a0ac0a1157b96df9be70485b83ce30bfe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRefSys.html#a0ac0a1157b96df9be70485b83ce30bfe">RefSys</a> (double x, double y, double z)</td></tr>
 <tr class="memitem:ad2258b26fe885bedd866cf3d74e1ce67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRefSys.html">RefSys</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRefSys.html#ad2258b26fe885bedd866cf3d74e1ce67">operator=</a> (<a class="el" href="classRefSys.html">RefSys</a> const &amp;other)</td></tr>
 <tr class="memdesc:ad2258b26fe885bedd866cf3d74e1ce67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default assignment operator.  <a href="#ad2258b26fe885bedd866cf3d74e1ce67"></a><br/></td></tr>
+<tr class="memitem:a6319bb44d168aefbb38d684853414cd8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRefSys.html#a6319bb44d168aefbb38d684853414cd8">setTransformationMatrix</a> (<a class="el" href="classTransformMatrix.html">TransformMatrix</a> tr)</td></tr>
 <tr class="memitem:a66ee220ae1db2f3c2244490e959fe45f"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRefSys.html#a66ee220ae1db2f3c2244490e959fe45f">~RefSys</a> ()</td></tr>
 <tr class="memdesc:a66ee220ae1db2f3c2244490e959fe45f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor.  <a href="#a66ee220ae1db2f3c2244490e959fe45f"></a><br/></td></tr>
-<tr class="memitem:a5dcfc5412f6f1bc3328c4c5b414251ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRefSys.html#a5dcfc5412f6f1bc3328c4c5b414251ad">translate</a> (double x, double y, double z)</td></tr>
-<tr class="memdesc:a5dcfc5412f6f1bc3328c4c5b414251ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translates the origin of the reference system This methods translated the origin of the reference system The axes are kept parallel to the non translated ref sys.  <a href="#a5dcfc5412f6f1bc3328c4c5b414251ad"></a><br/></td></tr>
-<tr class="memitem:abe3f04d24545bf4c085e08d04fe2150a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRefSys.html#abe3f04d24545bf4c085e08d04fe2150a">rotate</a> (double x, double y, double z)</td></tr>
-<tr class="memdesc:abe3f04d24545bf4c085e08d04fe2150a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the reference system This methods rotates the reference system The origin is kept unmoved.  <a href="#abe3f04d24545bf4c085e08d04fe2150a"></a><br/></td></tr>
-<tr class="memitem:aaef60f082d3f15aa558f7276eea12368"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRefSys.html#aaef60f082d3f15aa558f7276eea12368">rotateEulerZXZ</a> (double z, double xp, double zpp)</td></tr>
-<tr class="memdesc:aaef60f082d3f15aa558f7276eea12368"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the reference system This methods rotates the reference system with the Euler ZXZ angles. The origin is kept unmoved.  <a href="#aaef60f082d3f15aa558f7276eea12368"></a><br/></td></tr>
-<tr class="memitem:a6cd5926ccf484bb4406af8b9251c9895"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRefSys.html#a6cd5926ccf484bb4406af8b9251c9895">rotateEulerZYZ</a> (double z, double yp, double zpp)</td></tr>
-<tr class="memdesc:a6cd5926ccf484bb4406af8b9251c9895"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the reference system This methods rotates the reference system with the Euler ZYZ angles. The origin is kept unmoved.  <a href="#a6cd5926ccf484bb4406af8b9251c9895"></a><br/></td></tr>
-<tr class="memitem:a8bc078e068e1af5ec562b5789e482cf5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRefSys.html#a8bc078e068e1af5ec562b5789e482cf5">relTranslate</a> (double x, double y, double z)</td></tr>
-<tr class="memdesc:a8bc078e068e1af5ec562b5789e482cf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translates the origin of the reference system This methods translated the origin of the reference system The axes are kept parallel to the non translated ref sys.  <a href="#a8bc078e068e1af5ec562b5789e482cf5"></a><br/></td></tr>
-<tr class="memitem:a0d9f1e184254e14464040e22da66b2cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRefSys.html#a0d9f1e184254e14464040e22da66b2cf">relRotate</a> (double x, double y, double z)</td></tr>
-<tr class="memdesc:a0d9f1e184254e14464040e22da66b2cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the reference system This methods rotates the reference system The origin is kept unmoved.  <a href="#a0d9f1e184254e14464040e22da66b2cf"></a><br/></td></tr>
-<tr class="memitem:a98574be4d68cc6e691df898596009335"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRefSys.html#a98574be4d68cc6e691df898596009335">relRotateEulerZXZ</a> (double z, double xp, double zpp)</td></tr>
-<tr class="memdesc:a98574be4d68cc6e691df898596009335"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the reference system This methods rotates the reference system with the Euler ZXZ angles. The origin is kept unmoved.  <a href="#a98574be4d68cc6e691df898596009335"></a><br/></td></tr>
-<tr class="memitem:a01add4986306de6b3de628504e8536d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRefSys.html#a01add4986306de6b3de628504e8536d9">relRotateEulerZYZ</a> (double z, double yp, double zpp)</td></tr>
-<tr class="memdesc:a01add4986306de6b3de628504e8536d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the reference system This methods rotates the reference system with the Euler ZYZ angles. The origin is kept unmoved.  <a href="#a01add4986306de6b3de628504e8536d9"></a><br/></td></tr>
+<tr class="memitem:a13d60d2bdaf80726fdd42694c1df98db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRefSys.html">RefSys</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRefSys.html#a13d60d2bdaf80726fdd42694c1df98db">translate</a> (double x, double y, double z)</td></tr>
+<tr class="memdesc:a13d60d2bdaf80726fdd42694c1df98db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translates the origin of the reference system This methods translated the origin of the reference system The axes are kept parallel to the non translated ref sys.  <a href="#a13d60d2bdaf80726fdd42694c1df98db"></a><br/></td></tr>
+<tr class="memitem:af6bf58cbf4ee5d308bd05ab976562c56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRefSys.html">RefSys</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRefSys.html#af6bf58cbf4ee5d308bd05ab976562c56">rotate</a> (double x, double y, double z)</td></tr>
+<tr class="memdesc:af6bf58cbf4ee5d308bd05ab976562c56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the reference system This methods rotates the reference system The origin is kept unmoved.  <a href="#af6bf58cbf4ee5d308bd05ab976562c56"></a><br/></td></tr>
+<tr class="memitem:a4221bb6359fc187e5b8f111c80e38659"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRefSys.html">RefSys</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRefSys.html#a4221bb6359fc187e5b8f111c80e38659">rotateEulerZXZ</a> (double z, double xp, double zpp)</td></tr>
+<tr class="memdesc:a4221bb6359fc187e5b8f111c80e38659"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the reference system This methods rotates the reference system with the Euler ZXZ angles. The origin is kept unmoved.  <a href="#a4221bb6359fc187e5b8f111c80e38659"></a><br/></td></tr>
+<tr class="memitem:a8546580f91dabc8f246aaa179577b327"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRefSys.html">RefSys</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRefSys.html#a8546580f91dabc8f246aaa179577b327">rotateEulerZYZ</a> (double z, double yp, double zpp)</td></tr>
+<tr class="memdesc:a8546580f91dabc8f246aaa179577b327"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the reference system This methods rotates the reference system with the Euler ZYZ angles. The origin is kept unmoved.  <a href="#a8546580f91dabc8f246aaa179577b327"></a><br/></td></tr>
+<tr class="memitem:a2369ded5f3d02e987c7f9c9c7a4d9147"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRefSys.html">RefSys</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRefSys.html#a2369ded5f3d02e987c7f9c9c7a4d9147">relTranslate</a> (double x, double y, double z)</td></tr>
+<tr class="memdesc:a2369ded5f3d02e987c7f9c9c7a4d9147"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translates the origin of the reference system This methods translated the origin of the reference system The axes are kept parallel to the non translated ref sys.  <a href="#a2369ded5f3d02e987c7f9c9c7a4d9147"></a><br/></td></tr>
+<tr class="memitem:a6a808b37b21c61eb6a47366a3fc2642c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRefSys.html">RefSys</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRefSys.html#a6a808b37b21c61eb6a47366a3fc2642c">relRotate</a> (double x, double y, double z)</td></tr>
+<tr class="memdesc:a6a808b37b21c61eb6a47366a3fc2642c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the reference system This methods rotates the reference system The origin is kept unmoved.  <a href="#a6a808b37b21c61eb6a47366a3fc2642c"></a><br/></td></tr>
+<tr class="memitem:aa072538837bda40928c53d308298021d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRefSys.html">RefSys</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRefSys.html#aa072538837bda40928c53d308298021d">relRotateEulerZXZ</a> (double z, double xp, double zpp)</td></tr>
+<tr class="memdesc:aa072538837bda40928c53d308298021d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the reference system This methods rotates the reference system with the Euler ZXZ angles. The origin is kept unmoved.  <a href="#aa072538837bda40928c53d308298021d"></a><br/></td></tr>
+<tr class="memitem:a665f74d330be2f94e8e29c186120b0ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRefSys.html">RefSys</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRefSys.html#a665f74d330be2f94e8e29c186120b0ea">relRotateEulerZYZ</a> (double z, double yp, double zpp)</td></tr>
+<tr class="memdesc:a665f74d330be2f94e8e29c186120b0ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the reference system This methods rotates the reference system with the Euler ZYZ angles. The origin is kept unmoved.  <a href="#a665f74d330be2f94e8e29c186120b0ea"></a><br/></td></tr>
 <tr class="memitem:a242db8ba69ca79d31ab07793ad458ced"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTransformMatrix.html">TransformMatrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRefSys.html#a242db8ba69ca79d31ab07793ad458ced">getTransformMatrix</a> () const </td></tr>
 <tr class="memdesc:a242db8ba69ca79d31ab07793ad458ced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the reference system This methods rotates the reference system with a rotational matrix. The origin is kept unmoved.  <a href="#a242db8ba69ca79d31ab07793ad458ced"></a><br/></td></tr>
 </table>
@@ -160,88 +160,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a641efcba85c99b217c4c0bd7746bf474"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">RefSys::RefSys </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>z</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>a_x</em> = <code>0</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>a_y</em> = <code>0</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>a_z</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Default parametrized constructor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>origin of the reference system </td></tr>
-    <tr><td class="paramname">y</td><td>origin of the reference system </td></tr>
-    <tr><td class="paramname">z</td><td>origin of the reference system </td></tr>
-    <tr><td class="paramname">a_x</td><td>first rotation around translated fixed x axis. </td></tr>
-    <tr><td class="paramname">a_y</td><td>second rotation around translated fixed y axis. </td></tr>
-    <tr><td class="paramname">a_z</td><td>third rotation around translated fized z axis. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="RefSys_8h_source.html#l00073">73</a> of file <a class="el" href="RefSys_8h_source.html">RefSys.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classRefSys_a641efcba85c99b217c4c0bd7746bf474_cgraph.png" border="0" usemap="#classRefSys_a641efcba85c99b217c4c0bd7746bf474_cgraph" alt=""/></div>
-<map name="classRefSys_a641efcba85c99b217c4c0bd7746bf474_cgraph" id="classRefSys_a641efcba85c99b217c4c0bd7746bf474_cgraph">
-</map>
-</div>
-</p>
-
-</div>
-</div>
 <a class="anchor" id="a93dd96d2170e63a5b1eeb9e429cfcc51"></a>
 <div class="memitem">
 <div class="memproto">
@@ -272,7 +190,49 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="RefSys_8h_source.html#l00083">83</a> of file <a class="el" href="RefSys_8h_source.html">RefSys.h</a>.</p>
+<p>Definition at line <a class="el" href="RefSys_8h_source.html#l00069">69</a> of file <a class="el" href="RefSys_8h_source.html">RefSys.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0ac0a1157b96df9be70485b83ce30bfe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RefSys::RefSys </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="RefSys_8h_source.html#l00073">73</a> of file <a class="el" href="RefSys_8h_source.html">RefSys.h</a>.</p>
 
 </div>
 </div>
@@ -299,7 +259,7 @@ Here is the call graph for this function:</div>
 
 <p>Default destructor. </p>
 
-<p>Definition at line <a class="el" href="RefSys_8h_source.html#l00102">102</a> of file <a class="el" href="RefSys_8h_source.html">RefSys.h</a>.</p>
+<p>Definition at line <a class="el" href="RefSys_8h_source.html#l00099">99</a> of file <a class="el" href="RefSys_8h_source.html">RefSys.h</a>.</p>
 
 </div>
 </div>
@@ -333,7 +293,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="RefSys_8h_source.html#l00194">194</a> of file <a class="el" href="RefSys_8h_source.html">RefSys.h</a>.</p>
+<p>Definition at line <a class="el" href="RefSys_8h_source.html#l00191">191</a> of file <a class="el" href="RefSys_8h_source.html">RefSys.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -376,16 +336,16 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="RefSys_8h_source.html#l00091">91</a> of file <a class="el" href="RefSys_8h_source.html">RefSys.h</a>.</p>
+<p>Definition at line <a class="el" href="RefSys_8h_source.html#l00084">84</a> of file <a class="el" href="RefSys_8h_source.html">RefSys.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a0d9f1e184254e14464040e22da66b2cf"></a>
+<a class="anchor" id="a6a808b37b21c61eb6a47366a3fc2642c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void RefSys::relRotate </td>
+          <td class="memname"><a class="el" href="classRefSys.html">RefSys</a> RefSys::relRotate </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>x</em>, </td>
@@ -420,25 +380,25 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="RefSys_8cpp_source.html#l00041">41</a> of file <a class="el" href="RefSys_8cpp_source.html">RefSys.cpp</a>.</p>
+<p>Definition at line <a class="el" href="RefSys_8cpp_source.html#l00042">42</a> of file <a class="el" href="RefSys_8cpp_source.html">RefSys.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classRefSys_a0d9f1e184254e14464040e22da66b2cf_cgraph.png" border="0" usemap="#classRefSys_a0d9f1e184254e14464040e22da66b2cf_cgraph" alt=""/></div>
-<map name="classRefSys_a0d9f1e184254e14464040e22da66b2cf_cgraph" id="classRefSys_a0d9f1e184254e14464040e22da66b2cf_cgraph">
+<div class="center"><img src="classRefSys_a6a808b37b21c61eb6a47366a3fc2642c_cgraph.png" border="0" usemap="#classRefSys_a6a808b37b21c61eb6a47366a3fc2642c_cgraph" alt=""/></div>
+<map name="classRefSys_a6a808b37b21c61eb6a47366a3fc2642c_cgraph" id="classRefSys_a6a808b37b21c61eb6a47366a3fc2642c_cgraph">
 </map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a98574be4d68cc6e691df898596009335"></a>
+<a class="anchor" id="aa072538837bda40928c53d308298021d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void RefSys::relRotateEulerZXZ </td>
+          <td class="memname"><a class="el" href="classRefSys.html">RefSys</a> RefSys::relRotateEulerZXZ </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>z</em>, </td>
@@ -473,25 +433,25 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="RefSys_8cpp_source.html#l00066">66</a> of file <a class="el" href="RefSys_8cpp_source.html">RefSys.cpp</a>.</p>
+<p>Definition at line <a class="el" href="RefSys_8cpp_source.html#l00073">73</a> of file <a class="el" href="RefSys_8cpp_source.html">RefSys.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classRefSys_a98574be4d68cc6e691df898596009335_cgraph.png" border="0" usemap="#classRefSys_a98574be4d68cc6e691df898596009335_cgraph" alt=""/></div>
-<map name="classRefSys_a98574be4d68cc6e691df898596009335_cgraph" id="classRefSys_a98574be4d68cc6e691df898596009335_cgraph">
+<div class="center"><img src="classRefSys_aa072538837bda40928c53d308298021d_cgraph.png" border="0" usemap="#classRefSys_aa072538837bda40928c53d308298021d_cgraph" alt=""/></div>
+<map name="classRefSys_aa072538837bda40928c53d308298021d_cgraph" id="classRefSys_aa072538837bda40928c53d308298021d_cgraph">
 </map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a01add4986306de6b3de628504e8536d9"></a>
+<a class="anchor" id="a665f74d330be2f94e8e29c186120b0ea"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void RefSys::relRotateEulerZYZ </td>
+          <td class="memname"><a class="el" href="classRefSys.html">RefSys</a> RefSys::relRotateEulerZYZ </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>z</em>, </td>
@@ -526,25 +486,25 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="RefSys_8cpp_source.html#l00062">62</a> of file <a class="el" href="RefSys_8cpp_source.html">RefSys.cpp</a>.</p>
+<p>Definition at line <a class="el" href="RefSys_8cpp_source.html#l00068">68</a> of file <a class="el" href="RefSys_8cpp_source.html">RefSys.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classRefSys_a01add4986306de6b3de628504e8536d9_cgraph.png" border="0" usemap="#classRefSys_a01add4986306de6b3de628504e8536d9_cgraph" alt=""/></div>
-<map name="classRefSys_a01add4986306de6b3de628504e8536d9_cgraph" id="classRefSys_a01add4986306de6b3de628504e8536d9_cgraph">
+<div class="center"><img src="classRefSys_a665f74d330be2f94e8e29c186120b0ea_cgraph.png" border="0" usemap="#classRefSys_a665f74d330be2f94e8e29c186120b0ea_cgraph" alt=""/></div>
+<map name="classRefSys_a665f74d330be2f94e8e29c186120b0ea_cgraph" id="classRefSys_a665f74d330be2f94e8e29c186120b0ea_cgraph">
 </map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a8bc078e068e1af5ec562b5789e482cf5"></a>
+<a class="anchor" id="a2369ded5f3d02e987c7f9c9c7a4d9147"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void RefSys::relTranslate </td>
+          <td class="memname"><a class="el" href="classRefSys.html">RefSys</a> RefSys::relTranslate </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>x</em>, </td>
@@ -579,25 +539,25 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="RefSys_8cpp_source.html#l00045">45</a> of file <a class="el" href="RefSys_8cpp_source.html">RefSys.cpp</a>.</p>
+<p>Definition at line <a class="el" href="RefSys_8cpp_source.html#l00047">47</a> of file <a class="el" href="RefSys_8cpp_source.html">RefSys.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classRefSys_a8bc078e068e1af5ec562b5789e482cf5_cgraph.png" border="0" usemap="#classRefSys_a8bc078e068e1af5ec562b5789e482cf5_cgraph" alt=""/></div>
-<map name="classRefSys_a8bc078e068e1af5ec562b5789e482cf5_cgraph" id="classRefSys_a8bc078e068e1af5ec562b5789e482cf5_cgraph">
+<div class="center"><img src="classRefSys_a2369ded5f3d02e987c7f9c9c7a4d9147_cgraph.png" border="0" usemap="#classRefSys_a2369ded5f3d02e987c7f9c9c7a4d9147_cgraph" alt=""/></div>
+<map name="classRefSys_a2369ded5f3d02e987c7f9c9c7a4d9147_cgraph" id="classRefSys_a2369ded5f3d02e987c7f9c9c7a4d9147_cgraph">
 </map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="abe3f04d24545bf4c085e08d04fe2150a"></a>
+<a class="anchor" id="af6bf58cbf4ee5d308bd05ab976562c56"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void RefSys::rotate </td>
+          <td class="memname"><a class="el" href="classRefSys.html">RefSys</a> RefSys::rotate </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>x</em>, </td>
@@ -632,25 +592,34 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="RefSys_8cpp_source.html#l00049">49</a> of file <a class="el" href="RefSys_8cpp_source.html">RefSys.cpp</a>.</p>
+<p>Definition at line <a class="el" href="RefSys_8cpp_source.html#l00052">52</a> of file <a class="el" href="RefSys_8cpp_source.html">RefSys.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classRefSys_abe3f04d24545bf4c085e08d04fe2150a_cgraph.png" border="0" usemap="#classRefSys_abe3f04d24545bf4c085e08d04fe2150a_cgraph" alt=""/></div>
-<map name="classRefSys_abe3f04d24545bf4c085e08d04fe2150a_cgraph" id="classRefSys_abe3f04d24545bf4c085e08d04fe2150a_cgraph">
+<div class="center"><img src="classRefSys_af6bf58cbf4ee5d308bd05ab976562c56_cgraph.png" border="0" usemap="#classRefSys_af6bf58cbf4ee5d308bd05ab976562c56_cgraph" alt=""/></div>
+<map name="classRefSys_af6bf58cbf4ee5d308bd05ab976562c56_cgraph" id="classRefSys_af6bf58cbf4ee5d308bd05ab976562c56_cgraph">
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRefSys_af6bf58cbf4ee5d308bd05ab976562c56_icgraph.png" border="0" usemap="#classRefSys_af6bf58cbf4ee5d308bd05ab976562c56_icgraph" alt=""/></div>
+<map name="classRefSys_af6bf58cbf4ee5d308bd05ab976562c56_icgraph" id="classRefSys_af6bf58cbf4ee5d308bd05ab976562c56_icgraph">
 </map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="aaef60f082d3f15aa558f7276eea12368"></a>
+<a class="anchor" id="a4221bb6359fc187e5b8f111c80e38659"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void RefSys::rotateEulerZXZ </td>
+          <td class="memname"><a class="el" href="classRefSys.html">RefSys</a> RefSys::rotateEulerZXZ </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>z</em>, </td>
@@ -685,25 +654,25 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="RefSys_8cpp_source.html#l00057">57</a> of file <a class="el" href="RefSys_8cpp_source.html">RefSys.cpp</a>.</p>
+<p>Definition at line <a class="el" href="RefSys_8cpp_source.html#l00062">62</a> of file <a class="el" href="RefSys_8cpp_source.html">RefSys.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classRefSys_aaef60f082d3f15aa558f7276eea12368_cgraph.png" border="0" usemap="#classRefSys_aaef60f082d3f15aa558f7276eea12368_cgraph" alt=""/></div>
-<map name="classRefSys_aaef60f082d3f15aa558f7276eea12368_cgraph" id="classRefSys_aaef60f082d3f15aa558f7276eea12368_cgraph">
+<div class="center"><img src="classRefSys_a4221bb6359fc187e5b8f111c80e38659_cgraph.png" border="0" usemap="#classRefSys_a4221bb6359fc187e5b8f111c80e38659_cgraph" alt=""/></div>
+<map name="classRefSys_a4221bb6359fc187e5b8f111c80e38659_cgraph" id="classRefSys_a4221bb6359fc187e5b8f111c80e38659_cgraph">
 </map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a6cd5926ccf484bb4406af8b9251c9895"></a>
+<a class="anchor" id="a8546580f91dabc8f246aaa179577b327"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void RefSys::rotateEulerZYZ </td>
+          <td class="memname"><a class="el" href="classRefSys.html">RefSys</a> RefSys::rotateEulerZYZ </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>z</em>, </td>
@@ -738,25 +707,60 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="RefSys_8cpp_source.html#l00053">53</a> of file <a class="el" href="RefSys_8cpp_source.html">RefSys.cpp</a>.</p>
+<p>Definition at line <a class="el" href="RefSys_8cpp_source.html#l00057">57</a> of file <a class="el" href="RefSys_8cpp_source.html">RefSys.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classRefSys_a6cd5926ccf484bb4406af8b9251c9895_cgraph.png" border="0" usemap="#classRefSys_a6cd5926ccf484bb4406af8b9251c9895_cgraph" alt=""/></div>
-<map name="classRefSys_a6cd5926ccf484bb4406af8b9251c9895_cgraph" id="classRefSys_a6cd5926ccf484bb4406af8b9251c9895_cgraph">
+<div class="center"><img src="classRefSys_a8546580f91dabc8f246aaa179577b327_cgraph.png" border="0" usemap="#classRefSys_a8546580f91dabc8f246aaa179577b327_cgraph" alt=""/></div>
+<map name="classRefSys_a8546580f91dabc8f246aaa179577b327_cgraph" id="classRefSys_a8546580f91dabc8f246aaa179577b327_cgraph">
 </map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a5dcfc5412f6f1bc3328c4c5b414251ad"></a>
+<a class="anchor" id="a6319bb44d168aefbb38d684853414cd8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RefSys::setTransformationMatrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTransformMatrix.html">TransformMatrix</a>&#160;</td>
+          <td class="paramname"><em>tr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="RefSys_8h_source.html#l00091">91</a> of file <a class="el" href="RefSys_8h_source.html">RefSys.h</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRefSys_a6319bb44d168aefbb38d684853414cd8_icgraph.png" border="0" usemap="#classRefSys_a6319bb44d168aefbb38d684853414cd8_icgraph" alt=""/></div>
+<map name="classRefSys_a6319bb44d168aefbb38d684853414cd8_icgraph" id="classRefSys_a6319bb44d168aefbb38d684853414cd8_icgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a13d60d2bdaf80726fdd42694c1df98db"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void RefSys::translate </td>
+          <td class="memname"><a class="el" href="classRefSys.html">RefSys</a> RefSys::translate </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>x</em>, </td>
@@ -796,8 +800,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classRefSys_a5dcfc5412f6f1bc3328c4c5b414251ad_cgraph.png" border="0" usemap="#classRefSys_a5dcfc5412f6f1bc3328c4c5b414251ad_cgraph" alt=""/></div>
-<map name="classRefSys_a5dcfc5412f6f1bc3328c4c5b414251ad_cgraph" id="classRefSys_a5dcfc5412f6f1bc3328c4c5b414251ad_cgraph">
+<div class="center"><img src="classRefSys_a13d60d2bdaf80726fdd42694c1df98db_cgraph.png" border="0" usemap="#classRefSys_a13d60d2bdaf80726fdd42694c1df98db_cgraph" alt=""/></div>
+<map name="classRefSys_a13d60d2bdaf80726fdd42694c1df98db_cgraph" id="classRefSys_a13d60d2bdaf80726fdd42694c1df98db_cgraph">
 </map>
 </div>
 </p>
@@ -805,8 +809,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classRefSys_a5dcfc5412f6f1bc3328c4c5b414251ad_icgraph.png" border="0" usemap="#classRefSys_a5dcfc5412f6f1bc3328c4c5b414251ad_icgraph" alt=""/></div>
-<map name="classRefSys_a5dcfc5412f6f1bc3328c4c5b414251ad_icgraph" id="classRefSys_a5dcfc5412f6f1bc3328c4c5b414251ad_icgraph">
+<div class="center"><img src="classRefSys_a13d60d2bdaf80726fdd42694c1df98db_icgraph.png" border="0" usemap="#classRefSys_a13d60d2bdaf80726fdd42694c1df98db_icgraph" alt=""/></div>
+<map name="classRefSys_a13d60d2bdaf80726fdd42694c1df98db_icgraph" id="classRefSys_a13d60d2bdaf80726fdd42694c1df98db_icgraph">
 </map>
 </div>
 </p>
@@ -820,7 +824,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 11 2012 00:27:41 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 12 2012 18:02:31 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

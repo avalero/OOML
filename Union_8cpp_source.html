@@ -89,10 +89,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Union.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="Union_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**********************************************************************</span></div>
+<a href="Union_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;﻿<span class="comment">/**********************************************************************</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This code is part of the OOML project</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Trevi�o</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Treviño</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * OOML is licenced under the Common Creative License,</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * Attribution-ShareAlike 3.0</span></div>
@@ -146,25 +146,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="Union_8h.html#a4bd396e9dea95407a61ac9b4b079c063">   55</a></span>&#160;<a class="code" href="classComponent.html" title="Component class.">Component</a> <a class="code" href="Union_8cpp.html#a853d8866133f3b7555925377a17a27c2">operator+</a>(<a class="code" href="classComponent.html" title="Component class.">Component</a> <span class="keyword">const</span>&amp; lhs, <a class="code" href="classComponent.html" title="Component class.">Component</a> <span class="keyword">const</span>&amp; rhs)</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;         <a class="code" href="classCompositeComponent.html" title="Composite component interface.">CompositeComponent</a> result(<a class="code" href="classUnion.html#abd6d383545bd9e28a2b2a73f716c9169" title="Static factory method.">Union::create</a>());</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;     <span class="comment">//Keep all the links of the children</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;     <span class="comment">//avoid link 0, which is the default link at the origin</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;     <span class="keywordflow">if</span>(lhs.<a class="code" href="classAbstractObject.html#ad6b31861029adf226524bbaf066ec7a6" title="Returns if the Object has links.">hasLinks</a>())</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=1; i&lt;lhs.<a class="code" href="classAbstractObject.html#a5aabc9bc5d049d0320092d8f8b1cb93e">getLinks</a>().size();i++)</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            result.<a class="code" href="classAbstractObject.html#afeb1ed691f3127374a16d0a3297f6917" title="Adds a Link to the system. System of the Link.">addLink</a>(lhs.<a class="code" href="classAbstractObject.html#a8ccb370b1bd2d4a08f35dfadb8532c21">getLink</a>(i));</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;     <span class="keywordflow">if</span> (rhs.<a class="code" href="classAbstractObject.html#ad6b31861029adf226524bbaf066ec7a6" title="Returns if the Object has links.">hasLinks</a>())</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=1; i&lt;rhs.<a class="code" href="classAbstractObject.html#a5aabc9bc5d049d0320092d8f8b1cb93e">getLinks</a>().size();i++)</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            result.<a class="code" href="classAbstractObject.html#afeb1ed691f3127374a16d0a3297f6917" title="Adds a Link to the system. System of the Link.">addLink</a>(rhs.<a class="code" href="classAbstractObject.html#a8ccb370b1bd2d4a08f35dfadb8532c21">getLink</a>(i));</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;         result &lt;&lt; lhs.<a class="code" href="classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version.">get</a>() &lt;&lt; rhs.<a class="code" href="classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version.">get</a>();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;         <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;         result &lt;&lt; lhs.<a class="code" href="classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version.">get</a>() &lt;&lt; rhs.<a class="code" href="classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version.">get</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;     <span class="comment">//keep the links (transformed if neccessary)</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;     result.<a class="code" href="classAbstractObject.html#ab10fcc764ffe95d859beedaaf6b54a7e">setLinks</a>(lhs.<a class="code" href="classComponent.html#a49bda799c32846b690940adc73ef49a0">getLinks</a>());</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;         <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 11 2012 00:27:40 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 12 2012 18:02:30 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

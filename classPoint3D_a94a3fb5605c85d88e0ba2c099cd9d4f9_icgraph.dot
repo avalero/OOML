@@ -10,6 +10,4 @@ digraph "Point3D::getX"
   Node3 [label="Point3D::operator+",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoint3D.html#aace0be0d5f96f2b590c4779d6fa69ad0",tooltip="Default plus operator."];
   Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node4 [label="Point3D::operator-",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoint3D.html#a3b660ccc8fc416be800d8ff796a82712",tooltip="Default minus operator."];
-  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="TranslateDecorator\l::create",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTranslateDecorator.html#ac1f7b9d2640cb5576a517c0337d4a1dd",tooltip="Default factory method."];
 }

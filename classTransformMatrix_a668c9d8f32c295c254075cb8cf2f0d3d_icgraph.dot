@@ -5,11 +5,19 @@ digraph "TransformMatrix::relRotateX"
   rankdir="LR";
   Node1 [label="TransformMatrix::relRotateX",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="TransformMatrix::relRotate\lEulerZXZ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTransformMatrix.html#aa4a1f915ff428d0e3bb9fa43dd0974b5",tooltip="Applies an Euler rotation around z, x&#39;, z&#39;&#39; Applies three rotations around z, x&#39; and z&#39;&#39;..."];
+  Node2 [label="TransformMatrix::relRotate\lEulerZXZ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTransformMatrix.html#aa4a1f915ff428d0e3bb9fa43dd0974b5",tooltip="Applies an Euler rotation around the local reference system z, x&#39;, z&#39;&#39; Applies three rotations around..."];
   Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="RefSys::relRotateEulerZXZ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRefSys.html#a98574be4d68cc6e691df898596009335",tooltip="Rotates the reference system This methods rotates the reference system with the Euler ZXZ angles..."];
-  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="TransformMatrix::relRotate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTransformMatrix.html#a00dc5a7c72440944e3fde54dde9bfb5d",tooltip="Applies a Roll-Pitch-Yaw rotation around x, y, z Applies three rotations around the fixed reference s..."];
-  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="RefSys::relRotate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRefSys.html#a0d9f1e184254e14464040e22da66b2cf",tooltip="Rotates the reference system This methods rotates the reference system The origin is kept unmoved..."];
+  Node3 [label="Component::relRotateEulerZXZ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#a29263e0bb90f81f656e96f2d32c7779a",tooltip="Rotate the component with Euler Angles ZX&#39;Z&#39;&#39; around its local reference system."];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Component::relRotatedEuler\lZXZCopy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#a25028782df9545cded87db34bfd597e6",tooltip="Rotate a copy of the component with Euler Angles ZX&#39;Z&#39;&#39; around its local reference system..."];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="RefSys::relRotateEulerZXZ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRefSys.html#aa072538837bda40928c53d308298021d",tooltip="Rotates the reference system This methods rotates the reference system with the Euler ZXZ angles..."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="TransformMatrix::relRotate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTransformMatrix.html#a00dc5a7c72440944e3fde54dde9bfb5d",tooltip="Applies a Roll-Pitch-Yaw rotation around the local reference system x, y, z Applies three rotations a..."];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Component::relRotatedCopy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#acaf3d36cfecfce9ac15e803f5d5d66d6",tooltip="Rotate the component around its local reference system."];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Component::relRotate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#a2c3e5cf2bc1680e69b3268e7063cd1d8",tooltip="Rotate the component around its local reference system."];
+  Node6 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="RefSys::relRotate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRefSys.html#a6a808b37b21c61eb6a47366a3fc2642c",tooltip="Rotates the reference system This methods rotates the reference system The origin is kept unmoved..."];
 }

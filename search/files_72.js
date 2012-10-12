@@ -8,8 +8,6 @@ var searchData=
   ['regularpiramid_2eh',['RegularPiramid.h',['../RegularPiramid_8h.html',1,'']]],
   ['regularprism_2ecpp',['RegularPrism.cpp',['../RegularPrism_8cpp.html',1,'']]],
   ['regularprism_2eh',['RegularPrism.h',['../RegularPrism_8h.html',1,'']]],
-  ['rotatedecorator_2ecpp',['RotateDecorator.cpp',['../RotateDecorator_8cpp.html',1,'']]],
-  ['rotatedecorator_2eh',['RotateDecorator.h',['../RotateDecorator_8h.html',1,'']]],
   ['rotateextrudedecorator_2ecpp',['RotateExtrudeDecorator.cpp',['../RotateExtrudeDecorator_8cpp.html',1,'']]],
   ['rotateextrudedecorator_2eh',['RotateExtrudeDecorator.h',['../RotateExtrudeDecorator_8h.html',1,'']]],
   ['rotmatrix_2ecpp',['RotMatrix.cpp',['../RotMatrix_8cpp.html',1,'']]],

@@ -5,5 +5,9 @@ digraph "TransformMatrix::relTranslate"
   rankdir="LR";
   Node1 [label="TransformMatrix::relTranslate",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="RefSys::relTranslate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRefSys.html#a8bc078e068e1af5ec562b5789e482cf5",tooltip="Translates the origin of the reference system This methods translated the origin of the reference sys..."];
+  Node2 [label="Component::relTranslatedCopy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#a81714ef743a86f37f571a1f40af66770",tooltip="Translate the component wrt. to its local reference system."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Component::relTranslate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#a9c77e890ea15db01c38273975f9a56ad",tooltip="Translate the component wrt. to its local reference system."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="RefSys::relTranslate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRefSys.html#a2369ded5f3d02e987c7f9c9c7a4d9147",tooltip="Translates the origin of the reference system This methods translated the origin of the reference sys..."];
 }

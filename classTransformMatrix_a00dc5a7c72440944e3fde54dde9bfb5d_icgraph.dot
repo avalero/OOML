@@ -5,5 +5,9 @@ digraph "TransformMatrix::relRotate"
   rankdir="LR";
   Node1 [label="TransformMatrix::relRotate",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="RefSys::relRotate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRefSys.html#a0d9f1e184254e14464040e22da66b2cf",tooltip="Rotates the reference system This methods rotates the reference system The origin is kept unmoved..."];
+  Node2 [label="Component::relRotatedCopy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#acaf3d36cfecfce9ac15e803f5d5d66d6",tooltip="Rotate the component around its local reference system."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Component::relRotate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#a2c3e5cf2bc1680e69b3268e7063cd1d8",tooltip="Rotate the component around its local reference system."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="RefSys::relRotate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRefSys.html#a6a808b37b21c61eb6a47366a3fc2642c",tooltip="Rotates the reference system This methods rotates the reference system The origin is kept unmoved..."];
 }

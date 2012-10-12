@@ -1,0 +1,15 @@
+digraph "AbstractObject::getLinks"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AbstractObject::getLinks",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Component::getLinks",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#a49bda799c32846b690940adc73ef49a0"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="LinksView::LinksView",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinksView.html#ac098d8856f85d764e3dbad57be30e8da"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="operator+",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Union_8h.html#a4bd396e9dea95407a61ac9b4b079c063"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="ObjectDecorator::getLinks",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classObjectDecorator.html#a18e900d54dd55ef2c5b69eac53272258"];
+}

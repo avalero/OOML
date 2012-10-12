@@ -9,13 +9,21 @@ digraph "ArduinoUNO::getBoard"
   Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node3 [label="Component::translatedCopy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#a871a9cc554e6c5bfa195215fa011e416",tooltip="Translate the component."];
   Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="TranslateDecorator\l::create",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTranslateDecorator.html#a1dcad9f08c75e2cfe13718aea9012f88",tooltip="Default factory method."];
+  Node4 [label="TransformMatrix::translate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTransformMatrix.html#ae2b5dc7c41da84953f791e12e0b22964",tooltip="performs a translation"];
   Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="SharedPtr::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSharedPtr.html#ac747048e189c896c11f0b436d02fc5e1",tooltip="Gets the pointer hold."];
-  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node6 [label="ObjectDecorator::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74",tooltip="Get the internally hold pointer. Const version."];
-  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node7 [label="Component::color",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#a2a09a1cc2732ab4ab42c10d36f6b8b6d",tooltip="Color the component."];
+  Node5 [label="Matrix::set",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMatrix.html#a820d3e49ffea766faf310729803e1df1"];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Component::Component",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#a8775db6d1a2c1afc2e77cd3c8f39da6f",tooltip="Default constructor."];
+  Node3 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="TransformDecorator\l::create",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTransformDecorator.html#a0aa4971660b91bebb8ad53e682b00bd1",tooltip="Default factory method."];
   Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node8 [label="ColorDecorator::create",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classColorDecorator.html#a74543bab1e3775280099b43d9d124c6a",tooltip="Default factory method."];
+  Node8 [label="TransformMatrix::isIdentity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTransformMatrix.html#ae53e1d2436656a41d8689cd818a05f88",tooltip="checke if matrix equals identity"];
+  Node7 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="SharedPtr::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSharedPtr.html#ac747048e189c896c11f0b436d02fc5e1",tooltip="Gets the pointer hold."];
+  Node7 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="ObjectDecorator::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74",tooltip="Get the internally hold pointer. Const version."];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Component::color",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#a2a09a1cc2732ab4ab42c10d36f6b8b6d",tooltip="Color the component."];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="ColorDecorator::create",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classColorDecorator.html#a74543bab1e3775280099b43d9d124c6a",tooltip="Default factory method."];
 }

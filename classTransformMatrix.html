@@ -118,37 +118,39 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a17e7b1b55650e17a98c703fdc59ebe02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTransformMatrix.html">TransformMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformMatrix.html#a17e7b1b55650e17a98c703fdc59ebe02">operator*</a> (<a class="el" href="classTransformMatrix.html">TransformMatrix</a> const &amp;matrix)</td></tr>
 <tr class="memdesc:a17e7b1b55650e17a98c703fdc59ebe02"><td class="mdescLeft">&#160;</td><td class="mdescRight">operator * Multiplies two matrices  <a href="#a17e7b1b55650e17a98c703fdc59ebe02"></a><br/></td></tr>
 <tr class="memitem:ae6ad2df1f60c163d35b5fd43846034fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformMatrix.html#ae6ad2df1f60c163d35b5fd43846034fb">rotateEulerZXZ</a> (double z, double xp, double zpp)</td></tr>
-<tr class="memdesc:ae6ad2df1f60c163d35b5fd43846034fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies an Euler rotation around z, x', z'' Applies three rotations around z, x' and z''.  <a href="#ae6ad2df1f60c163d35b5fd43846034fb"></a><br/></td></tr>
+<tr class="memdesc:ae6ad2df1f60c163d35b5fd43846034fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies an Euler rotation around the initial fixed z, x', z'' Applies three rotations around z, x' and z''.  <a href="#ae6ad2df1f60c163d35b5fd43846034fb"></a><br/></td></tr>
 <tr class="memitem:a6ca67ecc63c5f6fd26cca1d0df2033eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformMatrix.html#a6ca67ecc63c5f6fd26cca1d0df2033eb">rotateEulerZYZ</a> (double z, double yp, double zpp)</td></tr>
-<tr class="memdesc:a6ca67ecc63c5f6fd26cca1d0df2033eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies an Euler rotation around z, y', z'' Applies three rotations around z, x' and z''.  <a href="#a6ca67ecc63c5f6fd26cca1d0df2033eb"></a><br/></td></tr>
+<tr class="memdesc:a6ca67ecc63c5f6fd26cca1d0df2033eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies an Euler rotation around the initial fixed z, y', z'' Applies three rotations around z, x' and z''.  <a href="#a6ca67ecc63c5f6fd26cca1d0df2033eb"></a><br/></td></tr>
 <tr class="memitem:a20910983db5e4e0574879dd86b4f8a3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformMatrix.html#a20910983db5e4e0574879dd86b4f8a3e">rotate</a> (double x, double y, double z)</td></tr>
-<tr class="memdesc:a20910983db5e4e0574879dd86b4f8a3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a Roll-Pitch-Yaw rotation around x, y, z Applies three rotations around the fixed reference system x,y,z.  <a href="#a20910983db5e4e0574879dd86b4f8a3e"></a><br/></td></tr>
+<tr class="memdesc:a20910983db5e4e0574879dd86b4f8a3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a Roll-Pitch-Yaw rotation around the initial fixed x, y, z Applies three rotations around the fixed reference system x,y,z.  <a href="#a20910983db5e4e0574879dd86b4f8a3e"></a><br/></td></tr>
 <tr class="memitem:aa4a1f915ff428d0e3bb9fa43dd0974b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformMatrix.html#aa4a1f915ff428d0e3bb9fa43dd0974b5">relRotateEulerZXZ</a> (double z, double xp, double zpp)</td></tr>
-<tr class="memdesc:aa4a1f915ff428d0e3bb9fa43dd0974b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies an Euler rotation around z, x', z'' Applies three rotations around z, x' and z''.  <a href="#aa4a1f915ff428d0e3bb9fa43dd0974b5"></a><br/></td></tr>
+<tr class="memdesc:aa4a1f915ff428d0e3bb9fa43dd0974b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies an Euler rotation around the local reference system z, x', z'' Applies three rotations around z, x' and z''.  <a href="#aa4a1f915ff428d0e3bb9fa43dd0974b5"></a><br/></td></tr>
 <tr class="memitem:a52cd13a210fb835f8c39f82830780d08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformMatrix.html#a52cd13a210fb835f8c39f82830780d08">relRotateEulerZYZ</a> (double z, double yp, double zpp)</td></tr>
-<tr class="memdesc:a52cd13a210fb835f8c39f82830780d08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies an Euler rotation around z, y', z'' Applies three rotations around z, x' and z''.  <a href="#a52cd13a210fb835f8c39f82830780d08"></a><br/></td></tr>
+<tr class="memdesc:a52cd13a210fb835f8c39f82830780d08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies an Euler rotation around the local reference system z, y', z'' Applies three rotations around z, x' and z''.  <a href="#a52cd13a210fb835f8c39f82830780d08"></a><br/></td></tr>
 <tr class="memitem:a00dc5a7c72440944e3fde54dde9bfb5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformMatrix.html#a00dc5a7c72440944e3fde54dde9bfb5d">relRotate</a> (double x, double y, double z)</td></tr>
-<tr class="memdesc:a00dc5a7c72440944e3fde54dde9bfb5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a Roll-Pitch-Yaw rotation around x, y, z Applies three rotations around the fixed reference system x,y,z.  <a href="#a00dc5a7c72440944e3fde54dde9bfb5d"></a><br/></td></tr>
+<tr class="memdesc:a00dc5a7c72440944e3fde54dde9bfb5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a Roll-Pitch-Yaw rotation around the local reference system x, y, z Applies three rotations around the fixed reference system x,y,z.  <a href="#a00dc5a7c72440944e3fde54dde9bfb5d"></a><br/></td></tr>
 <tr class="memitem:ad94010aa2da239614efbfb4926d63c04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformMatrix.html#ad94010aa2da239614efbfb4926d63c04">rotateX</a> (double x)</td></tr>
-<tr class="memdesc:ad94010aa2da239614efbfb4926d63c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a rotation around current x axis Applies a rotation around current x axis.  <a href="#ad94010aa2da239614efbfb4926d63c04"></a><br/></td></tr>
+<tr class="memdesc:ad94010aa2da239614efbfb4926d63c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a rotation around initial fixed x axis Applies a rotation around current x axis.  <a href="#ad94010aa2da239614efbfb4926d63c04"></a><br/></td></tr>
 <tr class="memitem:ac76ffec4c53cd0b70b0bc86a67f95ad0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformMatrix.html#ac76ffec4c53cd0b70b0bc86a67f95ad0">rotateY</a> (double y)</td></tr>
-<tr class="memdesc:ac76ffec4c53cd0b70b0bc86a67f95ad0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a rotation around current y axis Applies a rotation around current y axis.  <a href="#ac76ffec4c53cd0b70b0bc86a67f95ad0"></a><br/></td></tr>
+<tr class="memdesc:ac76ffec4c53cd0b70b0bc86a67f95ad0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a rotation around initial fixed y axis Applies a rotation around current y axis.  <a href="#ac76ffec4c53cd0b70b0bc86a67f95ad0"></a><br/></td></tr>
 <tr class="memitem:a4b485e8c3d73e3b687b4859b4cc11408"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformMatrix.html#a4b485e8c3d73e3b687b4859b4cc11408">rotateZ</a> (double z)</td></tr>
-<tr class="memdesc:a4b485e8c3d73e3b687b4859b4cc11408"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a rotation around current z axis Applies a rotation around current z axis.  <a href="#a4b485e8c3d73e3b687b4859b4cc11408"></a><br/></td></tr>
+<tr class="memdesc:a4b485e8c3d73e3b687b4859b4cc11408"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a rotation around initial fixed current z axis Applies a rotation around current z axis.  <a href="#a4b485e8c3d73e3b687b4859b4cc11408"></a><br/></td></tr>
 <tr class="memitem:a668c9d8f32c295c254075cb8cf2f0d3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformMatrix.html#a668c9d8f32c295c254075cb8cf2f0d3d">relRotateX</a> (double x)</td></tr>
-<tr class="memdesc:a668c9d8f32c295c254075cb8cf2f0d3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a rotation around current x axis Applies a rotation around current x axis.  <a href="#a668c9d8f32c295c254075cb8cf2f0d3d"></a><br/></td></tr>
+<tr class="memdesc:a668c9d8f32c295c254075cb8cf2f0d3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a rotation around current local x axis Applies a rotation around current x axis.  <a href="#a668c9d8f32c295c254075cb8cf2f0d3d"></a><br/></td></tr>
 <tr class="memitem:a15e0f3ce5ce669ae2894ec34f68a692e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformMatrix.html#a15e0f3ce5ce669ae2894ec34f68a692e">relRotateY</a> (double y)</td></tr>
-<tr class="memdesc:a15e0f3ce5ce669ae2894ec34f68a692e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a rotation around current y axis Applies a rotation around current y axis.  <a href="#a15e0f3ce5ce669ae2894ec34f68a692e"></a><br/></td></tr>
+<tr class="memdesc:a15e0f3ce5ce669ae2894ec34f68a692e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a rotation around current local y axis Applies a rotation around current y axis.  <a href="#a15e0f3ce5ce669ae2894ec34f68a692e"></a><br/></td></tr>
 <tr class="memitem:a4b15619b5a1a9e1236d25e570b11397a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformMatrix.html#a4b15619b5a1a9e1236d25e570b11397a">relRotateZ</a> (double z)</td></tr>
-<tr class="memdesc:a4b15619b5a1a9e1236d25e570b11397a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a rotation around current z axis Applies a rotation around current z axis.  <a href="#a4b15619b5a1a9e1236d25e570b11397a"></a><br/></td></tr>
-<tr class="memitem:a4559456160bd3837e04274e40c94e0d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformMatrix.html#a4559456160bd3837e04274e40c94e0d3">getGlobalXYZAngles</a> (double &amp;x, double &amp;y, double &amp;z)</td></tr>
-<tr class="memdesc:a4559456160bd3837e04274e40c94e0d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the rotation angles about the fixed axes x,y,z. Obtains the rotation angles about the fixed x,y,z (Roll,Pich,Yaw).  <a href="#a4559456160bd3837e04274e40c94e0d3"></a><br/></td></tr>
-<tr class="memitem:a72f9ac738cb08ae6fc252dbe2ff01017"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformMatrix.html#a72f9ac738cb08ae6fc252dbe2ff01017">getGlobalTranslation</a> (double &amp;x, double &amp;y, double &amp;z)</td></tr>
-<tr class="memdesc:a72f9ac738cb08ae6fc252dbe2ff01017"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the translation wrt. the fixed axes x,y,z. Obtains the rotation angles about the fixed x,y,z (Roll,Pich,Yaw).  <a href="#a72f9ac738cb08ae6fc252dbe2ff01017"></a><br/></td></tr>
+<tr class="memdesc:a4b15619b5a1a9e1236d25e570b11397a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a rotation around current local z axis Applies a rotation around current z axis.  <a href="#a4b15619b5a1a9e1236d25e570b11397a"></a><br/></td></tr>
+<tr class="memitem:a72b499093d75f6737660168c21b01a5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformMatrix.html#a72b499093d75f6737660168c21b01a5b">getGlobalXYZAngles</a> (double &amp;x, double &amp;y, double &amp;z) const </td></tr>
+<tr class="memdesc:a72b499093d75f6737660168c21b01a5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the rotation angles about the fixed axes x,y,z. Obtains the rotation angles about the fixed x,y,z (Roll,Pich,Yaw).  <a href="#a72b499093d75f6737660168c21b01a5b"></a><br/></td></tr>
+<tr class="memitem:a7f27e92f29e5d19fdffafb1fd987984b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformMatrix.html#a7f27e92f29e5d19fdffafb1fd987984b">getGlobalTranslation</a> (double &amp;x, double &amp;y, double &amp;z) const </td></tr>
+<tr class="memdesc:a7f27e92f29e5d19fdffafb1fd987984b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the translation wrt. the fixed axes x,y,z. Obtains the rotation angles about the fixed x,y,z (Roll,Pich,Yaw).  <a href="#a7f27e92f29e5d19fdffafb1fd987984b"></a><br/></td></tr>
 <tr class="memitem:ae2b5dc7c41da84953f791e12e0b22964"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformMatrix.html#ae2b5dc7c41da84953f791e12e0b22964">translate</a> (double x, double y, double z)</td></tr>
 <tr class="memdesc:ae2b5dc7c41da84953f791e12e0b22964"><td class="mdescLeft">&#160;</td><td class="mdescRight">performs a translation  <a href="#ae2b5dc7c41da84953f791e12e0b22964"></a><br/></td></tr>
 <tr class="memitem:af2e8c92afee36a6e24206ffed1398161"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformMatrix.html#af2e8c92afee36a6e24206ffed1398161">relTranslate</a> (double x, double y, double z)</td></tr>
 <tr class="memdesc:af2e8c92afee36a6e24206ffed1398161"><td class="mdescLeft">&#160;</td><td class="mdescRight">performs a translation  <a href="#af2e8c92afee36a6e24206ffed1398161"></a><br/></td></tr>
+<tr class="memitem:ae53e1d2436656a41d8689cd818a05f88"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransformMatrix.html#ae53e1d2436656a41d8689cd818a05f88">isIdentity</a> ()</td></tr>
+<tr class="memdesc:ae53e1d2436656a41d8689cd818a05f88"><td class="mdescLeft">&#160;</td><td class="mdescRight">checke if matrix equals identity  <a href="#ae53e1d2436656a41d8689cd818a05f88"></a><br/></td></tr>
 <tr class="inherit_header pub_methods_classMatrix"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classMatrix')"><img src="closed.png" alt="-"/>&nbsp;Public Member Functions inherited from <a class="el" href="classMatrix.html">Matrix< double, 4, 4 ></a></td></tr>
 <tr class="memitem:a755d6027fb025fccfcc91b2098d806f0 inherit pub_methods_classMatrix"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMatrix.html#a755d6027fb025fccfcc91b2098d806f0">Matrix</a> ()</td></tr>
 <tr class="memdesc:a755d6027fb025fccfcc91b2098d806f0 inherit pub_methods_classMatrix"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a755d6027fb025fccfcc91b2098d806f0"></a><br/></td></tr>
@@ -219,7 +221,7 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2>Member Function Documentation</h2>
-<a class="anchor" id="a72f9ac738cb08ae6fc252dbe2ff01017"></a>
+<a class="anchor" id="a7f27e92f29e5d19fdffafb1fd987984b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -244,7 +246,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -264,15 +266,15 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classTransformMatrix_a72f9ac738cb08ae6fc252dbe2ff01017_icgraph.png" border="0" usemap="#classTransformMatrix_a72f9ac738cb08ae6fc252dbe2ff01017_icgraph" alt=""/></div>
-<map name="classTransformMatrix_a72f9ac738cb08ae6fc252dbe2ff01017_icgraph" id="classTransformMatrix_a72f9ac738cb08ae6fc252dbe2ff01017_icgraph">
+<div class="center"><img src="classTransformMatrix_a7f27e92f29e5d19fdffafb1fd987984b_icgraph.png" border="0" usemap="#classTransformMatrix_a7f27e92f29e5d19fdffafb1fd987984b_icgraph" alt=""/></div>
+<map name="classTransformMatrix_a7f27e92f29e5d19fdffafb1fd987984b_icgraph" id="classTransformMatrix_a7f27e92f29e5d19fdffafb1fd987984b_icgraph">
 </map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a4559456160bd3837e04274e40c94e0d3"></a>
+<a class="anchor" id="a72b499093d75f6737660168c21b01a5b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -297,7 +299,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -317,8 +319,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classTransformMatrix_a4559456160bd3837e04274e40c94e0d3_cgraph.png" border="0" usemap="#classTransformMatrix_a4559456160bd3837e04274e40c94e0d3_cgraph" alt=""/></div>
-<map name="classTransformMatrix_a4559456160bd3837e04274e40c94e0d3_cgraph" id="classTransformMatrix_a4559456160bd3837e04274e40c94e0d3_cgraph">
+<div class="center"><img src="classTransformMatrix_a72b499093d75f6737660168c21b01a5b_cgraph.png" border="0" usemap="#classTransformMatrix_a72b499093d75f6737660168c21b01a5b_cgraph" alt=""/></div>
+<map name="classTransformMatrix_a72b499093d75f6737660168c21b01a5b_cgraph" id="classTransformMatrix_a72b499093d75f6737660168c21b01a5b_cgraph">
 </map>
 </div>
 </p>
@@ -326,8 +328,45 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classTransformMatrix_a4559456160bd3837e04274e40c94e0d3_icgraph.png" border="0" usemap="#classTransformMatrix_a4559456160bd3837e04274e40c94e0d3_icgraph" alt=""/></div>
-<map name="classTransformMatrix_a4559456160bd3837e04274e40c94e0d3_icgraph" id="classTransformMatrix_a4559456160bd3837e04274e40c94e0d3_icgraph">
+<div class="center"><img src="classTransformMatrix_a72b499093d75f6737660168c21b01a5b_icgraph.png" border="0" usemap="#classTransformMatrix_a72b499093d75f6737660168c21b01a5b_icgraph" alt=""/></div>
+<map name="classTransformMatrix_a72b499093d75f6737660168c21b01a5b_icgraph" id="classTransformMatrix_a72b499093d75f6737660168c21b01a5b_icgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae53e1d2436656a41d8689cd818a05f88"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TransformMatrix::isIdentity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>checke if matrix equals identity </p>
+<dl class="section return"><dt>Returns</dt><dd>ture when matrix is identitiy </dd></dl>
+
+<p>Definition at line <a class="el" href="TransformMatrix_8h_source.html#l00224">224</a> of file <a class="el" href="TransformMatrix_8h_source.html">TransformMatrix.h</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTransformMatrix_ae53e1d2436656a41d8689cd818a05f88_icgraph.png" border="0" usemap="#classTransformMatrix_ae53e1d2436656a41d8689cd818a05f88_icgraph" alt=""/></div>
+<map name="classTransformMatrix_ae53e1d2436656a41d8689cd818a05f88_icgraph" id="classTransformMatrix_ae53e1d2436656a41d8689cd818a05f88_icgraph">
 </map>
 </div>
 </p>
@@ -425,7 +464,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Applies a Roll-Pitch-Yaw rotation around x, y, z Applies three rotations around the fixed reference system x,y,z. </p>
+<p>Applies a Roll-Pitch-Yaw rotation around the local reference system x, y, z Applies three rotations around the fixed reference system x,y,z. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>Rotation (in degrees) around x axis. </td></tr>
@@ -487,7 +526,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Applies an Euler rotation around z, x', z'' Applies three rotations around z, x' and z''. </p>
+<p>Applies an Euler rotation around the local reference system z, x', z'' Applies three rotations around z, x' and z''. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">z</td><td>Rotation (in degrees) around z axis. </td></tr>
@@ -549,7 +588,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Applies an Euler rotation around z, y', z'' Applies three rotations around z, x' and z''. </p>
+<p>Applies an Euler rotation around the local reference system z, y', z'' Applies three rotations around z, x' and z''. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">z</td><td>(in degrees) Rotation around z axis. </td></tr>
@@ -595,7 +634,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Applies a rotation around current x axis Applies a rotation around current x axis. </p>
+<p>Applies a rotation around current local x axis Applies a rotation around current x axis. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>Rotation (in degrees) around x axis. </td></tr>
@@ -639,7 +678,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Applies a rotation around current y axis Applies a rotation around current y axis. </p>
+<p>Applies a rotation around current local y axis Applies a rotation around current y axis. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">y</td><td>Rotation (in degrees) around y axis. </td></tr>
@@ -683,7 +722,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Applies a rotation around current z axis Applies a rotation around current z axis. </p>
+<p>Applies a rotation around current local z axis Applies a rotation around current z axis. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">z</td><td>Rotation (in degrees) around z axis. </td></tr>
@@ -805,7 +844,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Applies a Roll-Pitch-Yaw rotation around x, y, z Applies three rotations around the fixed reference system x,y,z. </p>
+<p>Applies a Roll-Pitch-Yaw rotation around the initial fixed x, y, z Applies three rotations around the fixed reference system x,y,z. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>Rotation (in degrees) around x axis. </td></tr>
@@ -867,7 +906,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Applies an Euler rotation around z, x', z'' Applies three rotations around z, x' and z''. </p>
+<p>Applies an Euler rotation around the initial fixed z, x', z'' Applies three rotations around z, x' and z''. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">z</td><td>Rotation (in degrees) around z axis. </td></tr>
@@ -929,7 +968,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Applies an Euler rotation around z, y', z'' Applies three rotations around z, x' and z''. </p>
+<p>Applies an Euler rotation around the initial fixed z, y', z'' Applies three rotations around z, x' and z''. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">z</td><td>(in degrees) Rotation around z axis. </td></tr>
@@ -975,7 +1014,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Applies a rotation around current x axis Applies a rotation around current x axis. </p>
+<p>Applies a rotation around initial fixed x axis Applies a rotation around current x axis. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>Rotation (in degrees) around x axis. </td></tr>
@@ -1019,7 +1058,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Applies a rotation around current y axis Applies a rotation around current y axis. </p>
+<p>Applies a rotation around initial fixed y axis Applies a rotation around current y axis. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">y</td><td>Rotation (in degrees) around y axis. </td></tr>
@@ -1063,7 +1102,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Applies a rotation around current z axis Applies a rotation around current z axis. </p>
+<p>Applies a rotation around initial fixed current z axis Applies a rotation around current z axis. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">z</td><td>Rotation (in degrees) around z axis. </td></tr>
@@ -1162,7 +1201,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 11 2012 00:27:41 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 12 2012 18:02:31 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

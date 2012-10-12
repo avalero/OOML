@@ -89,7 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">RefSysView.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="RefSysView_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**********************************************************************</span></div>
+<a href="RefSysView_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;﻿<span class="comment">/**********************************************************************</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This code is part of the OOML project</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Trevio</span></div>
@@ -159,19 +159,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keyword">set</span>(genComponent().get());</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="code" href="classRefSysView.html#ae87289efcbdd4f0bab0498321276123c">   89</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classRefSysView.html#ae87289efcbdd4f0bab0498321276123c" title="Default destructor.">~RefSysView</a>() {}</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="code" href="classRefSysView.html#a4f750fae643594a5914c732ea7ca2e8a">   85</a></span>&#160;    <a class="code" href="classRefSysView.html" title="3D point primitive object">RefSysView</a>(<a class="code" href="classComponent.html" title="Component class.">Component</a> <span class="keyword">const</span> &amp; comp)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <a class="code" href="classAbstractObject.html" title="Abstract object interface.">AbstractObject</a> * <span class="keywordtype">object</span> = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="classAbstractObject.html" title="Abstract object interface.">AbstractObject</a> *<span class="keyword">&gt;</span>(comp.<a class="code" href="classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version.">get</a>().<a class="code" href="classSharedPtr.html#ac747048e189c896c11f0b436d02fc5e1" title="Gets the pointer hold.">get</a>());</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        _refSys=<span class="keywordtype">object</span>-&gt;<a class="code" href="classAbstractObject.html#a699b7bbe9185ea1695941ebce185a577">getRefSys</a>();</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <a class="code" href="classRefSys.html" title="3D point primitive object">RefSys</a> _refSys;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <a class="code" href="classComponent.html" title="Component class.">Component</a> genComponent();</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;};</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif // OOML_REFSYSIEW_H_INCLUDED</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keyword">set</span>(genComponent().get());</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="code" href="classRefSysView.html#ae87289efcbdd4f0bab0498321276123c">   98</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classRefSysView.html#ae87289efcbdd4f0bab0498321276123c" title="Default destructor.">~RefSysView</a>() {}</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <a class="code" href="classRefSys.html" title="3D point primitive object">RefSys</a> _refSys;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <a class="code" href="classComponent.html" title="Component class.">Component</a> genComponent();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif // OOML_REFSYSIEW_H_INCLUDED</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 11 2012 00:27:40 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 12 2012 18:02:30 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

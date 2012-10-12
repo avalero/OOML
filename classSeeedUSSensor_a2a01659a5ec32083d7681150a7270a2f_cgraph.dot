@@ -5,11 +5,17 @@ digraph "SeeedUSSensor::build"
   rankdir="LR";
   Node1 [label="SeeedUSSensor::build",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="Component::translate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#ad6dc21a828b8eebedf66f7e27a80799d",tooltip="Translate the component."];
+  Node2 [label="Component::translate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#a0df678527e9d0d65a749bbc5883a71af",tooltip="Translate the component."];
   Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="TranslateDecorator\l::create",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTranslateDecorator.html#a1dcad9f08c75e2cfe13718aea9012f88",tooltip="Default factory method."];
+  Node3 [label="TransformMatrix::translate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTransformMatrix.html#ae2b5dc7c41da84953f791e12e0b22964",tooltip="performs a translation"];
   Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="SharedPtr::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSharedPtr.html#ac747048e189c896c11f0b436d02fc5e1",tooltip="Gets the pointer hold."];
-  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="ObjectDecorator::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74",tooltip="Get the internally hold pointer. Const version."];
+  Node4 [label="Matrix::set",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMatrix.html#a820d3e49ffea766faf310729803e1df1"];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="TransformDecorator\l::create",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTransformDecorator.html#a0aa4971660b91bebb8ad53e682b00bd1",tooltip="Default factory method."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="TransformMatrix::isIdentity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTransformMatrix.html#ae53e1d2436656a41d8689cd818a05f88",tooltip="checke if matrix equals identity"];
+  Node5 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="SharedPtr::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSharedPtr.html#ac747048e189c896c11f0b436d02fc5e1",tooltip="Gets the pointer hold."];
+  Node5 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="ObjectDecorator::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74",tooltip="Get the internally hold pointer. Const version."];
 }

@@ -7,13 +7,12 @@ digraph "operator+"
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="Union::create",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classUnion.html#abd6d383545bd9e28a2b2a73f716c9169",tooltip="Static factory method."];
   Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="AbstractObject::hasLinks",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAbstractObject.html#ad6b31861029adf226524bbaf066ec7a6",tooltip="Returns if the Object has links."];
+  Node3 [label="ObjectDecorator::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74",tooltip="Get the internally hold pointer. Const version."];
   Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="AbstractObject::getLinks",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAbstractObject.html#a5aabc9bc5d049d0320092d8f8b1cb93e"];
+  Node4 [label="AbstractObject::setLinks",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAbstractObject.html#ab10fcc764ffe95d859beedaaf6b54a7e"];
   Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="AbstractObject::addLink",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAbstractObject.html#afeb1ed691f3127374a16d0a3297f6917",tooltip="Adds a Link to the system. System of the Link."];
-  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node6 [label="AbstractObject::getLink",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAbstractObject.html#a8ccb370b1bd2d4a08f35dfadb8532c21"];
-  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node7 [label="ObjectDecorator::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74",tooltip="Get the internally hold pointer. Const version."];
+  Node5 [label="Component::getLinks",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#a49bda799c32846b690940adc73ef49a0"];
+  Node5 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AbstractObject::getLinks",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAbstractObject.html#ab0650b0b0c6fd0e692f976bcc1f3a065"];
 }

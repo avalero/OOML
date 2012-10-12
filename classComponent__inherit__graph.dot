@@ -53,17 +53,19 @@ digraph "Component"
   Node1 -> Node25 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node25 [label="Cylinder",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCylinder.html",tooltip="Cylinder primitive object."];
   Node1 -> Node26 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node26 [label="RefSysView",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRefSysView.html",tooltip="3D point primitive object"];
+  Node26 [label="LinksView",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinksView.html",tooltip="3D point primitive object"];
   Node1 -> Node27 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node27 [label="RegularPiramid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRegularPiramid.html",tooltip="Regular base piramid primitive object."];
+  Node27 [label="RefSysView",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRefSysView.html",tooltip="3D point primitive object"];
   Node1 -> Node28 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node28 [label="RegularPrism",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRegularPrism.html",tooltip="Regular base prism primitive object."];
+  Node28 [label="RegularPiramid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRegularPiramid.html",tooltip="Regular base piramid primitive object."];
   Node1 -> Node29 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node29 [label="RoundedCube",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRoundedCube.html",tooltip="Rounded cube primitive object."];
+  Node29 [label="RegularPrism",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRegularPrism.html",tooltip="Regular base prism primitive object."];
   Node1 -> Node30 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node30 [label="RoundedCylinder",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRoundedCylinder.html",tooltip="Rounded cylinder primitive object."];
+  Node30 [label="RoundedCube",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRoundedCube.html",tooltip="Rounded cube primitive object."];
   Node1 -> Node31 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node31 [label="RoundedTablet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRoundedTablet.html",tooltip="Rounded tablet primitive object."];
+  Node31 [label="RoundedCylinder",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRoundedCylinder.html",tooltip="Rounded cylinder primitive object."];
   Node1 -> Node32 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node32 [label="Sphere",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSphere.html",tooltip="Sphere primitive object."];
+  Node32 [label="RoundedTablet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRoundedTablet.html",tooltip="Rounded tablet primitive object."];
+  Node1 -> Node33 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node33 [label="Sphere",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSphere.html",tooltip="Sphere primitive object."];
 }

@@ -5,5 +5,9 @@ digraph "TransformMatrix::relRotateEulerZXZ"
   rankdir="LR";
   Node1 [label="TransformMatrix::relRotate\lEulerZXZ",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="RefSys::relRotateEulerZXZ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRefSys.html#a98574be4d68cc6e691df898596009335",tooltip="Rotates the reference system This methods rotates the reference system with the Euler ZXZ angles..."];
+  Node2 [label="Component::relRotateEulerZXZ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#a29263e0bb90f81f656e96f2d32c7779a",tooltip="Rotate the component with Euler Angles ZX&#39;Z&#39;&#39; around its local reference system."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Component::relRotatedEuler\lZXZCopy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#a25028782df9545cded87db34bfd597e6",tooltip="Rotate a copy of the component with Euler Angles ZX&#39;Z&#39;&#39; around its local reference system..."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="RefSys::relRotateEulerZXZ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRefSys.html#aa072538837bda40928c53d308298021d",tooltip="Rotates the reference system This methods rotates the reference system with the Euler ZXZ angles..."];
 }

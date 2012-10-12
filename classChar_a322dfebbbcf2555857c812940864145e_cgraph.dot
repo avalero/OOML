@@ -11,7 +11,7 @@ digraph "Char::Char"
   Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node4 [label="DXFLinearExtrude::create",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDXFLinearExtrude.html#a90be3fd523ea9f167550ccd7cd2ec70c",tooltip="Default DXF factory method."];
   Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="Component::scale",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#a2ac4e80605acebdce055cc0d4a247f04",tooltip="Scale the component."];
+  Node5 [label="Component::scale",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classComponent.html#aa2c0e9a9811c924da985d2cb300f9e1c",tooltip="Scale the component."];
   Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node6 [label="ScaleDecorator::create",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classScaleDecorator.html#a308672869ccf13fb1ab3805543555706",tooltip="Default factory method."];
   Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

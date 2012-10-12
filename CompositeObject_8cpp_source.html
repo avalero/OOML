@@ -89,10 +89,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">CompositeObject.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="CompositeObject_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**********************************************************************</span></div>
+<a href="CompositeObject_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;﻿<span class="comment">/**********************************************************************</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This code is part of the OOML project</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Trevi�o</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Treviño</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * OOML is licenced under the Common Creative License,</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * Attribution-ShareAlike 3.0</span></div>
@@ -133,10 +133,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">for</span> (Vector::const_iterator it = <a class="code" href="classCompositeObject.html#aa5e174d56407e7e7e4616990949553b3">_children</a>.begin(); it != <a class="code" href="classCompositeObject.html#aa5e174d56407e7e7e4616990949553b3">_children</a>.end(); ++it)</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                (*it)-&gt;printAst(writer);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="classCompositeObject.html#a9564aacd86b82a932e8bc703bc448b30">   46</a></span>&#160;<a class="code" href="classRefSys.html" title="3D point primitive object">RefSys</a> <a class="code" href="classCompositeObject.html#a9564aacd86b82a932e8bc703bc448b30">CompositeObject::getRefSys</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classAbstractObject.html" title="Abstract object interface.">AbstractObject</a> * <span class="keywordtype">object</span> =  <span class="keyword">dynamic_cast&lt;</span><a class="code" href="classAbstractObject.html" title="Abstract object interface.">AbstractObject</a> *<span class="keyword">&gt;</span>(<a class="code" href="classCompositeObject.html#aa5e174d56407e7e7e4616990949553b3">_children</a>[0].get());</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> <span class="keywordtype">object</span>-&gt;<a class="code" href="classAbstractObject.html#a699b7bbe9185ea1695941ebce185a577">getRefSys</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 11 2012 00:27:40 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 12 2012 18:02:30 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

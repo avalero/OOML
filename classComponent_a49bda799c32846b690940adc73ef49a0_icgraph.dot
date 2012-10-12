@@ -1,0 +1,11 @@
+digraph "Component::getLinks"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Component::getLinks",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="LinksView::LinksView",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinksView.html#ac098d8856f85d764e3dbad57be30e8da"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="operator+",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Union_8h.html#a4bd396e9dea95407a61ac9b4b079c063"];
+}
