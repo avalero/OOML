@@ -1,7 +1,4 @@
-﻿#include <core/RefSys.h>
-#include <core/IndentWriter.h>
-#include <components/LinksView.h>
-#include <components/Cube.h>
+﻿#include <components.h>
 #include <core.h>
 #include <iostream>
 #include <fstream>
