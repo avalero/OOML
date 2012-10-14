@@ -1,4 +1,4 @@
-﻿/*
+/*
 *    OOML : Object Oriented Mechanics Library
 *    Copyright (C) 2012  Alberto Valero Gomez, Juan González Gómez, Rafael Treviño
 *
