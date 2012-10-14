@@ -21,6 +21,13 @@ int main(int argc, char **argv)
     cube1.addLink(RefSys(-5,-5,5).relRotate(0,0,180).relRotate(-45,0,0));
     cube1.addLink(RefSys(-5,-5,-5).relRotate(0,180,0).relRotate(45,0,0));
     cube1.addLink(RefSys(-5,5,-5).relRotate(0,180,0).relRotate(-45,0,0));
+    //cube1.scale(0.9);
+    cube1.translate(-20,0,0);
+    cube1.translate(10,0,0);
+    cube1 = cube1 + Cube(5,5,20);
+    cube1.translate(40,0,0);
+    cube1.color(1,0,0);
+    cube1.translate(0,0,20);
 
     for (int i=0; i<cube1.numberOfLinks();i++){
         Component cub = Cube(5,5,1);

@@ -150,7 +150,9 @@ public:
    */
     Component coloredCopy(double r, double g, double b, double a=1.0) const
     {
-        return Component(ColorDecorator::create(get(), r, g, b, a));
+        SharedPtr<AbstractObject> aux = get();
+        aux->setLinks(_links);
+        return Component(ColorDecorator::create(aux, r, g, b, a));
     }
     /**
    * \brief Color the component.
@@ -166,7 +168,9 @@ public:
    */
     Component & color(double r, double g, double b, double a=1.0)
     {
-        set(ColorDecorator::create(get(), r, g, b, a));
+        SharedPtr<AbstractObject> aux = get();
+        aux->setLinks(_links);
+        set(ColorDecorator::create(aux, r, g, b, a));
         return *this;
     }
 
