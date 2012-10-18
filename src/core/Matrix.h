@@ -92,7 +92,7 @@ public:
         if (other._rows == _rows && other._cols == _cols){
             _elements = other._elements;
         }else{
-            std::cerr << "Matrix are of differente sizes" << std::endl;
+            std::cerr << "Matrix are of different sizes" << std::endl;
         }
 
 		return *this;
