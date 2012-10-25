@@ -45,7 +45,7 @@
 #define OOMLParts_EXP_DEC
 #endif
 
-enum Metric{M3,M4,M5,M6,M7,M8};
+enum Metric{M3,M4};
 
 class OOMLParts_EXP_DEC NutShape : public AbstractPart
 {
