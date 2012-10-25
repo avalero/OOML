@@ -53,6 +53,6 @@ NutShape::NutShape(Metric m):AbstractPart()
 }
 
 Component NutShape::build(){
-    Component hexnut = Cylinder(data.witdth_across_coners/2,data.thickness,6,true);
+    Component hexnut = Cylinder(data.witdth_across_coners/2 + COMPONENT_MARGIN ,data.thickness,6,true);
     return hexnut;
 }
