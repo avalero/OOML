@@ -54,5 +54,9 @@ target_link_libraries(transform OOMLCore OOMLComponents OOMLParts)
 add_executable(attachment attachment.cpp)
 target_link_libraries(attachment OOMLCore OOMLComponents OOMLParts)
 
+# Add test executables
+add_executable(sandbox sandbox.cpp)
+target_link_libraries(sandbox OOMLCore OOMLComponents OOMLParts)
+
 
 #install(TARGETS rounded DESTINATION bin)

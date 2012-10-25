@@ -72,5 +72,6 @@
 #include "core/RotMatrix.h"
 #include "core/globalfunctions.h"
 #include "core/TransformDecorator.h"
+#include "core/Hull.h"
 
 #endif // OOML_CORE_H
