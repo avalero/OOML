@@ -18,5 +18,5 @@
 #include "components/RefSysView.h"
 #include "components/LinksView.h"
 #include "components/Bearings.h"
-
+#include "components/Nuts.h"
 #endif // COMPONENTS_H
