@@ -31,7 +31,7 @@
 #ifndef PLASTICVALLEY_BEARINGS_H
 #define PLASTICVALLEY_BEARINGS_H
 
-#include "ooml/core.h"
+#include "../core.h"
 
 #include <core/AbstractPart.h>
 

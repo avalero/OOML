@@ -31,7 +31,7 @@
 
 
 #include "Nuts.h"
-#include "ooml/components.h"
+#include "../components.h"
 
 NutShape::NutShape(Metric m):AbstractPart()
 {

@@ -31,7 +31,7 @@
 
 
 #include "Bearings.h"
-#include "ooml/components.h"
+#include "../components.h"
 
 LM8uu::LM8uu():AbstractPart()
 {

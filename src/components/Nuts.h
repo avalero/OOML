@@ -31,7 +31,7 @@
 #ifndef OOML_NUTS_H
 #define OOML_NUTS_H
 
-#include "ooml/core.h"
+#include "../core.h"
 
 #include <core/AbstractPart.h>
 
