@@ -35,12 +35,8 @@ String::String(string cad, double font_size, double spacing, double height) :
 
     CompositeComponent comp = Union::create();
 
-    for (int i=0; data._string.size();i++){
+    for (int i=0; i<data._string.size();i++){
         Char ch(data._string.at(i),data._font_size,data._height);
-        if (!ch.exists()){
-            data._created=false;
-            return;
-        }
         ch.translate(i*data._spacing,0,0);
         comp << ch;
     }
