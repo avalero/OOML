@@ -26,12 +26,12 @@ Char::Char(char character, double font_size, double height) :
 {
     bool capitalized;
 
-    if (character >= 65 && character <=90){
+    if ((character >= 65 && character <=90) || (character >=49 && character <=58)){
         capitalized = true;
-    }else if ((character >=97 && character <=122) || (character >=0 && character <=9)){
+    }else if (character >=97 && character <=122){
         capitalized = false;
     }else{
-        cerr << "No dxf for that char" << endl;
+        cerr << "No dxf for that char: " << (int)character << endl;
         data._created=false;
         return;
     }
@@ -47,8 +47,6 @@ Char::Char(char character, double font_size, double height) :
         string file_path="";
         //check whether the file exists in the installed dir
         {
-
-
             stringstream dxf;
             dxf << DXF_INSTALLED_PATH << "/" << character << ".dxf";
             string dxf_file = dxf.str();
