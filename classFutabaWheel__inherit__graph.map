@@ -1,0 +1,7 @@
+<map id="FutabaWheel" name="FutabaWheel">
+<area shape="rect" id="node2" href="$classSimpleWheel.html" title="Simple wheel primitive object." alt="" coords="15,315,113,344"/>
+<area shape="rect" id="node4" href="$classAbstractPart.html" title="Color decorator." alt="" coords="17,237,111,267"/>
+<area shape="rect" id="node6" href="$classComponent.html" title="Component class." alt="" coords="20,160,108,189"/>
+<area shape="rect" id="node8" href="$classObjectDecorator.html" title="Abstract object decorator interface." alt="" coords="5,83,123,112"/>
+<area shape="rect" id="node10" href="$classAbstractObject.html" title="Abstract object interface." alt="" coords="9,5,119,35"/>
+</map>

@@ -1,0 +1,23 @@
+<map id="Component::Component" name="Component::Component">
+<area shape="rect" id="node3" href="$classComponent.html#ad428061d4b1fbb0095b70cba6d8a5fd4" title="Rotate the component." alt="" coords="251,72,419,101"/>
+<area shape="rect" id="node11" href="$classComponent.html#acaf3d36cfecfce9ac15e803f5d5d66d6" title="Rotate the component around its local reference system." alt="" coords="241,205,428,235"/>
+<area shape="rect" id="node13" href="$classComponent.html#ab274194213390b91a710465d7c7c12ea" title="Rotate a copy of the component with Euler Angles ZX&#39;Z&#39;&#39;." alt="" coords="224,259,445,288"/>
+<area shape="rect" id="node15" href="$classComponent.html#a25028782df9545cded87db34bfd597e6" title="Rotate a copy of the component with Euler Angles ZX&#39;Z&#39;&#39; around its local reference system..." alt="" coords="241,311,428,358"/>
+<area shape="rect" id="node17" href="$classComponent.html#a0ec11e37ac626ea7ea2ce8019a828a16" title="Rotate a copy of the component with Euler Angles ZX&#39;Z&#39;&#39;." alt="" coords="224,381,445,411"/>
+<area shape="rect" id="node19" href="$classComponent.html#aae9aac84bce74a68c307c10cd2fd060e" title="Rotate a copy of the component with Euler Angles ZX&#39;Z&#39;&#39; around its local reference system..." alt="" coords="241,434,428,481"/>
+<area shape="rect" id="node21" href="$classComponent.html#aedfec2802a485ab9d0b6536cfaf72393" title="Scale the component." alt="" coords="252,504,417,533"/>
+<area shape="rect" id="node23" href="$classComponent.html#a871a9cc554e6c5bfa195215fa011e416" title="Translate the component." alt="" coords="243,152,427,181"/>
+<area shape="rect" id="node38" href="$classComponent.html#a81714ef743a86f37f571a1f40af66770" title="Translate the component wrt. to its local reference system." alt="" coords="233,557,436,587"/>
+<area shape="rect" id="node40" href="$classComponent2D.html#af1a08fb02dcf5453904a94375a43d850" title="Linear extrude the component." alt="" coords="221,611,448,640"/>
+<area shape="rect" id="node44" href="$classComponent2D.html#a198370c81a1f9f00aa14850baf89458f" title="Rotate extrude the component." alt="" coords="220,664,449,693"/>
+<area shape="rect" id="node5" href="$classBatteryHolder.html#a31b5756aae7816ef88986302ec12303c" title="Build the piece." alt="" coords="535,5,671,35"/>
+<area shape="rect" id="node7" href="$classBearing.html#acf031144883f9a2eb8db860d3391547e" title="Build the piece." alt="" coords="552,59,653,88"/>
+<area shape="rect" id="node9" href="$classSharpIRSensor.html#a9358ae89493f89e94ecf763fa4f2f542" title="Build the piece." alt="" coords="529,112,676,141"/>
+<area shape="rect" id="node25" href="$classRoundedCube.html#ad0ba2fd7d94c9b93a559bb36ab5787bf" title="Constructor." alt="" coords="505,325,700,355"/>
+<area shape="rect" id="node27" href="$classRoundedTablet.html#acb7bd8292117dbfba2b14e928a5f1d1e" title="Constructor." alt="" coords="500,165,705,195"/>
+<area shape="rect" id="node29" href="$classArduinoUNO.html#a2765f8e142d0668f66270d15dfb30296" title="returns a component only with the board" alt="" coords="525,219,680,248"/>
+<area shape="rect" id="node35" href="$classFutabaS3003.html#a780e4ad25476f3d7962675c1b5e4fb03" title="Build the piece." alt="" coords="536,272,669,301"/>
+<area shape="rect" id="node31" href="$classArduinoUNO.html#a3f36db05b8094951b6a0372fae99e390" title="Build the piece." alt="" coords="755,219,885,248"/>
+<area shape="rect" id="node42" href="$classPolygonalPrism.html#a3915dd262cd305a5212b01dcb6494d04" title="Build the piece." alt="" coords="529,611,676,640"/>
+<area shape="rect" id="node46" href="$classToroid.html#a1f536ca45b977d2b16caddcfac37e8f2" title="Build the piece." alt="" coords="556,664,649,693"/>
+</map>

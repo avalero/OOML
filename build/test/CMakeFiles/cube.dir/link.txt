@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -ggdb -g    CMakeFiles/cube.dir/cube.cpp.o  -o ../../bin/cube -rdynamic -L/home/avalero/workspace/OOML/lib ../../lib/libOOMLCore.so ../../lib/libOOMLComponents.so ../../lib/libOOMLParts.so ../../lib/libOOMLComponents.so ../../lib/libOOMLCore.so -Wl,-rpath,/home/avalero/workspace/OOML/lib 

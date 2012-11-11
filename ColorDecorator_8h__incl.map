@@ -1,0 +1,10 @@
+<map id="src/core/ColorDecorator.h" name="src/core/ColorDecorator.h">
+<area shape="rect" id="node3" href="$ObjectDecorator_8h.html" title="core/ObjectDecorator.h" alt="" coords="169,83,327,112"/>
+<area shape="rect" id="node7" href="$IndentWriter_8h.html" title="IndentWriter.h" alt="" coords="5,237,109,267"/>
+<area shape="rect" id="node15" href="$SharedPtr_8h.html" title="SharedPtr.h" alt="" coords="656,237,747,267"/>
+<area shape="rect" id="node5" href="$AbstractObject_8h.html" title="core/AbstractObject.h" alt="" coords="173,160,323,189"/>
+<area shape="rect" id="node19" href="$RefSys_8h.html" title="RefSys.h" alt="" coords="345,237,423,267"/>
+<area shape="rect" id="node23" href="$TransformMatrix_8h.html" title="TransformMatrix.h" alt="" coords="320,315,448,344"/>
+<area shape="rect" id="node34" href="$RotMatrix_8h.html" title="RotMatrix.h" alt="" coords="472,315,563,344"/>
+<area shape="rect" id="node26" href="$Matrix_8h.html" title="Matrix.h" alt="" coords="452,392,521,421"/>
+</map>

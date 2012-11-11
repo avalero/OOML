@@ -1,0 +1,9 @@
+<map id="Component::rotate" name="Component::rotate">
+<area shape="rect" id="node3" href="$classRoundedCube.html#ad0ba2fd7d94c9b93a559bb36ab5787bf" title="Constructor." alt="" coords="185,5,380,35"/>
+<area shape="rect" id="node5" href="$classComponent.html#a90358faa491581771a2677e8cdc00bfd" title="Move To Link Function This method rotates and translates the component in order to place it at a link..." alt="" coords="199,59,367,88"/>
+<area shape="rect" id="node7" href="$classComponent.html#a229e816c0585cc4452b0200e0e842d1c" title="Attaches two components This method attaches attachment component to the componet, making the links fit together." alt="" coords="216,112,349,141"/>
+<area shape="rect" id="node11" href="$classArduinoUNO.html#a3f36db05b8094951b6a0372fae99e390" title="Build the piece." alt="" coords="217,165,348,195"/>
+<area shape="rect" id="node13" href="$classBallWheelHolder.html#a5fdc4b7a1f329bf9e136abb14ce79066" title="Build the piece." alt="" coords="205,219,360,248"/>
+<area shape="rect" id="node15" href="$classBatteryHolder.html#a31b5756aae7816ef88986302ec12303c" title="Build the piece." alt="" coords="215,272,351,301"/>
+<area shape="rect" id="node9" href="$globalfunctions_8h.html#a09e34955be2ae478ecf8ee52ce4cc741" title="Attaches two components This method attaches attachment component to base componet, making the links fit together." alt="" coords="429,112,488,141"/>
+</map>

@@ -1,0 +1,20 @@
+<map id="src/core/AbstractPart.cpp" name="src/core/AbstractPart.cpp">
+<area shape="rect" id="node3" href="$AbstractPart_8h.html" title="core/AbstractPart.h" alt="" coords="512,83,645,112"/>
+<area shape="rect" id="node13" href="$IndentWriter_8h.html" title="IndentWriter.h" alt="" coords="460,469,564,499"/>
+<area shape="rect" id="node5" href="$Component_8h.html" title="core/Component.h" alt="" coords="984,160,1112,189"/>
+<area shape="rect" id="node7" href="$ColorDecorator_8h.html" title="ColorDecorator.h" alt="" coords="988,237,1108,267"/>
+<area shape="rect" id="node9" href="$ObjectDecorator_8h.html" title="core/ObjectDecorator.h" alt="" coords="896,315,1053,344"/>
+<area shape="rect" id="node25" href="$RefSys_8h.html" title="RefSys.h" alt="" coords="1485,469,1563,499"/>
+<area shape="rect" id="node40" href="$RotMatrix_8h.html" title="RotMatrix.h" alt="" coords="1539,547,1629,576"/>
+<area shape="rect" id="node54" href="$DXFLinearExtrude_8h.html" title="DXFLinearExtrude.h" alt="" coords="581,315,720,344"/>
+<area shape="rect" id="node59" href="$DXFRotateExtrude_8h.html" title="DXFRotateExtrude.h" alt="" coords="413,315,557,344"/>
+<area shape="rect" id="node64" href="$Imported_8h.html" title="Imported.h" alt="" coords="139,315,221,344"/>
+<area shape="rect" id="node72" href="$MirrorDecorator_8h.html" title="MirrorDecorator.h" alt="" coords="841,237,964,267"/>
+<area shape="rect" id="node79" href="$TransformDecorator_8h.html" title="TransformDecorator.h" alt="" coords="1183,237,1332,267"/>
+<area shape="rect" id="node92" href="$ScaleDecorator_8h.html" title="ScaleDecorator.h" alt="" coords="695,237,817,267"/>
+<area shape="rect" id="node21" href="$SharedPtr_8h.html" title="SharedPtr.h" alt="" coords="969,469,1060,499"/>
+<area shape="rect" id="node11" href="$AbstractObject_8h.html" title="core/AbstractObject.h" alt="" coords="701,392,851,421"/>
+<area shape="rect" id="node29" href="$TransformMatrix_8h.html" title="TransformMatrix.h" alt="" coords="1387,547,1515,576"/>
+<area shape="rect" id="node32" href="$Matrix_8h.html" title="Matrix.h" alt="" coords="1408,624,1477,653"/>
+<area shape="rect" id="node84" href="$Point3D_8h.html" title="Point3D.h" alt="" coords="1280,315,1360,344"/>
+</map>

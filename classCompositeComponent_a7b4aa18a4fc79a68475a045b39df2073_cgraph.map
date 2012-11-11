@@ -1,0 +1,5 @@
+<map id="CompositeComponent::operator&lt;&lt;" name="CompositeComponent::operator&lt;&lt;">
+<area shape="rect" id="node3" href="$classCompositeComponent.html#a363f11dbc32188c3d004964d24c39c4e" title="Adds a component to the composite." alt="" coords="205,23,357,70"/>
+<area shape="rect" id="node5" href="$classCompositeObject.html#a222f1c5454458792044747a508d24838" title="Adds an object to the composite." alt="" coords="407,5,596,35"/>
+<area shape="rect" id="node7" href="$classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version." alt="" coords="431,59,572,88"/>
+</map>

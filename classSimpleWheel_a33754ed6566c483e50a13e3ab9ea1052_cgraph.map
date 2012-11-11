@@ -1,0 +1,9 @@
+<map id="SimpleWheel::build" name="SimpleWheel::build">
+<area shape="rect" id="node3" href="$classComponent.html#a0df678527e9d0d65a749bbc5883a71af" title="Translate the component." alt="" coords="189,60,336,89"/>
+<area shape="rect" id="node5" href="$classTransformMatrix.html#ae2b5dc7c41da84953f791e12e0b22964" title="performs a translation" alt="" coords="385,17,559,47"/>
+<area shape="rect" id="node9" href="$classTransformDecorator.html#a0aa4971660b91bebb8ad53e682b00bd1" title="Default factory method." alt="" coords="403,93,541,139"/>
+<area shape="rect" id="node7" href="$classMatrix.html#a820d3e49ffea766faf310729803e1df1" title="Matrix::set" alt="" coords="656,5,739,35"/>
+<area shape="rect" id="node11" href="$classTransformMatrix.html#ae53e1d2436656a41d8689cd818a05f88" title="checke if matrix equals identity" alt="" coords="608,59,787,88"/>
+<area shape="rect" id="node13" href="$classSharedPtr.html#ac747048e189c896c11f0b436d02fc5e1" title="Gets the pointer hold." alt="" coords="644,112,751,141"/>
+<area shape="rect" id="node15" href="$classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version." alt="" coords="627,165,768,195"/>
+</map>

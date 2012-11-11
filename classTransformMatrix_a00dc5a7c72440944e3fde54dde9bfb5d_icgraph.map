@@ -1,0 +1,5 @@
+<map id="TransformMatrix::relRotate" name="TransformMatrix::relRotate">
+<area shape="rect" id="node3" href="$classComponent.html#acaf3d36cfecfce9ac15e803f5d5d66d6" title="Rotate the component around its local reference system." alt="" coords="233,5,420,35"/>
+<area shape="rect" id="node5" href="$classComponent.html#a2c3e5cf2bc1680e69b3268e7063cd1d8" title="Rotate the component around its local reference system." alt="" coords="252,59,401,88"/>
+<area shape="rect" id="node7" href="$classRefSys.html#a6a808b37b21c61eb6a47366a3fc2642c" title="Rotates the reference system This methods rotates the reference system The origin is kept unmoved..." alt="" coords="264,112,389,141"/>
+</map>

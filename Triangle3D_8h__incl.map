@@ -1,0 +1,20 @@
+<map id="src/core/Triangle3D.h" name="src/core/Triangle3D.h">
+<area shape="rect" id="node3" href="$Point3D_8h.html" title="core/Point3D.h" alt="" coords="1472,315,1581,344"/>
+<area shape="rect" id="node47" href="$Polygon_8h.html" title="core/Polygon.h" alt="" coords="488,83,597,112"/>
+<area shape="rect" id="node5" href="$AbstractObject_8h.html" title="AbstractObject.h" alt="" coords="771,392,891,421"/>
+<area shape="rect" id="node7" href="$IndentWriter_8h.html" title="IndentWriter.h" alt="" coords="575,469,679,499"/>
+<area shape="rect" id="node15" href="$SharedPtr_8h.html" title="SharedPtr.h" alt="" coords="1060,469,1151,499"/>
+<area shape="rect" id="node19" href="$RefSys_8h.html" title="RefSys.h" alt="" coords="1523,469,1600,499"/>
+<area shape="rect" id="node23" href="$TransformMatrix_8h.html" title="TransformMatrix.h" alt="" coords="1364,547,1492,576"/>
+<area shape="rect" id="node34" href="$RotMatrix_8h.html" title="RotMatrix.h" alt="" coords="1516,547,1607,576"/>
+<area shape="rect" id="node26" href="$Matrix_8h.html" title="Matrix.h" alt="" coords="1352,624,1421,653"/>
+<area shape="rect" id="node50" href="$Component_8h.html" title="core/Component.h" alt="" coords="919,160,1047,189"/>
+<area shape="rect" id="node52" href="$ColorDecorator_8h.html" title="ColorDecorator.h" alt="" coords="580,237,700,267"/>
+<area shape="rect" id="node54" href="$ObjectDecorator_8h.html" title="core/ObjectDecorator.h" alt="" coords="723,315,880,344"/>
+<area shape="rect" id="node61" href="$DXFLinearExtrude_8h.html" title="DXFLinearExtrude.h" alt="" coords="1005,315,1144,344"/>
+<area shape="rect" id="node66" href="$DXFRotateExtrude_8h.html" title="DXFRotateExtrude.h" alt="" coords="403,315,547,344"/>
+<area shape="rect" id="node71" href="$Imported_8h.html" title="Imported.h" alt="" coords="195,315,277,344"/>
+<area shape="rect" id="node79" href="$MirrorDecorator_8h.html" title="MirrorDecorator.h" alt="" coords="724,237,847,267"/>
+<area shape="rect" id="node86" href="$TransformDecorator_8h.html" title="TransformDecorator.h" alt="" coords="1276,237,1425,267"/>
+<area shape="rect" id="node94" href="$ScaleDecorator_8h.html" title="ScaleDecorator.h" alt="" coords="921,237,1044,267"/>
+</map>

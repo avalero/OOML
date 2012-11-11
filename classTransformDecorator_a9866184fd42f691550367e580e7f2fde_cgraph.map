@@ -1,0 +1,5 @@
+<map id="TransformDecorator::genScad" name="TransformDecorator::genScad">
+<area shape="rect" id="node3" href="$classTransformMatrix.html#a72b499093d75f6737660168c21b01a5b" title="Gets the rotation angles about the fixed axes x,y,z. Obtains the rotation angles about the fixed x..." alt="" coords="193,5,372,51"/>
+<area shape="rect" id="node7" href="$classTransformMatrix.html#a7f27e92f29e5d19fdffafb1fd987984b" title="Gets the translation wrt. the fixed axes x,y,z. Obtains the rotation angles about the fixed x..." alt="" coords="193,74,372,121"/>
+<area shape="rect" id="node5" href="$Math_8h.html#a638b7a3259334d9389d4dcb31cb7dfea" title="rad2deg" alt="" coords="423,13,489,43"/>
+</map>

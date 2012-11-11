@@ -1,0 +1,19 @@
+<map id="src/core/Polygon.h" name="src/core/Polygon.h">
+<area shape="rect" id="node3" href="$AbstractObject_8h.html" title="core/AbstractObject.h" alt="" coords="788,315,938,344"/>
+<area shape="rect" id="node5" href="$IndentWriter_8h.html" title="IndentWriter.h" alt="" coords="496,392,600,421"/>
+<area shape="rect" id="node42" href="$Component_8h.html" title="core/Component.h" alt="" coords="1008,83,1136,112"/>
+<area shape="rect" id="node83" href="$Point3D_8h.html" title="Point3D.h" alt="" coords="1316,237,1396,267"/>
+<area shape="rect" id="node13" href="$SharedPtr_8h.html" title="SharedPtr.h" alt="" coords="1011,392,1102,421"/>
+<area shape="rect" id="node17" href="$RefSys_8h.html" title="RefSys.h" alt="" coords="1464,392,1542,421"/>
+<area shape="rect" id="node21" href="$TransformMatrix_8h.html" title="TransformMatrix.h" alt="" coords="1306,469,1434,499"/>
+<area shape="rect" id="node32" href="$RotMatrix_8h.html" title="RotMatrix.h" alt="" coords="1458,469,1548,499"/>
+<area shape="rect" id="node24" href="$Matrix_8h.html" title="Matrix.h" alt="" coords="1378,547,1447,576"/>
+<area shape="rect" id="node44" href="$ColorDecorator_8h.html" title="ColorDecorator.h" alt="" coords="906,160,1026,189"/>
+<area shape="rect" id="node46" href="$ObjectDecorator_8h.html" title="core/ObjectDecorator.h" alt="" coords="714,237,871,267"/>
+<area shape="rect" id="node53" href="$DXFLinearExtrude_8h.html" title="DXFLinearExtrude.h" alt="" coords="298,237,436,267"/>
+<area shape="rect" id="node58" href="$DXFRotateExtrude_8h.html" title="DXFRotateExtrude.h" alt="" coords="946,237,1090,267"/>
+<area shape="rect" id="node63" href="$Imported_8h.html" title="Imported.h" alt="" coords="90,237,172,267"/>
+<area shape="rect" id="node71" href="$MirrorDecorator_8h.html" title="MirrorDecorator.h" alt="" coords="708,160,831,189"/>
+<area shape="rect" id="node78" href="$TransformDecorator_8h.html" title="TransformDecorator.h" alt="" coords="1258,160,1407,189"/>
+<area shape="rect" id="node91" href="$ScaleDecorator_8h.html" title="ScaleDecorator.h" alt="" coords="562,160,684,189"/>
+</map>

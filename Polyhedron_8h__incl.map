@@ -1,0 +1,22 @@
+<map id="src/core/Polyhedron.h" name="src/core/Polyhedron.h">
+<area shape="rect" id="node3" href="$AbstractObject_8h.html" title="core/AbstractObject.h" alt="" coords="1259,469,1408,499"/>
+<area shape="rect" id="node5" href="$IndentWriter_8h.html" title="IndentWriter.h" alt="" coords="916,547,1020,576"/>
+<area shape="rect" id="node13" href="$SharedPtr_8h.html" title="SharedPtr.h" alt="" coords="416,547,507,576"/>
+<area shape="rect" id="node42" href="$Component_8h.html" title="core/Component.h" alt="" coords="920,237,1048,267"/>
+<area shape="rect" id="node83" href="$Point3D_8h.html" title="Point3D.h" alt="" coords="1725,392,1805,421"/>
+<area shape="rect" id="node105" href="$PointIndexMap_8h.html" title="core/PointIndexMap.h" alt="" coords="1412,237,1561,267"/>
+<area shape="rect" id="node112" href="$Triangle3D_8h.html" title="core/Triangle3D.h" alt="" coords="1572,83,1697,112"/>
+<area shape="rect" id="node17" href="$RefSys_8h.html" title="RefSys.h" alt="" coords="1524,547,1601,576"/>
+<area shape="rect" id="node21" href="$TransformMatrix_8h.html" title="TransformMatrix.h" alt="" coords="1411,624,1539,653"/>
+<area shape="rect" id="node32" href="$RotMatrix_8h.html" title="RotMatrix.h" alt="" coords="1563,624,1653,653"/>
+<area shape="rect" id="node24" href="$Matrix_8h.html" title="Matrix.h" alt="" coords="1483,701,1552,731"/>
+<area shape="rect" id="node44" href="$ColorDecorator_8h.html" title="ColorDecorator.h" alt="" coords="844,315,964,344"/>
+<area shape="rect" id="node46" href="$ObjectDecorator_8h.html" title="core/ObjectDecorator.h" alt="" coords="728,392,885,421"/>
+<area shape="rect" id="node53" href="$DXFLinearExtrude_8h.html" title="DXFLinearExtrude.h" alt="" coords="413,392,552,421"/>
+<area shape="rect" id="node58" href="$DXFRotateExtrude_8h.html" title="DXFRotateExtrude.h" alt="" coords="245,392,389,421"/>
+<area shape="rect" id="node63" href="$Imported_8h.html" title="Imported.h" alt="" coords="1061,392,1144,421"/>
+<area shape="rect" id="node71" href="$MirrorDecorator_8h.html" title="MirrorDecorator.h" alt="" coords="500,315,623,344"/>
+<area shape="rect" id="node78" href="$TransformDecorator_8h.html" title="TransformDecorator.h" alt="" coords="988,315,1137,344"/>
+<area shape="rect" id="node91" href="$ScaleDecorator_8h.html" title="ScaleDecorator.h" alt="" coords="647,315,769,344"/>
+<area shape="rect" id="node115" href="$Polygon_8h.html" title="core/Polygon.h" alt="" coords="1580,160,1689,189"/>
+</map>

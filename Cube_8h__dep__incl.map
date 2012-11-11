@@ -1,0 +1,22 @@
+<map id="src/components/Cube.h" name="src/components/Cube.h">
+<area shape="rect" id="node3" href="$components_8h.html" title="src/components.h" alt="" coords="256,160,381,189"/>
+<area shape="rect" id="node9" href="$Cube_8cpp.html" title="src/components/Cube.cpp" alt="" coords="1601,83,1775,112"/>
+<area shape="rect" id="node11" href="$RoundedCube_8h.html" title="src/components/RoundedCube.h" alt="" coords="212,83,425,112"/>
+<area shape="rect" id="node16" href="$RoundedTablet_8h.html" title="src/components/RoundedTablet.h" alt="" coords="596,83,815,112"/>
+<area shape="rect" id="node21" href="$FutabaS3003_8cpp.html" title="src/parts/FutabaS3003.cpp" alt="" coords="405,160,584,189"/>
+<area shape="rect" id="node23" href="$NineVoltBattery_8cpp.html" title="src/parts/NineVoltBattery.cpp" alt="" coords="864,160,1059,189"/>
+<area shape="rect" id="node25" href="$SeeedUSSensor_8cpp.html" title="src/parts/SeeedUSSensor.cpp" alt="" coords="1083,160,1280,189"/>
+<area shape="rect" id="node27" href="$SharpIRSensor_8cpp.html" title="src/parts/SharpIRSensor.cpp" alt="" coords="1411,160,1600,189"/>
+<area shape="rect" id="node29" href="$ArduinoUNO_8cpp.html" title="src/parts/ArduinoUNO.cpp" alt="" coords="1799,83,1975,112"/>
+<area shape="rect" id="node31" href="$BallWheelHolder_8cpp.html" title="src/parts/BallWheelHolder.cpp" alt="" coords="1999,83,2196,112"/>
+<area shape="rect" id="node33" href="$BatteryHolder_8cpp.html" title="src/parts/BatteryHolder.cpp" alt="" coords="2220,83,2401,112"/>
+<area shape="rect" id="node35" href="$Bearing_8cpp.html" title="src/parts/Bearing.cpp" alt="" coords="2425,83,2572,112"/>
+<area shape="rect" id="node39" href="$NineVoltBattery_8h.html" title="src/parts/NineVoltBattery.h" alt="" coords="889,83,1068,112"/>
+<area shape="rect" id="node45" href="$SeeedUSSensor_8h.html" title="src/parts/SeeedUSSensor.h" alt="" coords="1143,83,1327,112"/>
+<area shape="rect" id="node50" href="$SharpIRSensor_8h.html" title="src/parts/SharpIRSensor.h" alt="" coords="1351,83,1527,112"/>
+<area shape="rect" id="node5" href="$Bearings_8cpp.html" title="src/components/Bearings.cpp" alt="" coords="117,237,312,267"/>
+<area shape="rect" id="node7" href="$Nuts_8cpp.html" title="src/components/Nuts.cpp" alt="" coords="336,237,507,267"/>
+<area shape="rect" id="node14" href="$RoundedCube_8cpp.html" title="src/components/RoundedCube.cpp" alt="" coords="5,160,232,189"/>
+<area shape="rect" id="node19" href="$RoundedTablet_8cpp.html" title="src/components/RoundedTablet.cpp" alt="" coords="608,160,840,189"/>
+<area shape="rect" id="node42" href="$parts_8h.html" title="src/parts.h" alt="" coords="1304,160,1387,189"/>
+</map>

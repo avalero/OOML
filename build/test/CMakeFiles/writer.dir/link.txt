@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -ggdb -g    CMakeFiles/writer.dir/writer.cpp.o  -o ../../bin/writer -rdynamic -L/home/avalero/workspace/OOML/lib ../../lib/libOOMLCore.so -Wl,-rpath,/home/avalero/workspace/OOML/lib 

@@ -1,0 +1,12 @@
+<map id="src/core/TransformDecorator.cpp" name="src/core/TransformDecorator.cpp">
+<area shape="rect" id="node3" href="$TransformDecorator_8h.html" title="TransformDecorator.h" alt="" coords="420,83,570,112"/>
+<area shape="rect" id="node7" href="$IndentWriter_8h.html" title="IndentWriter.h" alt="" coords="650,315,754,344"/>
+<area shape="rect" id="node5" href="$AbstractObject_8h.html" title="AbstractObject.h" alt="" coords="447,237,567,267"/>
+<area shape="rect" id="node15" href="$SharedPtr_8h.html" title="SharedPtr.h" alt="" coords="180,315,271,344"/>
+<area shape="rect" id="node23" href="$TransformMatrix_8h.html" title="TransformMatrix.h" alt="" coords="79,392,207,421"/>
+<area shape="rect" id="node45" href="$ObjectDecorator_8h.html" title="ObjectDecorator.h" alt="" coords="532,160,660,189"/>
+<area shape="rect" id="node50" href="$Point3D_8h.html" title="Point3D.h" alt="" coords="378,160,458,189"/>
+<area shape="rect" id="node19" href="$RefSys_8h.html" title="RefSys.h" alt="" coords="295,315,372,344"/>
+<area shape="rect" id="node34" href="$RotMatrix_8h.html" title="RotMatrix.h" alt="" coords="231,392,322,421"/>
+<area shape="rect" id="node26" href="$Matrix_8h.html" title="Matrix.h" alt="" coords="239,469,308,499"/>
+</map>

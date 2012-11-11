@@ -1,0 +1,20 @@
+<map id="AbstractObject::setLinks" name="AbstractObject::setLinks">
+<area shape="rect" id="node3" href="$classComponent.html#aa2c0e9a9811c924da985d2cb300f9e1c" title="Scale the component." alt="" coords="243,31,371,60"/>
+<area shape="rect" id="node7" href="$classComponent.html#a7a5f83f9f5f9045bfc4cb20b26b927e0" title="Scale the component." alt="" coords="224,109,389,139"/>
+<area shape="rect" id="node9" href="$classComponent.html#a7c8f07f5f4b51b3b5a0df49e62c8869c" title="Color the component." alt="" coords="221,163,392,192"/>
+<area shape="rect" id="node11" href="$classComponent.html#a2a09a1cc2732ab4ab42c10d36f6b8b6d" title="Color the component." alt="" coords="244,216,369,245"/>
+<area shape="rect" id="node22" href="$classComponent.html#a49bda799c32846b690940adc73ef49a0" title="Component::getLinks" alt="" coords="233,323,380,352"/>
+<area shape="rect" id="node26" href="$Difference_8h.html#ad84a89edec6508565124d27cedd5dafe" title="operator&#45;" alt="" coords="488,269,560,299"/>
+<area shape="rect" id="node28" href="$Hull_8h.html#af8bb3979e6724e4adba61dd4e792f9f0" title="operator&amp;" alt="" coords="485,376,563,405"/>
+<area shape="rect" id="node30" href="$Union_8h.html#a4bd396e9dea95407a61ac9b4b079c063" title="operator+" alt="" coords="485,429,563,459"/>
+<area shape="rect" id="node32" href="$classComponent.html#a91c6c7f8caa0ab0e6d8368ee46a4edb9" title="Component::getLink" alt="" coords="237,483,376,512"/>
+<area shape="rect" id="node5" href="$classChar.html#a322dfebbbcf2555857c812940864145e" title="Char::Char" alt="" coords="481,5,567,35"/>
+<area shape="rect" id="node13" href="$classArduinoUNO.html#a2765f8e142d0668f66270d15dfb30296" title="returns a component only with the board" alt="" coords="447,112,601,141"/>
+<area shape="rect" id="node15" href="$classArduinoUNO.html#a3f36db05b8094951b6a0372fae99e390" title="Build the piece." alt="" coords="656,139,787,168"/>
+<area shape="rect" id="node18" href="$classFutabaS3003.html#a780e4ad25476f3d7962675c1b5e4fb03" title="Build the piece." alt="" coords="457,216,591,245"/>
+<area shape="rect" id="node20" href="$classNineVoltBattery.html#a47fdf8ed2d4de128b9acae2ced2cb9ef" title="Build the piece." alt="" coords="449,59,599,88"/>
+<area shape="rect" id="node24" href="$classLinksView.html#ac098d8856f85d764e3dbad57be30e8da" title="LinksView::LinksView" alt="" coords="449,323,599,352"/>
+<area shape="rect" id="node34" href="$classComponent.html#a90358faa491581771a2677e8cdc00bfd" title="Move To Link Function This method rotates and translates the component in order to place it at a link..." alt="" coords="440,536,608,565"/>
+<area shape="rect" id="node36" href="$classComponent.html#a229e816c0585cc4452b0200e0e842d1c" title="Attaches two components This method attaches attachment component to the componet, making the links fit together." alt="" coords="457,483,591,512"/>
+<area shape="rect" id="node38" href="$globalfunctions_8h.html#a09e34955be2ae478ecf8ee52ce4cc741" title="Attaches two components This method attaches attachment component to base componet, making the links fit together." alt="" coords="692,483,751,512"/>
+</map>

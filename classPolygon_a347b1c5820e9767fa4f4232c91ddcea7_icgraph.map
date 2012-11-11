@@ -1,0 +1,9 @@
+<map id="Polygon::addPoint" name="Polygon::addPoint">
+<area shape="rect" id="node3" href="$classRegularPiramid.html#a29ebc7f41a66e9bba3b51e2007470b58" title="Constructor." alt="" coords="181,5,389,35"/>
+<area shape="rect" id="node5" href="$classRegularPrism.html#aeecb6ee153c829788c847e82f9eca3b0" title="Constructor." alt="" coords="192,59,379,88"/>
+<area shape="rect" id="node7" href="$classPolygon.html#aa34c064278f38cca2ca245a379317e89" title="Adds a point with insertor syntax." alt="" coords="216,111,355,158"/>
+<area shape="rect" id="node9" href="$classPolygon.html#a21ee9bf6e9f6ea3ec4faf16a4b36f3e9" title="Close the polygon." alt="" coords="216,181,355,227"/>
+<area shape="rect" id="node11" href="$classTriangle3D.html#ae2f40a451a0df3c4f0c2f3f5f8497958" title="Default parametrized constructor." alt="" coords="208,251,363,280"/>
+<area shape="rect" id="node13" href="$classArduinoUNO.html#a2765f8e142d0668f66270d15dfb30296" title="returns a component only with the board" alt="" coords="208,304,363,333"/>
+<area shape="rect" id="node15" href="$classArduinoUNO.html#a3f36db05b8094951b6a0372fae99e390" title="Build the piece." alt="" coords="437,304,568,333"/>
+</map>

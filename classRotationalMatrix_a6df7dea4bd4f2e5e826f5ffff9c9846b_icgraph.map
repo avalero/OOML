@@ -1,0 +1,4 @@
+<map id="RotationalMatrix::rotateY" name="RotationalMatrix::rotateY">
+<area shape="rect" id="node3" href="$classRotationalMatrix.html#a5c3409d05d844696cd5be7399eefa5dc" title="Applies an Euler rotation around z, y&#39;, z&#39;&#39; Applies three rotations around z, x&#39; and z&#39;&#39;..." alt="" coords="223,5,380,51"/>
+<area shape="rect" id="node5" href="$classRotationalMatrix.html#a66de01c0e617a05cfb0e57d88dc8c372" title="Applies a Roll&#45;Pitch&#45;Yaw rotation around x, y, z Applies three rotations around the fixed reference s..." alt="" coords="223,74,380,121"/>
+</map>

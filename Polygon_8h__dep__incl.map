@@ -1,0 +1,22 @@
+<map id="src/core/Polygon.h" name="src/core/Polygon.h">
+<area shape="rect" id="node3" href="$core_8h.html" title="src/core.h" alt="" coords="467,265,547,295"/>
+<area shape="rect" id="node18" href="$PolygonalPiramid_8cpp.html" title="src/components/Polygonal\lPiramid.cpp" alt="" coords="80,257,256,303"/>
+<area shape="rect" id="node20" href="$PolygonalPiramid_8h.html" title="src/components/Polygonal\lPiramid.h" alt="" coords="181,161,357,207"/>
+<area shape="rect" id="node24" href="$PolygonalPrism_8cpp.html" title="src/components/Polygonal\lPrism.cpp" alt="" coords="1096,257,1272,303"/>
+<area shape="rect" id="node26" href="$PolygonalPrism_8h.html" title="src/components/Polygonal\lPrism.h" alt="" coords="837,161,1013,207"/>
+<area shape="rect" id="node30" href="$RegularPiramid_8h.html" title="src/components/RegularPiramid.h" alt="" coords="571,265,789,295"/>
+<area shape="rect" id="node35" href="$RegularPrism_8h.html" title="src/components/RegularPrism.h" alt="" coords="813,265,1021,295"/>
+<area shape="rect" id="node44" href="$Polygon2D_8h.html" title="src/core/Polygon2D.h" alt="" coords="1111,169,1257,199"/>
+<area shape="rect" id="node51" href="$Triangle3D_8h.html" title="src/core/Triangle3D.h" alt="" coords="464,83,611,112"/>
+<area shape="rect" id="node5" href="$Bearings_8h.html" title="src/components/Bearings.h" alt="" coords="187,352,368,381"/>
+<area shape="rect" id="node14" href="$Nuts_8h.html" title="src/components/Nuts.h" alt="" coords="5,352,163,381"/>
+<area shape="rect" id="node7" href="$Bearings_8cpp.html" title="src/components/Bearings.cpp" alt="" coords="251,507,445,536"/>
+<area shape="rect" id="node9" href="$components_8h.html" title="src/components.h" alt="" coords="335,429,460,459"/>
+<area shape="rect" id="node12" href="$Nuts_8cpp.html" title="src/components/Nuts.cpp" alt="" coords="41,507,212,536"/>
+<area shape="rect" id="node40" href="$ArduinoUNO_8cpp.html" title="src/parts/ArduinoUNO.cpp" alt="" coords="1296,265,1472,295"/>
+<area shape="rect" id="node33" href="$RegularPiramid_8cpp.html" title="src/components/RegularPiramid.cpp" alt="" coords="493,352,725,381"/>
+<area shape="rect" id="node38" href="$RegularPrism_8cpp.html" title="src/components/RegularPrism.cpp" alt="" coords="800,352,1021,381"/>
+<area shape="rect" id="node48" href="$Polygon2D_8cpp.html" title="src/core/Polygon2D.cpp" alt="" coords="1496,265,1659,295"/>
+<area shape="rect" id="node54" href="$Polyhedron_8h.html" title="src/core/Polyhedron.h" alt="" coords="381,169,531,199"/>
+<area shape="rect" id="node59" href="$Polyhedron_8cpp.html" title="src/core/Polyhedron.cpp" alt="" coords="280,265,443,295"/>
+</map>

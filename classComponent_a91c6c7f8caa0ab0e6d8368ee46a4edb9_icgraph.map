@@ -1,0 +1,5 @@
+<map id="Component::getLink" name="Component::getLink">
+<area shape="rect" id="node3" href="$classComponent.html#a90358faa491581771a2677e8cdc00bfd" title="Move To Link Function This method rotates and translates the component in order to place it at a link..." alt="" coords="192,5,360,35"/>
+<area shape="rect" id="node5" href="$classComponent.html#a229e816c0585cc4452b0200e0e842d1c" title="Attaches two components This method attaches attachment component to the componet, making the links fit together." alt="" coords="209,59,343,88"/>
+<area shape="rect" id="node7" href="$globalfunctions_8h.html#a09e34955be2ae478ecf8ee52ce4cc741" title="Attaches two components This method attaches attachment component to base componet, making the links fit together." alt="" coords="408,59,467,88"/>
+</map>

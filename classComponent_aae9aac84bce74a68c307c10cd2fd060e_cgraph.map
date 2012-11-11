@@ -1,0 +1,12 @@
+<map id="Component::relRotatedEulerZYZCopy" name="Component::relRotatedEulerZYZCopy">
+<area shape="rect" id="node3" href="$classTransformMatrix.html#a52cd13a210fb835f8c39f82830780d08" title="Applies an Euler rotation around the local reference system z, y&#39;, z&#39;&#39; Applies three rotations around..." alt="" coords="240,42,419,89"/>
+<area shape="rect" id="node15" href="$classComponent.html#a8775db6d1a2c1afc2e77cd3c8f39da6f" title="Default constructor." alt="" coords="248,112,411,141"/>
+<area shape="rect" id="node17" href="$classTransformDecorator.html#a0aa4971660b91bebb8ad53e682b00bd1" title="Default factory method." alt="" coords="260,165,399,211"/>
+<area shape="rect" id="node5" href="$classTransformMatrix.html#a4b15619b5a1a9e1236d25e570b11397a" title="Applies a rotation around current local z axis Applies a rotation around current z axis..." alt="" coords="467,5,653,35"/>
+<area shape="rect" id="node11" href="$classTransformMatrix.html#a15e0f3ce5ce669ae2894ec34f68a692e" title="Applies a rotation around current local y axis Applies a rotation around current y axis..." alt="" coords="467,59,653,88"/>
+<area shape="rect" id="node7" href="$Math_8h.html#a021636ed21e2cb128cb67fa392983ac0" title="deg2rad" alt="" coords="711,5,777,35"/>
+<area shape="rect" id="node9" href="$classMatrix.html#a820d3e49ffea766faf310729803e1df1" title="Matrix::set" alt="" coords="703,59,785,88"/>
+<area shape="rect" id="node19" href="$classTransformMatrix.html#ae53e1d2436656a41d8689cd818a05f88" title="checke if matrix equals identity" alt="" coords="471,120,649,149"/>
+<area shape="rect" id="node21" href="$classSharedPtr.html#ac747048e189c896c11f0b436d02fc5e1" title="Gets the pointer hold." alt="" coords="507,173,613,203"/>
+<area shape="rect" id="node23" href="$classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version." alt="" coords="489,227,631,256"/>
+</map>

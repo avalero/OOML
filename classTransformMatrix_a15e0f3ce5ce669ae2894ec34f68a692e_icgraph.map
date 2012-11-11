@@ -1,0 +1,10 @@
+<map id="TransformMatrix::relRotateY" name="TransformMatrix::relRotateY">
+<area shape="rect" id="node3" href="$classTransformMatrix.html#a52cd13a210fb835f8c39f82830780d08" title="Applies an Euler rotation around the local reference system z, y&#39;, z&#39;&#39; Applies three rotations around..." alt="" coords="240,89,419,135"/>
+<area shape="rect" id="node11" href="$classTransformMatrix.html#a00dc5a7c72440944e3fde54dde9bfb5d" title="Applies a Roll&#45;Pitch&#45;Yaw rotation around the local reference system x, y, z Applies three rotations a..." alt="" coords="240,208,419,237"/>
+<area shape="rect" id="node5" href="$classComponent.html#a04731b2276edc482d179889f9ac83a5a" title="Rotate the component with Euler Angles ZY&#39;Z&#39;&#39; around its local reference system." alt="" coords="467,5,672,35"/>
+<area shape="rect" id="node7" href="$classComponent.html#aae9aac84bce74a68c307c10cd2fd060e" title="Rotate a copy of the component with Euler Angles ZX&#39;Z&#39;&#39; around its local reference system..." alt="" coords="476,58,663,105"/>
+<area shape="rect" id="node9" href="$classRefSys.html#a665f74d330be2f94e8e29c186120b0ea" title="Rotates the reference system This methods rotates the reference system with the Euler ZYZ angles..." alt="" coords="479,128,660,157"/>
+<area shape="rect" id="node13" href="$classComponent.html#acaf3d36cfecfce9ac15e803f5d5d66d6" title="Rotate the component around its local reference system." alt="" coords="476,181,663,211"/>
+<area shape="rect" id="node15" href="$classComponent.html#a2c3e5cf2bc1680e69b3268e7063cd1d8" title="Rotate the component around its local reference system." alt="" coords="495,235,644,264"/>
+<area shape="rect" id="node17" href="$classRefSys.html#a6a808b37b21c61eb6a47366a3fc2642c" title="Rotates the reference system This methods rotates the reference system The origin is kept unmoved..." alt="" coords="507,288,632,317"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="rad2deg" name="rad2deg">
+<area shape="rect" id="node3" href="$classRotationalMatrix.html#a6e8d9b68336d9507fb71f0e8fea58524" title="Gets the rotation angles about the fixed axes x,y,z. Obtains the rotation angles about the fixed x..." alt="" coords="124,50,303,97"/>
+<area shape="rect" id="node9" href="$classTransformMatrix.html#a72b499093d75f6737660168c21b01a5b" title="Gets the rotation angles about the fixed axes x,y,z. Obtains the rotation angles about the fixed x..." alt="" coords="124,218,303,265"/>
+<area shape="rect" id="node5" href="$classComponent.html#a60e5379a30551bd9483c39c9c45c13f2" title="Rotate the component." alt="" coords="371,5,501,35"/>
+<area shape="rect" id="node7" href="$classComponent.html#a8dd330613261b7e69280fb7666ae869b" title="Component::rotatedCopy" alt="" coords="352,59,520,88"/>
+<area shape="rect" id="node11" href="$classComponent.html#a90358faa491581771a2677e8cdc00bfd" title="Move To Link Function This method rotates and translates the component in order to place it at a link..." alt="" coords="352,112,520,141"/>
+<area shape="rect" id="node13" href="$classComponent.html#a229e816c0585cc4452b0200e0e842d1c" title="Attaches two components This method attaches attachment component to the componet, making the links fit together." alt="" coords="369,165,503,195"/>
+<area shape="rect" id="node17" href="$classTransformDecorator.html#a5ecdeb6ea7f0a75928fcd5260378c6d8" title="TransformDecorator\l::getLinks" alt="" coords="367,218,505,265"/>
+<area shape="rect" id="node19" href="$classTransformDecorator.html#a2ef0f71beae424dd67ebbeb378015ee8" title="TransformDecorator\l::getLink" alt="" coords="367,287,505,334"/>
+<area shape="rect" id="node21" href="$classTransformDecorator.html#a9866184fd42f691550367e580e7f2fde" title="Generate SCAD output for this object." alt="" coords="367,357,505,403"/>
+<area shape="rect" id="node23" href="$classTransformDecorator.html#a45dd85b8684ad8a1bfa3a3b67c6e20ec" title="Generate AST output for this object." alt="" coords="367,426,505,473"/>
+<area shape="rect" id="node15" href="$globalfunctions_8h.html#a09e34955be2ae478ecf8ee52ce4cc741" title="Attaches two components This method attaches attachment component to base componet, making the links fit together." alt="" coords="568,165,627,195"/>
+</map>

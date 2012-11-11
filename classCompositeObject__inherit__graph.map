@@ -1,0 +1,7 @@
+<map id="CompositeObject" name="CompositeObject">
+<area shape="rect" id="node5" href="$classDifference.html" title="Difference object." alt="" coords="5,160,88,189"/>
+<area shape="rect" id="node7" href="$classHull.html" title="Union object." alt="" coords="112,160,157,189"/>
+<area shape="rect" id="node9" href="$classIntersection.html" title="Intersection object." alt="" coords="181,160,272,189"/>
+<area shape="rect" id="node11" href="$classUnion.html" title="Union object." alt="" coords="296,160,352,189"/>
+<area shape="rect" id="node2" href="$classAbstractObject.html" title="Abstract object interface." alt="" coords="125,5,235,35"/>
+</map>

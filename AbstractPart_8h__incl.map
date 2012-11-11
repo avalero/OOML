@@ -1,0 +1,19 @@
+<map id="src/core/AbstractPart.h" name="src/core/AbstractPart.h">
+<area shape="rect" id="node3" href="$Component_8h.html" title="core/Component.h" alt="" coords="838,83,966,112"/>
+<area shape="rect" id="node5" href="$ColorDecorator_8h.html" title="ColorDecorator.h" alt="" coords="566,160,686,189"/>
+<area shape="rect" id="node7" href="$ObjectDecorator_8h.html" title="core/ObjectDecorator.h" alt="" coords="567,237,724,267"/>
+<area shape="rect" id="node23" href="$RefSys_8h.html" title="RefSys.h" alt="" coords="1306,392,1383,421"/>
+<area shape="rect" id="node38" href="$RotMatrix_8h.html" title="RotMatrix.h" alt="" coords="1299,469,1390,499"/>
+<area shape="rect" id="node52" href="$DXFLinearExtrude_8h.html" title="DXFLinearExtrude.h" alt="" coords="135,237,274,267"/>
+<area shape="rect" id="node57" href="$DXFRotateExtrude_8h.html" title="DXFRotateExtrude.h" alt="" coords="298,237,442,267"/>
+<area shape="rect" id="node62" href="$Imported_8h.html" title="Imported.h" alt="" coords="1052,237,1135,267"/>
+<area shape="rect" id="node70" href="$MirrorDecorator_8h.html" title="MirrorDecorator.h" alt="" coords="760,160,883,189"/>
+<area shape="rect" id="node77" href="$TransformDecorator_8h.html" title="TransformDecorator.h" alt="" coords="907,160,1056,189"/>
+<area shape="rect" id="node90" href="$ScaleDecorator_8h.html" title="ScaleDecorator.h" alt="" coords="419,160,542,189"/>
+<area shape="rect" id="node11" href="$IndentWriter_8h.html" title="IndentWriter.h" alt="" coords="334,392,438,421"/>
+<area shape="rect" id="node19" href="$SharedPtr_8h.html" title="SharedPtr.h" alt="" coords="778,392,868,421"/>
+<area shape="rect" id="node9" href="$AbstractObject_8h.html" title="core/AbstractObject.h" alt="" coords="524,315,674,344"/>
+<area shape="rect" id="node27" href="$TransformMatrix_8h.html" title="TransformMatrix.h" alt="" coords="1147,469,1275,499"/>
+<area shape="rect" id="node30" href="$Matrix_8h.html" title="Matrix.h" alt="" coords="1168,547,1238,576"/>
+<area shape="rect" id="node82" href="$Point3D_8h.html" title="Point3D.h" alt="" coords="1159,237,1239,267"/>
+</map>

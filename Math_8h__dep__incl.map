@@ -1,0 +1,14 @@
+<map id="src/core/Math.h" name="src/core/Math.h">
+<area shape="rect" id="node3" href="$core_8h.html" title="src/core.h" alt="" coords="504,83,584,112"/>
+<area shape="rect" id="node18" href="$RegularPiramid_8h.html" title="src/components/RegularPiramid.h" alt="" coords="165,83,384,112"/>
+<area shape="rect" id="node23" href="$RegularPrism_8h.html" title="src/components/RegularPrism.h" alt="" coords="608,83,816,112"/>
+<area shape="rect" id="node28" href="$RotMatrix_8cpp.html" title="src/core/RotMatrix.cpp" alt="" coords="840,83,995,112"/>
+<area shape="rect" id="node30" href="$TransformMatrix_8cpp.html" title="src/core/TransformMatrix.cpp" alt="" coords="1019,83,1211,112"/>
+<area shape="rect" id="node5" href="$Bearings_8h.html" title="src/components/Bearings.h" alt="" coords="493,160,675,189"/>
+<area shape="rect" id="node14" href="$Nuts_8h.html" title="src/components/Nuts.h" alt="" coords="312,160,469,189"/>
+<area shape="rect" id="node7" href="$Bearings_8cpp.html" title="src/components/Bearings.cpp" alt="" coords="495,315,689,344"/>
+<area shape="rect" id="node9" href="$components_8h.html" title="src/components.h" alt="" coords="425,237,551,267"/>
+<area shape="rect" id="node12" href="$Nuts_8cpp.html" title="src/components/Nuts.cpp" alt="" coords="300,315,471,344"/>
+<area shape="rect" id="node21" href="$RegularPiramid_8cpp.html" title="src/components/RegularPiramid.cpp" alt="" coords="5,160,237,189"/>
+<area shape="rect" id="node26" href="$RegularPrism_8cpp.html" title="src/components/RegularPrism.cpp" alt="" coords="749,160,971,189"/>
+</map>

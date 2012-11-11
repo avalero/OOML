@@ -1,0 +1,9 @@
+<map id="Component::relTranslatedCopy" name="Component::relTranslatedCopy">
+<area shape="rect" id="node3" href="$classTransformMatrix.html#af2e8c92afee36a6e24206ffed1398161" title="performs a translation" alt="" coords="257,5,449,35"/>
+<area shape="rect" id="node7" href="$classComponent.html#a8775db6d1a2c1afc2e77cd3c8f39da6f" title="Default constructor." alt="" coords="272,59,435,88"/>
+<area shape="rect" id="node9" href="$classTransformDecorator.html#a0aa4971660b91bebb8ad53e682b00bd1" title="Default factory method." alt="" coords="284,111,423,158"/>
+<area shape="rect" id="node5" href="$classMatrix.html#a820d3e49ffea766faf310729803e1df1" title="Matrix::set" alt="" coords="547,5,629,35"/>
+<area shape="rect" id="node11" href="$classTransformMatrix.html#ae53e1d2436656a41d8689cd818a05f88" title="checke if matrix equals identity" alt="" coords="499,67,677,96"/>
+<area shape="rect" id="node13" href="$classSharedPtr.html#ac747048e189c896c11f0b436d02fc5e1" title="Gets the pointer hold." alt="" coords="535,120,641,149"/>
+<area shape="rect" id="node15" href="$classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version." alt="" coords="517,173,659,203"/>
+</map>

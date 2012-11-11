@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -ggdb -g    CMakeFiles/sharedptr.dir/sharedptr.cpp.o  -o ../../bin/sharedptr -rdynamic -L/home/avalero/workspace/OOML/lib 

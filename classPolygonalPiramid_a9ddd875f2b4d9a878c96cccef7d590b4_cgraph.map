@@ -1,0 +1,7 @@
+<map id="PolygonalPiramid::build" name="PolygonalPiramid::build">
+<area shape="rect" id="node3" href="$classPolyhedron.html#a5c2b365047798f4854e6dcc12fda4f30" title="Static factory method." alt="" coords="229,5,360,35"/>
+<area shape="rect" id="node5" href="$classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version." alt="" coords="224,59,365,88"/>
+<area shape="rect" id="node7" href="$classSharedPtr.html#ac747048e189c896c11f0b436d02fc5e1" title="Gets the pointer hold." alt="" coords="241,112,348,141"/>
+<area shape="rect" id="node9" href="$classPolygon.html#a669eb7390e34ca3a7267b3329743abdc" title="Get the polygon points." alt="" coords="229,165,360,195"/>
+<area shape="rect" id="node11" href="$classPolyhedron.html#abe043f81d689cf387791cd7896aac48c" title="Adds a new triangle to the polygon after the last." alt="" coords="213,219,376,248"/>
+</map>

@@ -1,0 +1,35 @@
+<map id="src/parts.h" name="src/parts.h">
+<area shape="rect" id="node3" href="$ArduinoUNO_8h.html" title="parts/ArduinoUNO.h" alt="" coords="825,160,964,189"/>
+<area shape="rect" id="node106" href="$BallWheelHolder_8h.html" title="parts/BallWheelHolder.h" alt="" coords="1467,83,1629,112"/>
+<area shape="rect" id="node118" href="$BatteryHolder_8h.html" title="parts/BatteryHolder.h" alt="" coords="159,160,305,189"/>
+<area shape="rect" id="node121" href="$FutabaS3003_8h.html" title="parts/FutabaS3003.h" alt="" coords="329,160,471,189"/>
+<area shape="rect" id="node124" href="$Link_8h.html" title="parts/Link.h" alt="" coords="495,160,585,189"/>
+<area shape="rect" id="node127" href="$NineVoltBattery_8h.html" title="parts/NineVoltBattery.h" alt="" coords="920,83,1077,112"/>
+<area shape="rect" id="node139" href="$ServoWheel_8h.html" title="parts/ServoWheel.h" alt="" coords="507,83,643,112"/>
+<area shape="rect" id="node141" href="$SimpleWheel_8h.html" title="parts/SimpleWheel.h" alt="" coords="609,160,751,189"/>
+<area shape="rect" id="node144" href="$SimpleAxe_8h.html" title="parts/SimpleAxe.h" alt="" coords="717,83,845,112"/>
+<area shape="rect" id="node148" href="$SeeedUSSensor_8h.html" title="parts/SeeedUSSensor.h" alt="" coords="1101,83,1264,112"/>
+<area shape="rect" id="node152" href="$SharpIRSensor_8h.html" title="parts/SharpIRSensor.h" alt="" coords="1288,83,1443,112"/>
+<area shape="rect" id="node5" href="$AbstractPart_8h.html" title="core/AbstractPart.h" alt="" coords="825,237,959,267"/>
+<area shape="rect" id="node7" href="$Component_8h.html" title="core/Component.h" alt="" coords="828,315,956,344"/>
+<area shape="rect" id="node9" href="$ColorDecorator_8h.html" title="ColorDecorator.h" alt="" coords="576,392,696,421"/>
+<area shape="rect" id="node11" href="$ObjectDecorator_8h.html" title="core/ObjectDecorator.h" alt="" coords="687,469,844,499"/>
+<area shape="rect" id="node27" href="$RefSys_8h.html" title="RefSys.h" alt="" coords="60,624,137,653"/>
+<area shape="rect" id="node42" href="$RotMatrix_8h.html" title="RotMatrix.h" alt="" coords="43,701,133,731"/>
+<area shape="rect" id="node56" href="$DXFLinearExtrude_8h.html" title="DXFLinearExtrude.h" alt="" coords="1172,469,1311,499"/>
+<area shape="rect" id="node61" href="$DXFRotateExtrude_8h.html" title="DXFRotateExtrude.h" alt="" coords="519,469,663,499"/>
+<area shape="rect" id="node66" href="$Imported_8h.html" title="Imported.h" alt="" coords="1487,469,1569,499"/>
+<area shape="rect" id="node74" href="$MirrorDecorator_8h.html" title="MirrorDecorator.h" alt="" coords="928,392,1051,421"/>
+<area shape="rect" id="node81" href="$TransformDecorator_8h.html" title="TransformDecorator.h" alt="" coords="305,392,455,421"/>
+<area shape="rect" id="node94" href="$ScaleDecorator_8h.html" title="ScaleDecorator.h" alt="" coords="1075,392,1197,421"/>
+<area shape="rect" id="node15" href="$IndentWriter_8h.html" title="IndentWriter.h" alt="" coords="1135,624,1239,653"/>
+<area shape="rect" id="node23" href="$SharedPtr_8h.html" title="SharedPtr.h" alt="" coords="512,624,603,653"/>
+<area shape="rect" id="node13" href="$AbstractObject_8h.html" title="core/AbstractObject.h" alt="" coords="772,547,921,576"/>
+<area shape="rect" id="node31" href="$TransformMatrix_8h.html" title="TransformMatrix.h" alt="" coords="157,701,285,731"/>
+<area shape="rect" id="node34" href="$Matrix_8h.html" title="Matrix.h" alt="" coords="195,779,264,808"/>
+<area shape="rect" id="node86" href="$Point3D_8h.html" title="Point3D.h" alt="" coords="212,469,292,499"/>
+<area shape="rect" id="node109" href="$Sphere_8h.html" title="components/Sphere.h" alt="" coords="1468,160,1617,189"/>
+<area shape="rect" id="node113" href="$SphereObject_8h.html" title="../core/SphereObject.h" alt="" coords="1465,237,1617,267"/>
+<area shape="rect" id="node130" href="$Cube_8h.html" title="components/Cube.h" alt="" coords="1272,160,1411,189"/>
+<area shape="rect" id="node132" href="$CubeObject_8h.html" title="../core/CubeObject.h" alt="" coords="1275,237,1416,267"/>
+</map>

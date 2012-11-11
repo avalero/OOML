@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="OOML" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\src\core\;CMake Files\src\components\;CMake Files\src\parts\;CMake Files\test\;CMake Files\data\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/avalero/workspace/OOML/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install">
+         <Option working_dir="/home/avalero/workspace/OOML/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/Makefile&quot;  VERBOSE=1 install" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install/local">
+         <Option working_dir="/home/avalero/workspace/OOML/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/Makefile&quot;  VERBOSE=1 install/local" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install/strip">
+         <Option working_dir="/home/avalero/workspace/OOML/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/Makefile&quot;  VERBOSE=1 install/strip" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="list_install_components">
+         <Option working_dir="/home/avalero/workspace/OOML/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/Makefile&quot;  VERBOSE=1 list_install_components" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/avalero/workspace/OOML/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="OOMLCore">
+         <Option output="/home/avalero/workspace/OOML/lib/libOOMLCore.so" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/build/src/core" />
+         <Option object_output="./" />
+         <Option type="3" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/src/core/Makefile&quot;  VERBOSE=1 OOMLCore" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/src/core/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/src/core/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/src/core/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="OOMLCore/fast">
+         <Option output="/home/avalero/workspace/OOML/lib/libOOMLCore.so" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/build/src/core" />
+         <Option object_output="./" />
+         <Option type="3" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/src/core/Makefile&quot;  VERBOSE=1 OOMLCore/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/src/core/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/src/core/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/src/core/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="OOMLComponents">
+         <Option output="/home/avalero/workspace/OOML/lib/libOOMLComponents.so" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/build/src/components" />
+         <Option object_output="./" />
+         <Option type="3" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/src/components/Makefile&quot;  VERBOSE=1 OOMLComponents" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/src/components/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/src/components/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/src/components/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="OOMLComponents/fast">
+         <Option output="/home/avalero/workspace/OOML/lib/libOOMLComponents.so" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/build/src/components" />
+         <Option object_output="./" />
+         <Option type="3" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/src/components/Makefile&quot;  VERBOSE=1 OOMLComponents/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/src/components/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/src/components/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/src/components/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="OOMLParts">
+         <Option output="/home/avalero/workspace/OOML/lib/libOOMLParts.so" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/build/src/parts" />
+         <Option object_output="./" />
+         <Option type="3" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/src/parts/Makefile&quot;  VERBOSE=1 OOMLParts" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/src/parts/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/src/parts/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/src/parts/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="OOMLParts/fast">
+         <Option output="/home/avalero/workspace/OOML/lib/libOOMLParts.so" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/build/src/parts" />
+         <Option object_output="./" />
+         <Option type="3" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/src/parts/Makefile&quot;  VERBOSE=1 OOMLParts/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/src/parts/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/src/parts/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/src/parts/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="attachment">
+         <Option output="/home/avalero/workspace/OOML/bin/attachment" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 attachment" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="attachment/fast">
+         <Option output="/home/avalero/workspace/OOML/bin/attachment" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 attachment/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="clamps">
+         <Option output="/home/avalero/workspace/OOML/bin/clamps" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clamps" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="clamps/fast">
+         <Option output="/home/avalero/workspace/OOML/bin/clamps" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clamps/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="cube">
+         <Option output="/home/avalero/workspace/OOML/bin/cube" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 cube" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="cube/fast">
+         <Option output="/home/avalero/workspace/OOML/bin/cube" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 cube/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="prism">
+         <Option output="/home/avalero/workspace/OOML/bin/prism" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 prism" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="prism/fast">
+         <Option output="/home/avalero/workspace/OOML/bin/prism" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 prism/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="refsys">
+         <Option output="/home/avalero/workspace/OOML/bin/refsys" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 refsys" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="refsys/fast">
+         <Option output="/home/avalero/workspace/OOML/bin/refsys" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 refsys/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="regular">
+         <Option output="/home/avalero/workspace/OOML/bin/regular" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 regular" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="regular/fast">
+         <Option output="/home/avalero/workspace/OOML/bin/regular" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 regular/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rounded">
+         <Option output="/home/avalero/workspace/OOML/bin/rounded" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 rounded" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rounded/fast">
+         <Option output="/home/avalero/workspace/OOML/bin/rounded" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 rounded/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="sandbox">
+         <Option output="/home/avalero/workspace/OOML/bin/sandbox" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 sandbox" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="sandbox/fast">
+         <Option output="/home/avalero/workspace/OOML/bin/sandbox" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 sandbox/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="sharedptr">
+         <Option output="/home/avalero/workspace/OOML/bin/sharedptr" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 sharedptr" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="sharedptr/fast">
+         <Option output="/home/avalero/workspace/OOML/bin/sharedptr" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 sharedptr/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="subsystem2D">
+         <Option output="/home/avalero/workspace/OOML/bin/subsystem2D" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 subsystem2D" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="subsystem2D/fast">
+         <Option output="/home/avalero/workspace/OOML/bin/subsystem2D" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 subsystem2D/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="toroid">
+         <Option output="/home/avalero/workspace/OOML/bin/toroid" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 toroid" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="toroid/fast">
+         <Option output="/home/avalero/workspace/OOML/bin/toroid" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 toroid/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="transform">
+         <Option output="/home/avalero/workspace/OOML/bin/transform" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 transform" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="transform/fast">
+         <Option output="/home/avalero/workspace/OOML/bin/transform" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 transform/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="writer">
+         <Option output="/home/avalero/workspace/OOML/bin/writer" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 writer" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="writer/fast">
+         <Option output="/home/avalero/workspace/OOML/bin/writer" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/avalero/workspace/OOML/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/avalero/workspace/OOML/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 writer/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/avalero/workspace/OOML/build/test/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/Bearings.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/Char.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/Circle.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/Cube.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/Cylinder.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/LinksView.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/Nuts.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/PolygonalPiramid.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/PolygonalPrism.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/RefSysView.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/RegularPiramid.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/RegularPrism.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/RoundedCube.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/RoundedCylinder.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/RoundedTablet.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/Sphere.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/Square.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/String.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/Toroid.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/AbstractObject.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/AbstractPackage.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/AbstractPart.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/ColorDecorator.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/Component.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/CompositeObject.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/CubeObject.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/CylinderObject.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/DXFLinearExtrude.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/DXFRotateExtrude.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/Difference.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/Hull.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/Imported.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/IndentWriter.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/Intersection.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/LinearExtrudeDecorator.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/MinkowskiDecorator.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/MirrorDecorator.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/ObjectDecorator.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/Point2D.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/Point3D.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/Polygon2D.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/Polyhedron.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/RefSys.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/RotMatrix.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/RotateExtrudeDecorator.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/ScaleDecorator.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/SphereObject.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/TransformDecorator.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/TransformMatrix.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/Union.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/globalfunctions.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/parts/ArduinoUNO.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/parts/BallWheelHolder.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/parts/BatteryHolder.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/parts/Bearing.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/parts/FutabaS3003.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/parts/FutabaWheel.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/parts/Link.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/parts/NineVoltBattery.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/parts/SeeedUSSensor.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/parts/ServoWheel.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/parts/SharpIRSensor.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/parts/SimpleAxe.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/parts/SimpleWheel.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/test/attachment.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/test/clamps.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/test/cube.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/test/prism.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/test/refsys.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/test/regular.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/test/rounded.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/test/sandbox.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/test/sharedptr.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/test/subsystem2D.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/test/toroid.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/test/transform.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/test/writer.cpp">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/Bearings.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/Char.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/Circle.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/Cube.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/Cylinder.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/LinksView.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/Nuts.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/PolygonalPiramid.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/PolygonalPrism.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/RefSysView.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/RegularPiramid.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/RegularPrism.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/RoundedCube.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/RoundedCylinder.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/RoundedTablet.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/Sphere.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/Square.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/String.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/Toroid.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/AbstractObject.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/AbstractPackage.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/AbstractPart.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/ColorDecorator.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/Component.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/Component2D.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/CompositeComponent.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/CompositeObject.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/CubeObject.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/CylinderObject.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/DXFLinearExtrude.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/DXFRotateExtrude.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/Difference.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/Hull.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/Imported.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/IndentWriter.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/Intersection.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/LinearExtrudeDecorator.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/Math.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/Matrix.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/MinkowskiDecorator.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/MirrorDecorator.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/ObjectDecorator.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/Point2D.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/Point3D.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/PointIndexMap.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/Polygon.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/Polygon2D.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/Polyhedron.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/RefSys.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/RotMatrix.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/RotateExtrudeDecorator.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/ScaleDecorator.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/SharedPtr.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/SphereObject.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/TransformDecorator.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/TransformMatrix.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/Translation.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/Triangle3D.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/Union.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/Vector.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/globalfunctions.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/parts/ArduinoUNO.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/parts/BallWheelHolder.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/parts/BatteryHolder.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/parts/Bearing.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/parts/FutabaS3003.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/parts/FutabaWheel.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/parts/Link.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/parts/NineVoltBattery.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/parts/SeeedUSSensor.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/parts/ServoWheel.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/parts/SharpIRSensor.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/parts/SimpleAxe.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/parts/SimpleWheel.h">
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/config.h.in">
+          <Option virtualFolder="CMake Files\src\" />
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\" />
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/core/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\core\" />
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/components/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\components\" />
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/src/parts/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\parts\" />
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/test/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\test\" />
+      </Unit>
+      <Unit filename="/home/avalero/workspace/OOML/data/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\data\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

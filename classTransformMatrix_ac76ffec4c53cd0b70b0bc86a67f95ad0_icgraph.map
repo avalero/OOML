@@ -1,0 +1,21 @@
+<map id="TransformMatrix::rotateY" name="TransformMatrix::rotateY">
+<area shape="rect" id="node3" href="$classTransformMatrix.html#a6ca67ecc63c5f6fd26cca1d0df2033eb" title="Applies an Euler rotation around the initial fixed z, y&#39;, z&#39;&#39; Applies three rotations around z..." alt="" coords="221,85,435,115"/>
+<area shape="rect" id="node11" href="$classTransformMatrix.html#a20910983db5e4e0574879dd86b4f8a3e" title="Applies a Roll&#45;Pitch&#45;Yaw rotation around the initial fixed x, y, z Applies three rotations around the..." alt="" coords="249,225,407,255"/>
+<area shape="rect" id="node5" href="$classComponent.html#a495eab23b140a50437e90f84500803eb" title="Rotate the component with Euler Angles ZY&#39;Z&#39;&#39;." alt="" coords="503,5,687,35"/>
+<area shape="rect" id="node7" href="$classComponent.html#a0ec11e37ac626ea7ea2ce8019a828a16" title="Rotate a copy of the component with Euler Angles ZX&#39;Z&#39;&#39;." alt="" coords="484,59,705,88"/>
+<area shape="rect" id="node9" href="$classRefSys.html#a8546580f91dabc8f246aaa179577b327" title="Rotates the reference system This methods rotates the reference system with the Euler ZYZ angles..." alt="" coords="513,112,676,141"/>
+<area shape="rect" id="node13" href="$classComponent.html#ad428061d4b1fbb0095b70cba6d8a5fd4" title="Rotate the component." alt="" coords="511,165,679,195"/>
+<area shape="rect" id="node21" href="$classComponent.html#a5d02f92e62bd7a142dcc9c0dae0c908d" title="Rotate the component." alt="" coords="529,272,660,301"/>
+<area shape="rect" id="node36" href="$classRefSys.html#af6bf58cbf4ee5d308bd05ab976562c56" title="Rotates the reference system This methods rotates the reference system The origin is kept unmoved..." alt="" coords="541,493,648,523"/>
+<area shape="rect" id="node15" href="$classBatteryHolder.html#a31b5756aae7816ef88986302ec12303c" title="Build the piece." alt="" coords="785,165,921,195"/>
+<area shape="rect" id="node17" href="$classBearing.html#acf031144883f9a2eb8db860d3391547e" title="Build the piece." alt="" coords="803,59,904,88"/>
+<area shape="rect" id="node19" href="$classSharpIRSensor.html#a9358ae89493f89e94ecf763fa4f2f542" title="Build the piece." alt="" coords="780,112,927,141"/>
+<area shape="rect" id="node23" href="$classRoundedCube.html#ad0ba2fd7d94c9b93a559bb36ab5787bf" title="Constructor." alt="" coords="756,219,951,248"/>
+<area shape="rect" id="node25" href="$classComponent.html#a90358faa491581771a2677e8cdc00bfd" title="Move To Link Function This method rotates and translates the component in order to place it at a link..." alt="" coords="769,272,937,301"/>
+<area shape="rect" id="node27" href="$classComponent.html#a229e816c0585cc4452b0200e0e842d1c" title="Attaches two components This method attaches attachment component to the componet, making the links fit together." alt="" coords="787,325,920,355"/>
+<area shape="rect" id="node31" href="$classArduinoUNO.html#a3f36db05b8094951b6a0372fae99e390" title="Build the piece." alt="" coords="788,379,919,408"/>
+<area shape="rect" id="node33" href="$classBallWheelHolder.html#a5fdc4b7a1f329bf9e136abb14ce79066" title="Build the piece." alt="" coords="776,432,931,461"/>
+<area shape="rect" id="node29" href="$globalfunctions_8h.html#a09e34955be2ae478ecf8ee52ce4cc741" title="Attaches two components This method attaches attachment component to base componet, making the links fit together." alt="" coords="1000,325,1059,355"/>
+<area shape="rect" id="node38" href="$classTransformDecorator.html#a5ecdeb6ea7f0a75928fcd5260378c6d8" title="TransformDecorator\l::getLinks" alt="" coords="784,485,923,531"/>
+<area shape="rect" id="node40" href="$classTransformDecorator.html#a2ef0f71beae424dd67ebbeb378015ee8" title="TransformDecorator\l::getLink" alt="" coords="784,554,923,601"/>
+</map>

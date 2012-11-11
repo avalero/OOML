@@ -1,0 +1,23 @@
+<map id="attach" name="attach">
+<area shape="rect" id="node3" href="$classComponent.html#a229e816c0585cc4452b0200e0e842d1c" title="Attaches two components This method attaches attachment component to the componet, making the links fit together." alt="" coords="112,181,245,211"/>
+<area shape="rect" id="node5" href="$classComponent.html#a91c6c7f8caa0ab0e6d8368ee46a4edb9" title="Component::getLink" alt="" coords="317,32,456,61"/>
+<area shape="rect" id="node11" href="$classRefSys.html#a242db8ba69ca79d31ab07793ad458ced" title="Rotates the reference system This methods rotates the reference system with a rotational matrix..." alt="" coords="293,85,480,115"/>
+<area shape="rect" id="node13" href="$classTransformMatrix.html#a72b499093d75f6737660168c21b01a5b" title="Gets the rotation angles about the fixed axes x,y,z. Obtains the rotation angles about the fixed x..." alt="" coords="297,138,476,185"/>
+<area shape="rect" id="node17" href="$classTransformMatrix.html#a7f27e92f29e5d19fdffafb1fd987984b" title="Gets the translation wrt. the fixed axes x,y,z. Obtains the rotation angles about the fixed x..." alt="" coords="297,207,476,254"/>
+<area shape="rect" id="node19" href="$classComponent.html#a5d02f92e62bd7a142dcc9c0dae0c908d" title="Rotate the component." alt="" coords="321,277,452,307"/>
+<area shape="rect" id="node45" href="$classComponent.html#a0df678527e9d0d65a749bbc5883a71af" title="Translate the component." alt="" coords="313,331,460,360"/>
+<area shape="rect" id="node7" href="$classAbstractObject.html#ab10fcc764ffe95d859beedaaf6b54a7e" title="AbstractObject::setLinks" alt="" coords="533,5,699,35"/>
+<area shape="rect" id="node9" href="$classAbstractObject.html#a1ed07929ab8bef9fd5f33f71890388cf" title="AbstractObject::getLink" alt="" coords="537,59,695,88"/>
+<area shape="rect" id="node15" href="$Math_8h.html#a638b7a3259334d9389d4dcb31cb7dfea" title="rad2deg" alt="" coords="583,147,649,176"/>
+<area shape="rect" id="node21" href="$classTransformMatrix.html#a20910983db5e4e0574879dd86b4f8a3e" title="Applies a Roll&#45;Pitch&#45;Yaw rotation around the initial fixed x, y, z Applies three rotations around the..." alt="" coords="537,212,695,241"/>
+<area shape="rect" id="node37" href="$classTransformDecorator.html#a0aa4971660b91bebb8ad53e682b00bd1" title="Default factory method." alt="" coords="547,315,685,362"/>
+<area shape="rect" id="node23" href="$classTransformMatrix.html#ad94010aa2da239614efbfb4926d63c04" title="Applies a rotation around initial fixed x axis Applies a rotation around current x axis..." alt="" coords="759,111,924,140"/>
+<area shape="rect" id="node29" href="$classTransformMatrix.html#ac76ffec4c53cd0b70b0bc86a67f95ad0" title="Applies a rotation around initial fixed y axis Applies a rotation around current y axis..." alt="" coords="759,164,924,193"/>
+<area shape="rect" id="node33" href="$classTransformMatrix.html#a4b485e8c3d73e3b687b4859b4cc11408" title="Applies a rotation around initial fixed current z axis Applies a rotation around current z axis..." alt="" coords="759,217,924,247"/>
+<area shape="rect" id="node25" href="$Math_8h.html#a021636ed21e2cb128cb67fa392983ac0" title="deg2rad" alt="" coords="988,164,1055,193"/>
+<area shape="rect" id="node27" href="$classMatrix.html#a820d3e49ffea766faf310729803e1df1" title="Matrix::set" alt="" coords="980,217,1063,247"/>
+<area shape="rect" id="node39" href="$classTransformMatrix.html#ae53e1d2436656a41d8689cd818a05f88" title="checke if matrix equals identity" alt="" coords="752,271,931,300"/>
+<area shape="rect" id="node41" href="$classSharedPtr.html#ac747048e189c896c11f0b436d02fc5e1" title="Gets the pointer hold." alt="" coords="788,324,895,353"/>
+<area shape="rect" id="node43" href="$classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version." alt="" coords="771,377,912,407"/>
+<area shape="rect" id="node47" href="$classTransformMatrix.html#ae2b5dc7c41da84953f791e12e0b22964" title="performs a translation" alt="" coords="529,407,703,436"/>
+</map>

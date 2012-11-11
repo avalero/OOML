@@ -1,0 +1,32 @@
+<map id="src/parts/BallWheelHolder.cpp" name="src/parts/BallWheelHolder.cpp">
+<area shape="rect" id="node3" href="$BallWheelHolder_8h.html" title="parts/BallWheelHolder.h" alt="" coords="1122,83,1285,112"/>
+<area shape="rect" id="node106" href="$Sphere_8h.html" title="components/Sphere.h" alt="" coords="1010,160,1160,189"/>
+<area shape="rect" id="node115" href="$Cylinder_8h.html" title="components/Cylinder.h" alt="" coords="1390,160,1545,189"/>
+<area shape="rect" id="node125" href="$Cube_8h.html" title="components/Cube.h" alt="" coords="1570,160,1709,189"/>
+<area shape="rect" id="node134" href="$Difference_8h.html" title="core/Difference.h" alt="" coords="1890,83,2013,112"/>
+<area shape="rect" id="node158" href="$Intersection_8h.html" title="core/Intersection.h" alt="" coords="2242,160,2373,189"/>
+<area shape="rect" id="node5" href="$AbstractPart_8h.html" title="core/AbstractPart.h" alt="" coords="1128,237,1261,267"/>
+<area shape="rect" id="node7" href="$Component_8h.html" title="core/Component.h" alt="" coords="970,315,1098,344"/>
+<area shape="rect" id="node9" href="$ColorDecorator_8h.html" title="ColorDecorator.h" alt="" coords="872,392,992,421"/>
+<area shape="rect" id="node11" href="$ObjectDecorator_8h.html" title="core/ObjectDecorator.h" alt="" coords="666,469,824,499"/>
+<area shape="rect" id="node27" href="$RefSys_8h.html" title="RefSys.h" alt="" coords="224,624,301,653"/>
+<area shape="rect" id="node42" href="$RotMatrix_8h.html" title="RotMatrix.h" alt="" coords="376,701,466,731"/>
+<area shape="rect" id="node56" href="$DXFLinearExtrude_8h.html" title="DXFLinearExtrude.h" alt="" coords="898,469,1037,499"/>
+<area shape="rect" id="node61" href="$DXFRotateExtrude_8h.html" title="DXFRotateExtrude.h" alt="" coords="1213,469,1357,499"/>
+<area shape="rect" id="node66" href="$Imported_8h.html" title="Imported.h" alt="" coords="253,469,336,499"/>
+<area shape="rect" id="node74" href="$MirrorDecorator_8h.html" title="MirrorDecorator.h" alt="" coords="1066,392,1189,421"/>
+<area shape="rect" id="node81" href="$TransformDecorator_8h.html" title="TransformDecorator.h" alt="" coords="394,392,544,421"/>
+<area shape="rect" id="node94" href="$ScaleDecorator_8h.html" title="ScaleDecorator.h" alt="" coords="568,392,690,421"/>
+<area shape="rect" id="node15" href="$IndentWriter_8h.html" title="IndentWriter.h" alt="" coords="1570,624,1674,653"/>
+<area shape="rect" id="node23" href="$SharedPtr_8h.html" title="SharedPtr.h" alt="" coords="493,624,584,653"/>
+<area shape="rect" id="node13" href="$AbstractObject_8h.html" title="core/AbstractObject.h" alt="" coords="893,547,1042,576"/>
+<area shape="rect" id="node31" href="$TransformMatrix_8h.html" title="TransformMatrix.h" alt="" coords="224,701,352,731"/>
+<area shape="rect" id="node34" href="$Matrix_8h.html" title="Matrix.h" alt="" coords="386,779,456,808"/>
+<area shape="rect" id="node86" href="$Point3D_8h.html" title="Point3D.h" alt="" coords="410,469,490,499"/>
+<area shape="rect" id="node110" href="$SphereObject_8h.html" title="../core/SphereObject.h" alt="" coords="850,237,1002,267"/>
+<area shape="rect" id="node117" href="$CylinderObject_8h.html" title="../core/CylinderObject.h" alt="" coords="1386,237,1546,267"/>
+<area shape="rect" id="node127" href="$CubeObject_8h.html" title="../core/CubeObject.h" alt="" coords="1570,237,1712,267"/>
+<area shape="rect" id="node137" href="$CompositeComponent_8h.html" title="core/CompositeComponent.h" alt="" coords="2192,237,2384,267"/>
+<area shape="rect" id="node140" href="$CompositeObject_8h.html" title="core/CompositeObject.h" alt="" coords="2090,469,2253,499"/>
+<area shape="rect" id="node152" href="$Union_8h.html" title="core/Union.h" alt="" coords="1954,160,2050,189"/>
+</map>

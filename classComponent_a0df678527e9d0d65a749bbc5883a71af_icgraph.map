@@ -1,0 +1,22 @@
+<map id="Component::translate" name="Component::translate">
+<area shape="rect" id="node3" href="$classRoundedCube.html#ad0ba2fd7d94c9b93a559bb36ab5787bf" title="Constructor." alt="" coords="207,5,401,35"/>
+<area shape="rect" id="node5" href="$classRoundedCylinder.html#a71de022375f47005a38034c037d6dd2f" title="Static factory method." alt="" coords="213,58,395,105"/>
+<area shape="rect" id="node7" href="$classRoundedTablet.html#acb7bd8292117dbfba2b14e928a5f1d1e" title="Constructor." alt="" coords="201,128,407,157"/>
+<area shape="rect" id="node9" href="$classString.html#a9662ca94c4e2cd2a1b6fe723fd7ee6d7" title="String::String" alt="" coords="255,181,353,211"/>
+<area shape="rect" id="node11" href="$classToroid.html#a1f536ca45b977d2b16caddcfac37e8f2" title="Build the piece." alt="" coords="257,235,351,264"/>
+<area shape="rect" id="node13" href="$classComponent.html#a90358faa491581771a2677e8cdc00bfd" title="Move To Link Function This method rotates and translates the component in order to place it at a link..." alt="" coords="220,288,388,317"/>
+<area shape="rect" id="node15" href="$classComponent.html#a229e816c0585cc4452b0200e0e842d1c" title="Attaches two components This method attaches attachment component to the componet, making the links fit together." alt="" coords="237,341,371,371"/>
+<area shape="rect" id="node19" href="$classArduinoUNO.html#a3f36db05b8094951b6a0372fae99e390" title="Build the piece." alt="" coords="239,395,369,424"/>
+<area shape="rect" id="node21" href="$classBallWheelHolder.html#a5fdc4b7a1f329bf9e136abb14ce79066" title="Build the piece." alt="" coords="227,448,381,477"/>
+<area shape="rect" id="node23" href="$classBallWheelHolder.html#aa345c2a64731ffd98a8562c452b9115b" title="BallWheelHolder::getBall" alt="" coords="221,501,387,531"/>
+<area shape="rect" id="node25" href="$classBatteryHolder.html#a31b5756aae7816ef88986302ec12303c" title="Build the piece." alt="" coords="236,555,372,584"/>
+<area shape="rect" id="node27" href="$classBearing.html#acf031144883f9a2eb8db860d3391547e" title="Build the piece." alt="" coords="253,608,355,637"/>
+<area shape="rect" id="node29" href="$classFutabaS3003.html#a780e4ad25476f3d7962675c1b5e4fb03" title="Build the piece." alt="" coords="237,661,371,691"/>
+<area shape="rect" id="node31" href="$classFutabaWheel.html#a6dc7222f040225cbea58a7f52ab51bc1" title="Build the piece." alt="" coords="237,715,371,744"/>
+<area shape="rect" id="node33" href="$classNineVoltBattery.html#a47fdf8ed2d4de128b9acae2ced2cb9ef" title="Build the piece." alt="" coords="229,768,379,797"/>
+<area shape="rect" id="node35" href="$classSeeedUSSensor.html#a2a01659a5ec32083d7681150a7270a2f" title="Build the piece." alt="" coords="227,821,381,851"/>
+<area shape="rect" id="node37" href="$classServoWheel.html#a1c938e0a0aeac4b0cb9f31081cdbcc62" title="Build the piece." alt="" coords="240,875,368,904"/>
+<area shape="rect" id="node39" href="$classSharpIRSensor.html#a9358ae89493f89e94ecf763fa4f2f542" title="Build the piece." alt="" coords="231,928,377,957"/>
+<area shape="rect" id="node41" href="$classSimpleWheel.html#a33754ed6566c483e50a13e3ab9ea1052" title="Build the piece." alt="" coords="237,981,371,1011"/>
+<area shape="rect" id="node17" href="$globalfunctions_8h.html#a09e34955be2ae478ecf8ee52ce4cc741" title="Attaches two components This method attaches attachment component to base componet, making the links fit together." alt="" coords="456,341,515,371"/>
+</map>

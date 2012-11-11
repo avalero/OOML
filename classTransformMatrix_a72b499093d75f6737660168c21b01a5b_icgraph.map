@@ -1,0 +1,9 @@
+<map id="TransformMatrix::getGlobalXYZAngles" name="TransformMatrix::getGlobalXYZAngles">
+<area shape="rect" id="node3" href="$classComponent.html#a90358faa491581771a2677e8cdc00bfd" title="Move To Link Function This method rotates and translates the component in order to place it at a link..." alt="" coords="235,5,403,35"/>
+<area shape="rect" id="node5" href="$classComponent.html#a229e816c0585cc4452b0200e0e842d1c" title="Attaches two components This method attaches attachment component to the componet, making the links fit together." alt="" coords="252,59,385,88"/>
+<area shape="rect" id="node9" href="$classTransformDecorator.html#a5ecdeb6ea7f0a75928fcd5260378c6d8" title="TransformDecorator\l::getLinks" alt="" coords="249,111,388,158"/>
+<area shape="rect" id="node11" href="$classTransformDecorator.html#a2ef0f71beae424dd67ebbeb378015ee8" title="TransformDecorator\l::getLink" alt="" coords="249,181,388,227"/>
+<area shape="rect" id="node13" href="$classTransformDecorator.html#a9866184fd42f691550367e580e7f2fde" title="Generate SCAD output for this object." alt="" coords="249,250,388,297"/>
+<area shape="rect" id="node15" href="$classTransformDecorator.html#a45dd85b8684ad8a1bfa3a3b67c6e20ec" title="Generate AST output for this object." alt="" coords="249,319,388,366"/>
+<area shape="rect" id="node7" href="$globalfunctions_8h.html#a09e34955be2ae478ecf8ee52ce4cc741" title="Attaches two components This method attaches attachment component to base componet, making the links fit together." alt="" coords="451,59,509,88"/>
+</map>

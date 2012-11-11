@@ -1,0 +1,16 @@
+/home/avalero/workspace/OOML/build/src/components/CMakeFiles/OOMLComponents.dir
+/home/avalero/workspace/OOML/build/src/core/CMakeFiles/OOMLCore.dir
+/home/avalero/workspace/OOML/build/src/parts/CMakeFiles/OOMLParts.dir
+/home/avalero/workspace/OOML/build/test/CMakeFiles/attachment.dir
+/home/avalero/workspace/OOML/build/test/CMakeFiles/clamps.dir
+/home/avalero/workspace/OOML/build/test/CMakeFiles/cube.dir
+/home/avalero/workspace/OOML/build/test/CMakeFiles/prism.dir
+/home/avalero/workspace/OOML/build/test/CMakeFiles/refsys.dir
+/home/avalero/workspace/OOML/build/test/CMakeFiles/regular.dir
+/home/avalero/workspace/OOML/build/test/CMakeFiles/rounded.dir
+/home/avalero/workspace/OOML/build/test/CMakeFiles/sandbox.dir
+/home/avalero/workspace/OOML/build/test/CMakeFiles/sharedptr.dir
+/home/avalero/workspace/OOML/build/test/CMakeFiles/subsystem2D.dir
+/home/avalero/workspace/OOML/build/test/CMakeFiles/toroid.dir
+/home/avalero/workspace/OOML/build/test/CMakeFiles/transform.dir
+/home/avalero/workspace/OOML/build/test/CMakeFiles/writer.dir

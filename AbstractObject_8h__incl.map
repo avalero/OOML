@@ -1,0 +1,8 @@
+<map id="src/core/AbstractObject.h" name="src/core/AbstractObject.h">
+<area shape="rect" id="node3" href="$IndentWriter_8h.html" title="IndentWriter.h" alt="" coords="69,83,173,112"/>
+<area shape="rect" id="node11" href="$SharedPtr_8h.html" title="SharedPtr.h" alt="" coords="537,83,628,112"/>
+<area shape="rect" id="node15" href="$RefSys_8h.html" title="RefSys.h" alt="" coords="372,83,449,112"/>
+<area shape="rect" id="node19" href="$TransformMatrix_8h.html" title="TransformMatrix.h" alt="" coords="347,160,475,189"/>
+<area shape="rect" id="node30" href="$RotMatrix_8h.html" title="RotMatrix.h" alt="" coords="499,160,589,189"/>
+<area shape="rect" id="node22" href="$Matrix_8h.html" title="Matrix.h" alt="" coords="485,237,555,267"/>
+</map>

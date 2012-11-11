@@ -1,0 +1,39 @@
+<map id="TransformDecorator::create" name="TransformDecorator::create">
+<area shape="rect" id="node3" href="$classComponent.html#ad428061d4b1fbb0095b70cba6d8a5fd4" title="Rotate the component." alt="" coords="220,371,388,400"/>
+<area shape="rect" id="node11" href="$classComponent.html#acaf3d36cfecfce9ac15e803f5d5d66d6" title="Rotate the component around its local reference system." alt="" coords="211,558,397,587"/>
+<area shape="rect" id="node13" href="$classComponent.html#a5d02f92e62bd7a142dcc9c0dae0c908d" title="Rotate the component." alt="" coords="239,211,369,240"/>
+<area shape="rect" id="node28" href="$classComponent.html#a2c3e5cf2bc1680e69b3268e7063cd1d8" title="Rotate the component around its local reference system." alt="" coords="229,611,379,640"/>
+<area shape="rect" id="node30" href="$classComponent.html#a65626ffdf954959a05120a15daf04219" title="Rotate the component with Euler Angles ZX&#39;Z&#39;&#39;." alt="" coords="212,664,396,694"/>
+<area shape="rect" id="node32" href="$classComponent.html#a29263e0bb90f81f656e96f2d32c7779a" title="Rotate the component with Euler Angles ZX&#39;Z&#39;&#39; around its local reference system." alt="" coords="201,718,407,747"/>
+<area shape="rect" id="node34" href="$classComponent.html#ab274194213390b91a710465d7c7c12ea" title="Rotate a copy of the component with Euler Angles ZX&#39;Z&#39;&#39;." alt="" coords="193,771,415,800"/>
+<area shape="rect" id="node36" href="$classComponent.html#a25028782df9545cded87db34bfd597e6" title="Rotate a copy of the component with Euler Angles ZX&#39;Z&#39;&#39; around its local reference system..." alt="" coords="211,824,397,870"/>
+<area shape="rect" id="node38" href="$classComponent.html#a495eab23b140a50437e90f84500803eb" title="Rotate the component with Euler Angles ZY&#39;Z&#39;&#39;." alt="" coords="212,894,396,923"/>
+<area shape="rect" id="node40" href="$classComponent.html#a04731b2276edc482d179889f9ac83a5a" title="Rotate the component with Euler Angles ZY&#39;Z&#39;&#39; around its local reference system." alt="" coords="201,947,407,976"/>
+<area shape="rect" id="node42" href="$classComponent.html#a0ec11e37ac626ea7ea2ce8019a828a16" title="Rotate a copy of the component with Euler Angles ZX&#39;Z&#39;&#39;." alt="" coords="193,1000,415,1030"/>
+<area shape="rect" id="node44" href="$classComponent.html#aae9aac84bce74a68c307c10cd2fd060e" title="Rotate a copy of the component with Euler Angles ZX&#39;Z&#39;&#39; around its local reference system..." alt="" coords="211,1053,397,1100"/>
+<area shape="rect" id="node46" href="$classComponent.html#a871a9cc554e6c5bfa195215fa011e416" title="Translate the component." alt="" coords="212,424,396,454"/>
+<area shape="rect" id="node59" href="$classComponent.html#a81714ef743a86f37f571a1f40af66770" title="Translate the component wrt. to its local reference system." alt="" coords="203,1123,405,1152"/>
+<area shape="rect" id="node61" href="$classComponent.html#a0df678527e9d0d65a749bbc5883a71af" title="Translate the component." alt="" coords="231,504,377,534"/>
+<area shape="rect" id="node91" href="$classComponent.html#a9c77e890ea15db01c38273975f9a56ad" title="Translate the component wrt. to its local reference system." alt="" coords="221,1176,387,1206"/>
+<area shape="rect" id="node5" href="$classBatteryHolder.html#a31b5756aae7816ef88986302ec12303c" title="Build the piece." alt="" coords="500,51,636,80"/>
+<area shape="rect" id="node7" href="$classBearing.html#acf031144883f9a2eb8db860d3391547e" title="Build the piece." alt="" coords="517,424,619,454"/>
+<area shape="rect" id="node9" href="$classSharpIRSensor.html#a9358ae89493f89e94ecf763fa4f2f542" title="Build the piece." alt="" coords="495,371,641,400"/>
+<area shape="rect" id="node15" href="$classRoundedCube.html#ad0ba2fd7d94c9b93a559bb36ab5787bf" title="Constructor." alt="" coords="471,211,665,240"/>
+<area shape="rect" id="node17" href="$classComponent.html#a90358faa491581771a2677e8cdc00bfd" title="Move To Link Function This method rotates and translates the component in order to place it at a link..." alt="" coords="484,264,652,294"/>
+<area shape="rect" id="node19" href="$classComponent.html#a229e816c0585cc4452b0200e0e842d1c" title="Attaches two components This method attaches attachment component to the componet, making the links fit together." alt="" coords="501,104,635,134"/>
+<area shape="rect" id="node23" href="$classArduinoUNO.html#a3f36db05b8094951b6a0372fae99e390" title="Build the piece." alt="" coords="720,158,851,187"/>
+<area shape="rect" id="node25" href="$classBallWheelHolder.html#a5fdc4b7a1f329bf9e136abb14ce79066" title="Build the piece." alt="" coords="491,318,645,347"/>
+<area shape="rect" id="node21" href="$globalfunctions_8h.html#a09e34955be2ae478ecf8ee52ce4cc741" title="Attaches two components This method attaches attachment component to base componet, making the links fit together." alt="" coords="756,104,815,134"/>
+<area shape="rect" id="node49" href="$classRoundedTablet.html#acb7bd8292117dbfba2b14e928a5f1d1e" title="Constructor." alt="" coords="465,478,671,507"/>
+<area shape="rect" id="node51" href="$classArduinoUNO.html#a2765f8e142d0668f66270d15dfb30296" title="returns a component only with the board" alt="" coords="491,158,645,187"/>
+<area shape="rect" id="node56" href="$classFutabaS3003.html#a780e4ad25476f3d7962675c1b5e4fb03" title="Build the piece." alt="" coords="501,531,635,560"/>
+<area shape="rect" id="node64" href="$classRoundedCylinder.html#a71de022375f47005a38034c037d6dd2f" title="Static factory method." alt="" coords="477,794,659,841"/>
+<area shape="rect" id="node67" href="$classString.html#a9662ca94c4e2cd2a1b6fe723fd7ee6d7" title="String::String" alt="" coords="519,864,617,894"/>
+<area shape="rect" id="node69" href="$classToroid.html#a1f536ca45b977d2b16caddcfac37e8f2" title="Build the piece." alt="" coords="521,918,615,947"/>
+<area shape="rect" id="node75" href="$classBallWheelHolder.html#aa345c2a64731ffd98a8562c452b9115b" title="BallWheelHolder::getBall" alt="" coords="485,971,651,1000"/>
+<area shape="rect" id="node80" href="$classFutabaWheel.html#a6dc7222f040225cbea58a7f52ab51bc1" title="Build the piece." alt="" coords="501,1024,635,1054"/>
+<area shape="rect" id="node82" href="$classNineVoltBattery.html#a47fdf8ed2d4de128b9acae2ced2cb9ef" title="Build the piece." alt="" coords="493,1078,643,1107"/>
+<area shape="rect" id="node84" href="$classSeeedUSSensor.html#a2a01659a5ec32083d7681150a7270a2f" title="Build the piece." alt="" coords="491,635,645,664"/>
+<area shape="rect" id="node86" href="$classServoWheel.html#a1c938e0a0aeac4b0cb9f31081cdbcc62" title="Build the piece." alt="" coords="504,688,632,718"/>
+<area shape="rect" id="node89" href="$classSimpleWheel.html#a33754ed6566c483e50a13e3ab9ea1052" title="Build the piece." alt="" coords="501,742,635,771"/>
+</map>

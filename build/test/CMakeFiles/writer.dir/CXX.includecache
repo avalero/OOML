@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/core/IndentWriter.h
+iostream
+-
+sstream
+-
+string
+-
+
+/home/avalero/workspace/OOML/test/writer.cpp
+core/IndentWriter.h
+-
+iostream
+-
+

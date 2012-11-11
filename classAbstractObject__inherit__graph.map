@@ -1,0 +1,48 @@
+<map id="AbstractObject" name="AbstractObject">
+<area shape="rect" id="node3" href="$classCircle.html" title="Circle primitive object." alt="" coords="237,45,293,75"/>
+<area shape="rect" id="node5" href="$classCompositeObject.html" title="Composite object interface." alt="" coords="204,99,327,128"/>
+<area shape="rect" id="node15" href="$classCubeObject.html" title="Cube primitive object." alt="" coords="220,152,311,181"/>
+<area shape="rect" id="node17" href="$classCylinderObject.html" title="Cylinder primitive object." alt="" coords="212,205,319,235"/>
+<area shape="rect" id="node19" href="$classDXFLinearExtrude.html" title="Linear extrude from DXF filename." alt="" coords="201,259,329,288"/>
+<area shape="rect" id="node21" href="$classDXFRotateExtrude.html" title="Linear extrude from DXF filename." alt="" coords="199,312,332,341"/>
+<area shape="rect" id="node23" href="$classImported.html" title="Imported object." alt="" coords="229,365,301,395"/>
+<area shape="rect" id="node25" href="$classObjectDecorator.html" title="Abstract object decorator interface." alt="" coords="207,419,324,448"/>
+<area shape="rect" id="node67" href="$classPoint2D.html" title="2D point primitive object" alt="" coords="231,472,300,501"/>
+<area shape="rect" id="node69" href="$classPoint3D.html" title="3D point primitive object" alt="" coords="231,525,300,555"/>
+<area shape="rect" id="node71" href="$classPointIndexMap.html" title="Point to index map." alt="" coords="195,579,336,608"/>
+<area shape="rect" id="node73" href="$classPointIndexMap.html" title="PointIndexMap\&lt; Point2D \&gt;" alt="" coords="176,632,355,661"/>
+<area shape="rect" id="node75" href="$classPointIndexMap.html" title="PointIndexMap\&lt; Point3D \&gt;" alt="" coords="176,685,355,715"/>
+<area shape="rect" id="node77" href="$classPolygon.html" title="Generic polygon primitive object." alt="" coords="215,739,316,768"/>
+<area shape="rect" id="node79" href="$classPolygon2D.html" title="Polygon 2D primitive object." alt="" coords="223,792,308,821"/>
+<area shape="rect" id="node83" href="$classPolygon.html" title="Polygon\&lt; Point2D \&gt;" alt="" coords="196,899,335,928"/>
+<area shape="rect" id="node85" href="$classPolygon.html" title="Polygon\&lt; Point3D \&gt;" alt="" coords="196,952,335,981"/>
+<area shape="rect" id="node89" href="$classPolyhedron.html" title="Polyhedron primitive object." alt="" coords="223,1005,308,1035"/>
+<area shape="rect" id="node93" href="$classSphereObject.html" title="Sphere primitive object." alt="" coords="215,1112,316,1141"/>
+<area shape="rect" id="node95" href="$classSquare.html" title="Square primitive object." alt="" coords="235,1165,296,1195"/>
+<area shape="rect" id="node97" href="$classVector.html" title="Generic vector primitive object." alt="" coords="220,1219,311,1248"/>
+<area shape="rect" id="node7" href="$classDifference.html" title="Difference object." alt="" coords="456,5,539,35"/>
+<area shape="rect" id="node9" href="$classHull.html" title="Union object." alt="" coords="475,59,520,88"/>
+<area shape="rect" id="node11" href="$classIntersection.html" title="Intersection object." alt="" coords="452,112,543,141"/>
+<area shape="rect" id="node13" href="$classUnion.html" title="Union object." alt="" coords="469,165,525,195"/>
+<area shape="rect" id="node27" href="$classColorDecorator.html" title="Color decorator." alt="" coords="443,245,552,275"/>
+<area shape="rect" id="node29" href="$classComponent.html" title="Component class." alt="" coords="453,299,541,328"/>
+<area shape="rect" id="node55" href="$classLinearExtrudeDecorator.html" title="Translate decorator." alt="" coords="419,352,576,381"/>
+<area shape="rect" id="node57" href="$classMinkowskiDecorator.html" title="Minkowski decorator." alt="" coords="427,405,568,435"/>
+<area shape="rect" id="node59" href="$classMirrorDecorator.html" title="Mirror decorator." alt="" coords="441,459,553,488"/>
+<area shape="rect" id="node61" href="$classRotateExtrudeDecorator.html" title="Translate decorator." alt="" coords="416,512,579,541"/>
+<area shape="rect" id="node63" href="$classScaleDecorator.html" title="Scale decorator." alt="" coords="441,565,553,595"/>
+<area shape="rect" id="node65" href="$classTransformDecorator.html" title="Translate decorator." alt="" coords="428,619,567,648"/>
+<area shape="rect" id="node31" href="$classAbstractPart.html" title="Color decorator." alt="" coords="656,5,749,35"/>
+<area shape="rect" id="node33" href="$classChar.html" title="Extruded Char primitive object." alt="" coords="677,59,728,88"/>
+<area shape="rect" id="node35" href="$classComponent2D.html" title="2D component class." alt="" coords="649,112,756,141"/>
+<area shape="rect" id="node37" href="$classCompositeComponent.html" title="Composite component interface." alt="" coords="627,165,779,195"/>
+<area shape="rect" id="node39" href="$classCube.html" title="Cube primitive object." alt="" coords="676,219,729,248"/>
+<area shape="rect" id="node41" href="$classCylinder.html" title="Cylinder primitive object." alt="" coords="668,272,737,301"/>
+<area shape="rect" id="node43" href="$classLinksView.html" title="3D point primitive object" alt="" coords="661,325,744,355"/>
+<area shape="rect" id="node45" href="$classRefSysView.html" title="3D point primitive object" alt="" coords="656,379,749,408"/>
+<area shape="rect" id="node47" href="$classRegularPiramid.html" title="Regular base piramid primitive object." alt="" coords="648,432,757,461"/>
+<area shape="rect" id="node49" href="$classRegularPrism.html" title="Regular base prism primitive object." alt="" coords="652,485,753,515"/>
+<area shape="rect" id="node51" href="$classRoundedCube.html" title="Rounded cube primitive object." alt="" coords="651,539,755,568"/>
+<area shape="rect" id="node53" href="$classRoundedCylinder.html" title="Rounded cylinder primitive object." alt="" coords="641,592,764,621"/>
+<area shape="rect" id="node87" href="$classTriangle3D.html" title="3D triangle primitive object" alt="" coords="455,952,540,981"/>
+</map>

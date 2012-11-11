@@ -1,0 +1,5 @@
+<map id="RefSysView::RefSysView" name="RefSysView::RefSysView">
+<area shape="rect" id="node3" href="$classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version." alt="" coords="248,5,389,35"/>
+<area shape="rect" id="node5" href="$classSharedPtr.html#ac747048e189c896c11f0b436d02fc5e1" title="Gets the pointer hold." alt="" coords="265,59,372,88"/>
+<area shape="rect" id="node7" href="$classAbstractObject.html#a699b7bbe9185ea1695941ebce185a577" title="AbstractObject::getRefSys" alt="" coords="229,112,408,141"/>
+</map>

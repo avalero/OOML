@@ -1,0 +1,45 @@
+<map id="ObjectDecorator" name="ObjectDecorator">
+<area shape="rect" id="node5" href="$classColorDecorator.html" title="Color decorator." alt="" coords="355,752,464,781"/>
+<area shape="rect" id="node7" href="$classComponent.html" title="Component class." alt="" coords="365,805,453,835"/>
+<area shape="rect" id="node77" href="$classLinearExtrudeDecorator.html" title="Translate decorator." alt="" coords="331,859,488,888"/>
+<area shape="rect" id="node79" href="$classMinkowskiDecorator.html" title="Minkowski decorator." alt="" coords="339,912,480,941"/>
+<area shape="rect" id="node81" href="$classMirrorDecorator.html" title="Mirror decorator." alt="" coords="353,965,465,995"/>
+<area shape="rect" id="node83" href="$classRotateExtrudeDecorator.html" title="Translate decorator." alt="" coords="328,1019,491,1048"/>
+<area shape="rect" id="node85" href="$classScaleDecorator.html" title="Scale decorator." alt="" coords="353,1072,465,1101"/>
+<area shape="rect" id="node87" href="$classTransformDecorator.html" title="Translate decorator." alt="" coords="340,1125,479,1155"/>
+<area shape="rect" id="node2" href="$classAbstractObject.html" title="Abstract object interface." alt="" coords="5,939,115,968"/>
+<area shape="rect" id="node9" href="$classAbstractPart.html" title="Color decorator." alt="" coords="568,432,661,461"/>
+<area shape="rect" id="node49" href="$classChar.html" title="Extruded Char primitive object." alt="" coords="589,485,640,515"/>
+<area shape="rect" id="node51" href="$classComponent2D.html" title="2D component class." alt="" coords="561,539,668,568"/>
+<area shape="rect" id="node53" href="$classCompositeComponent.html" title="Composite component interface." alt="" coords="539,592,691,621"/>
+<area shape="rect" id="node55" href="$classCube.html" title="Cube primitive object." alt="" coords="588,645,641,675"/>
+<area shape="rect" id="node57" href="$classCylinder.html" title="Cylinder primitive object." alt="" coords="580,699,649,728"/>
+<area shape="rect" id="node59" href="$classLinksView.html" title="3D point primitive object" alt="" coords="573,752,656,781"/>
+<area shape="rect" id="node61" href="$classRefSysView.html" title="3D point primitive object" alt="" coords="568,805,661,835"/>
+<area shape="rect" id="node63" href="$classRegularPiramid.html" title="Regular base piramid primitive object." alt="" coords="560,859,669,888"/>
+<area shape="rect" id="node65" href="$classRegularPrism.html" title="Regular base prism primitive object." alt="" coords="564,912,665,941"/>
+<area shape="rect" id="node67" href="$classRoundedCube.html" title="Rounded cube primitive object." alt="" coords="563,965,667,995"/>
+<area shape="rect" id="node69" href="$classRoundedCylinder.html" title="Rounded cylinder primitive object." alt="" coords="553,1019,676,1048"/>
+<area shape="rect" id="node71" href="$classRoundedTablet.html" title="Rounded tablet primitive object." alt="" coords="560,1072,669,1101"/>
+<area shape="rect" id="node73" href="$classSphere.html" title="Sphere primitive object." alt="" coords="584,1125,645,1155"/>
+<area shape="rect" id="node75" href="$classString.html" title="Extruded Char primitive object." alt="" coords="587,1179,643,1208"/>
+<area shape="rect" id="node11" href="$classArduinoUNO.html" title="Arduino UNO Bounding Box." alt="" coords="752,5,848,35"/>
+<area shape="rect" id="node13" href="$classB608zz.html" title="B608zz" alt="" coords="767,59,833,88"/>
+<area shape="rect" id="node15" href="$classBallWheelHolder.html" title="Ball Wheel Holder primitive object." alt="" coords="741,112,859,141"/>
+<area shape="rect" id="node17" href="$classBatteryHolder.html" title="Battery holder primitive object." alt="" coords="749,165,851,195"/>
+<area shape="rect" id="node19" href="$classBearing.html" title="Bearing primitive object." alt="" coords="767,219,833,248"/>
+<area shape="rect" id="node21" href="$classFutabaS3003.html" title="Futaba S3003 Bounding Box." alt="" coords="751,272,849,301"/>
+<area shape="rect" id="node23" href="$classLink.html" title="link primitive object" alt="" coords="777,325,823,355"/>
+<area shape="rect" id="node25" href="$classLM8uu.html" title="LM8uu" alt="" coords="769,379,831,408"/>
+<area shape="rect" id="node27" href="$classNineVoltBattery.html" title="Futaba S3003 Bounding Box." alt="" coords="743,432,857,461"/>
+<area shape="rect" id="node29" href="$classNutShape.html" title="NutShape" alt="" coords="760,485,840,515"/>
+<area shape="rect" id="node31" href="$classPolygonalPiramid.html" title="Polygonal base piramid primitive object." alt="" coords="739,539,861,568"/>
+<area shape="rect" id="node33" href="$classPolygonalPrism.html" title="Polygonal base prism primitive object." alt="" coords="744,592,856,621"/>
+<area shape="rect" id="node35" href="$classSeeedUSSensor.html" title="Seeed Ultrasonic Sensor Model." alt="" coords="741,645,859,675"/>
+<area shape="rect" id="node37" href="$classSharpIRSensor.html" title="Shrap IR Analogic Sensor Model." alt="" coords="745,699,855,728"/>
+<area shape="rect" id="node39" href="$classSimpleAxe.html" title="Simple axe primitive object." alt="" coords="757,752,843,781"/>
+<area shape="rect" id="node41" href="$classSimpleWheel.html" title="Simple wheel primitive object." alt="" coords="751,805,849,835"/>
+<area shape="rect" id="node47" href="$classToroid.html" title="Toroid primitive object." alt="" coords="771,859,829,888"/>
+<area shape="rect" id="node43" href="$classFutabaWheel.html" title="Futaba wheel primitive object." alt="" coords="909,779,1008,808"/>
+<area shape="rect" id="node45" href="$classServoWheel.html" title="Servo wheel primitive object." alt="" coords="912,832,1005,861"/>
+</map>

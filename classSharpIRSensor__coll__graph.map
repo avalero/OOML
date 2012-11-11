@@ -1,0 +1,7 @@
+<map id="SharpIRSensor" name="SharpIRSensor">
+<area shape="rect" id="node2" href="$classAbstractPart.html" title="Color decorator." alt="" coords="17,245,111,275"/>
+<area shape="rect" id="node4" href="$classComponent.html" title="Component class." alt="" coords="20,165,108,195"/>
+<area shape="rect" id="node6" href="$classObjectDecorator.html" title="Abstract object decorator interface." alt="" coords="5,85,123,115"/>
+<area shape="rect" id="node8" href="$classAbstractObject.html" title="Abstract object interface." alt="" coords="9,5,119,35"/>
+<area shape="rect" id="node10" href="$structSharpIRSensor_1_1Data.html" title="SharpIRSensor::Data" alt="" coords="135,245,281,275"/>
+</map>
