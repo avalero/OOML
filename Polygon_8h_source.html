@@ -89,132 +89,121 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Polygon.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="Polygon_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;﻿<span class="comment">/**********************************************************************</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This code is part of the OOML project</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Treviño</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * OOML is licenced under the Common Creative License,</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * Attribution-ShareAlike 3.0</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * You are free:</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *   - to Share - to copy, distribute and transmit the work</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *   - to Remix - to adapt the work</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * Under the following conditions:</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *   - Attribution. You must attribute the work in the manner specified</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *     by the author or licensor (but not in any way that suggests that</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *     they endorse you or your use of the work).</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *   - Share Alike. If you alter, transform, or build upon this work,</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *     you may distribute the resulting work only under the same or</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *     similar license to this one.</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * Any of the above conditions can be waived if you get permission</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * from the copyright holder.  Nothing in this license impairs or</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * restricts the author&#39;s moral rights.</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * It is distributed in the hope that it will be useful,</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * PURPOSE.</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> **********************************************************************/</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#ifndef POLYGON_H_INCLUDED</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define POLYGON_H_INCLUDED</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifdef OOMLCore_EXPORTS</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OOMLCore_EXP_DEC __declspec(dllexport)</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OOMLCore_EXP_DEC __declspec(dllimport)</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="Polygon_8h.html#ad88ad115d074664d76d5560dafacc35b">   41</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OOMLCore_EXP_DEC</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="AbstractObject_8h.html">core/AbstractObject.h</a>&gt;</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Component_8h.html">core/Component.h</a>&gt;</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="IndentWriter_8h.html">core/IndentWriter.h</a>&gt;</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Point3D_8h.html">core/Point3D.h</a>&gt;</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="classPolygon.html">   58</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPolygon.html" title="Generic polygon primitive object.">Polygon</a> : <span class="keyword">public</span> <a class="code" href="classAbstractObject.html" title="Abstract object interface.">AbstractObject</a></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="classPolygon.html#a0c079091bb795cd144b3f31551bd4738">   64</a></span>&#160;        <a class="code" href="classPolygon.html#a0c079091bb795cd144b3f31551bd4738" title="Default constructor.">Polygon</a>() :</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <a class="code" href="classAbstractObject.html" title="Abstract object interface.">AbstractObject</a>(),</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                _points()</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        {}</div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="code" href="classPolygon.html#a98b6c55dff64ccaa7514d1ed4cc3319c">   73</a></span>&#160;        <a class="code" href="classPolygon.html#a0c079091bb795cd144b3f31551bd4738" title="Default constructor.">Polygon</a>(<a class="code" href="classPolygon.html" title="Generic polygon primitive object.">Polygon</a> <span class="keyword">const</span>&amp; other) :</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                <a class="code" href="classAbstractObject.html" title="Abstract object interface.">AbstractObject</a>(),</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                _points(other.<a class="code" href="classPolygon.html#a669eb7390e34ca3a7267b3329743abdc" title="Get the polygon points.">getPoints</a>())</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        {}</div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="code" href="classPolygon.html#aa2323b72c3a17188d27b5434c3e0b3d3">   82</a></span>&#160;        <a class="code" href="classPolygon.html" title="Generic polygon primitive object.">Polygon</a> &amp; <a class="code" href="classPolygon.html#aa2323b72c3a17188d27b5434c3e0b3d3" title="Default assignment operator.">operator=</a>(<a class="code" href="classPolygon.html" title="Generic polygon primitive object.">Polygon</a> <span class="keyword">const</span>&amp; other)</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                _points = other.<a class="code" href="classPolygon.html#a669eb7390e34ca3a7267b3329743abdc" title="Get the polygon points.">getPoints</a>();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="code" href="classPolygon.html#aabc73d183c26d1d3c16cc8a353537fb2">   90</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classPolygon.html#aabc73d183c26d1d3c16cc8a353537fb2" title="Default destructor.">~Polygon</a>() {}</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="code" href="classPolygon.html#a347b1c5820e9767fa4f4232c91ddcea7">   97</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classPolygon.html#a347b1c5820e9767fa4f4232c91ddcea7" title="Adds a new point to the polygon after the last.">addPoint</a>(T <span class="keyword">const</span>&amp; point)</div>
+<a href="Polygon_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;﻿<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">*    OOML : Object Oriented Mechanics Library</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">*    Copyright (C) 2012  Alberto Valero Gomez, Juan González Gómez, Rafael Treviño</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*    This program is free software: you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*    it under the terms of the GNU Lesser General Public License (LGPL) as published by</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*    the Free Software Foundation, either version 3 of the License, or</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*    (at your option) any later version.</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*    This program is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*    but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*    GNU Lesser General Public License (LGPL) for more details.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*    You should have received a copy of the GNU Lesser General Public License (LGPL)</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">*    along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifndef POLYGON_H_INCLUDED</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define POLYGON_H_INCLUDED</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifdef OOMLCore_EXPORTS</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OOMLCore_EXP_DEC __declspec(dllexport)</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OOMLCore_EXP_DEC __declspec(dllimport)</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="Polygon_8h.html#ad88ad115d074664d76d5560dafacc35b">   30</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OOMLCore_EXP_DEC</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="AbstractObject_8h.html">core/AbstractObject.h</a>&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Component_8h.html">core/Component.h</a>&gt;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="IndentWriter_8h.html">core/IndentWriter.h</a>&gt;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Point3D_8h.html">core/Point3D.h</a>&gt;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="classPolygon.html">   47</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPolygon.html" title="Generic polygon primitive object.">Polygon</a> : <span class="keyword">public</span> <a class="code" href="classAbstractObject.html" title="Abstract object interface.">AbstractObject</a></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="classPolygon.html#a0c079091bb795cd144b3f31551bd4738">   53</a></span>&#160;        <a class="code" href="classPolygon.html#a0c079091bb795cd144b3f31551bd4738" title="Default constructor.">Polygon</a>() :</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <a class="code" href="classAbstractObject.html" title="Abstract object interface.">AbstractObject</a>(),</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                _points()</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        {}</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="classPolygon.html#a98b6c55dff64ccaa7514d1ed4cc3319c">   62</a></span>&#160;        <a class="code" href="classPolygon.html#a0c079091bb795cd144b3f31551bd4738" title="Default constructor.">Polygon</a>(<a class="code" href="classPolygon.html" title="Generic polygon primitive object.">Polygon</a> <span class="keyword">const</span>&amp; other) :</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <a class="code" href="classAbstractObject.html" title="Abstract object interface.">AbstractObject</a>(),</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                _points(other.<a class="code" href="classPolygon.html#a669eb7390e34ca3a7267b3329743abdc" title="Get the polygon points.">getPoints</a>())</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        {}</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="classPolygon.html#aa2323b72c3a17188d27b5434c3e0b3d3">   71</a></span>&#160;        <a class="code" href="classPolygon.html" title="Generic polygon primitive object.">Polygon</a> &amp; <a class="code" href="classPolygon.html#aa2323b72c3a17188d27b5434c3e0b3d3" title="Default assignment operator.">operator=</a>(<a class="code" href="classPolygon.html" title="Generic polygon primitive object.">Polygon</a> <span class="keyword">const</span>&amp; other)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                _points = other.<a class="code" href="classPolygon.html#a669eb7390e34ca3a7267b3329743abdc" title="Get the polygon points.">getPoints</a>();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="code" href="classPolygon.html#aabc73d183c26d1d3c16cc8a353537fb2">   79</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classPolygon.html#aabc73d183c26d1d3c16cc8a353537fb2" title="Default destructor.">~Polygon</a>() {}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="code" href="classPolygon.html#a347b1c5820e9767fa4f4232c91ddcea7">   86</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classPolygon.html#a347b1c5820e9767fa4f4232c91ddcea7" title="Adds a new point to the polygon after the last.">addPoint</a>(T <span class="keyword">const</span>&amp; point)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                _points.push_back(point);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="code" href="classPolygon.html#a594ddd6fc69bd1889cefe745c31d520e">   97</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classPolygon.html#a594ddd6fc69bd1889cefe745c31d520e" title="Removes a point from the polygon.">removePoint</a>(T <span class="keyword">const</span>&amp; point)</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                _points.push_back(point);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                _points.erase(std::remove(_points.begin(), _points.end(), point), _points.end());</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        }</div>
-<div class="line"><a name="l00108"></a><span class="lineno"><a class="code" href="classPolygon.html#a594ddd6fc69bd1889cefe745c31d520e">  108</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classPolygon.html#a594ddd6fc69bd1889cefe745c31d520e" title="Removes a point from the polygon.">removePoint</a>(T <span class="keyword">const</span>&amp; point)</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        {</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                _points.erase(std::remove(_points.begin(), _points.end(), point), _points.end());</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        }</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno"><a class="code" href="classPolygon.html#aa34c064278f38cca2ca245a379317e89">  120</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classPolygon.html" title="Generic polygon primitive object.">Polygon</a> &amp; <a class="code" href="classPolygon.html#aa34c064278f38cca2ca245a379317e89" title="Adds a point with insertor syntax.">operator&lt;&lt;</a>(T <span class="keyword">const</span>&amp; point)</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                <a class="code" href="classPolygon.html#a347b1c5820e9767fa4f4232c91ddcea7" title="Adds a new point to the polygon after the last.">addPoint</a>(point);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        }</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno"><a class="code" href="classPolygon.html#a84f94a8d1bfff621d7322adbc8a416d7">  127</a></span>&#160;        <span class="keyword">typedef</span> std::vector&lt;T&gt; <a class="code" href="classPolygon.html#a84f94a8d1bfff621d7322adbc8a416d7">PointVector</a>;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno"><a class="code" href="classPolygon.html#a669eb7390e34ca3a7267b3329743abdc">  134</a></span>&#160;        <a class="code" href="classPolygon.html#a84f94a8d1bfff621d7322adbc8a416d7">PointVector</a> <span class="keyword">const</span>&amp; <a class="code" href="classPolygon.html#a669eb7390e34ca3a7267b3329743abdc" title="Get the polygon points.">getPoints</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _points; }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="code" href="classPolygon.html#aa34c064278f38cca2ca245a379317e89">  109</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classPolygon.html" title="Generic polygon primitive object.">Polygon</a> &amp; <a class="code" href="classPolygon.html#aa34c064278f38cca2ca245a379317e89" title="Adds a point with insertor syntax.">operator&lt;&lt;</a>(T <span class="keyword">const</span>&amp; point)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                <a class="code" href="classPolygon.html#a347b1c5820e9767fa4f4232c91ddcea7" title="Adds a new point to the polygon after the last.">addPoint</a>(point);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="code" href="classPolygon.html#a84f94a8d1bfff621d7322adbc8a416d7">  116</a></span>&#160;        <span class="keyword">typedef</span> std::vector&lt;T&gt; <a class="code" href="classPolygon.html#a84f94a8d1bfff621d7322adbc8a416d7">PointVector</a>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="code" href="classPolygon.html#a669eb7390e34ca3a7267b3329743abdc">  123</a></span>&#160;        <a class="code" href="classPolygon.html#a84f94a8d1bfff621d7322adbc8a416d7">PointVector</a> <span class="keyword">const</span>&amp; <a class="code" href="classPolygon.html#a669eb7390e34ca3a7267b3329743abdc" title="Get the polygon points.">getPoints</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _points; }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="code" href="classPolygon.html#a21ee9bf6e9f6ea3ec4faf16a4b36f3e9">  131</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classPolygon.html#a21ee9bf6e9f6ea3ec4faf16a4b36f3e9" title="Close the polygon.">close</a>()</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        {</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                <a class="code" href="classPolygon.html#a347b1c5820e9767fa4f4232c91ddcea7" title="Adds a new point to the polygon after the last.">addPoint</a>(_points[0]);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        }</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00142"></a><span class="lineno"><a class="code" href="classPolygon.html#a21ee9bf6e9f6ea3ec4faf16a4b36f3e9">  142</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classPolygon.html#a21ee9bf6e9f6ea3ec4faf16a4b36f3e9" title="Close the polygon.">close</a>()</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                <a class="code" href="classPolygon.html#a347b1c5820e9767fa4f4232c91ddcea7" title="Adds a new point to the polygon after the last.">addPoint</a>(_points[0]);</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        }</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classPolygon.html#a5052a8ee255cadc4475c0c63c0ed59de" title="Generate SCAD output for this object.">genScad</a>(<a class="code" href="classIndentWriter.html" title="Indented output writer.">IndentWriter</a>&amp; writer) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classPolygon.html#af5d52c5849c03ea03c077ef5b387f630" title="Generate AST output for this object.">printAst</a>(<a class="code" href="classIndentWriter.html" title="Indented output writer.">IndentWriter</a>&amp; writer) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <a class="code" href="classPolygon.html#a84f94a8d1bfff621d7322adbc8a416d7">PointVector</a> _points; </div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;};</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00173"></a><span class="lineno"><a class="code" href="classPolygon.html#a5052a8ee255cadc4475c0c63c0ed59de">  173</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classPolygon.html#a5052a8ee255cadc4475c0c63c0ed59de" title="Generate SCAD output for this object.">Polygon&lt;T&gt;::genScad</a>(<a class="code" href="classIndentWriter.html" title="Indented output writer.">IndentWriter</a>&amp; writer)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        writer &lt;&lt; <span class="stringliteral">&quot;[&quot;</span>;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">typename</span> PointVector::const_iterator it = _points.begin();</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                it != _points.end(); ++it)</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                it-&gt;genScad(writer);</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        writer &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;}</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00183"></a><span class="lineno"><a class="code" href="classPolygon.html#af5d52c5849c03ea03c077ef5b387f630">  183</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classPolygon.html#af5d52c5849c03ea03c077ef5b387f630" title="Generate AST output for this object.">Polygon&lt;T&gt;::printAst</a>(<a class="code" href="classIndentWriter.html" title="Indented output writer.">IndentWriter</a>&amp; writer)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        writer &lt;&lt; <span class="stringliteral">&quot;[&quot;</span>;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">typename</span> PointVector::const_iterator it = _points.begin();</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                it != _points.end(); ++it)</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                it-&gt;printAst(writer);</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        writer &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;}</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="preprocessor">#endif // POLYGON_H_INCLUDED</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classPolygon.html#a5052a8ee255cadc4475c0c63c0ed59de" title="Generate SCAD output for this object.">genScad</a>(<a class="code" href="classIndentWriter.html" title="Indented output writer.">IndentWriter</a>&amp; writer) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classPolygon.html#af5d52c5849c03ea03c077ef5b387f630" title="Generate AST output for this object.">printAst</a>(<a class="code" href="classIndentWriter.html" title="Indented output writer.">IndentWriter</a>&amp; writer) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <a class="code" href="classPolygon.html#a84f94a8d1bfff621d7322adbc8a416d7">PointVector</a> _points; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;};</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00162"></a><span class="lineno"><a class="code" href="classPolygon.html#a5052a8ee255cadc4475c0c63c0ed59de">  162</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classPolygon.html#a5052a8ee255cadc4475c0c63c0ed59de" title="Generate SCAD output for this object.">Polygon&lt;T&gt;::genScad</a>(<a class="code" href="classIndentWriter.html" title="Indented output writer.">IndentWriter</a>&amp; writer)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        writer &lt;&lt; <span class="stringliteral">&quot;[&quot;</span>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">typename</span> PointVector::const_iterator it = _points.begin();</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                it != _points.end(); ++it)</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                it-&gt;genScad(writer);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        writer &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;}</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00172"></a><span class="lineno"><a class="code" href="classPolygon.html#af5d52c5849c03ea03c077ef5b387f630">  172</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classPolygon.html#af5d52c5849c03ea03c077ef5b387f630" title="Generate AST output for this object.">Polygon&lt;T&gt;::printAst</a>(<a class="code" href="classIndentWriter.html" title="Indented output writer.">IndentWriter</a>&amp; writer)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        writer &lt;&lt; <span class="stringliteral">&quot;[&quot;</span>;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">typename</span> PointVector::const_iterator it = _points.begin();</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                it != _points.end(); ++it)</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                it-&gt;printAst(writer);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        writer &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;}</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="preprocessor">#endif // POLYGON_H_INCLUDED</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 12 2012 18:02:30 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 10 2012 19:45:53 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

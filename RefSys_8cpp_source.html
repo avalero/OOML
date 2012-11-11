@@ -89,86 +89,75 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">RefSys.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="RefSys_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;﻿<span class="comment">/**********************************************************************</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This code is part of the OOML project</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Authors: Juan Gonzalez-Gomez, Alberto Valero-Gomez, Rafael Trevio</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * OOML is licenced under the Common Creative License,</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * Attribution-ShareAlike 3.0</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * You are free:</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *   - to Share - to copy, distribute and transmit the work</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *   - to Remix - to adapt the work</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * Under the following conditions:</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *   - Attribution. You must attribute the work in the manner specified</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *     by the author or licensor (but not in any way that suggests that</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *     they endorse you or your use of the work).</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *   - Share Alike. If you alter, transform, or build upon this work,</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *     you may distribute the resulting work only under the same or</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *     similar license to this one.</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * Any of the above conditions can be waived if you get permission</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * from the copyright holder.  Nothing in this license impairs or</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * restricts the author&#39;s moral rights.</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * It is distributed in the hope that it will be useful,</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * PURPOSE.</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> **********************************************************************/</span></div>
+<a href="RefSys_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;﻿<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">*    OOML : Object Oriented Mechanics Library</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">*    Copyright (C) 2012  Alberto Valero Gomez, Juan González Gómez, Rafael Treviño</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*    This program is free software: you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*    it under the terms of the GNU Lesser General Public License (LGPL) as published by</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*    the Free Software Foundation, either version 3 of the License, or</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*    (at your option) any later version.</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*    This program is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*    but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*    GNU Lesser General Public License (LGPL) for more details.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*    You should have received a copy of the GNU Lesser General Public License (LGPL)</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">*    along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="RefSys_8h.html">RefSys.h</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Union_8h.html">Union.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="IndentWriter_8h.html">IndentWriter.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="classRefSys.html#a13d60d2bdaf80726fdd42694c1df98db">   26</a></span>&#160;<a class="code" href="classRefSys.html" title="3D point primitive object">RefSys</a> <a class="code" href="classRefSys.html#a13d60d2bdaf80726fdd42694c1df98db" title="Translates the origin of the reference system This methods translated the origin of the reference sys...">RefSys::translate</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> z){</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    _trans.<a class="code" href="classTransformMatrix.html#ae2b5dc7c41da84953f791e12e0b22964" title="performs a translation">translate</a>(x,y,z);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="RefSys_8h.html">RefSys.h</a>&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Union_8h.html">Union.h</a>&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="IndentWriter_8h.html">IndentWriter.h</a>&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="classRefSys.html#a13d60d2bdaf80726fdd42694c1df98db">   37</a></span>&#160;<a class="code" href="classRefSys.html" title="3D point primitive object">RefSys</a> <a class="code" href="classRefSys.html#a13d60d2bdaf80726fdd42694c1df98db" title="Translates the origin of the reference system This methods translated the origin of the reference sys...">RefSys::translate</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> z){</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    _trans.<a class="code" href="classTransformMatrix.html#ae2b5dc7c41da84953f791e12e0b22964" title="performs a translation">translate</a>(x,y,z);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="classRefSys.html#a6a808b37b21c61eb6a47366a3fc2642c">   42</a></span>&#160;<a class="code" href="classRefSys.html" title="3D point primitive object">RefSys</a> <a class="code" href="classRefSys.html#a6a808b37b21c61eb6a47366a3fc2642c" title="Rotates the reference system This methods rotates the reference system The origin is kept unmoved...">RefSys::relRotate</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> z){</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    _trans.<a class="code" href="classTransformMatrix.html#a00dc5a7c72440944e3fde54dde9bfb5d" title="Applies a Roll-Pitch-Yaw rotation around the local reference system x, y, z Applies three rotations a...">relRotate</a>(x,y,z);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="classRefSys.html#a2369ded5f3d02e987c7f9c9c7a4d9147">   47</a></span>&#160;<a class="code" href="classRefSys.html" title="3D point primitive object">RefSys</a> <a class="code" href="classRefSys.html#a2369ded5f3d02e987c7f9c9c7a4d9147" title="Translates the origin of the reference system This methods translated the origin of the reference sys...">RefSys::relTranslate</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> z){</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    _trans.<a class="code" href="classTransformMatrix.html#af2e8c92afee36a6e24206ffed1398161" title="performs a translation">relTranslate</a>(x,y,z);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="classRefSys.html#af6bf58cbf4ee5d308bd05ab976562c56">   52</a></span>&#160;<a class="code" href="classRefSys.html" title="3D point primitive object">RefSys</a> <a class="code" href="classRefSys.html#af6bf58cbf4ee5d308bd05ab976562c56" title="Rotates the reference system This methods rotates the reference system The origin is kept unmoved...">RefSys::rotate</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> z){</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    _trans.<a class="code" href="classTransformMatrix.html#a20910983db5e4e0574879dd86b4f8a3e" title="Applies a Roll-Pitch-Yaw rotation around the initial fixed x, y, z Applies three rotations around the...">rotate</a>(x,y,z);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="classRefSys.html#a6a808b37b21c61eb6a47366a3fc2642c">   31</a></span>&#160;<a class="code" href="classRefSys.html" title="3D point primitive object">RefSys</a> <a class="code" href="classRefSys.html#a6a808b37b21c61eb6a47366a3fc2642c" title="Rotates the reference system This methods rotates the reference system The origin is kept unmoved...">RefSys::relRotate</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> z){</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    _trans.<a class="code" href="classTransformMatrix.html#a00dc5a7c72440944e3fde54dde9bfb5d" title="Applies a Roll-Pitch-Yaw rotation around the local reference system x, y, z Applies three rotations a...">relRotate</a>(x,y,z);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="classRefSys.html#a2369ded5f3d02e987c7f9c9c7a4d9147">   36</a></span>&#160;<a class="code" href="classRefSys.html" title="3D point primitive object">RefSys</a> <a class="code" href="classRefSys.html#a2369ded5f3d02e987c7f9c9c7a4d9147" title="Translates the origin of the reference system This methods translated the origin of the reference sys...">RefSys::relTranslate</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> z){</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    _trans.<a class="code" href="classTransformMatrix.html#af2e8c92afee36a6e24206ffed1398161" title="performs a translation">relTranslate</a>(x,y,z);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="classRefSys.html#af6bf58cbf4ee5d308bd05ab976562c56">   41</a></span>&#160;<a class="code" href="classRefSys.html" title="3D point primitive object">RefSys</a> <a class="code" href="classRefSys.html#af6bf58cbf4ee5d308bd05ab976562c56" title="Rotates the reference system This methods rotates the reference system The origin is kept unmoved...">RefSys::rotate</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> z){</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    _trans.<a class="code" href="classTransformMatrix.html#a20910983db5e4e0574879dd86b4f8a3e" title="Applies a Roll-Pitch-Yaw rotation around the initial fixed x, y, z Applies three rotations around the...">rotate</a>(x,y,z);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="classRefSys.html#a8546580f91dabc8f246aaa179577b327">   46</a></span>&#160;<a class="code" href="classRefSys.html" title="3D point primitive object">RefSys</a> <a class="code" href="classRefSys.html#a8546580f91dabc8f246aaa179577b327" title="Rotates the reference system This methods rotates the reference system with the Euler ZYZ angles...">RefSys::rotateEulerZYZ</a>(<span class="keywordtype">double</span> z, <span class="keywordtype">double</span> yp, <span class="keywordtype">double</span> zpp){</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    _trans.<a class="code" href="classTransformMatrix.html#a6ca67ecc63c5f6fd26cca1d0df2033eb" title="Applies an Euler rotation around the initial fixed z, y&#39;, z&#39;&#39; Applies three rotations around z...">rotateEulerZYZ</a>(z,yp,zpp);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="classRefSys.html#a4221bb6359fc187e5b8f111c80e38659">   51</a></span>&#160;<a class="code" href="classRefSys.html" title="3D point primitive object">RefSys</a> <a class="code" href="classRefSys.html#a4221bb6359fc187e5b8f111c80e38659" title="Rotates the reference system This methods rotates the reference system with the Euler ZXZ angles...">RefSys::rotateEulerZXZ</a>(<span class="keywordtype">double</span> z, <span class="keywordtype">double</span> xp, <span class="keywordtype">double</span> zpp){</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    _trans.<a class="code" href="classTransformMatrix.html#ae6ad2df1f60c163d35b5fd43846034fb" title="Applies an Euler rotation around the initial fixed z, x&#39;, z&#39;&#39; Applies three rotations around z...">rotateEulerZXZ</a>(z,xp,zpp);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="classRefSys.html#a8546580f91dabc8f246aaa179577b327">   57</a></span>&#160;<a class="code" href="classRefSys.html" title="3D point primitive object">RefSys</a> <a class="code" href="classRefSys.html#a8546580f91dabc8f246aaa179577b327" title="Rotates the reference system This methods rotates the reference system with the Euler ZYZ angles...">RefSys::rotateEulerZYZ</a>(<span class="keywordtype">double</span> z, <span class="keywordtype">double</span> yp, <span class="keywordtype">double</span> zpp){</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    _trans.<a class="code" href="classTransformMatrix.html#a6ca67ecc63c5f6fd26cca1d0df2033eb" title="Applies an Euler rotation around the initial fixed z, y&#39;, z&#39;&#39; Applies three rotations around z...">rotateEulerZYZ</a>(z,yp,zpp);</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="classRefSys.html#a665f74d330be2f94e8e29c186120b0ea">   57</a></span>&#160;<a class="code" href="classRefSys.html" title="3D point primitive object">RefSys</a> <a class="code" href="classRefSys.html#a665f74d330be2f94e8e29c186120b0ea" title="Rotates the reference system This methods rotates the reference system with the Euler ZYZ angles...">RefSys::relRotateEulerZYZ</a>(<span class="keywordtype">double</span> z, <span class="keywordtype">double</span> yp, <span class="keywordtype">double</span> zpp){</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    _trans.<a class="code" href="classTransformMatrix.html#a52cd13a210fb835f8c39f82830780d08" title="Applies an Euler rotation around the local reference system z, y&#39;, z&#39;&#39; Applies three rotations around...">relRotateEulerZYZ</a>(z,yp,zpp);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="classRefSys.html#a4221bb6359fc187e5b8f111c80e38659">   62</a></span>&#160;<a class="code" href="classRefSys.html" title="3D point primitive object">RefSys</a> <a class="code" href="classRefSys.html#a4221bb6359fc187e5b8f111c80e38659" title="Rotates the reference system This methods rotates the reference system with the Euler ZXZ angles...">RefSys::rotateEulerZXZ</a>(<span class="keywordtype">double</span> z, <span class="keywordtype">double</span> xp, <span class="keywordtype">double</span> zpp){</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    _trans.<a class="code" href="classTransformMatrix.html#ae6ad2df1f60c163d35b5fd43846034fb" title="Applies an Euler rotation around the initial fixed z, x&#39;, z&#39;&#39; Applies three rotations around z...">rotateEulerZXZ</a>(z,xp,zpp);</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="classRefSys.html#aa072538837bda40928c53d308298021d">   62</a></span>&#160;<a class="code" href="classRefSys.html" title="3D point primitive object">RefSys</a> <a class="code" href="classRefSys.html#aa072538837bda40928c53d308298021d" title="Rotates the reference system This methods rotates the reference system with the Euler ZXZ angles...">RefSys::relRotateEulerZXZ</a>(<span class="keywordtype">double</span> z, <span class="keywordtype">double</span> xp, <span class="keywordtype">double</span> zpp){</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    _trans.<a class="code" href="classTransformMatrix.html#aa4a1f915ff428d0e3bb9fa43dd0974b5" title="Applies an Euler rotation around the local reference system z, x&#39;, z&#39;&#39; Applies three rotations around...">relRotateEulerZXZ</a>(z,xp,zpp);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="code" href="classRefSys.html#a665f74d330be2f94e8e29c186120b0ea">   68</a></span>&#160;<a class="code" href="classRefSys.html" title="3D point primitive object">RefSys</a> <a class="code" href="classRefSys.html#a665f74d330be2f94e8e29c186120b0ea" title="Rotates the reference system This methods rotates the reference system with the Euler ZYZ angles...">RefSys::relRotateEulerZYZ</a>(<span class="keywordtype">double</span> z, <span class="keywordtype">double</span> yp, <span class="keywordtype">double</span> zpp){</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    _trans.<a class="code" href="classTransformMatrix.html#a52cd13a210fb835f8c39f82830780d08" title="Applies an Euler rotation around the local reference system z, y&#39;, z&#39;&#39; Applies three rotations around...">relRotateEulerZYZ</a>(z,yp,zpp);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="code" href="classRefSys.html#aa072538837bda40928c53d308298021d">   73</a></span>&#160;<a class="code" href="classRefSys.html" title="3D point primitive object">RefSys</a> <a class="code" href="classRefSys.html#aa072538837bda40928c53d308298021d" title="Rotates the reference system This methods rotates the reference system with the Euler ZXZ angles...">RefSys::relRotateEulerZXZ</a>(<span class="keywordtype">double</span> z, <span class="keywordtype">double</span> xp, <span class="keywordtype">double</span> zpp){</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    _trans.<a class="code" href="classTransformMatrix.html#aa4a1f915ff428d0e3bb9fa43dd0974b5" title="Applies an Euler rotation around the local reference system z, x&#39;, z&#39;&#39; Applies three rotations around...">relRotateEulerZXZ</a>(z,xp,zpp);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 12 2012 18:02:30 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 10 2012 19:45:53 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

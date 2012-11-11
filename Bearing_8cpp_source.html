@@ -89,92 +89,111 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Bearing.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="Bearing_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;﻿#include &lt;parts/<a class="code" href="classBearing.html" title="Bearing primitive object.">Bearing</a>.h&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Cube_8h.html">components/Cube.h</a>&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Cylinder_8h.html">components/Cylinder.h</a>&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Sphere_8h.html">components/Sphere.h</a>&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Difference_8h.html">core/Difference.h</a>&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Union_8h.html">core/Union.h</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="code" href="classBearing.html#acf031144883f9a2eb8db860d3391547e">    8</a></span>&#160;<a class="code" href="classComponent.html" title="Component class.">Component</a> <a class="code" href="classBearing.html#acf031144883f9a2eb8db860d3391547e" title="Build the piece.">Bearing::build</a>()</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//Creates two types of bearings depending on whether the radius is larger than the width or vice versa.</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="comment">//External cylinder.</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <a class="code" href="classComponent.html" title="Component class.">Component</a> ext_cylinder = <a class="code" href="classCylinder.html" title="Cylinder primitive object.">Cylinder</a>(_radius,_width,40,<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment">//Internal cylinder.</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="classComponent.html" title="Component class.">Component</a> int_cylinder = <a class="code" href="classCylinder.html" title="Cylinder primitive object.">Cylinder</a>(0.615*_radius,_width,40,<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">//Hole that divides the bearing from external cylinder and internal cylinder.</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="classComponent.html" title="Component class.">Component</a> hole_ext_int = <a class="code" href="classCylinder.html" title="Cylinder primitive object.">Cylinder</a>((<span class="keywordtype">float</span>)0.635*_radius,_width+2,40,<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">//Gap where balls are to roll. It&#39;s formed by the difference between two cylinder (these depend on the relationship between radius and width).</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="classComponent.html" title="Component class.">Component</a> gap;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="comment">//Cylinders 1 and 2, belong to first kind of bearing.</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <a class="code" href="classComponent.html" title="Component class.">Component</a> cyl1 = <a class="code" href="classCylinder.html" title="Cylinder primitive object.">Cylinder</a>(0.75*_radius, 0.25*_radius,40,<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <a class="code" href="classComponent.html" title="Component class.">Component</a> cyl2 = <a class="code" href="classCylinder.html" title="Cylinder primitive object.">Cylinder</a>(0.5*_radius, 0.25*_radius,40,<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="comment">//Cylinders 3 and 4, belong to second kind of bearing.</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <a class="code" href="classComponent.html" title="Component class.">Component</a> cyl3 = <a class="code" href="classCylinder.html" title="Cylinder primitive object.">Cylinder</a>(0.625*_radius+0.16*_width, 0.32*_width,40,<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <a class="code" href="classComponent.html" title="Component class.">Component</a> cyl4 = <a class="code" href="classCylinder.html" title="Cylinder primitive object.">Cylinder</a>(0.625*_radius-0.08*_width, 0.32*_width,40,<span class="keyword">true</span>);</div>
+<a href="Bearing_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;﻿<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">*    OOML : Object Oriented Mechanics Library</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">*    Copyright (C) 2012  Alberto Valero Gomez, Juan González Gómez, Rafael Treviño</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*    This program is free software: you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*    it under the terms of the GNU Lesser General Public License (LGPL) as published by</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*    the Free Software Foundation, either version 3 of the License, or</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*    (at your option) any later version.</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*    This program is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*    but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*    GNU Lesser General Public License (LGPL) for more details.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*    You should have received a copy of the GNU Lesser General Public License (LGPL)</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">*    along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Bearing_8h.html">parts/Bearing.h</a>&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Cube_8h.html">components/Cube.h</a>&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Cylinder_8h.html">components/Cylinder.h</a>&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Sphere_8h.html">components/Sphere.h</a>&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Difference_8h.html">core/Difference.h</a>&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Union_8h.html">core/Union.h</a>&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="classBearing.html#acf031144883f9a2eb8db860d3391547e">   27</a></span>&#160;<a class="code" href="classComponent.html" title="Component class.">Component</a> <a class="code" href="classBearing.html#acf031144883f9a2eb8db860d3391547e" title="Build the piece.">Bearing::build</a>()</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">//Ball.</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="classComponent.html" title="Component class.">Component</a> sphere;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="comment">//Two ball types depending on the bearing type.</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <a class="code" href="classComponent.html" title="Component class.">Component</a> sphere1 = <a class="code" href="classSphere.html" title="Sphere primitive object.">Sphere</a>(0.15*_width,24,<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <a class="code" href="classComponent.html" title="Component class.">Component</a> sphere2 = <a class="code" href="classSphere.html" title="Sphere primitive object.">Sphere</a>(0.125*_radius,24,<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">//Creates two types of bearings depending on whether the radius is larger than the width or vice versa.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">//External cylinder.</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="classComponent.html" title="Component class.">Component</a> ext_cylinder = <a class="code" href="classCylinder.html" title="Cylinder primitive object.">Cylinder</a>(_radius,_width,40,<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">//Internal cylinder.</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="classComponent.html" title="Component class.">Component</a> int_cylinder = <a class="code" href="classCylinder.html" title="Cylinder primitive object.">Cylinder</a>(0.615*_radius,_width,40,<span class="keyword">true</span>);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">//Parameter to determine the number of spheres.</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordtype">double</span> distance;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">//Choice of type of bearing.</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">if</span>(_radius &lt; _width){</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            gap = cyl1 - cyl2;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            sphere = sphere2;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            distance = 0.25*_radius;}</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">else</span>{</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            gap = cyl3 - cyl4;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            sphere = sphere1;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            distance = 0.32*_width;}</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">//Number of spheres that bearing has.</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">int</span> number_spheres = 3.1416 * 2 * 0.625 *_radius / (distance * 1.6);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">//Angle between each ball.</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">float</span> angle = 360 / (number_spheres + 3);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">//Balls. Set of balls for the bearing.</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="classComponent.html" title="Component class.">Component</a> spheres = sphere.<a class="code" href="classComponent.html#a0df678527e9d0d65a749bbc5883a71af" title="Translate the component.">translate</a>(0.615*_radius,0,0);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=1; j&lt;360; j=j+angle)</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            spheres = spheres + sphere.<a class="code" href="classComponent.html#ad428061d4b1fbb0095b70cba6d8a5fd4" title="Rotate the component.">rotatedCopy</a>(0,0,j);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">//Choice of holes number.</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="classComponent.html" title="Component class.">Component</a> hole = <a class="code" href="classCylinder.html" title="Cylinder primitive object.">Cylinder</a>(1.8,_radius*1.25,40,<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="classComponent.html" title="Component class.">Component</a> holes;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">if</span>(_holes==1)</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            holes = hole;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">if</span>(_holes==2)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            holes = hole.<a class="code" href="classComponent.html#a871a9cc554e6c5bfa195215fa011e416" title="Translate the component.">translatedCopy</a>(0.3*_radius,0,0) + hole.<a class="code" href="classComponent.html#a871a9cc554e6c5bfa195215fa011e416" title="Translate the component.">translatedCopy</a>(-0.3*_radius,0,0);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">if</span>(_holes==3)</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            holes = hole.<a class="code" href="classComponent.html#a871a9cc554e6c5bfa195215fa011e416" title="Translate the component.">translatedCopy</a>(0.3*_radius,0,0) + hole.<a class="code" href="classComponent.html#a871a9cc554e6c5bfa195215fa011e416" title="Translate the component.">translatedCopy</a>(0.3*_radius,0,0).<a class="code" href="classComponent.html#ad428061d4b1fbb0095b70cba6d8a5fd4" title="Rotate the component.">rotatedCopy</a>(0,0,120) + hole.<a class="code" href="classComponent.html#a871a9cc554e6c5bfa195215fa011e416" title="Translate the component.">translatedCopy</a>(0.3*_radius,0,0).<a class="code" href="classComponent.html#ad428061d4b1fbb0095b70cba6d8a5fd4" title="Rotate the component.">rotatedCopy</a>(0,0,240);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">if</span>(_holes==4)</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            holes = hole.<a class="code" href="classComponent.html#a871a9cc554e6c5bfa195215fa011e416" title="Translate the component.">translatedCopy</a>(0.3*_radius,0,0) + hole.<a class="code" href="classComponent.html#a871a9cc554e6c5bfa195215fa011e416" title="Translate the component.">translatedCopy</a>(0.3*_radius,0,0).<a class="code" href="classComponent.html#ad428061d4b1fbb0095b70cba6d8a5fd4" title="Rotate the component.">rotatedCopy</a>(0,0,90) + hole.<a class="code" href="classComponent.html#a871a9cc554e6c5bfa195215fa011e416" title="Translate the component.">translatedCopy</a>(0.3*_radius,0,0).<a class="code" href="classComponent.html#ad428061d4b1fbb0095b70cba6d8a5fd4" title="Rotate the component.">rotatedCopy</a>(0,0,180) + hole.<a class="code" href="classComponent.html#a871a9cc554e6c5bfa195215fa011e416" title="Translate the component.">translatedCopy</a>(0.3*_radius,0,0).<a class="code" href="classComponent.html#ad428061d4b1fbb0095b70cba6d8a5fd4" title="Rotate the component.">rotatedCopy</a>(0,0,270);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            holes = hole.<a class="code" href="classComponent.html#a871a9cc554e6c5bfa195215fa011e416" title="Translate the component.">translatedCopy</a>(_radius*10,0,0);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">//Final part.</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="code" href="classComponent.html" title="Component class.">Component</a> part = ext_cylinder - hole_ext_int + int_cylinder - holes - gap + spheres;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> part;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">//Hole that divides the bearing from external cylinder and internal cylinder.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="classComponent.html" title="Component class.">Component</a> hole_ext_int = <a class="code" href="classCylinder.html" title="Cylinder primitive object.">Cylinder</a>((<span class="keywordtype">float</span>)0.635*_radius,_width+2,40,<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">//Gap where balls are to roll. It&#39;s formed by the difference between two cylinder (these depend on the relationship between radius and width).</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="classComponent.html" title="Component class.">Component</a> gap;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="comment">//Cylinders 1 and 2, belong to first kind of bearing.</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <a class="code" href="classComponent.html" title="Component class.">Component</a> cyl1 = <a class="code" href="classCylinder.html" title="Cylinder primitive object.">Cylinder</a>(0.75*_radius, 0.25*_radius,40,<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <a class="code" href="classComponent.html" title="Component class.">Component</a> cyl2 = <a class="code" href="classCylinder.html" title="Cylinder primitive object.">Cylinder</a>(0.5*_radius, 0.25*_radius,40,<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="comment">//Cylinders 3 and 4, belong to second kind of bearing.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <a class="code" href="classComponent.html" title="Component class.">Component</a> cyl3 = <a class="code" href="classCylinder.html" title="Cylinder primitive object.">Cylinder</a>(0.625*_radius+0.16*_width, 0.32*_width,40,<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <a class="code" href="classComponent.html" title="Component class.">Component</a> cyl4 = <a class="code" href="classCylinder.html" title="Cylinder primitive object.">Cylinder</a>(0.625*_radius-0.08*_width, 0.32*_width,40,<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">//Ball.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="classComponent.html" title="Component class.">Component</a> sphere;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="comment">//Two ball types depending on the bearing type.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <a class="code" href="classComponent.html" title="Component class.">Component</a> sphere1 = <a class="code" href="classSphere.html" title="Sphere primitive object.">Sphere</a>(0.15*_width,24,<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <a class="code" href="classComponent.html" title="Component class.">Component</a> sphere2 = <a class="code" href="classSphere.html" title="Sphere primitive object.">Sphere</a>(0.125*_radius,24,<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">//Parameter to determine the number of spheres.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">double</span> distance;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">//Choice of type of bearing.</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">if</span>(_radius &lt; _width){</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            gap = cyl1 - cyl2;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            sphere = sphere2;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            distance = 0.25*_radius;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            gap = cyl3 - cyl4;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            sphere = sphere1;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            distance = 0.32*_width;}</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">//Number of spheres that bearing has.</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">int</span> number_spheres = 3.1416 * 2 * 0.625 *_radius / (distance * 1.6);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">//Angle between each ball.</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordtype">float</span> angle = 360 / (number_spheres + 3);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">//Balls. Set of balls for the bearing.</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <a class="code" href="classComponent.html" title="Component class.">Component</a> spheres = sphere.<a class="code" href="classComponent.html#a0df678527e9d0d65a749bbc5883a71af" title="Translate the component.">translate</a>(0.615*_radius,0,0);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=1; j&lt;360; j=j+angle)</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            spheres = spheres + sphere.<a class="code" href="classComponent.html#ad428061d4b1fbb0095b70cba6d8a5fd4" title="Rotate the component.">rotatedCopy</a>(0,0,j);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">//Choice of holes number.</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <a class="code" href="classComponent.html" title="Component class.">Component</a> hole = <a class="code" href="classCylinder.html" title="Cylinder primitive object.">Cylinder</a>(1.8,_radius*1.25,40,<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="classComponent.html" title="Component class.">Component</a> holes;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">if</span>(_holes==1)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            holes = hole;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">if</span>(_holes==2)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            holes = hole.<a class="code" href="classComponent.html#a871a9cc554e6c5bfa195215fa011e416" title="Translate the component.">translatedCopy</a>(0.3*_radius,0,0) + hole.<a class="code" href="classComponent.html#a871a9cc554e6c5bfa195215fa011e416" title="Translate the component.">translatedCopy</a>(-0.3*_radius,0,0);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">if</span>(_holes==3)</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            holes = hole.<a class="code" href="classComponent.html#a871a9cc554e6c5bfa195215fa011e416" title="Translate the component.">translatedCopy</a>(0.3*_radius,0,0) + hole.<a class="code" href="classComponent.html#a871a9cc554e6c5bfa195215fa011e416" title="Translate the component.">translatedCopy</a>(0.3*_radius,0,0).<a class="code" href="classComponent.html#ad428061d4b1fbb0095b70cba6d8a5fd4" title="Rotate the component.">rotatedCopy</a>(0,0,120) + hole.<a class="code" href="classComponent.html#a871a9cc554e6c5bfa195215fa011e416" title="Translate the component.">translatedCopy</a>(0.3*_radius,0,0).<a class="code" href="classComponent.html#ad428061d4b1fbb0095b70cba6d8a5fd4" title="Rotate the component.">rotatedCopy</a>(0,0,240);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">if</span>(_holes==4)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            holes = hole.<a class="code" href="classComponent.html#a871a9cc554e6c5bfa195215fa011e416" title="Translate the component.">translatedCopy</a>(0.3*_radius,0,0) + hole.<a class="code" href="classComponent.html#a871a9cc554e6c5bfa195215fa011e416" title="Translate the component.">translatedCopy</a>(0.3*_radius,0,0).<a class="code" href="classComponent.html#ad428061d4b1fbb0095b70cba6d8a5fd4" title="Rotate the component.">rotatedCopy</a>(0,0,90) + hole.<a class="code" href="classComponent.html#a871a9cc554e6c5bfa195215fa011e416" title="Translate the component.">translatedCopy</a>(0.3*_radius,0,0).<a class="code" href="classComponent.html#ad428061d4b1fbb0095b70cba6d8a5fd4" title="Rotate the component.">rotatedCopy</a>(0,0,180) + hole.<a class="code" href="classComponent.html#a871a9cc554e6c5bfa195215fa011e416" title="Translate the component.">translatedCopy</a>(0.3*_radius,0,0).<a class="code" href="classComponent.html#ad428061d4b1fbb0095b70cba6d8a5fd4" title="Rotate the component.">rotatedCopy</a>(0,0,270);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            holes = hole.<a class="code" href="classComponent.html#a871a9cc554e6c5bfa195215fa011e416" title="Translate the component.">translatedCopy</a>(_radius*10,0,0);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">//Final part.</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <a class="code" href="classComponent.html" title="Component class.">Component</a> part = ext_cylinder - hole_ext_int + int_cylinder - holes - gap + spheres;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">return</span> part;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 12 2012 18:02:30 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 10 2012 19:45:53 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

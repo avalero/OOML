@@ -22,6 +22,7 @@ var searchData=
   ['_7edxfrotateextrude',['~DXFRotateExtrude',['../classDXFRotateExtrude.html#ad665edbaab009bde938a21fa4149a397',1,'DXFRotateExtrude']]],
   ['_7efutabas3003',['~FutabaS3003',['../classFutabaS3003.html#ae864c78c88e71b89b50ea18b96d37c3d',1,'FutabaS3003']]],
   ['_7efutabawheel',['~FutabaWheel',['../classFutabaWheel.html#ac1acab648f0fe1ccee00986f7bebf2ff',1,'FutabaWheel']]],
+  ['_7ehull',['~Hull',['../classHull.html#a31091a163c7044dada2ba72b81088765',1,'Hull']]],
   ['_7eimported',['~Imported',['../classImported.html#ae424ec759b883c0eb981138e7a77c34e',1,'Imported']]],
   ['_7eindentblock',['~IndentBlock',['../classIndentBlock.html#a661c431fae95fee7843768ba7e371853',1,'IndentBlock']]],
   ['_7eindentwriter',['~IndentWriter',['../classIndentWriter.html#ad344ad8e538ab97113c994f305f2b5ea',1,'IndentWriter']]],

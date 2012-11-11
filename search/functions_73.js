@@ -19,5 +19,6 @@ var searchData=
   ['sphere',['Sphere',['../classSphere.html#a890a63ff583cb88e7ec4e840b4ef5eb9',1,'Sphere::Sphere()'],['../classSphere.html#a2b2174ec677ba2f7caff647c05a266c7',1,'Sphere::Sphere(double radius, unsigned int faces=100, bool center=true)']]],
   ['sphereobject',['SphereObject',['../classSphereObject.html#a2f2510b1562ee98a0ef1253f5e1a0127',1,'SphereObject::SphereObject()'],['../classSphereObject.html#a90d22757e5359e8281a99a483af5765f',1,'SphereObject::SphereObject(double radius, unsigned int faces=100, bool center=true)']]],
   ['square',['Square',['../classSquare.html#a3dc7ff9aefc2725172b5d3153973d243',1,'Square::Square()'],['../classSquare.html#a0fc65e628989afc1a95a5bc43071ea9d',1,'Square::Square(double sx, double sy, bool center=true)']]],
+  ['string',['String',['../classString.html#a9662ca94c4e2cd2a1b6fe723fd7ee6d7',1,'String']]],
   ['swap',['swap',['../classSharedPtr.html#af637d3c7d7763a918c52c284771f6234',1,'SharedPtr']]]
 ];

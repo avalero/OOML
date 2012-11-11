@@ -1,10 +1,13 @@
 var searchData=
 [
   ['d',['D',['../classBatteryHolder.html#a05fd25225ae1951e22d60ed931f93821abbb84939a05d168ab26f76f7095e4d1c',1,'BatteryHolder']]],
-  ['data',['Data',['../structSeeedUSSensor_1_1Data.html',1,'SeeedUSSensor']]],
   ['data',['Data',['../structBallWheelHolder_1_1Data.html',1,'BallWheelHolder']]],
+  ['data',['Data',['../structB608zz_1_1Data.html',1,'B608zz']]],
   ['data',['Data',['../structSharpIRSensor_1_1Data.html',1,'SharpIRSensor']]],
   ['data',['data',['../classBallWheelHolder.html#ad7cb9f64fabb9eeba06181c6db57fbeb',1,'BallWheelHolder::data()'],['../classSeeedUSSensor.html#a49a1151074ad9f89221e7a2c625ae841',1,'SeeedUSSensor::data()'],['../classSharpIRSensor.html#a6feb0d59e2a001bd318631dd458c5f65',1,'SharpIRSensor::data()']]],
+  ['data',['Data',['../structNutShape_1_1Data.html',1,'NutShape']]],
+  ['data',['Data',['../structSeeedUSSensor_1_1Data.html',1,'SeeedUSSensor']]],
+  ['data',['Data',['../structLM8uu_1_1Data.html',1,'LM8uu']]],
   ['debug',['debug',['../classAbstractObject.html#a94d1df7f574fbcaab883fd06c3f54370',1,'AbstractObject']]],
   ['debugmode',['debugMode',['../classAbstractObject.html#ab90692ac8dcea8b39c4f1f45d301fa40',1,'AbstractObject']]],
   ['deg2rad',['deg2rad',['../Math_8h.html#a021636ed21e2cb128cb67fa392983ac0',1,'Math.h']]],

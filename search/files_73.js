@@ -18,5 +18,7 @@ var searchData=
   ['sphereobject_2ecpp',['SphereObject.cpp',['../SphereObject_8cpp.html',1,'']]],
   ['sphereobject_2eh',['SphereObject.h',['../SphereObject_8h.html',1,'']]],
   ['square_2ecpp',['Square.cpp',['../Square_8cpp.html',1,'']]],
-  ['square_2eh',['Square.h',['../Square_8h.html',1,'']]]
+  ['square_2eh',['Square.h',['../Square_8h.html',1,'']]],
+  ['string_2ecpp',['String.cpp',['../String_8cpp.html',1,'']]],
+  ['string_2eh',['String.h',['../String_8h.html',1,'']]]
 ];

@@ -89,124 +89,113 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">RotMatrix.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="RotMatrix_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;﻿<span class="comment">/**********************************************************************</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This code is part of the OOML project</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Author: Alberto Valero-Gomez</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * OOML is licenced under the Common Creative License,</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * Attribution-ShareAlike 3.0</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * You are free:</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *   - to Share - to copy, distribute and transmit the work</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *   - to Remix - to adapt the work</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * Under the following conditions:</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *   - Attribution. You must attribute the work in the manner specified</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *     by the author or licensor (but not in any way that suggests that</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *     they endorse you or your use of the work).</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *   - Share Alike. If you alter, transform, or build upon this work,</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *     you may distribute the resulting work only under the same or</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *     similar license to this one.</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * Any of the above conditions can be waived if you get permission</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * from the copyright holder.  Nothing in this license impairs or</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * restricts the author&#39;s moral rights.</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * It is distributed in the hope that it will be useful,</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * PURPOSE.</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> **********************************************************************/</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="RotMatrix_8h.html">RotMatrix.h</a>&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Math_8h.html">Math.h</a>&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="classRotationalMatrix.html#a9086d683251ae99e0bd71b1dd7361ba3">   34</a></span>&#160;<a class="code" href="classRotationalMatrix.html" title="Rotational Matrix.">RotationalMatrix</a>&amp; <a class="code" href="classRotationalMatrix.html#a9086d683251ae99e0bd71b1dd7361ba3">RotationalMatrix::operator *</a>(<a class="code" href="classRotationalMatrix.html" title="Rotational Matrix.">RotationalMatrix</a> <span class="keyword">const</span> &amp; matrix){</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classRotationalMatrix.html" title="Rotational Matrix.">RotationalMatrix</a>* result = <span class="keyword">new</span> <a class="code" href="classRotationalMatrix.html#a85eb4651cd6364478fb2a69d7b2ee47a" title="Default constructor.">RotationalMatrix</a>();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=1;i&lt;=3;i++){</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=1;j&lt;=3;j++){</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordtype">double</span> value = 0;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k=1;k&lt;=3;k++){</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                value+=<span class="keyword">get</span>(i,k)*matrix.<a class="code" href="classMatrix.html#a3b917f858e982e13d0c76af122077978">get</a>(k,j);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            result-&gt;<a class="code" href="classMatrix.html#a820d3e49ffea766faf310729803e1df1">set</a>(i,j,value);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<a href="RotMatrix_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;﻿<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">*    OOML : Object Oriented Mechanics Library</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">*    Copyright (C) 2012  Alberto Valero Gomez, Juan González Gómez, Rafael Treviño</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*    This program is free software: you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*    it under the terms of the GNU Lesser General Public License (LGPL) as published by</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*    the Free Software Foundation, either version 3 of the License, or</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*    (at your option) any later version.</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*    This program is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*    but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*    GNU Lesser General Public License (LGPL) for more details.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*    You should have received a copy of the GNU Lesser General Public License (LGPL)</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">*    along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="RotMatrix_8h.html">RotMatrix.h</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Math_8h.html">Math.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="classRotationalMatrix.html#a9086d683251ae99e0bd71b1dd7361ba3">   23</a></span>&#160;<a class="code" href="classRotationalMatrix.html" title="Rotational Matrix.">RotationalMatrix</a>&amp; <a class="code" href="classRotationalMatrix.html#a9086d683251ae99e0bd71b1dd7361ba3">RotationalMatrix::operator *</a>(<a class="code" href="classRotationalMatrix.html" title="Rotational Matrix.">RotationalMatrix</a> <span class="keyword">const</span> &amp; matrix){</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classRotationalMatrix.html" title="Rotational Matrix.">RotationalMatrix</a>* result = <span class="keyword">new</span> <a class="code" href="classRotationalMatrix.html#a85eb4651cd6364478fb2a69d7b2ee47a" title="Default constructor.">RotationalMatrix</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=1;i&lt;=3;i++){</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=1;j&lt;=3;j++){</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keywordtype">double</span> value = 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k=1;k&lt;=3;k++){</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                value+=<span class="keyword">get</span>(i,k)*matrix.<a class="code" href="classMatrix.html#a3b917f858e982e13d0c76af122077978">get</a>(k,j);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            result-&gt;<a class="code" href="classMatrix.html#a820d3e49ffea766faf310729803e1df1">set</a>(i,j,value);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">return</span> *result;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="classRotationalMatrix.html#a5c3409d05d844696cd5be7399eefa5dc">   39</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classRotationalMatrix.html#a5c3409d05d844696cd5be7399eefa5dc" title="Applies an Euler rotation around z, y&#39;, z&#39;&#39; Applies three rotations around z, x&#39; and z&#39;&#39;...">RotationalMatrix::rotateEulerZYZ</a>(<span class="keywordtype">double</span> z, <span class="keywordtype">double</span> yp, <span class="keywordtype">double</span> zpp){</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classRotationalMatrix.html#a22d975b459aa676f92fccfdeedbf8878" title="Applies a rotation around current z axis Applies a rotation around current z axis.">rotateZ</a>(z);<a class="code" href="classRotationalMatrix.html#a6df7dea4bd4f2e5e826f5ffff9c9846b" title="Applies a rotation around current y axis Applies a rotation around current y axis.">rotateY</a>(yp);<a class="code" href="classRotationalMatrix.html#a22d975b459aa676f92fccfdeedbf8878" title="Applies a rotation around current z axis Applies a rotation around current z axis.">rotateZ</a>(zpp);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="classRotationalMatrix.html#a791b7409dde52402e1a5728602590a93">   43</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classRotationalMatrix.html#a791b7409dde52402e1a5728602590a93" title="Applies an Euler rotation around z, x&#39;, z&#39;&#39; Applies three rotations around z, x&#39; and z&#39;&#39;...">RotationalMatrix::rotateEulerZXZ</a>(<span class="keywordtype">double</span> z, <span class="keywordtype">double</span> xp, <span class="keywordtype">double</span> zpp){</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classRotationalMatrix.html#a22d975b459aa676f92fccfdeedbf8878" title="Applies a rotation around current z axis Applies a rotation around current z axis.">rotateZ</a>(z);<a class="code" href="classRotationalMatrix.html#a65c817d036afdd0a623a555d983170d6" title="Applies a rotation around current x axis Applies a rotation around current x axis.">rotateX</a>(xp);<a class="code" href="classRotationalMatrix.html#a22d975b459aa676f92fccfdeedbf8878" title="Applies a rotation around current z axis Applies a rotation around current z axis.">rotateZ</a>(zpp);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> *result;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="classRotationalMatrix.html#a5c3409d05d844696cd5be7399eefa5dc">   50</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classRotationalMatrix.html#a5c3409d05d844696cd5be7399eefa5dc" title="Applies an Euler rotation around z, y&#39;, z&#39;&#39; Applies three rotations around z, x&#39; and z&#39;&#39;...">RotationalMatrix::rotateEulerZYZ</a>(<span class="keywordtype">double</span> z, <span class="keywordtype">double</span> yp, <span class="keywordtype">double</span> zpp){</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classRotationalMatrix.html#a22d975b459aa676f92fccfdeedbf8878" title="Applies a rotation around current z axis Applies a rotation around current z axis.">rotateZ</a>(z);<a class="code" href="classRotationalMatrix.html#a6df7dea4bd4f2e5e826f5ffff9c9846b" title="Applies a rotation around current y axis Applies a rotation around current y axis.">rotateY</a>(yp);<a class="code" href="classRotationalMatrix.html#a22d975b459aa676f92fccfdeedbf8878" title="Applies a rotation around current z axis Applies a rotation around current z axis.">rotateZ</a>(zpp);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="classRotationalMatrix.html#a791b7409dde52402e1a5728602590a93">   54</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classRotationalMatrix.html#a791b7409dde52402e1a5728602590a93" title="Applies an Euler rotation around z, x&#39;, z&#39;&#39; Applies three rotations around z, x&#39; and z&#39;&#39;...">RotationalMatrix::rotateEulerZXZ</a>(<span class="keywordtype">double</span> z, <span class="keywordtype">double</span> xp, <span class="keywordtype">double</span> zpp){</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classRotationalMatrix.html#a22d975b459aa676f92fccfdeedbf8878" title="Applies a rotation around current z axis Applies a rotation around current z axis.">rotateZ</a>(z);<a class="code" href="classRotationalMatrix.html#a65c817d036afdd0a623a555d983170d6" title="Applies a rotation around current x axis Applies a rotation around current x axis.">rotateX</a>(xp);<a class="code" href="classRotationalMatrix.html#a22d975b459aa676f92fccfdeedbf8878" title="Applies a rotation around current z axis Applies a rotation around current z axis.">rotateZ</a>(zpp);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="classRotationalMatrix.html#a66de01c0e617a05cfb0e57d88dc8c372">   58</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classRotationalMatrix.html#a66de01c0e617a05cfb0e57d88dc8c372" title="Applies a Roll-Pitch-Yaw rotation around x, y, z Applies three rotations around the fixed reference s...">RotationalMatrix::rotateFixedXYZ</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> z){</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="classRotationalMatrix.html#a22d975b459aa676f92fccfdeedbf8878" title="Applies a rotation around current z axis Applies a rotation around current z axis.">rotateZ</a>(z);<a class="code" href="classRotationalMatrix.html#a6df7dea4bd4f2e5e826f5ffff9c9846b" title="Applies a rotation around current y axis Applies a rotation around current y axis.">rotateY</a>(y);<a class="code" href="classRotationalMatrix.html#a65c817d036afdd0a623a555d983170d6" title="Applies a rotation around current x axis Applies a rotation around current x axis.">rotateX</a>(x);</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="classRotationalMatrix.html#a66de01c0e617a05cfb0e57d88dc8c372">   47</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classRotationalMatrix.html#a66de01c0e617a05cfb0e57d88dc8c372" title="Applies a Roll-Pitch-Yaw rotation around x, y, z Applies three rotations around the fixed reference s...">RotationalMatrix::rotateFixedXYZ</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> z){</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classRotationalMatrix.html#a22d975b459aa676f92fccfdeedbf8878" title="Applies a rotation around current z axis Applies a rotation around current z axis.">rotateZ</a>(z);<a class="code" href="classRotationalMatrix.html#a6df7dea4bd4f2e5e826f5ffff9c9846b" title="Applies a rotation around current y axis Applies a rotation around current y axis.">rotateY</a>(y);<a class="code" href="classRotationalMatrix.html#a65c817d036afdd0a623a555d983170d6" title="Applies a rotation around current x axis Applies a rotation around current x axis.">rotateX</a>(x);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="classRotationalMatrix.html#a6e8d9b68336d9507fb71f0e8fea58524">   51</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classRotationalMatrix.html#a6e8d9b68336d9507fb71f0e8fea58524" title="Gets the rotation angles about the fixed axes x,y,z. Obtains the rotation angles about the fixed x...">RotationalMatrix::getGlobalXYZAngles</a>(<span class="keywordtype">double</span> &amp;x, <span class="keywordtype">double</span> &amp;y, <span class="keywordtype">double</span> &amp;z){</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    x = atan2( - <span class="keyword">get</span>(3,2) , - <span class="keyword">get</span>(3,3) );</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    y = atan2( - <span class="keyword">get</span>(3,1) , - sqrt( <span class="keyword">get</span>(3,2)*<span class="keyword">get</span>(3,2)  + <span class="keyword">get</span>(3,3)*<span class="keyword">get</span>(3,3) ) );</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    z = atan2( - <span class="keyword">get</span>(2,1) , -<span class="keyword">get</span>(1,1) );</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    x = <a class="code" href="Math_8h.html#a638b7a3259334d9389d4dcb31cb7dfea">rad2deg</a>(x);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    y = <a class="code" href="Math_8h.html#a638b7a3259334d9389d4dcb31cb7dfea">rad2deg</a>(y);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    z = <a class="code" href="Math_8h.html#a638b7a3259334d9389d4dcb31cb7dfea">rad2deg</a>(z);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="classRotationalMatrix.html#a6e8d9b68336d9507fb71f0e8fea58524">   62</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classRotationalMatrix.html#a6e8d9b68336d9507fb71f0e8fea58524" title="Gets the rotation angles about the fixed axes x,y,z. Obtains the rotation angles about the fixed x...">RotationalMatrix::getGlobalXYZAngles</a>(<span class="keywordtype">double</span> &amp;x, <span class="keywordtype">double</span> &amp;y, <span class="keywordtype">double</span> &amp;z){</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    x = atan2( - <span class="keyword">get</span>(3,2) , - <span class="keyword">get</span>(3,3) );</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    y = atan2( - <span class="keyword">get</span>(3,1) , - sqrt( <span class="keyword">get</span>(3,2)*<span class="keyword">get</span>(3,2)  + <span class="keyword">get</span>(3,3)*<span class="keyword">get</span>(3,3) ) );</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    z = atan2( - <span class="keyword">get</span>(2,1) , -<span class="keyword">get</span>(1,1) );</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="classRotationalMatrix.html#a65c817d036afdd0a623a555d983170d6">   64</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classRotationalMatrix.html#a65c817d036afdd0a623a555d983170d6" title="Applies a rotation around current x axis Applies a rotation around current x axis.">RotationalMatrix::rotateX</a>(<span class="keywordtype">double</span> x){</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    x = <a class="code" href="Math_8h.html#a021636ed21e2cb128cb67fa392983ac0">deg2rad</a>(x);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    x = <a class="code" href="Math_8h.html#a638b7a3259334d9389d4dcb31cb7dfea">rad2deg</a>(x);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    y = <a class="code" href="Math_8h.html#a638b7a3259334d9389d4dcb31cb7dfea">rad2deg</a>(y);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    z = <a class="code" href="Math_8h.html#a638b7a3259334d9389d4dcb31cb7dfea">rad2deg</a>(z);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="classRotationalMatrix.html" title="Rotational Matrix.">RotationalMatrix</a> rotation;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">//rotation.set(1,1,1);</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    rotation.<a class="code" href="classMatrix.html#a820d3e49ffea766faf310729803e1df1">set</a>(2,2,cos(x));</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    rotation.<a class="code" href="classMatrix.html#a820d3e49ffea766faf310729803e1df1">set</a>(2,3,-sin(x));</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    rotation.<a class="code" href="classMatrix.html#a820d3e49ffea766faf310729803e1df1">set</a>(3,2,sin(x));</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    rotation.<a class="code" href="classMatrix.html#a820d3e49ffea766faf310729803e1df1">set</a>(3,3,cos(x));</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="code" href="classRotationalMatrix.html#a65c817d036afdd0a623a555d983170d6">   75</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classRotationalMatrix.html#a65c817d036afdd0a623a555d983170d6" title="Applies a rotation around current x axis Applies a rotation around current x axis.">RotationalMatrix::rotateX</a>(<span class="keywordtype">double</span> x){</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    x = <a class="code" href="Math_8h.html#a021636ed21e2cb128cb67fa392983ac0">deg2rad</a>(x);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="classRotationalMatrix.html" title="Rotational Matrix.">RotationalMatrix</a> rotation;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">//rotation.set(1,1,1);</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    rotation.<a class="code" href="classMatrix.html#a820d3e49ffea766faf310729803e1df1">set</a>(2,2,cos(x));</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    rotation.<a class="code" href="classMatrix.html#a820d3e49ffea766faf310729803e1df1">set</a>(2,3,-sin(x));</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    rotation.<a class="code" href="classMatrix.html#a820d3e49ffea766faf310729803e1df1">set</a>(3,2,sin(x));</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    rotation.<a class="code" href="classMatrix.html#a820d3e49ffea766faf310729803e1df1">set</a>(3,3,cos(x));</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    *<span class="keyword">this</span> = *<span class="keyword">this</span> * rotation;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="code" href="classRotationalMatrix.html#a6df7dea4bd4f2e5e826f5ffff9c9846b">   89</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classRotationalMatrix.html#a6df7dea4bd4f2e5e826f5ffff9c9846b" title="Applies a rotation around current y axis Applies a rotation around current y axis.">RotationalMatrix::rotateY</a>(<span class="keywordtype">double</span> y){</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    *<span class="keyword">this</span> = *<span class="keyword">this</span> * rotation;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="code" href="classRotationalMatrix.html#a6df7dea4bd4f2e5e826f5ffff9c9846b">   78</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classRotationalMatrix.html#a6df7dea4bd4f2e5e826f5ffff9c9846b" title="Applies a rotation around current y axis Applies a rotation around current y axis.">RotationalMatrix::rotateY</a>(<span class="keywordtype">double</span> y){</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    y = <a class="code" href="Math_8h.html#a021636ed21e2cb128cb67fa392983ac0">deg2rad</a>(y);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="classRotationalMatrix.html" title="Rotational Matrix.">RotationalMatrix</a> rotation;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    rotation.<a class="code" href="classMatrix.html#a820d3e49ffea766faf310729803e1df1">set</a>(1,1,cos(y));</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    rotation.<a class="code" href="classMatrix.html#a820d3e49ffea766faf310729803e1df1">set</a>(1,3,sin(y));</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    rotation.<a class="code" href="classMatrix.html#a820d3e49ffea766faf310729803e1df1">set</a>(3,1,-sin(y));</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    rotation.<a class="code" href="classMatrix.html#a820d3e49ffea766faf310729803e1df1">set</a>(3,3,cos(y));</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    *<span class="keyword">this</span> = *<span class="keyword">this</span> * rotation;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    y = <a class="code" href="Math_8h.html#a021636ed21e2cb128cb67fa392983ac0">deg2rad</a>(y);</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="code" href="classRotationalMatrix.html#a22d975b459aa676f92fccfdeedbf8878">   91</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classRotationalMatrix.html#a22d975b459aa676f92fccfdeedbf8878" title="Applies a rotation around current z axis Applies a rotation around current z axis.">RotationalMatrix::rotateZ</a>(<span class="keywordtype">double</span> z){</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="classRotationalMatrix.html" title="Rotational Matrix.">RotationalMatrix</a> rotation;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    rotation.<a class="code" href="classMatrix.html#a820d3e49ffea766faf310729803e1df1">set</a>(1,1,cos(y));</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    rotation.<a class="code" href="classMatrix.html#a820d3e49ffea766faf310729803e1df1">set</a>(1,3,sin(y));</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    rotation.<a class="code" href="classMatrix.html#a820d3e49ffea766faf310729803e1df1">set</a>(3,1,-sin(y));</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    rotation.<a class="code" href="classMatrix.html#a820d3e49ffea766faf310729803e1df1">set</a>(3,3,cos(y));</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    *<span class="keyword">this</span> = *<span class="keyword">this</span> * rotation;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="code" href="classRotationalMatrix.html#a22d975b459aa676f92fccfdeedbf8878">  102</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classRotationalMatrix.html#a22d975b459aa676f92fccfdeedbf8878" title="Applies a rotation around current z axis Applies a rotation around current z axis.">RotationalMatrix::rotateZ</a>(<span class="keywordtype">double</span> z){</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    z = <a class="code" href="Math_8h.html#a021636ed21e2cb128cb67fa392983ac0">deg2rad</a>(z);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="classRotationalMatrix.html" title="Rotational Matrix.">RotationalMatrix</a> rotation;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    rotation.<a class="code" href="classMatrix.html#a820d3e49ffea766faf310729803e1df1">set</a>(1,1,cos(z));</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    rotation.<a class="code" href="classMatrix.html#a820d3e49ffea766faf310729803e1df1">set</a>(1,2,-sin(z));</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    rotation.<a class="code" href="classMatrix.html#a820d3e49ffea766faf310729803e1df1">set</a>(2,1,sin(z));</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    rotation.<a class="code" href="classMatrix.html#a820d3e49ffea766faf310729803e1df1">set</a>(2,2,cos(z));</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    *<span class="keyword">this</span> = *<span class="keyword">this</span> * rotation;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    z = <a class="code" href="Math_8h.html#a021636ed21e2cb128cb67fa392983ac0">deg2rad</a>(z);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="classRotationalMatrix.html" title="Rotational Matrix.">RotationalMatrix</a> rotation;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    rotation.<a class="code" href="classMatrix.html#a820d3e49ffea766faf310729803e1df1">set</a>(1,1,cos(z));</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    rotation.<a class="code" href="classMatrix.html#a820d3e49ffea766faf310729803e1df1">set</a>(1,2,-sin(z));</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    rotation.<a class="code" href="classMatrix.html#a820d3e49ffea766faf310729803e1df1">set</a>(2,1,sin(z));</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    rotation.<a class="code" href="classMatrix.html#a820d3e49ffea766faf310729803e1df1">set</a>(2,2,cos(z));</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    *<span class="keyword">this</span> = *<span class="keyword">this</span> * rotation;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 12 2012 18:02:30 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 10 2012 19:45:53 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

@@ -10,5 +10,6 @@ var searchData=
   ['simplewheel',['SimpleWheel',['../classSimpleWheel.html',1,'']]],
   ['sphere',['Sphere',['../classSphere.html',1,'']]],
   ['sphereobject',['SphereObject',['../classSphereObject.html',1,'']]],
-  ['square',['Square',['../classSquare.html',1,'']]]
+  ['square',['Square',['../classSquare.html',1,'']]],
+  ['string',['String',['../classString.html',1,'']]]
 ];

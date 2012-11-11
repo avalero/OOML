@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['m3',['M3',['../Nuts_8h.html#abf74dfd688b4203cefa6d49f8d14403ea3a20456b77b5a99695ff09fcede047a4',1,'Nuts.h']]],
+  ['m4',['M4',['../Nuts_8h.html#abf74dfd688b4203cefa6d49f8d14403eaee2d528d4709f2b27aecc22948517d8b',1,'Nuts.h']]],
   ['m_5fpi',['M_PI',['../Math_8h.html#ae71449b1cc6e6250b91f539153a7a0d3',1,'Math.h']]],
   ['map',['Map',['../classAbstractPackage.html#a63d7dd0642fd6b6503153a502e1e105e',1,'AbstractPackage']]],
   ['math_2eh',['Math.h',['../Math_8h.html',1,'']]],
@@ -7,6 +9,7 @@ var searchData=
   ['matrix_2eh',['Matrix.h',['../Matrix_8h.html',1,'']]],
   ['matrix_3c_20double_2c_203_2c_203_20_3e',['Matrix&lt; double, 3, 3 &gt;',['../classMatrix.html',1,'']]],
   ['matrix_3c_20double_2c_204_2c_204_20_3e',['Matrix&lt; double, 4, 4 &gt;',['../classMatrix.html',1,'']]],
+  ['metric',['Metric',['../Nuts_8h.html#abf74dfd688b4203cefa6d49f8d14403e',1,'Nuts.h']]],
   ['minkowskidecorator',['MinkowskiDecorator',['../classMinkowskiDecorator.html',1,'MinkowskiDecorator'],['../classMinkowskiDecorator.html#aaecd9df4987f0b1ef26b214ef8e06417',1,'MinkowskiDecorator::MinkowskiDecorator()'],['../classMinkowskiDecorator.html#a1dd7274954d6c1cd261586b9d8b8a361',1,'MinkowskiDecorator::MinkowskiDecorator(SharedPtr&lt; AbstractObject &gt; const &amp;decorated, SharedPtr&lt; AbstractObject &gt; const &amp;reference, unsigned int faces=100)']]],
   ['minkowskidecorator_2ecpp',['MinkowskiDecorator.cpp',['../MinkowskiDecorator_8cpp.html',1,'']]],
   ['minkowskidecorator_2eh',['MinkowskiDecorator.h',['../MinkowskiDecorator_8h.html',1,'']]],
