@@ -12,5 +12,6 @@
 #include <parts/SimpleWheel.h>
 #include <parts/SeeedUSSensor.h>
 #include <parts/SharpIRSensor.h>
-
+#include "parts/Nuts.h"
+#include "parts/Bearings.h"
 #endif // PARTS_H

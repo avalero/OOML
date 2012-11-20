@@ -56,14 +56,16 @@ public:
       */
     struct Data{
         double width_across_flats; // (mm)
-        double witdth_across_coners; //<! the rod diameter (mm)
-        double thickness; //<! the rod lenght (mm)
+        double witdth_across_coners; //<! (mm)
+        double thickness; //<! (mm)
     };
 
     /**
       * Constructor
+      * @param m Metric: M3, M4
+      * @param thickness: Thickness of the NUT. By default metric thickness
       */
-    NutShape(Metric m);
+    NutShape(Metric m,double thickness=0);
 
     /**
      * \brief returns part data
@@ -83,6 +85,7 @@ protected:
 
 private:
     Data data;
+    const double dim_margin;
 };
 
 
