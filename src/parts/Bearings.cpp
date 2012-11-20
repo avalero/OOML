@@ -33,17 +33,25 @@
 #include "Bearings.h"
 #include "../components.h"
 
-LM8uu::LM8uu():AbstractPart()
+LMXuu::LMXuu(LinearBearings type):AbstractPart()
 {
-    data.inner_diameter=8; //mm
-    data.ext_diameter=15; //mm
-    data.length = 24; //mm
-
+    switch(type){
+    case LM8uu:
+        data.inner_diameter=8; //mm
+        data.ext_diameter=15; //mm
+        data.length = 24; //mm
+        break;
+    case LM10uu:
+        data.inner_diameter=10; //mm
+        data.ext_diameter=19; //mm
+        data.length = 29; //mm
+        break;
+    }
     //build the part
     rebuild();
 }
 
-Component LM8uu::build(){
+Component LMXuu::build(){
     Component bearing = Cylinder::create(data.ext_diameter/2,data.length,100,true)
             - Cylinder::create(data.inner_diameter/2,data.length+1,20,true)
             ;

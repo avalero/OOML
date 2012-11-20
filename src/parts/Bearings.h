@@ -45,8 +45,9 @@
 #define OOMLParts_EXP_DEC
 #endif
 
+enum LinearBearings{LM8uu, LM10uu};
 
-class OOMLParts_EXP_DEC LM8uu : public AbstractPart
+class OOMLParts_EXP_DEC LMXuu : public AbstractPart
 {
 public:
     /**
@@ -61,7 +62,7 @@ public:
     /**
       * Constructor
       */
-    LM8uu();
+    LMXuu(LinearBearings type);
 
     /**
      * \brief returns part data
