@@ -51,5 +51,6 @@ Component StepperMotor::build(){
         }
     }
 
+    motor.translate(0,0,-data.z_dim_body/2);
     return motor;
 }
