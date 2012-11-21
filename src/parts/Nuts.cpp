@@ -33,9 +33,9 @@
 #include "Nuts.h"
 #include "../components.h"
 
-NutShape::NutShape(Metric m, double thickness):AbstractPart(),
-    dim_margin(1)
+NutShape::NutShape(Metric m, double thickness, double extra):AbstractPart()
 {
+    data.dim_margin=extra;
 
     switch (m){
     case M3:
@@ -48,12 +48,28 @@ NutShape::NutShape(Metric m, double thickness):AbstractPart(),
         data.witdth_across_coners = 7.66;
         data.thickness = (thickness==0)?3.2:thickness;
         break;
+    case M5:
+        data.width_across_flats = 8;
+        data.witdth_across_coners = 8.79;
+        data.thickness = (thickness==0)?4.7:thickness;
+        break;
+    case M6:
+        data.width_across_flats = 10;
+        data.witdth_across_coners = 11.05;
+        data.thickness = (thickness==0)?5.02:thickness;
+        break;
+    case M8:
+        data.width_across_flats = 13;
+        data.witdth_across_coners = 14.38;
+        data.thickness = (thickness==0)?6.8:thickness;
+        break;
+
     }
     //build the part
     rebuild();
 }
 
 Component NutShape::build(){
-    Component hexnut = Cylinder((data.witdth_across_coners+dim_margin)/2 ,data.thickness,6,true);
+    Component hexnut = Cylinder((data.witdth_across_coners+data.dim_margin)/2 ,data.thickness,6,true);
     return hexnut;
 }

@@ -84,7 +84,6 @@ private:
     Data data;
 };
 
-
 class OOMLParts_EXP_DEC B608zz : public AbstractPart
 {
 public:

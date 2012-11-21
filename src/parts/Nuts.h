@@ -45,7 +45,7 @@
 #define OOMLParts_EXP_DEC
 #endif
 
-enum Metric{M3,M4};
+enum Metric{M3,M4,M5,M6,M8};
 
 class OOMLParts_EXP_DEC NutShape : public AbstractPart
 {
@@ -58,6 +58,7 @@ public:
         double width_across_flats; // (mm)
         double witdth_across_coners; //<! (mm)
         double thickness; //<! (mm)
+        double dim_margin; //<! extra size for the model (mm)
     };
 
     /**
@@ -65,7 +66,7 @@ public:
       * @param m Metric: M3, M4
       * @param thickness: Thickness of the NUT. By default metric thickness
       */
-    NutShape(Metric m,double thickness=0);
+    NutShape(Metric m,double thickness=0,double extra=1);
 
     /**
      * \brief returns part data
@@ -85,7 +86,6 @@ protected:
 
 private:
     Data data;
-    const double dim_margin;
 };
 
 
