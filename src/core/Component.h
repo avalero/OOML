@@ -501,11 +501,9 @@ public:
     inline virtual RefSys getRefSys() const{
 
         if (hasRefSys()){
-                    std::cout << 1 << std::endl;
             return AbstractObject::getRefSys();
         }
         else{
-            std::cout << 2 << std::endl;
             return this->get()->getRefSys();
         }
     }
