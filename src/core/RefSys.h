@@ -177,6 +177,8 @@ public:
       */
     //void applyRotation(RotationalMatrix const & rot);
 
+    RefSys transfrom(TransformMatrix tr);
+
     inline TransformMatrix getTransformMatrix() const {return _trans;}
 
 private:

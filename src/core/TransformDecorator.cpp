@@ -21,9 +21,15 @@
 #include "IndentWriter.h"
 
 RefSys TransformDecorator::getRefSys() const{
-    RefSys refsys;
-    refsys.setTransformationMatrix(_tr);
-    return refsys;
+
+    if (hasRefSys()){
+        return AbstractObject::getRefSys();
+    }
+    else{
+        RefSys refsys = ObjectDecorator::getRefSys();
+        refsys.transfrom(_tr);
+        return refsys;
+    }
 
 }
 

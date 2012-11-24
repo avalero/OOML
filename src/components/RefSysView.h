@@ -73,9 +73,7 @@ public:
 
     RefSysView(Component const & comp)
     {
-        AbstractObject * object = dynamic_cast<AbstractObject *>(comp.get().get());
-
-        _refSys=object->getRefSys();
+        _refSys = comp.getRefSys();
 
         set(genComponent().get());
     }

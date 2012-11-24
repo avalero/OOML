@@ -59,7 +59,7 @@ public:
    */
     Component() :
         ObjectDecorator()
-    {  }
+    {  resetRefSys(); }
     /**
    * \brief Default referenced constructor.
    *
@@ -67,7 +67,7 @@ public:
    */
     Component(SharedPtr<AbstractObject> const& decorated) :
         ObjectDecorator(decorated)
-    {    }
+    {  resetRefSys();  }
     /**
    * \brief Default copy constructor.
    *
@@ -482,6 +482,8 @@ public:
    */
     Component & translate(double tx, double ty, double tz);
 
+    Component & transform(TransformMatrix tr);
+    Component & relTransform(TransformMatrix tr);
 
     /**
    * \brief Translate the component wrt. to its local reference system
@@ -497,8 +499,15 @@ public:
     Component & relTranslate(double tx, double ty, double tz);
 
     inline virtual RefSys getRefSys() const{
-        AbstractObject* abso = dynamic_cast<AbstractObject*>(this->get().get());
-        return abso->getRefSys();
+
+        if (hasRefSys()){
+                    std::cout << 1 << std::endl;
+            return AbstractObject::getRefSys();
+        }
+        else{
+            std::cout << 2 << std::endl;
+            return this->get()->getRefSys();
+        }
     }
 
     inline int numberOfLinks() const{

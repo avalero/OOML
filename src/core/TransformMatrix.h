@@ -72,6 +72,8 @@ public:
      */
     TransformMatrix & operator*(TransformMatrix const& matrix);
 
+    void transform(TransformMatrix tr);
+
     /**
       * \brief Applies an Euler rotation around the initial fixed z, x', z''
       * Applies three rotations around z, x' and z''

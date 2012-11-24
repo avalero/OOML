@@ -26,6 +26,7 @@ void ObjectDecorator::genScad(IndentWriter& writer) const
         _decorated->genScad(writer);
 }
 
+
 void ObjectDecorator::printAst(IndentWriter& writer) const
 {
 	if (_decorated.get())
@@ -33,8 +34,9 @@ void ObjectDecorator::printAst(IndentWriter& writer) const
 }
 
 RefSys ObjectDecorator::getRefSys() const{
-    AbstractObject * object =  dynamic_cast<AbstractObject *>(_decorated.get());
-    return object->getRefSys();
+    if (_decorated.get())
+        return _decorated->getRefSys();
+    else return RefSys(0,0,0);
 }
 
 RefSys ObjectDecorator::getLink(int i) const{

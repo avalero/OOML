@@ -99,6 +99,7 @@ public:
    */
   virtual void printAst(IndentWriter& writer) const;
 
+
 protected:
   /**
    * \brief Default constructor.

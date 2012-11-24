@@ -57,10 +57,10 @@ public:
 	/**
 	 * \brief Default constructor.
 	 */
-	AbstractObject() {}
+    AbstractObject():_has_refsys(false) {}
 	/**
 	 * \brief Default destructor.
-	 */
+     */
 	virtual ~AbstractObject() {}
 
 	/**
@@ -137,8 +137,10 @@ public:
         return (_links.size()>0);
     }
 
-    virtual RefSys getRefSys() const{
-        return RefSys(); }
+    inline virtual RefSys getRefSys() const {return _refsys;}
+    inline void setRefSys(RefSys const & r){_refsys=r; _has_refsys = true;}
+    inline void resetRefSys(){_refsys=RefSys(0,0,0); _has_refsys = true;}
+
 
 protected:
 
@@ -151,10 +153,13 @@ protected:
 
     inline void debug(std::string const& str) const { if (_debugFlag) std::cout << "//-- " << str << std::endl;}
 
+    inline bool hasRefSys() const {return _has_refsys;}
 
     Links _links;
+    RefSys _refsys;
 
 private:
+    bool _has_refsys;
 	/**
 	 * \brief Default copy constructor.
 	 *

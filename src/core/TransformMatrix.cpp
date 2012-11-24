@@ -36,6 +36,10 @@ TransformMatrix& TransformMatrix::operator *(TransformMatrix const & matrix){
     return *result;
 }
 
+void TransformMatrix::transform(TransformMatrix tr){
+    *this = tr * (*this);
+}
+
 void TransformMatrix::rotateEulerZYZ(double z, double yp, double zpp){
     rotateZ(z);rotateY(yp);rotateZ(zpp);
 }

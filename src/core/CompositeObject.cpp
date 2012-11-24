@@ -33,7 +33,9 @@ void CompositeObject::printAst(IndentWriter& writer) const
 }
 
 RefSys CompositeObject::getRefSys() const {
-    AbstractObject * object =  dynamic_cast<AbstractObject *>(_children[0].get());
-    return object->getRefSys();
-
+    if (hasRefSys()){
+        return AbstractObject::getRefSys();
+    }else{
+        return _children[0]->getRefSys();
+    }
 }

@@ -219,6 +219,15 @@ Component Component::relTranslatedCopy(double tx, double ty, double tz) const
     return Component(TransformDecorator::create(get(), tr, true));
 }
 
+Component & Component::transform(TransformMatrix tr){
+    set(TransformDecorator::create(get(), tr));
+    return *this;
+}
+
+Component & Component::relTransform(TransformMatrix tr){
+    set(TransformDecorator::create(get(), tr, true));
+    return *this;
+}
 
 Component & Component::translate(double tx, double ty, double tz)
 {
