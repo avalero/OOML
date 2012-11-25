@@ -530,7 +530,6 @@ public:
       * \return Link Number.
       */
     inline int addLink(RefSys rs){
-        std::cout << "add" << std::endl;
         get()->links()->push_back(rs);
         return (get()->links()->size()-1);
     }
@@ -558,9 +557,9 @@ public:
       * \brief Returns if the Object has links.
       * \return true when there are links
       */
-    inline bool hasLinks() const {
-        return (get()->links()->size()>0);
-    }
+    //inline bool hasLinks() const {
+    //    return (get()->links()->size()>0);
+    //}
 
 
     /**

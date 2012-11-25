@@ -55,10 +55,20 @@ Component ArduinoUNO::getBoard(double height, double holes_height, bool fill_hol
 		  holes = holes +  hole_arduino.translatedCopy(15.24,50.8,0);
 	 }
 
+
+
 	 if(fill_holes)
 		 board = prism1 + prism2 + holes;
 	 else
 		 board = prism1 + prism2 - holes;
+
+     //Add one link at each drill
+     board.addLink(RefSys(13.97,2.54,0));
+     board.addLink(RefSys(66.04,7.62,0));
+     board.addLink(RefSys(66.04,35.56,0));
+     board.addLink(RefSys(15.24,50.8,0));
+
+
 
 	 return board.color(0,0,1);
 }
@@ -79,7 +89,7 @@ Component ArduinoUNO::build()
 										  + Cube(6.5,6.5,5,false).translate(25,1.6,2);
 			Component button = Cube(6,6,3,false).translate(52.5,24.5,2);
 
-         Component arduino = board.color(0,0,0.6) + pins.color(0.2,0.2,0.2) + micro.color(0.2,0.2,0.2) + usb.color(0.7,0.7,0.7) + power.color(0.7,0.7,0.7) + capacitors.color(0.5,0.5,0.5) + button.color(0.5,0.5,0.5);
+            Component arduino = board + pins.color(0.2,0.2,0.2) + micro.color(0.2,0.2,0.2) + usb.color(0.7,0.7,0.7) + power.color(0.7,0.7,0.7) + capacitors.color(0.5,0.5,0.5) + button.color(0.5,0.5,0.5);
 
 	 return arduino;
 }

@@ -66,7 +66,7 @@ public:
 	 *
 	 * \note Create another component for the board only and then use it in this one.
 	 */
-  static Component getBoard(double height=2, double holes_height=5, bool fill_drills=true, bool fourth_hole=true);
+  Component getBoard(double height=2, double holes_height=5, bool fill_drills=true, bool fourth_hole=true);
 
 protected:
   /**
