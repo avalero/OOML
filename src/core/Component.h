@@ -151,7 +151,6 @@ public:
     Component coloredCopy(double r, double g, double b, double a=1.0) const
     {
         SharedPtr<AbstractObject> aux = get();
-        aux->setLinks(_links);
         return Component(ColorDecorator::create(aux, r, g, b, a));
     }
     /**
@@ -169,7 +168,6 @@ public:
     Component & color(double r, double g, double b, double a=1.0)
     {
         SharedPtr<AbstractObject> aux = get();
-        aux->setLinks(_links);
         set(ColorDecorator::create(aux, r, g, b, a));
         return *this;
     }
@@ -508,22 +506,62 @@ public:
         }
     }
 
-    inline int numberOfLinks() const{
-        return _links.size();
-    }
-
     inline virtual Links getLinks() const{
-
-        AbstractObject* abso = dynamic_cast<AbstractObject*>(this->get().get());
-        abso->setLinks(_links);
-        return abso->getLinks();
+        if (get()->hasLinks()){
+            return get()->AbstractObject::getLinks();
+        }
+        else{
+            return get()->getLinks();
+        }
     }
 
-    inline virtual RefSys getLink(int i)const{
-        AbstractObject* abso = dynamic_cast<AbstractObject*>(this->get().get());
-        abso->setLinks(_links);
-        return abso->getLink(i);
+    inline virtual RefSys getLink(int i) const{
+        if (get()->hasLinks()){
+            return get()->AbstractObject::getLink(i);
+        }
+        else{
+            return this->get()->getLink(i);
+        }
     }
+
+    /**
+      * \brief Adds a Link to the system.
+      * \link Reference System of the Link.
+      * \return Link Number.
+      */
+    inline int addLink(RefSys rs){
+        std::cout << "add" << std::endl;
+        get()->links()->push_back(rs);
+        return (get()->links()->size()-1);
+    }
+
+    inline void setLinks(Links l){
+        get()->links()->clear();
+        *(get()->links()) = l;
+    }
+
+    inline void clearLinks(){
+        get()->links()->clear();
+        get()->links()->resize(0);
+    }
+
+    /**
+      * \brief Adds a vector of Links to the system.
+      * \links Vector of Reference Systems of the Links.
+      */
+    inline void addLinks(Links l){
+        for (int i=0; i<l.size();i++)
+            get()->links()->push_back(l[i]);
+    }
+
+    /**
+      * \brief Returns if the Object has links.
+      * \return true when there are links
+      */
+    inline bool hasLinks() const {
+        return (get()->links()->size()>0);
+    }
+
 
     /**
      * \brief Try to cast the decorated pointer to a concrete type.

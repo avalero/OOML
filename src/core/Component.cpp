@@ -184,7 +184,6 @@ Component Component::scaledCopy(double s) const
 Component & Component::scale(double s)
 {
     SharedPtr<AbstractObject> aux = get();
-    aux->setLinks(_links);
     set(ScaleDecorator::create(aux, s));
 
     return *this;
@@ -193,14 +192,12 @@ Component & Component::scale(double s)
 Component Component::scaledCopy(double sx, double sy, double sz) const
 {
     SharedPtr<AbstractObject> aux = get();
-    aux->setLinks(_links);
     return Component(ScaleDecorator::create(aux, sx, sy, sz));
 }
 
 Component & Component::scale(double sx, double sy, double sz)
 {
     SharedPtr<AbstractObject> aux = get();
-    aux->setLinks(_links);
     set(ScaleDecorator::create(aux, sx,sy,sz));
     return *this;
 }

@@ -27,36 +27,34 @@ RefSys TransformDecorator::getRefSys() const{
     }
     else{
         RefSys refsys = ObjectDecorator::getRefSys();
-        refsys.transfrom(_tr);
+        refsys.transform(_tr);
         return refsys;
     }
 
 }
 
 Links TransformDecorator::getLinks() const{
-    double x,y,z; _tr.getGlobalTranslation(x,y,z);
-    double xa, ya, za; _tr.getGlobalXYZAngles(xa,ya,za);
-    Links tr_links(_links.size());
-
-    for (int i=0 ; i<_links.size(); i++){
-        RefSys link =_links[i];
-        link.rotate(xa,ya,za);
-        link.translate(x,y,z);
-        tr_links[i]=link;
+    if (hasLinks()){
+        return AbstractObject::getLinks();
     }
-
-    return tr_links;
+    else{
+        Links links = ObjectDecorator::getLinks();
+        for (int i=0; i<links.size();i++){
+            links[i].transform(_tr);
+        }
+        return links;
+    }
 }
 
 RefSys TransformDecorator::getLink(int i) const{
-    double x,y,z; _tr.getGlobalTranslation(x,y,z);
-    double xa, ya, za; _tr.getGlobalXYZAngles(xa,ya,za);
-
-    RefSys link =_links[i];
-    link.rotate(xa,ya,za);
-    link.translate(x,y,z);
-
-    return link;
+    if (hasLinks()){
+        return AbstractObject::getLink(i);
+    }
+    else{
+        RefSys link = ObjectDecorator::getLink(i);
+        link.transform(_tr);
+        return link;
+    }
 }
 
 void TransformDecorator::genScad(IndentWriter& writer) const

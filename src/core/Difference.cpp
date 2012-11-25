@@ -45,8 +45,5 @@ Component operator-(Component const& lhs, Component const& rhs)
 {
   CompositeComponent result(Difference::create());
   result << lhs.get() << rhs.get();
-
-  result.setLinks(lhs.getLinks());
-
   return result;
 }

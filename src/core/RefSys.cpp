@@ -64,7 +64,7 @@ RefSys RefSys::relRotateEulerZXZ(double z, double xp, double zpp){
     return *this;
 }
 
-RefSys RefSys::transfrom(TransformMatrix tr){
+RefSys RefSys::transform(TransformMatrix tr){
     _trans.transform(tr);
     return *this;
 }

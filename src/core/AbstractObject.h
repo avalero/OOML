@@ -57,7 +57,10 @@ public:
 	/**
 	 * \brief Default constructor.
 	 */
-    AbstractObject():_has_refsys(false) {}
+    AbstractObject():_has_refsys(false) {
+        _links.clear();
+        _links.resize(0);
+    }
 	/**
 	 * \brief Default destructor.
      */
@@ -120,6 +123,15 @@ public:
         _links = l;
     }
 
+    inline void clearLinks(){
+        _links.clear();
+        _links.resize(0);
+    }
+
+    inline Links* links(){
+        return &_links;
+    }
+
     /**
       * \brief Adds a vector of Links to the system.
       * \links Vector of Reference Systems of the Links.
@@ -138,11 +150,13 @@ public:
     }
 
     inline virtual RefSys getRefSys() const {return _refsys;}
-    inline void setRefSys(RefSys const & r){_refsys=r; _has_refsys = true;}
-    inline void resetRefSys(){_refsys=RefSys(0,0,0); _has_refsys = true;}
 
 
 protected:
+
+    inline void setRefSys(RefSys const & r){_refsys=r; _has_refsys = true;}
+    inline void resetRefSys(){_refsys=RefSys(0,0,0); _has_refsys = true;}
+
 
 	/**
 	 * \brief Print a debug message.

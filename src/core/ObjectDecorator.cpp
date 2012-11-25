@@ -40,12 +40,15 @@ RefSys ObjectDecorator::getRefSys() const{
 }
 
 RefSys ObjectDecorator::getLink(int i) const{
-    AbstractObject * object =  dynamic_cast<AbstractObject *>(_decorated.get());
-    return object->getLink(i);
+    if (_decorated.get())
+        return _decorated->getLink(i);
+    else return RefSys(0,0,0);
 }
 
 Links ObjectDecorator::getLinks() const{
-    AbstractObject * object =  dynamic_cast<AbstractObject *>(_decorated.get());
-    return object->getLinks();
+    if (_decorated.get())
+        return _decorated->getLinks();
+    else
+        return Links(0);
 }
 

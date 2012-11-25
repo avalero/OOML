@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 
     comp.translate(0,20,0);
 
-    comp.resetRefSys();
+    //comp.resetRefSys();
 
     writer << "%";
     writer << comp;

@@ -39,3 +39,19 @@ RefSys CompositeObject::getRefSys() const {
         return _children[0]->getRefSys();
     }
 }
+
+Links CompositeObject::getLinks() const {
+    if (hasLinks()){
+        return AbstractObject::getLinks();
+    }else{
+        return _children[0]->getLinks();
+    }
+}
+
+RefSys CompositeObject::getLink(int i) const {
+    if (hasLinks()){
+        return AbstractObject::getLink(i);
+    }else{
+        return _children[0]->getLink(i);
+    }
+}

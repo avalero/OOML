@@ -52,6 +52,7 @@ public:
 	void rebuild()
 	{
 		set(build().get());
+        resetRefSys();
 	}
 
 	/**

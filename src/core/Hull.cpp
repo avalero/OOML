@@ -45,10 +45,5 @@ Component operator&(Component const& lhs, Component const& rhs)
 {
 	 CompositeComponent result(Hull::create());
 	 result << lhs.get() << rhs.get();
-
-
-     //keep the links (transformed if neccessary)
-     result.setLinks(lhs.getLinks());
-
 	 return result;
 }
