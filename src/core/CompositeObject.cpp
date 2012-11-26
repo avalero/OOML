@@ -42,7 +42,11 @@ RefSys CompositeObject::getRefSys() const {
 
 Links CompositeObject::getLinks() const {
     if (hasLinks()){
-        return AbstractObject::getLinks();
+        Links lks1 = AbstractObject::getLinks();
+        Links lks2 = _children[0]->getLinks();
+        lks1.insert( lks1.end(), lks2.begin(), lks2.end() );
+        return lks1;
+        //return AbstractObject::getLinks();
     }else{
         return _children[0]->getLinks();
     }
@@ -50,7 +54,11 @@ Links CompositeObject::getLinks() const {
 
 RefSys CompositeObject::getLink(int i) const {
     if (hasLinks()){
-        return AbstractObject::getLink(i);
+        Links lks1 = AbstractObject::getLinks();
+        Links lks2 = _children[0]->getLinks();
+        lks1.insert( lks1.end(), lks2.begin(), lks2.end() );
+        return lks1[i];
+        //return AbstractObject::getLink(i);
     }else{
         return _children[0]->getLink(i);
     }

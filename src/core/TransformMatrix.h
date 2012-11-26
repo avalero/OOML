@@ -72,7 +72,10 @@ public:
      */
     TransformMatrix & operator*(TransformMatrix const& matrix);
 
+    TransformMatrix getInv() const;
+
     void transform(TransformMatrix tr);
+    void relTransform(TransformMatrix tr);
 
     /**
       * \brief Applies an Euler rotation around the initial fixed z, x', z''

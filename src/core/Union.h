@@ -99,6 +99,8 @@ public:
    */
   virtual void printAst(IndentWriter& writer) const;
 
+  virtual RefSys getLink(int i) const;
+  virtual Links getLinks() const;
 
 protected:
   /**

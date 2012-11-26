@@ -68,3 +68,9 @@ RefSys RefSys::transform(TransformMatrix tr){
     _trans.transform(tr);
     return *this;
 }
+
+RefSys RefSys::relTransform(TransformMatrix tr){
+    _trans.relTransform(tr);
+    return *this;
+}
+

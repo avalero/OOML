@@ -507,21 +507,11 @@ public:
     }
 
     inline virtual Links getLinks() const{
-        if (get()->hasLinks()){
-            return get()->AbstractObject::getLinks();
-        }
-        else{
-            return get()->getLinks();
-        }
+        return get()->getLinks();
     }
 
     inline virtual RefSys getLink(int i) const{
-        if (get()->hasLinks()){
-            return get()->AbstractObject::getLink(i);
-        }
-        else{
-            return this->get()->getLink(i);
-        }
+        return this->get()->getLink(i);
     }
 
     /**

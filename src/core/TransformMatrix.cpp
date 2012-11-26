@@ -20,6 +20,33 @@
 #include "TransformMatrix.h"
 #include "Math.h"
 
+TransformMatrix TransformMatrix::getInv() const {
+    TransformMatrix inv;
+
+    //Traspose the 3x3 submatrix
+    for (int i=1;i<=3;i++){
+        for (int j=1;j<=3;j++){
+            inv.set(i,j,get(j,i));
+        }
+    }
+
+    //Las row all 0 but last
+    for (int i=1;i<=3;i++)
+        inv.set(4,i,0);
+    inv.set(4,4,1);
+
+    double e14 = get(1,4)*get(1,1) + get(2,4)*get(2,1) + get(3,4)*get(3,1) ;
+    double e24 = get(1,4)*get(1,2) + get(2,4)*get(2,2) + get(3,4)*get(3,2) ;
+    double e34 = get(1,4)*get(1,3) + get(2,4)*get(2,3) + get(3,4)*get(3,3) ;
+
+    inv.set(1,4,-e14);
+    inv.set(2,4,-e24);
+    inv.set(3,4,-e34);
+
+    return inv;
+
+}
+
 TransformMatrix& TransformMatrix::operator *(TransformMatrix const & matrix){
     TransformMatrix* result = new TransformMatrix();
 
@@ -38,6 +65,10 @@ TransformMatrix& TransformMatrix::operator *(TransformMatrix const & matrix){
 
 void TransformMatrix::transform(TransformMatrix tr){
     *this = tr * (*this);
+}
+
+void TransformMatrix::relTransform(TransformMatrix tr){
+    *this = (*this) * tr;
 }
 
 void TransformMatrix::rotateEulerZYZ(double z, double yp, double zpp){

@@ -34,27 +34,33 @@ RefSys TransformDecorator::getRefSys() const{
 }
 
 Links TransformDecorator::getLinks() const{
-    if (hasLinks()){
-        return AbstractObject::getLinks();
-    }
-    else{
-        Links links = ObjectDecorator::getLinks();
-        for (int i=0; i<links.size();i++){
-            links[i].transform(_tr);
-        }
-        return links;
-    }
+    Links lks1;
+    Links lks2;
+
+    lks1 = ObjectDecorator::getLinks();
+    for (int i=0; i<lks1.size();i++)
+        lks1[i].transform(_tr);
+
+    if (hasLinks())
+        lks2 = AbstractObject::getLinks();
+
+    lks1.insert( lks1.end(), lks2.begin(), lks2.end() );
+    return lks1;
 }
 
 RefSys TransformDecorator::getLink(int i) const{
-    if (hasLinks()){
-        return AbstractObject::getLink(i);
-    }
-    else{
-        RefSys link = ObjectDecorator::getLink(i);
-        link.transform(_tr);
-        return link;
-    }
+    Links lks1;
+    Links lks2;
+
+    lks1 = ObjectDecorator::getLinks();
+    for (int j=0; j<lks1.size();j++)
+        lks1[j].transform(_tr);
+
+    if (hasLinks())
+        lks2 = AbstractObject::getLinks();
+
+    lks1.insert( lks1.end(), lks2.begin(), lks2.end() );
+    return lks1[i];
 }
 
 void TransformDecorator::genScad(IndentWriter& writer) const

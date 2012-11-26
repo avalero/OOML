@@ -178,6 +178,7 @@ public:
     //void applyRotation(RotationalMatrix const & rot);
 
     RefSys transform(TransformMatrix tr);
+    RefSys relTransform(TransformMatrix tr);
 
     inline TransformMatrix getTransformMatrix() const {return _trans;}
 

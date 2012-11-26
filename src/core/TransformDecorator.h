@@ -63,11 +63,27 @@ public:
         {
 
             TransformMatrix tr2  = transform->_tr;
+
+            //if there are untransformed links apply before transforming
+            Links lks = transform->AbstractObject::getLinks();
+            for (int i=0;i<lks.size();i++){
+                RefSys lk = lks[i];
+                if (rel)
+                    lk.relTransform(tr2.getInv());
+                else
+                    lk.transform(tr2.getInv());
+
+                transform->get()->addLink(lk);
+            }
+
+
             if(rel){
                 tr = tr2 * tr;
             }else{
                 tr = tr * tr2;
             }
+            double x,y,z;tr.getGlobalXYZAngles(x,y,z);
+            double ax,ay,az; tr.getGlobalXYZAngles(ax,ay,az);
 
             return SharedPtr<AbstractObject>(new TransformDecorator(transform->get(),tr));
         }

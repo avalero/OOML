@@ -22,6 +22,42 @@
 
 #include <iostream>
 
+Links Union::getLinks() const {
+    if (hasLinks()){ //If the Union Component has links return all its links and all the children links
+        Links lks1 = AbstractObject::getLinks();
+        Links lks2 = _children[0]->getLinks();
+        lks1.insert( lks1.end(), lks2.begin(), lks2.end() );
+        return lks1;
+    }else{ //Return all the children links
+        Links lks1;
+        for (int j=0;j<_children.size();j++){
+            Links lks2 = _children[0]->getLinks();
+            lks1.insert( lks1.end(), lks2.begin(), lks2.end() );
+        }
+        return lks1;
+    }
+}
+
+RefSys Union::getLink(int i) const {
+    if (hasLinks()){ //If the Union Component has links consider all its links and all the children links
+        Links lks1 = AbstractObject::getLinks();
+        for (int j=0;j<_children.size();j++){
+            Links lks2 = _children[0]->getLinks();
+            lks1.insert( lks1.end(), lks2.begin(), lks2.end() );
+        }
+        return lks1[i];
+
+    }else{ //Consider all the children links
+        Links lks1;
+        for (int j=0;j<_children.size();j++){
+            Links lks2 = _children[0]->getLinks();
+            lks1.insert( lks1.end(), lks2.begin(), lks2.end() );
+        }
+        return lks1[i];
+    }
+}
+
+
 void Union::genScad(IndentWriter& writer) const
 {
 	writer << "union() {" << std::endl;
