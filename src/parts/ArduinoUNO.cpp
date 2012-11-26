@@ -62,14 +62,6 @@ Component ArduinoUNO::getBoard(double height, double holes_height, bool fill_hol
 	 else
 		 board = prism1 + prism2 - holes;
 
-     //Add one link at each drill
-     board.addLink(RefSys(13.97,2.54,0));
-     board.addLink(RefSys(66.04,7.62,0));
-     board.addLink(RefSys(66.04,35.56,0));
-     board.addLink(RefSys(15.24,50.8,0));
-
-
-
 	 return board.color(0,0,1);
 }
 

@@ -64,7 +64,7 @@ public:
 
             TransformMatrix tr2  = transform->_tr;
 
-            //if there are untransformed links apply before transforming
+            //if there are links apply inverse of transformation before transforming
             Links lks = transform->AbstractObject::getLinks();
             for (int i=0;i<lks.size();i++){
                 RefSys lk = lks[i];

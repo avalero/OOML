@@ -24,16 +24,29 @@ int main(int argc, char **argv)
 
     //Component cyl = Cylinder(3,50);
 
-    cube1.translate(5,0,0);
+    //cube1.translate(5,0,0);
 
     cube1.addLink(RefSys(0,0,0));
 
-    cube1.translate(5,0,0);
-    cube1.rotate(0,0,45);
+    Component cube2 = Cube(3,50,2);
+    cube2.addLink(RefSys(1.5,25,1.5));
+
+    //cube1.translate(5,0,0);
+    //cube1.rotate(0,0,45);
+
+    Component ardu = ArduinoUNO();
+
+    Component wheel = SharpIRSensor();
+
+    wheel.addLink(RefSys(10,10,10));
+
+    Component comp = ardu + cube1;
+
+    //comp.addLink(RefSys(20,20,20));
 
     /* Generate OpenSCAD code and write to file */
-    writer << LinksView(cube1);
-    writer << cube1;
+    writer << LinksView(comp);
+    writer << comp;
     file << writer ;
     file.close();
     std::cout << "Done" << std::endl;

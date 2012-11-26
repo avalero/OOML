@@ -20,6 +20,19 @@
 #include "RotMatrix.h"
 #include "Math.h"
 
+RotationalMatrix RotationalMatrix::getInv() const{
+    RotationalMatrix inv;
+
+    //Inverse of RotMatrix is its traspose
+    for (int i=1;i<=3;i++){
+        for (int j=1;j<=3;j++){
+            inv.set(i,j,get(j,i));
+        }
+    }
+
+    return inv;
+}
+
 RotationalMatrix& RotationalMatrix::operator *(RotationalMatrix const & matrix){
     RotationalMatrix* result = new RotationalMatrix();
 

@@ -124,6 +124,8 @@ public:
       */
     void getGlobalXYZAngles(double &x, double &y, double &z);
 
+    RotationalMatrix getInv() const;
+
 };
 
 #endif // REFSYS_H_INCLUDED

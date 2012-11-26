@@ -53,6 +53,10 @@ public:
 		_fourth_drill(fourth_hole)
   {
     rebuild();
+    addLink(RefSys(13.97,2.54,0));
+    addLink(RefSys(66.04,7.62,0));
+    addLink(RefSys(66.04,35.56,0));
+    addLink(RefSys(15.24,50.8,0));
   }
   /**
    * \brief Default destructor.
