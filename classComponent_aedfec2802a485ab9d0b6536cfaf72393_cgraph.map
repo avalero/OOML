@@ -1,5 +1,6 @@
 <map id="Component::scaledCopy" name="Component::scaledCopy">
 <area shape="rect" id="node3" href="$classComponent.html#a8775db6d1a2c1afc2e77cd3c8f39da6f" title="Default constructor." alt="" coords="223,5,385,35"/>
-<area shape="rect" id="node5" href="$classScaleDecorator.html#a308672869ccf13fb1ab3805543555706" title="Default factory method." alt="" coords="227,59,381,88"/>
-<area shape="rect" id="node7" href="$classSharedPtr.html#ac747048e189c896c11f0b436d02fc5e1" title="Gets the pointer hold." alt="" coords="435,59,541,88"/>
+<area shape="rect" id="node7" href="$classScaleDecorator.html#a308672869ccf13fb1ab3805543555706" title="Default factory method." alt="" coords="227,59,381,88"/>
+<area shape="rect" id="node5" href="$classAbstractObject.html#a5c6b81512c95f040f1d31dd65d4b3d57" title="AbstractObject::resetRefSys" alt="" coords="436,5,625,35"/>
+<area shape="rect" id="node9" href="$classSharedPtr.html#ac747048e189c896c11f0b436d02fc5e1" title="Gets the pointer hold." alt="" coords="477,59,584,88"/>
 </map>

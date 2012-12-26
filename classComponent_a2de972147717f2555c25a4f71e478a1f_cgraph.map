@@ -1,3 +1,6 @@
 <map id="Component::getRefSys" name="Component::getRefSys">
-<area shape="rect" id="node3" href="$classAbstractObject.html#a699b7bbe9185ea1695941ebce185a577" title="AbstractObject::getRefSys" alt="" coords="213,5,392,35"/>
+<area shape="rect" id="node3" href="$classAbstractObject.html#ad07e9542a7f687f73ded66b40cbc380a" title="AbstractObject::hasRefSys" alt="" coords="216,5,397,35"/>
+<area shape="rect" id="node5" href="$classAbstractObject.html#a699b7bbe9185ea1695941ebce185a577" title="AbstractObject::getRefSys" alt="" coords="448,57,627,87"/>
+<area shape="rect" id="node7" href="$classObjectDecorator.html#a7222de0f0a7e2bdb90e3ac24fd44fe86" title="ObjectDecorator::getRefSys" alt="" coords="213,109,400,139"/>
+<area shape="rect" id="node9" href="$classSharedPtr.html#ac747048e189c896c11f0b436d02fc5e1" title="Gets the pointer hold." alt="" coords="484,111,591,140"/>
 </map>

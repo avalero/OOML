@@ -1,14 +1,4 @@
 <map id="TransformDecorator::getLinks" name="TransformDecorator::getLinks">
-<area shape="rect" id="node3" href="$classTransformMatrix.html#a7f27e92f29e5d19fdffafb1fd987984b" title="Gets the translation wrt. the fixed axes x,y,z. Obtains the rotation angles about the fixed x..." alt="" coords="193,5,372,51"/>
-<area shape="rect" id="node5" href="$classTransformMatrix.html#a72b499093d75f6737660168c21b01a5b" title="Gets the rotation angles about the fixed axes x,y,z. Obtains the rotation angles about the fixed x..." alt="" coords="193,74,372,121"/>
-<area shape="rect" id="node9" href="$classRefSys.html#af6bf58cbf4ee5d308bd05ab976562c56" title="Rotates the reference system This methods rotates the reference system The origin is kept unmoved..." alt="" coords="229,144,336,173"/>
-<area shape="rect" id="node27" href="$classRefSys.html#a13d60d2bdaf80726fdd42694c1df98db" title="Translates the origin of the reference system This methods translated the origin of the reference sys..." alt="" coords="221,208,344,237"/>
-<area shape="rect" id="node7" href="$Math_8h.html#a638b7a3259334d9389d4dcb31cb7dfea" title="rad2deg" alt="" coords="476,83,543,112"/>
-<area shape="rect" id="node11" href="$classTransformMatrix.html#a20910983db5e4e0574879dd86b4f8a3e" title="Applies a Roll&#45;Pitch&#45;Yaw rotation around the initial fixed x, y, z Applies three rotations around the..." alt="" coords="431,140,588,169"/>
-<area shape="rect" id="node13" href="$classTransformMatrix.html#ad94010aa2da239614efbfb4926d63c04" title="Applies a rotation around initial fixed x axis Applies a rotation around current x axis..." alt="" coords="647,79,812,108"/>
-<area shape="rect" id="node19" href="$classTransformMatrix.html#ac76ffec4c53cd0b70b0bc86a67f95ad0" title="Applies a rotation around initial fixed y axis Applies a rotation around current y axis..." alt="" coords="647,132,812,161"/>
-<area shape="rect" id="node23" href="$classTransformMatrix.html#a4b485e8c3d73e3b687b4859b4cc11408" title="Applies a rotation around initial fixed current z axis Applies a rotation around current z axis..." alt="" coords="647,185,812,215"/>
-<area shape="rect" id="node15" href="$Math_8h.html#a021636ed21e2cb128cb67fa392983ac0" title="deg2rad" alt="" coords="871,132,937,161"/>
-<area shape="rect" id="node17" href="$classMatrix.html#a820d3e49ffea766faf310729803e1df1" title="Matrix::set" alt="" coords="863,185,945,215"/>
-<area shape="rect" id="node29" href="$classTransformMatrix.html#ae2b5dc7c41da84953f791e12e0b22964" title="performs a translation" alt="" coords="423,229,596,259"/>
+<area shape="rect" id="node3" href="$classAbstractObject.html#ad6b31861029adf226524bbaf066ec7a6" title="Returns if the Object has links." alt="" coords="193,5,361,35"/>
+<area shape="rect" id="node5" href="$classAbstractObject.html#ab0650b0b0c6fd0e692f976bcc1f3a065" title="AbstractObject::getLinks" alt="" coords="195,59,360,88"/>
 </map>

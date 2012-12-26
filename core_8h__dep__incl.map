@@ -1,7 +1,9 @@
 <map id="src/core.h" name="src/core.h">
-<area shape="rect" id="node3" href="$Bearings_8h.html" title="src/components/Bearings.h" alt="" coords="16,83,197,112"/>
-<area shape="rect" id="node12" href="$Nuts_8h.html" title="src/components/Nuts.h" alt="" coords="221,83,379,112"/>
-<area shape="rect" id="node5" href="$Bearings_8cpp.html" title="src/components/Bearings.cpp" alt="" coords="5,237,200,267"/>
-<area shape="rect" id="node7" href="$components_8h.html" title="src/components.h" alt="" coords="144,160,269,189"/>
-<area shape="rect" id="node10" href="$Nuts_8cpp.html" title="src/components/Nuts.cpp" alt="" coords="224,237,395,267"/>
+<area shape="rect" id="node3" href="$Bearings_8h.html" title="src/parts/Bearings.h" alt="" coords="24,83,163,112"/>
+<area shape="rect" id="node9" href="$Nuts_8h.html" title="src/parts/Nuts.h" alt="" coords="187,83,301,112"/>
+<area shape="rect" id="node14" href="$StepperMotors_8h.html" title="src/parts/StepperMotors.h" alt="" coords="325,83,499,112"/>
+<area shape="rect" id="node16" href="$StepperMotors_8cpp.html" title="src/parts/StepperMotors.cpp" alt="" coords="443,160,629,189"/>
+<area shape="rect" id="node5" href="$Bearings_8cpp.html" title="src/parts/Bearings.cpp" alt="" coords="5,160,157,189"/>
+<area shape="rect" id="node7" href="$parts_8h.html" title="src/parts.h" alt="" coords="181,160,264,189"/>
+<area shape="rect" id="node11" href="$Nuts_8cpp.html" title="src/parts/Nuts.cpp" alt="" coords="288,160,419,189"/>
 </map>

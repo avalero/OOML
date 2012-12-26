@@ -11,5 +11,6 @@ var searchData=
   ['sphere',['Sphere',['../classSphere.html',1,'']]],
   ['sphereobject',['SphereObject',['../classSphereObject.html',1,'']]],
   ['square',['Square',['../classSquare.html',1,'']]],
+  ['steppermotor',['StepperMotor',['../classStepperMotor.html',1,'']]],
   ['string',['String',['../classString.html',1,'']]]
 ];

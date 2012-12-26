@@ -113,40 +113,67 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="classUnion.html#af306764b8dfb6c9e8f70b7c374dd9af7">   25</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classUnion.html#af306764b8dfb6c9e8f70b7c374dd9af7" title="Generate SCAD output for this object.">Union::genScad</a>(<a class="code" href="classIndentWriter.html" title="Indented output writer.">IndentWriter</a>&amp; writer)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        writer &lt;&lt; <span class="stringliteral">&quot;union() {&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                <a class="code" href="classIndentBlock.html" title="Indent block class.">IndentBlock</a> block(writer);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                <a class="code" href="classUnion.html#af306764b8dfb6c9e8f70b7c374dd9af7" title="Generate SCAD output for this object.">CompositeObject::genScad</a>(writer);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        writer &lt;&lt; <span class="stringliteral">&quot;} // End union&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="classUnion.html#a8aeb2982b0e0ef6ce23aca783384d6ba">   35</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classUnion.html#a8aeb2982b0e0ef6ce23aca783384d6ba" title="Generate AST output for this object.">Union::printAst</a>(<a class="code" href="classIndentWriter.html" title="Indented output writer.">IndentWriter</a>&amp; writer)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        writer &lt;&lt; <span class="stringliteral">&quot;// UNION()&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                <a class="code" href="classIndentBlock.html" title="Indent block class.">IndentBlock</a> block(writer);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                <a class="code" href="classUnion.html#a8aeb2982b0e0ef6ce23aca783384d6ba" title="Generate AST output for this object.">CompositeObject::printAst</a>(writer);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="classUnion.html#acdb69c983d0a7c549a213f381ed38abc">   25</a></span>&#160;<a class="code" href="AbstractObject_8h.html#afbf2a7fd8545c773204ac992175ecf74">Links</a> <a class="code" href="classUnion.html#acdb69c983d0a7c549a213f381ed38abc">Union::getLinks</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">//std::cout &lt;&lt; &quot;I am here&quot; &lt;&lt; std::endl;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="AbstractObject_8h.html#afbf2a7fd8545c773204ac992175ecf74">Links</a> lks1;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classAbstractObject.html#ad6b31861029adf226524bbaf066ec7a6" title="Returns if the Object has links.">hasLinks</a>()){ <span class="comment">//If the Union Component has links return all its links and all the children links</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        lks1 = <a class="code" href="classUnion.html#acdb69c983d0a7c549a213f381ed38abc">AbstractObject::getLinks</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0;j&lt;<a class="code" href="classCompositeObject.html#aa5e174d56407e7e7e4616990949553b3">_children</a>.size();j++){</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="AbstractObject_8h.html#afbf2a7fd8545c773204ac992175ecf74">Links</a> lks2 = <a class="code" href="classCompositeObject.html#aa5e174d56407e7e7e4616990949553b3">_children</a>[j]-&gt;getLinks();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        lks1.insert( lks1.end(), lks2.begin(), lks2.end() );</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> lks1;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="classUnion.html#aabf9e6d1f9a183b008c45e471878bee5">   41</a></span>&#160;<a class="code" href="classRefSys.html" title="3D point primitive object">RefSys</a> <a class="code" href="classUnion.html#aabf9e6d1f9a183b008c45e471878bee5">Union::getLink</a>(<span class="keywordtype">int</span> i)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="AbstractObject_8h.html#afbf2a7fd8545c773204ac992175ecf74">Links</a> lks1, lks2;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="Union_8h.html#a4bd396e9dea95407a61ac9b4b079c063">   44</a></span>&#160;<a class="code" href="classComponent.html" title="Component class.">Component</a> <a class="code" href="Union_8cpp.html#a853d8866133f3b7555925377a17a27c2">operator+</a>(<a class="code" href="classComponent.html" title="Component class.">Component</a> <span class="keyword">const</span>&amp; lhs, <a class="code" href="classComponent.html" title="Component class.">Component</a> <span class="keyword">const</span>&amp; rhs)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;         <a class="code" href="classCompositeComponent.html" title="Composite component interface.">CompositeComponent</a> result(<a class="code" href="classUnion.html#abd6d383545bd9e28a2b2a73f716c9169" title="Static factory method.">Union::create</a>());</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;         result &lt;&lt; lhs.<a class="code" href="classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version.">get</a>() &lt;&lt; rhs.<a class="code" href="classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version.">get</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;     <span class="comment">//keep the links (transformed if neccessary)</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;     result.<a class="code" href="classAbstractObject.html#ab10fcc764ffe95d859beedaaf6b54a7e">setLinks</a>(lhs.<a class="code" href="classComponent.html#a49bda799c32846b690940adc73ef49a0">getLinks</a>());</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classAbstractObject.html#ad6b31861029adf226524bbaf066ec7a6" title="Returns if the Object has links.">hasLinks</a>()){ <span class="comment">//If the Union Component has links return all its links and all the children links</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        lks1 = <a class="code" href="classUnion.html#acdb69c983d0a7c549a213f381ed38abc">AbstractObject::getLinks</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0;j&lt;<a class="code" href="classCompositeObject.html#aa5e174d56407e7e7e4616990949553b3">_children</a>.size();j++){</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        lks2 = <a class="code" href="classCompositeObject.html#aa5e174d56407e7e7e4616990949553b3">_children</a>[j]-&gt;getLinks();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        lks1.insert( lks1.end(), lks2.begin(), lks2.end() );</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;         <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> lks1[i];</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="classUnion.html#af306764b8dfb6c9e8f70b7c374dd9af7">   57</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classUnion.html#af306764b8dfb6c9e8f70b7c374dd9af7" title="Generate SCAD output for this object.">Union::genScad</a>(<a class="code" href="classIndentWriter.html" title="Indented output writer.">IndentWriter</a>&amp; writer)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        writer &lt;&lt; <span class="stringliteral">&quot;union() {&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <a class="code" href="classIndentBlock.html" title="Indent block class.">IndentBlock</a> block(writer);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                <a class="code" href="classUnion.html#af306764b8dfb6c9e8f70b7c374dd9af7" title="Generate SCAD output for this object.">CompositeObject::genScad</a>(writer);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        writer &lt;&lt; <span class="stringliteral">&quot;} // End union&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="code" href="classUnion.html#a8aeb2982b0e0ef6ce23aca783384d6ba">   67</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classUnion.html#a8aeb2982b0e0ef6ce23aca783384d6ba" title="Generate AST output for this object.">Union::printAst</a>(<a class="code" href="classIndentWriter.html" title="Indented output writer.">IndentWriter</a>&amp; writer)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        writer &lt;&lt; <span class="stringliteral">&quot;// UNION()&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <a class="code" href="classIndentBlock.html" title="Indent block class.">IndentBlock</a> block(writer);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <a class="code" href="classUnion.html#a8aeb2982b0e0ef6ce23aca783384d6ba" title="Generate AST output for this object.">CompositeObject::printAst</a>(writer);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="code" href="Union_8h.html#a4bd396e9dea95407a61ac9b4b079c063">   76</a></span>&#160;<a class="code" href="classComponent.html" title="Component class.">Component</a> <a class="code" href="Union_8cpp.html#a853d8866133f3b7555925377a17a27c2">operator+</a>(<a class="code" href="classComponent.html" title="Component class.">Component</a> <span class="keyword">const</span>&amp; lhs, <a class="code" href="classComponent.html" title="Component class.">Component</a> <span class="keyword">const</span>&amp; rhs)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;         <a class="code" href="classCompositeComponent.html" title="Composite component interface.">CompositeComponent</a> result(<a class="code" href="classUnion.html#abd6d383545bd9e28a2b2a73f716c9169" title="Static factory method.">Union::create</a>());</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;         result &lt;&lt; lhs.<a class="code" href="classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version.">get</a>() &lt;&lt; rhs.<a class="code" href="classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version.">get</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;         <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 10 2012 19:45:53 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2012 16:47:36 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

@@ -1,10 +1,18 @@
 <map id="String::String" name="String::String">
-<area shape="rect" id="node3" href="$classUnion.html#abd6d383545bd9e28a2b2a73f716c9169" title="Static factory method." alt="" coords="176,52,275,81"/>
-<area shape="rect" id="node5" href="$classComponent.html#a0df678527e9d0d65a749bbc5883a71af" title="Translate the component." alt="" coords="152,105,299,135"/>
-<area shape="rect" id="node17" href="$classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version." alt="" coords="589,165,731,195"/>
-<area shape="rect" id="node7" href="$classTransformMatrix.html#ae2b5dc7c41da84953f791e12e0b22964" title="performs a translation" alt="" coords="348,25,521,55"/>
-<area shape="rect" id="node11" href="$classTransformDecorator.html#a0aa4971660b91bebb8ad53e682b00bd1" title="Default factory method." alt="" coords="365,97,504,143"/>
-<area shape="rect" id="node9" href="$classMatrix.html#a820d3e49ffea766faf310729803e1df1" title="Matrix::set" alt="" coords="619,5,701,35"/>
-<area shape="rect" id="node13" href="$classTransformMatrix.html#ae53e1d2436656a41d8689cd818a05f88" title="checke if matrix equals identity" alt="" coords="571,59,749,88"/>
-<area shape="rect" id="node15" href="$classSharedPtr.html#ac747048e189c896c11f0b436d02fc5e1" title="Gets the pointer hold." alt="" coords="607,112,713,141"/>
+<area shape="rect" id="node3" href="$classUnion.html#abd6d383545bd9e28a2b2a73f716c9169" title="Static factory method." alt="" coords="176,161,275,191"/>
+<area shape="rect" id="node5" href="$classComponent.html#a0df678527e9d0d65a749bbc5883a71af" title="Translate the component." alt="" coords="152,215,299,244"/>
+<area shape="rect" id="node28" href="$classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version." alt="" coords="591,417,732,447"/>
+<area shape="rect" id="node7" href="$classTransformMatrix.html#ae2b5dc7c41da84953f791e12e0b22964" title="performs a translation" alt="" coords="348,52,521,81"/>
+<area shape="rect" id="node11" href="$classTransformDecorator.html#a0aa4971660b91bebb8ad53e682b00bd1" title="Default factory method." alt="" coords="365,206,504,253"/>
+<area shape="rect" id="node9" href="$classMatrix.html#a820d3e49ffea766faf310729803e1df1" title="Matrix::set" alt="" coords="859,56,941,85"/>
+<area shape="rect" id="node13" href="$classTransformMatrix.html#ae53e1d2436656a41d8689cd818a05f88" title="checke if matrix equals identity" alt="" coords="572,28,751,57"/>
+<area shape="rect" id="node15" href="$classSharedPtr.html#ac747048e189c896c11f0b436d02fc5e1" title="Gets the pointer hold." alt="" coords="608,81,715,111"/>
+<area shape="rect" id="node17" href="$classRefSys.html#a964c20355e817d51cc44f4370f41056f" title="RefSys::relTransform" alt="" coords="588,188,735,217"/>
+<area shape="rect" id="node21" href="$classTransformMatrix.html#adb4b8dfd970e2970d393e045d1a41b70" title="TransformMatrix::getInv" alt="" coords="581,135,741,164"/>
+<area shape="rect" id="node24" href="$classRefSys.html#a257068ba4a052c855587d334edec48ff" title="Rotates the reference system This methods rotates the reference system with a rotational matrix..." alt="" coords="597,241,725,271"/>
+<area shape="rect" id="node30" href="$classAbstractObject.html#afeb1ed691f3127374a16d0a3297f6917" title="Adds a Link to the system. System of the Link." alt="" coords="580,295,743,324"/>
+<area shape="rect" id="node32" href="$classTransformMatrix.html#a72b499093d75f6737660168c21b01a5b" title="Gets the rotation angles about the fixed axes x,y,z. Obtains the rotation angles about the fixed x..." alt="" coords="572,347,751,394"/>
+<area shape="rect" id="node19" href="$classTransformMatrix.html#a2b8dd01bc118116b0ca134643a4b8cc9" title="TransformMatrix::relTransform" alt="" coords="801,188,999,217"/>
+<area shape="rect" id="node26" href="$classTransformMatrix.html#ae5e480c59e5afd8367cc456789d5f79d" title="TransformMatrix::transform" alt="" coords="811,241,989,271"/>
+<area shape="rect" id="node34" href="$Math_8h.html#a638b7a3259334d9389d4dcb31cb7dfea" title="rad2deg" alt="" coords="867,356,933,385"/>
 </map>

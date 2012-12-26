@@ -1,6 +1,5 @@
 <map id="AbstractObject::getRefSys" name="AbstractObject::getRefSys">
-<area shape="rect" id="node3" href="$classRefSysView.html#a4f750fae643594a5914c732ea7ca2e8a" title="RefSysView::RefSysView" alt="" coords="241,5,417,35"/>
-<area shape="rect" id="node5" href="$classComponent.html#a2de972147717f2555c25a4f71e478a1f" title="Component::getRefSys" alt="" coords="251,59,408,88"/>
-<area shape="rect" id="node7" href="$classCompositeObject.html#a9564aacd86b82a932e8bc703bc448b30" title="CompositeObject::getRefSys" alt="" coords="233,112,425,141"/>
-<area shape="rect" id="node9" href="$classObjectDecorator.html#a7222de0f0a7e2bdb90e3ac24fd44fe86" title="ObjectDecorator::getRefSys" alt="" coords="236,165,423,195"/>
+<area shape="rect" id="node3" href="$classComponent.html#a2de972147717f2555c25a4f71e478a1f" title="Component::getRefSys" alt="" coords="468,5,625,35"/>
+<area shape="rect" id="node7" href="$classObjectDecorator.html#a7222de0f0a7e2bdb90e3ac24fd44fe86" title="ObjectDecorator::getRefSys" alt="" coords="232,31,419,60"/>
+<area shape="rect" id="node5" href="$classRefSysView.html#a4f750fae643594a5914c732ea7ca2e8a" title="RefSysView::RefSysView" alt="" coords="675,5,851,35"/>
 </map>

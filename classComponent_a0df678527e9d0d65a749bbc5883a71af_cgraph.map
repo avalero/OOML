@@ -1,8 +1,16 @@
 <map id="Component::translate" name="Component::translate">
-<area shape="rect" id="node3" href="$classTransformMatrix.html#ae2b5dc7c41da84953f791e12e0b22964" title="performs a translation" alt="" coords="201,17,375,47"/>
-<area shape="rect" id="node7" href="$classTransformDecorator.html#a0aa4971660b91bebb8ad53e682b00bd1" title="Default factory method." alt="" coords="219,93,357,139"/>
-<area shape="rect" id="node5" href="$classMatrix.html#a820d3e49ffea766faf310729803e1df1" title="Matrix::set" alt="" coords="472,5,555,35"/>
-<area shape="rect" id="node9" href="$classTransformMatrix.html#ae53e1d2436656a41d8689cd818a05f88" title="checke if matrix equals identity" alt="" coords="424,59,603,88"/>
-<area shape="rect" id="node11" href="$classSharedPtr.html#ac747048e189c896c11f0b436d02fc5e1" title="Gets the pointer hold." alt="" coords="460,112,567,141"/>
-<area shape="rect" id="node13" href="$classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version." alt="" coords="443,165,584,195"/>
+<area shape="rect" id="node3" href="$classTransformMatrix.html#ae2b5dc7c41da84953f791e12e0b22964" title="performs a translation" alt="" coords="201,52,375,81"/>
+<area shape="rect" id="node7" href="$classTransformDecorator.html#a0aa4971660b91bebb8ad53e682b00bd1" title="Default factory method." alt="" coords="219,179,357,226"/>
+<area shape="rect" id="node5" href="$classMatrix.html#a820d3e49ffea766faf310729803e1df1" title="Matrix::set" alt="" coords="712,56,795,85"/>
+<area shape="rect" id="node9" href="$classTransformMatrix.html#ae53e1d2436656a41d8689cd818a05f88" title="checke if matrix equals identity" alt="" coords="425,28,604,57"/>
+<area shape="rect" id="node11" href="$classSharedPtr.html#ac747048e189c896c11f0b436d02fc5e1" title="Gets the pointer hold." alt="" coords="461,81,568,111"/>
+<area shape="rect" id="node13" href="$classRefSys.html#a964c20355e817d51cc44f4370f41056f" title="RefSys::relTransform" alt="" coords="441,188,588,217"/>
+<area shape="rect" id="node17" href="$classTransformMatrix.html#adb4b8dfd970e2970d393e045d1a41b70" title="TransformMatrix::getInv" alt="" coords="435,135,595,164"/>
+<area shape="rect" id="node20" href="$classRefSys.html#a257068ba4a052c855587d334edec48ff" title="Rotates the reference system This methods rotates the reference system with a rotational matrix..." alt="" coords="451,241,579,271"/>
+<area shape="rect" id="node24" href="$classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version." alt="" coords="444,295,585,324"/>
+<area shape="rect" id="node26" href="$classAbstractObject.html#afeb1ed691f3127374a16d0a3297f6917" title="Adds a Link to the system. System of the Link." alt="" coords="433,348,596,377"/>
+<area shape="rect" id="node28" href="$classTransformMatrix.html#a72b499093d75f6737660168c21b01a5b" title="Gets the rotation angles about the fixed axes x,y,z. Obtains the rotation angles about the fixed x..." alt="" coords="425,401,604,447"/>
+<area shape="rect" id="node15" href="$classTransformMatrix.html#a2b8dd01bc118116b0ca134643a4b8cc9" title="TransformMatrix::relTransform" alt="" coords="655,188,852,217"/>
+<area shape="rect" id="node22" href="$classTransformMatrix.html#ae5e480c59e5afd8367cc456789d5f79d" title="TransformMatrix::transform" alt="" coords="664,241,843,271"/>
+<area shape="rect" id="node30" href="$Math_8h.html#a638b7a3259334d9389d4dcb31cb7dfea" title="rad2deg" alt="" coords="720,409,787,439"/>
 </map>

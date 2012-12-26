@@ -1,3 +1,4 @@
 <map id="Point2D" name="Point2D">
-<area shape="rect" id="node2" href="$classAbstractObject.html" title="Abstract object interface." alt="" coords="5,5,115,35"/>
+<area shape="rect" id="node2" href="$classAbstractObject.html" title="Abstract object interface." alt="" coords="5,101,115,131"/>
+<area shape="rect" id="node4" href="$classRefSys.html" title="3D point primitive object" alt="" coords="27,5,93,35"/>
 </map>

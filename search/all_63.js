@@ -7,6 +7,7 @@ var searchData=
   ['circle',['Circle',['../classCircle.html',1,'Circle'],['../classCircle.html#ad1ecfcfc7bf34529c6a6d6c448bf70fe',1,'Circle::Circle()'],['../classCircle.html#a7f3a8aeb61b805d81a2b3a4ba604b9e4',1,'Circle::Circle(double radius, unsigned int faces)']]],
   ['circle_2ecpp',['Circle.cpp',['../Circle_8cpp.html',1,'']]],
   ['circle_2eh',['Circle.h',['../Circle_8h.html',1,'']]],
+  ['clearlinks',['clearLinks',['../classAbstractObject.html#a4d03017dd1b6c73a08bfeba26b416005',1,'AbstractObject::clearLinks()'],['../classComponent.html#a16546160ed6ec4fe7021367bd232a0b8',1,'Component::clearLinks()']]],
   ['close',['close',['../classPolygon.html#a21ee9bf6e9f6ea3ec4faf16a4b36f3e9',1,'Polygon']]],
   ['color',['color',['../classComponent.html#a2a09a1cc2732ab4ab42c10d36f6b8b6d',1,'Component']]],
   ['colordecorator',['ColorDecorator',['../classColorDecorator.html',1,'ColorDecorator'],['../classColorDecorator.html#a95a3a3450137d28ba56b7509552b1ee3',1,'ColorDecorator::ColorDecorator()'],['../classColorDecorator.html#a4085779b62915b87bc5a5bb6a2c43125',1,'ColorDecorator::ColorDecorator(SharedPtr&lt; AbstractObject &gt; const &amp;decorated, double r, double g, double b, double a=1.0)']]],

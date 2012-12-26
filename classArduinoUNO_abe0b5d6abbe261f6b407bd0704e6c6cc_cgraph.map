@@ -1,3 +1,6 @@
 <map id="ArduinoUNO::ArduinoUNO" name="ArduinoUNO::ArduinoUNO">
-<area shape="rect" id="node3" href="$classAbstractPart.html#a06732798fd060a805f89e2a9a66e5368" title="Rebuild the part." alt="" coords="232,5,373,35"/>
+<area shape="rect" id="node3" href="$classAbstractPart.html#a06732798fd060a805f89e2a9a66e5368" title="Rebuild the part." alt="" coords="233,5,375,35"/>
+<area shape="rect" id="node7" href="$classComponent.html#ad4606b806f4e736f98fe6090702c6c25" title="Adds a Link to the system. System of the Link." alt="" coords="233,59,375,88"/>
+<area shape="rect" id="node5" href="$classAbstractObject.html#a5c6b81512c95f040f1d31dd65d4b3d57" title="AbstractObject::resetRefSys" alt="" coords="425,5,615,35"/>
+<area shape="rect" id="node9" href="$classAbstractObject.html#a274595dc90ceaf2e675623b3d07a912c" title="AbstractObject::links" alt="" coords="448,59,592,88"/>
 </map>

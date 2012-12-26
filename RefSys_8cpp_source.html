@@ -154,10 +154,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    _trans.<a class="code" href="classTransformMatrix.html#aa4a1f915ff428d0e3bb9fa43dd0974b5" title="Applies an Euler rotation around the local reference system z, x&#39;, z&#39;&#39; Applies three rotations around...">relRotateEulerZXZ</a>(z,xp,zpp);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="code" href="classRefSys.html#a257068ba4a052c855587d334edec48ff">   67</a></span>&#160;<a class="code" href="classRefSys.html" title="3D point primitive object">RefSys</a> <a class="code" href="classRefSys.html#a257068ba4a052c855587d334edec48ff" title="Rotates the reference system This methods rotates the reference system with a rotational matrix...">RefSys::transform</a>(<a class="code" href="classTransformMatrix.html" title="Homogeneous Transformation Matrix.">TransformMatrix</a> tr){</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    _trans.<a class="code" href="classTransformMatrix.html#ae5e480c59e5afd8367cc456789d5f79d">transform</a>(tr);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="code" href="classRefSys.html#a964c20355e817d51cc44f4370f41056f">   72</a></span>&#160;<a class="code" href="classRefSys.html" title="3D point primitive object">RefSys</a> <a class="code" href="classRefSys.html#a964c20355e817d51cc44f4370f41056f">RefSys::relTransform</a>(<a class="code" href="classTransformMatrix.html" title="Homogeneous Transformation Matrix.">TransformMatrix</a> tr){</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    _trans.<a class="code" href="classTransformMatrix.html#a2b8dd01bc118116b0ca134643a4b8cc9">relTransform</a>(tr);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 10 2012 19:45:53 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2012 16:47:36 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

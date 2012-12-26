@@ -1,5 +1,14 @@
 <map id="TransformDecorator::create" name="TransformDecorator::create">
-<area shape="rect" id="node3" href="$classTransformMatrix.html#ae53e1d2436656a41d8689cd818a05f88" title="checke if matrix equals identity" alt="" coords="192,5,371,35"/>
-<area shape="rect" id="node5" href="$classSharedPtr.html#ac747048e189c896c11f0b436d02fc5e1" title="Gets the pointer hold." alt="" coords="228,59,335,88"/>
-<area shape="rect" id="node7" href="$classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version." alt="" coords="211,112,352,141"/>
+<area shape="rect" id="node3" href="$classTransformMatrix.html#ae53e1d2436656a41d8689cd818a05f88" title="checke if matrix equals identity" alt="" coords="193,5,372,35"/>
+<area shape="rect" id="node5" href="$classSharedPtr.html#ac747048e189c896c11f0b436d02fc5e1" title="Gets the pointer hold." alt="" coords="229,59,336,88"/>
+<area shape="rect" id="node7" href="$classRefSys.html#a964c20355e817d51cc44f4370f41056f" title="RefSys::relTransform" alt="" coords="209,112,356,141"/>
+<area shape="rect" id="node11" href="$classTransformMatrix.html#adb4b8dfd970e2970d393e045d1a41b70" title="TransformMatrix::getInv" alt="" coords="203,165,363,195"/>
+<area shape="rect" id="node15" href="$classRefSys.html#a257068ba4a052c855587d334edec48ff" title="Rotates the reference system This methods rotates the reference system with a rotational matrix..." alt="" coords="219,219,347,248"/>
+<area shape="rect" id="node19" href="$classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version." alt="" coords="212,272,353,301"/>
+<area shape="rect" id="node21" href="$classAbstractObject.html#afeb1ed691f3127374a16d0a3297f6917" title="Adds a Link to the system. System of the Link." alt="" coords="201,325,364,355"/>
+<area shape="rect" id="node23" href="$classTransformMatrix.html#a72b499093d75f6737660168c21b01a5b" title="Gets the rotation angles about the fixed axes x,y,z. Obtains the rotation angles about the fixed x..." alt="" coords="193,378,372,425"/>
+<area shape="rect" id="node9" href="$classTransformMatrix.html#a2b8dd01bc118116b0ca134643a4b8cc9" title="TransformMatrix::relTransform" alt="" coords="423,112,620,141"/>
+<area shape="rect" id="node13" href="$classMatrix.html#a820d3e49ffea766faf310729803e1df1" title="Matrix::set" alt="" coords="480,165,563,195"/>
+<area shape="rect" id="node17" href="$classTransformMatrix.html#ae5e480c59e5afd8367cc456789d5f79d" title="TransformMatrix::transform" alt="" coords="432,219,611,248"/>
+<area shape="rect" id="node25" href="$Math_8h.html#a638b7a3259334d9389d4dcb31cb7dfea" title="rad2deg" alt="" coords="488,387,555,416"/>
 </map>

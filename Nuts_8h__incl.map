@@ -1,4 +1,4 @@
-<map id="src/components/Nuts.h" name="src/components/Nuts.h">
+<map id="src/parts/Nuts.h" name="src/parts/Nuts.h">
 <area shape="rect" id="node3" href="$core_8h.html" title="../core.h" alt="" coords="2690,83,2759,112"/>
 <area shape="rect" id="node93" href="$AbstractPart_8h.html" title="core/AbstractPart.h" alt="" coords="4814,160,4947,189"/>
 <area shape="rect" id="node5" href="$AbstractObject_8h.html" title="core/AbstractObject.h" alt="" coords="2395,624,2544,653"/>

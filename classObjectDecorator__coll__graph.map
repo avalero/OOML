@@ -1,3 +1,4 @@
 <map id="ObjectDecorator" name="ObjectDecorator">
-<area shape="rect" id="node2" href="$classAbstractObject.html" title="Abstract object interface." alt="" coords="9,5,119,35"/>
+<area shape="rect" id="node2" href="$classAbstractObject.html" title="Abstract object interface." alt="" coords="9,101,119,131"/>
+<area shape="rect" id="node4" href="$classRefSys.html" title="3D point primitive object" alt="" coords="31,5,97,35"/>
 </map>

@@ -1,4 +1,5 @@
 <map id="Component::getLink" name="Component::getLink">
-<area shape="rect" id="node3" href="$classAbstractObject.html#ab10fcc764ffe95d859beedaaf6b54a7e" title="AbstractObject::setLinks" alt="" coords="193,5,359,35"/>
-<area shape="rect" id="node5" href="$classAbstractObject.html#a1ed07929ab8bef9fd5f33f71890388cf" title="AbstractObject::getLink" alt="" coords="197,59,355,88"/>
+<area shape="rect" id="node3" href="$classObjectDecorator.html#a6f1de8fe17e7666c0d79f1018319b8e0" title="ObjectDecorator::getLink" alt="" coords="193,32,359,61"/>
+<area shape="rect" id="node5" href="$classSharedPtr.html#ac747048e189c896c11f0b436d02fc5e1" title="Gets the pointer hold." alt="" coords="435,5,541,35"/>
+<area shape="rect" id="node7" href="$classAbstractObject.html#a1ed07929ab8bef9fd5f33f71890388cf" title="AbstractObject::getLink" alt="" coords="409,59,567,88"/>
 </map>

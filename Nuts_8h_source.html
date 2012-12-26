@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>OOML: src/components/Nuts.h Source File</title>
+<title>OOML: src/parts/Nuts.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -81,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_3c4c7c1a85608ccd561c026bec818e51.html">components</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_74468c6aa5627e796dac9600ce6ada7d.html">parts</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -136,7 +136,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="Nuts_8h.html#a083e38a97ac2f599d03ae16c34bb16a8">   45</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OOMLParts_EXP_DEC</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="Nuts_8h.html#abf74dfd688b4203cefa6d49f8d14403e">   48</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="Nuts_8h.html#abf74dfd688b4203cefa6d49f8d14403e">Metric</a>{<a class="code" href="Nuts_8h.html#abf74dfd688b4203cefa6d49f8d14403ea3a20456b77b5a99695ff09fcede047a4">M3</a>,<a class="code" href="Nuts_8h.html#abf74dfd688b4203cefa6d49f8d14403eaee2d528d4709f2b27aecc22948517d8b">M4</a>};</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="Nuts_8h.html#abf74dfd688b4203cefa6d49f8d14403e">   48</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="Nuts_8h.html#abf74dfd688b4203cefa6d49f8d14403e">Metric</a>{<a class="code" href="Nuts_8h.html#abf74dfd688b4203cefa6d49f8d14403ea3a20456b77b5a99695ff09fcede047a4">M3</a>,<a class="code" href="Nuts_8h.html#abf74dfd688b4203cefa6d49f8d14403eaee2d528d4709f2b27aecc22948517d8b">M4</a>,<a class="code" href="Nuts_8h.html#abf74dfd688b4203cefa6d49f8d14403ea143e24f959b490325e0f239db0a42064">M5</a>,<a class="code" href="Nuts_8h.html#abf74dfd688b4203cefa6d49f8d14403ea0ec7b9021e1caa50904888afd0dd5ec0">M6</a>,<a class="code" href="Nuts_8h.html#abf74dfd688b4203cefa6d49f8d14403ea106132653be26ab272163c6764e38c7f">M8</a>};</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="classNutShape.html">   50</a></span>&#160;<span class="keyword">class </span><a class="code" href="Nuts_8h.html#a083e38a97ac2f599d03ae16c34bb16a8">OOMLParts_EXP_DEC</a> <a class="code" href="classNutShape.html">NutShape</a> : <span class="keyword">public</span> <a class="code" href="classAbstractPart.html" title="Color decorator.">AbstractPart</a></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
@@ -144,28 +144,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="structNutShape_1_1Data.html">   57</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structNutShape_1_1Data.html">Data</a>{</div>
 <div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="structNutShape_1_1Data.html#ae834e3624b8b18e22814cddb932fe2a2">   58</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="structNutShape_1_1Data.html#ae834e3624b8b18e22814cddb932fe2a2">width_across_flats</a>; <span class="comment">// (mm)</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="code" href="structNutShape_1_1Data.html#a7cfac5e6932d1e9cb895e6fd11a0f480">   59</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="structNutShape_1_1Data.html#a7cfac5e6932d1e9cb895e6fd11a0f480">witdth_across_coners</a>; <span class="comment">//&lt;! the rod diameter (mm)</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="code" href="structNutShape_1_1Data.html#a40ff8f84c72500b69dec8531569cd71b">   60</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="structNutShape_1_1Data.html#a40ff8f84c72500b69dec8531569cd71b">thickness</a>; <span class="comment">//&lt;! the rod lenght (mm)</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    };</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classNutShape.html">NutShape</a>(<a class="code" href="Nuts_8h.html#abf74dfd688b4203cefa6d49f8d14403e">Metric</a> m);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="code" href="classNutShape.html#a1d9790acf6f234bd5425b1b55791427f">   72</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="structNutShape_1_1Data.html">Data</a> <a class="code" href="classNutShape.html#a1d9790acf6f234bd5425b1b55791427f" title="returns part data">getData</a>()<span class="keyword"> const</span>{<span class="keywordflow">return</span> data;}</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classComponent.html" title="Component class.">Component</a> <a class="code" href="classAbstractPart.html#ab239b352fcd9263304e0bb5543ad1009" title="Build the part.">build</a>();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    Data data;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="code" href="structNutShape_1_1Data.html#a7cfac5e6932d1e9cb895e6fd11a0f480">   59</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="structNutShape_1_1Data.html#a7cfac5e6932d1e9cb895e6fd11a0f480">witdth_across_coners</a>; <span class="comment">//&lt;! (mm)</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="code" href="structNutShape_1_1Data.html#a40ff8f84c72500b69dec8531569cd71b">   60</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="structNutShape_1_1Data.html#a40ff8f84c72500b69dec8531569cd71b">thickness</a>; <span class="comment">//&lt;! (mm)</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="code" href="structNutShape_1_1Data.html#a3adb403447432619e51ebff3ca5e7594">   61</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="structNutShape_1_1Data.html#a3adb403447432619e51ebff3ca5e7594">dim_margin</a>; <span class="comment">//&lt;! extra size for the model (mm)</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    };</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="classNutShape.html">NutShape</a>(<a class="code" href="Nuts_8h.html#abf74dfd688b4203cefa6d49f8d14403e">Metric</a> m,<span class="keywordtype">double</span> thickness=0,<span class="keywordtype">double</span> extra=1);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="code" href="classNutShape.html#a1d9790acf6f234bd5425b1b55791427f">   75</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="structNutShape_1_1Data.html">Data</a> <a class="code" href="classNutShape.html#a1d9790acf6f234bd5425b1b55791427f" title="returns part data">getData</a>()<span class="keyword"> const</span>{<span class="keywordflow">return</span> data;}</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classComponent.html" title="Component class.">Component</a> <a class="code" href="classAbstractPart.html#ab239b352fcd9263304e0bb5543ad1009" title="Build the part.">build</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    Data data;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 10 2012 19:45:53 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2012 16:47:36 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

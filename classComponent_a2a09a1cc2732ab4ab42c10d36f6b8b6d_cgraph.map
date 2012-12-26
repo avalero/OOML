@@ -1,4 +1,3 @@
 <map id="Component::color" name="Component::color">
-<area shape="rect" id="node3" href="$classAbstractObject.html#ab10fcc764ffe95d859beedaaf6b54a7e" title="AbstractObject::setLinks" alt="" coords="180,5,345,35"/>
-<area shape="rect" id="node5" href="$classColorDecorator.html#a74543bab1e3775280099b43d9d124c6a" title="Default factory method." alt="" coords="185,59,340,88"/>
+<area shape="rect" id="node3" href="$classColorDecorator.html#a74543bab1e3775280099b43d9d124c6a" title="Default factory method." alt="" coords="179,5,333,35"/>
 </map>

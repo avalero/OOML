@@ -1,10 +1,11 @@
 <map id="src/components/RoundedTablet.h" name="src/components/RoundedTablet.h">
-<area shape="rect" id="node3" href="$components_8h.html" title="src/components.h" alt="" coords="143,83,268,112"/>
-<area shape="rect" id="node9" href="$RoundedTablet_8cpp.html" title="src/components/RoundedTablet.cpp" alt="" coords="292,83,524,112"/>
-<area shape="rect" id="node11" href="$FutabaS3003_8cpp.html" title="src/parts/FutabaS3003.cpp" alt="" coords="548,83,727,112"/>
-<area shape="rect" id="node13" href="$NineVoltBattery_8cpp.html" title="src/parts/NineVoltBattery.cpp" alt="" coords="751,83,945,112"/>
-<area shape="rect" id="node15" href="$SeeedUSSensor_8cpp.html" title="src/parts/SeeedUSSensor.cpp" alt="" coords="969,83,1167,112"/>
-<area shape="rect" id="node17" href="$SharpIRSensor_8cpp.html" title="src/parts/SharpIRSensor.cpp" alt="" coords="1191,83,1380,112"/>
-<area shape="rect" id="node5" href="$Bearings_8cpp.html" title="src/components/Bearings.cpp" alt="" coords="5,160,200,189"/>
-<area shape="rect" id="node7" href="$Nuts_8cpp.html" title="src/components/Nuts.cpp" alt="" coords="224,160,395,189"/>
+<area shape="rect" id="node3" href="$RoundedTablet_8cpp.html" title="src/components/RoundedTablet.cpp" alt="" coords="5,83,237,112"/>
+<area shape="rect" id="node5" href="$components_8h.html" title="src/components.h" alt="" coords="261,83,387,112"/>
+<area shape="rect" id="node13" href="$FutabaS3003_8cpp.html" title="src/parts/FutabaS3003.cpp" alt="" coords="411,83,589,112"/>
+<area shape="rect" id="node15" href="$NineVoltBattery_8cpp.html" title="src/parts/NineVoltBattery.cpp" alt="" coords="613,83,808,112"/>
+<area shape="rect" id="node17" href="$SeeedUSSensor_8cpp.html" title="src/parts/SeeedUSSensor.cpp" alt="" coords="832,83,1029,112"/>
+<area shape="rect" id="node19" href="$SharpIRSensor_8cpp.html" title="src/parts/SharpIRSensor.cpp" alt="" coords="1053,83,1243,112"/>
+<area shape="rect" id="node7" href="$Bearings_8cpp.html" title="src/parts/Bearings.cpp" alt="" coords="83,160,235,189"/>
+<area shape="rect" id="node9" href="$Nuts_8cpp.html" title="src/parts/Nuts.cpp" alt="" coords="259,160,389,189"/>
+<area shape="rect" id="node11" href="$StepperMotors_8cpp.html" title="src/parts/StepperMotors.cpp" alt="" coords="413,160,600,189"/>
 </map>

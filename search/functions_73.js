@@ -6,10 +6,11 @@ var searchData=
   ['seeedussensor',['SeeedUSSensor',['../classSeeedUSSensor.html#a45e52fa7288b70fc37144a56a4a2261d',1,'SeeedUSSensor']]],
   ['servowheel',['ServoWheel',['../classServoWheel.html#a34383fed97ca15f865e3cae7959686ea',1,'ServoWheel::ServoWheel()'],['../classServoWheel.html#abd88d1f6cfc7108e5f863035f726b92f',1,'ServoWheel::ServoWheel(double radius, double axeRadius, double thickness, double servoRadius, double servoThickness)']]],
   ['set',['set',['../classCompositeComponent.html#add7fada87bbaf74e74be2c42304c98c4',1,'CompositeComponent::set()'],['../classMatrix.html#a820d3e49ffea766faf310729803e1df1',1,'Matrix::set()'],['../classObjectDecorator.html#a4251489dddda61864e787359e9edd148',1,'ObjectDecorator::set()']]],
-  ['setlinks',['setLinks',['../classAbstractObject.html#ab10fcc764ffe95d859beedaaf6b54a7e',1,'AbstractObject']]],
+  ['setlinks',['setLinks',['../classAbstractObject.html#ab10fcc764ffe95d859beedaaf6b54a7e',1,'AbstractObject::setLinks()'],['../classComponent.html#a715470fa12795932527a4498f1640add',1,'Component::setLinks()']]],
   ['setnormal',['setNormal',['../classVector.html#ab40fc77be319fdfdf2ee978d7dc7e3fe',1,'Vector']]],
   ['setpath',['setPath',['../classPolygon2D.html#a2ad166750a3cfb4484eaffc80061a059',1,'Polygon2D']]],
   ['setpose',['setPose',['../classVector.html#a44c30140d9cc1e82a5140049a7083993',1,'Vector']]],
+  ['setrefsys',['setRefSys',['../classAbstractObject.html#a9b508e40e6055b72fff62abe82c0131f',1,'AbstractObject']]],
   ['settransformationmatrix',['setTransformationMatrix',['../classRefSys.html#a6319bb44d168aefbb38d684853414cd8',1,'RefSys']]],
   ['sharedptr',['SharedPtr',['../classSharedPtr.html#a8b08806704038d3625f602770ab86b5c',1,'SharedPtr::SharedPtr()'],['../classSharedPtr.html#a70fc6184e0a3c52e83b4f6c5936ac2e3',1,'SharedPtr::SharedPtr(T *ptr)'],['../classSharedPtr.html#acb15c801fb102f270364663012f35b03',1,'SharedPtr::SharedPtr(SharedPtr&lt; T &gt; const &amp;other)'],['../classSharedPtr.html#aa46073878609f59df1ab7b71209f07ad',1,'SharedPtr::SharedPtr(SharedPtr&lt; U &gt; const &amp;other)']]],
   ['sharpirsensor',['SharpIRSensor',['../classSharpIRSensor.html#a14ccc78b56b66688e223f4db597fc016',1,'SharpIRSensor']]],
@@ -19,6 +20,7 @@ var searchData=
   ['sphere',['Sphere',['../classSphere.html#a890a63ff583cb88e7ec4e840b4ef5eb9',1,'Sphere::Sphere()'],['../classSphere.html#a2b2174ec677ba2f7caff647c05a266c7',1,'Sphere::Sphere(double radius, unsigned int faces=100, bool center=true)']]],
   ['sphereobject',['SphereObject',['../classSphereObject.html#a2f2510b1562ee98a0ef1253f5e1a0127',1,'SphereObject::SphereObject()'],['../classSphereObject.html#a90d22757e5359e8281a99a483af5765f',1,'SphereObject::SphereObject(double radius, unsigned int faces=100, bool center=true)']]],
   ['square',['Square',['../classSquare.html#a3dc7ff9aefc2725172b5d3153973d243',1,'Square::Square()'],['../classSquare.html#a0fc65e628989afc1a95a5bc43071ea9d',1,'Square::Square(double sx, double sy, bool center=true)']]],
+  ['steppermotor',['StepperMotor',['../classStepperMotor.html#ae24d601aad895acc3bb8511a9efd11d5',1,'StepperMotor']]],
   ['string',['String',['../classString.html#a9662ca94c4e2cd2a1b6fe723fd7ee6d7',1,'String']]],
   ['swap',['swap',['../classSharedPtr.html#af637d3c7d7763a918c52c284771f6234',1,'SharedPtr']]]
 ];

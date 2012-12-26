@@ -1,3 +1,4 @@
 <map id="BatteryHolder::BatteryHolder" name="BatteryHolder::BatteryHolder">
 <area shape="rect" id="node3" href="$classAbstractPart.html#a06732798fd060a805f89e2a9a66e5368" title="Rebuild the part." alt="" coords="245,5,387,35"/>
+<area shape="rect" id="node5" href="$classAbstractObject.html#a5c6b81512c95f040f1d31dd65d4b3d57" title="AbstractObject::resetRefSys" alt="" coords="436,5,625,35"/>
 </map>

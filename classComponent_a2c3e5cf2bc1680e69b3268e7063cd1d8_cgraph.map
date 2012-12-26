@@ -1,12 +1,20 @@
 <map id="Component::relRotate" name="Component::relRotate">
 <area shape="rect" id="node3" href="$classTransformMatrix.html#a00dc5a7c72440944e3fde54dde9bfb5d" title="Applies a Roll&#45;Pitch&#45;Yaw rotation around the local reference system x, y, z Applies three rotations a..." alt="" coords="205,85,384,115"/>
-<area shape="rect" id="node19" href="$classTransformDecorator.html#a0aa4971660b91bebb8ad53e682b00bd1" title="Default factory method." alt="" coords="225,183,364,230"/>
+<area shape="rect" id="node19" href="$classTransformDecorator.html#a0aa4971660b91bebb8ad53e682b00bd1" title="Default factory method." alt="" coords="225,317,364,363"/>
 <area shape="rect" id="node5" href="$classTransformMatrix.html#a4b15619b5a1a9e1236d25e570b11397a" title="Applies a rotation around current local z axis Applies a rotation around current z axis..." alt="" coords="432,5,619,35"/>
 <area shape="rect" id="node11" href="$classTransformMatrix.html#a15e0f3ce5ce669ae2894ec34f68a692e" title="Applies a rotation around current local y axis Applies a rotation around current y axis..." alt="" coords="432,59,619,88"/>
 <area shape="rect" id="node15" href="$classTransformMatrix.html#a668c9d8f32c295c254075cb8cf2f0d3d" title="Applies a rotation around current local x axis Applies a rotation around current x axis..." alt="" coords="432,112,619,141"/>
-<area shape="rect" id="node7" href="$Math_8h.html#a021636ed21e2cb128cb67fa392983ac0" title="deg2rad" alt="" coords="676,32,743,61"/>
-<area shape="rect" id="node9" href="$classMatrix.html#a820d3e49ffea766faf310729803e1df1" title="Matrix::set" alt="" coords="668,85,751,115"/>
-<area shape="rect" id="node21" href="$classTransformMatrix.html#ae53e1d2436656a41d8689cd818a05f88" title="checke if matrix equals identity" alt="" coords="436,165,615,195"/>
-<area shape="rect" id="node23" href="$classSharedPtr.html#ac747048e189c896c11f0b436d02fc5e1" title="Gets the pointer hold." alt="" coords="472,219,579,248"/>
-<area shape="rect" id="node25" href="$classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version." alt="" coords="455,272,596,301"/>
+<area shape="rect" id="node7" href="$Math_8h.html#a021636ed21e2cb128cb67fa392983ac0" title="deg2rad" alt="" coords="733,59,800,88"/>
+<area shape="rect" id="node9" href="$classMatrix.html#a820d3e49ffea766faf310729803e1df1" title="Matrix::set" alt="" coords="725,112,808,141"/>
+<area shape="rect" id="node21" href="$classTransformMatrix.html#ae53e1d2436656a41d8689cd818a05f88" title="checke if matrix equals identity" alt="" coords="436,272,615,301"/>
+<area shape="rect" id="node23" href="$classSharedPtr.html#ac747048e189c896c11f0b436d02fc5e1" title="Gets the pointer hold." alt="" coords="472,325,579,355"/>
+<area shape="rect" id="node25" href="$classRefSys.html#a964c20355e817d51cc44f4370f41056f" title="RefSys::relTransform" alt="" coords="452,448,599,477"/>
+<area shape="rect" id="node29" href="$classTransformMatrix.html#adb4b8dfd970e2970d393e045d1a41b70" title="TransformMatrix::getInv" alt="" coords="445,165,605,195"/>
+<area shape="rect" id="node32" href="$classRefSys.html#a257068ba4a052c855587d334edec48ff" title="Rotates the reference system This methods rotates the reference system with a rotational matrix..." alt="" coords="461,219,589,248"/>
+<area shape="rect" id="node36" href="$classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version." alt="" coords="455,501,596,531"/>
+<area shape="rect" id="node38" href="$classAbstractObject.html#afeb1ed691f3127374a16d0a3297f6917" title="Adds a Link to the system. System of the Link." alt="" coords="444,555,607,584"/>
+<area shape="rect" id="node40" href="$classTransformMatrix.html#a72b499093d75f6737660168c21b01a5b" title="Gets the rotation angles about the fixed axes x,y,z. Obtains the rotation angles about the fixed x..." alt="" coords="436,378,615,425"/>
+<area shape="rect" id="node27" href="$classTransformMatrix.html#a2b8dd01bc118116b0ca134643a4b8cc9" title="TransformMatrix::relTransform" alt="" coords="668,448,865,477"/>
+<area shape="rect" id="node34" href="$classTransformMatrix.html#ae5e480c59e5afd8367cc456789d5f79d" title="TransformMatrix::transform" alt="" coords="677,219,856,248"/>
+<area shape="rect" id="node42" href="$Math_8h.html#a638b7a3259334d9389d4dcb31cb7dfea" title="rad2deg" alt="" coords="733,387,800,416"/>
 </map>

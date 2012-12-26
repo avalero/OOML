@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>OOML: src/components/Bearings.cpp Source File</title>
+<title>OOML: src/parts/Bearings.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -81,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_3c4c7c1a85608ccd561c026bec818e51.html">components</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_74468c6aa5627e796dac9600ce6ada7d.html">parts</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -124,43 +124,51 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Bearings_8h.html">Bearings.h</a>&quot;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;../components.h&quot;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="classLM8uu.html#a8ce87db2047086bf2ef376d793b9adee">   36</a></span>&#160;<a class="code" href="classLM8uu.html#a8ce87db2047086bf2ef376d793b9adee">LM8uu::LM8uu</a>():<a class="code" href="classAbstractPart.html" title="Color decorator.">AbstractPart</a>()</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="classLMXuu.html#aa3a8c5d9004e2305cbe901382f16a348">   36</a></span>&#160;<a class="code" href="classLMXuu.html#aa3a8c5d9004e2305cbe901382f16a348">LMXuu::LMXuu</a>(<a class="code" href="Bearings_8h.html#a5e0b01e586fd56092dd702d4ca8b8423">LinearBearings</a> type):<a class="code" href="classAbstractPart.html" title="Color decorator.">AbstractPart</a>()</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    data.<a class="code" href="structLM8uu_1_1Data.html#aed523187f731f083bff0dd4c34801b30">inner_diameter</a>=8; <span class="comment">//mm</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    data.<a class="code" href="structLM8uu_1_1Data.html#a1b268b2126712367ae4d41cb4f35c1ae">ext_diameter</a>=15; <span class="comment">//mm</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    data.<a class="code" href="structLM8uu_1_1Data.html#aad2b9fd659748b0c92b6132d5e390d1a">length</a> = 24; <span class="comment">//mm</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">//build the part</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="classAbstractPart.html#a06732798fd060a805f89e2a9a66e5368" title="Rebuild the part.">rebuild</a>();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="classLM8uu.html#a1c6dc06c906d7204859942ff96f3f295">   46</a></span>&#160;<a class="code" href="classComponent.html" title="Component class.">Component</a> <a class="code" href="classLM8uu.html#a1c6dc06c906d7204859942ff96f3f295" title="Build the piece.">LM8uu::build</a>(){</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classComponent.html" title="Component class.">Component</a> bearing = <a class="code" href="classCylinder.html#ac24009e8406642fc7b6a3de99129d077" title="Creates a Cylinder Component.">Cylinder::create</a>(data.<a class="code" href="structLM8uu_1_1Data.html#a1b268b2126712367ae4d41cb4f35c1ae">ext_diameter</a>/2,data.<a class="code" href="structLM8uu_1_1Data.html#aad2b9fd659748b0c92b6132d5e390d1a">length</a>,100,<span class="keyword">true</span>)</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            - <a class="code" href="classCylinder.html#ac24009e8406642fc7b6a3de99129d077" title="Creates a Cylinder Component.">Cylinder::create</a>(data.<a class="code" href="structLM8uu_1_1Data.html#aed523187f731f083bff0dd4c34801b30">inner_diameter</a>/2,data.<a class="code" href="structLM8uu_1_1Data.html#aad2b9fd659748b0c92b6132d5e390d1a">length</a>+1,20,<span class="keyword">true</span>)</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            ;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> bearing;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="classB608zz.html#a003c3a9aad9bf8e67ef7680734c8db2f">   53</a></span>&#160;<a class="code" href="classB608zz.html#a003c3a9aad9bf8e67ef7680734c8db2f">B608zz::B608zz</a>():<a class="code" href="classAbstractPart.html" title="Color decorator.">AbstractPart</a>()</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    data.<a class="code" href="structB608zz_1_1Data.html#aea63a57ff3bfde360abdbe24fab2da94">inner_diameter</a>=8; <span class="comment">//mm</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    data.<a class="code" href="structB608zz_1_1Data.html#a8e06a925d4300bda493a8faccffea17a">ext_diameter</a>=22; <span class="comment">//mm</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    data.<a class="code" href="structB608zz_1_1Data.html#aeb86fdb3d76465ed1936b8ec68f8c588">length</a> = 7; <span class="comment">//mm</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">//build the part</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="classAbstractPart.html#a06732798fd060a805f89e2a9a66e5368" title="Rebuild the part.">rebuild</a>();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="code" href="classB608zz.html#a215462ae253333d0b69eb4c30a4b2f1a">   63</a></span>&#160;<a class="code" href="classComponent.html" title="Component class.">Component</a> <a class="code" href="classB608zz.html#a215462ae253333d0b69eb4c30a4b2f1a" title="Build the piece.">B608zz::build</a>(){</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="classComponent.html" title="Component class.">Component</a> bearing = <a class="code" href="classCylinder.html#ac24009e8406642fc7b6a3de99129d077" title="Creates a Cylinder Component.">Cylinder::create</a>(data.<a class="code" href="structB608zz_1_1Data.html#a8e06a925d4300bda493a8faccffea17a">ext_diameter</a>/2,data.<a class="code" href="structB608zz_1_1Data.html#aeb86fdb3d76465ed1936b8ec68f8c588">length</a>,20,<span class="keyword">true</span>)</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            - <a class="code" href="classCylinder.html#ac24009e8406642fc7b6a3de99129d077" title="Creates a Cylinder Component.">Cylinder::create</a>(data.<a class="code" href="structB608zz_1_1Data.html#aea63a57ff3bfde360abdbe24fab2da94">inner_diameter</a>/2,data.<a class="code" href="structB608zz_1_1Data.html#aeb86fdb3d76465ed1936b8ec68f8c588">length</a>+1,20,<span class="keyword">true</span>)</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            ;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span> bearing;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">switch</span>(type){</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="Bearings_8h.html#a5e0b01e586fd56092dd702d4ca8b8423a8b6f782769b9138370ee7f30eb2d6851">LM8uu</a>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        data.<a class="code" href="structLMXuu_1_1Data.html#a36e7c257361f5ae35a96816ffd4777dc">inner_diameter</a>=8; <span class="comment">//mm</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        data.<a class="code" href="structLMXuu_1_1Data.html#a6c4f92b8ebdba5761c4e3ead9ee7a78d">ext_diameter</a>=15; <span class="comment">//mm</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        data.<a class="code" href="structLMXuu_1_1Data.html#ac2a7d2aaa3c97febe261a1507e9015c9">length</a> = 24; <span class="comment">//mm</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="Bearings_8h.html#a5e0b01e586fd56092dd702d4ca8b8423a423d0359115de873805a9fe39b55ae86">LM10uu</a>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        data.<a class="code" href="structLMXuu_1_1Data.html#a36e7c257361f5ae35a96816ffd4777dc">inner_diameter</a>=10; <span class="comment">//mm</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        data.<a class="code" href="structLMXuu_1_1Data.html#a6c4f92b8ebdba5761c4e3ead9ee7a78d">ext_diameter</a>=19; <span class="comment">//mm</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        data.<a class="code" href="structLMXuu_1_1Data.html#ac2a7d2aaa3c97febe261a1507e9015c9">length</a> = 29; <span class="comment">//mm</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">//build the part</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classAbstractPart.html#a06732798fd060a805f89e2a9a66e5368" title="Rebuild the part.">rebuild</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="classLMXuu.html#ab95344fdd682307f5165949185a9ff81">   54</a></span>&#160;<a class="code" href="classComponent.html" title="Component class.">Component</a> <a class="code" href="classLMXuu.html#ab95344fdd682307f5165949185a9ff81" title="Build the piece.">LMXuu::build</a>(){</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classComponent.html" title="Component class.">Component</a> bearing = <a class="code" href="classCylinder.html#ac24009e8406642fc7b6a3de99129d077" title="Creates a Cylinder Component.">Cylinder::create</a>(data.<a class="code" href="structLMXuu_1_1Data.html#a6c4f92b8ebdba5761c4e3ead9ee7a78d">ext_diameter</a>/2,data.<a class="code" href="structLMXuu_1_1Data.html#ac2a7d2aaa3c97febe261a1507e9015c9">length</a>,100,<span class="keyword">true</span>)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            - <a class="code" href="classCylinder.html#ac24009e8406642fc7b6a3de99129d077" title="Creates a Cylinder Component.">Cylinder::create</a>(data.<a class="code" href="structLMXuu_1_1Data.html#a36e7c257361f5ae35a96816ffd4777dc">inner_diameter</a>/2,data.<a class="code" href="structLMXuu_1_1Data.html#ac2a7d2aaa3c97febe261a1507e9015c9">length</a>+1,20,<span class="keyword">true</span>)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            ;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> bearing;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="code" href="classB608zz.html#a003c3a9aad9bf8e67ef7680734c8db2f">   61</a></span>&#160;<a class="code" href="classB608zz.html#a003c3a9aad9bf8e67ef7680734c8db2f">B608zz::B608zz</a>():<a class="code" href="classAbstractPart.html" title="Color decorator.">AbstractPart</a>()</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    data.<a class="code" href="structB608zz_1_1Data.html#aea63a57ff3bfde360abdbe24fab2da94">inner_diameter</a>=8; <span class="comment">//mm</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    data.<a class="code" href="structB608zz_1_1Data.html#a8e06a925d4300bda493a8faccffea17a">ext_diameter</a>=22; <span class="comment">//mm</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    data.<a class="code" href="structB608zz_1_1Data.html#aeb86fdb3d76465ed1936b8ec68f8c588">length</a> = 7; <span class="comment">//mm</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//build the part</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="classAbstractPart.html#a06732798fd060a805f89e2a9a66e5368" title="Rebuild the part.">rebuild</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="classB608zz.html#a215462ae253333d0b69eb4c30a4b2f1a">   71</a></span>&#160;<a class="code" href="classComponent.html" title="Component class.">Component</a> <a class="code" href="classB608zz.html#a215462ae253333d0b69eb4c30a4b2f1a" title="Build the piece.">B608zz::build</a>(){</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="classComponent.html" title="Component class.">Component</a> bearing = <a class="code" href="classCylinder.html#ac24009e8406642fc7b6a3de99129d077" title="Creates a Cylinder Component.">Cylinder::create</a>(data.<a class="code" href="structB608zz_1_1Data.html#a8e06a925d4300bda493a8faccffea17a">ext_diameter</a>/2,data.<a class="code" href="structB608zz_1_1Data.html#aeb86fdb3d76465ed1936b8ec68f8c588">length</a>,20,<span class="keyword">true</span>)</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            - <a class="code" href="classCylinder.html#ac24009e8406642fc7b6a3de99129d077" title="Creates a Cylinder Component.">Cylinder::create</a>(data.<a class="code" href="structB608zz_1_1Data.html#aea63a57ff3bfde360abdbe24fab2da94">inner_diameter</a>/2,data.<a class="code" href="structB608zz_1_1Data.html#aeb86fdb3d76465ed1936b8ec68f8c588">length</a>+1,20,<span class="keyword">true</span>)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            ;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span> bearing;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 10 2012 19:45:53 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2012 16:47:36 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

@@ -1,11 +1,19 @@
 <map id="Component::relRotateEulerZYZ" name="Component::relRotateEulerZYZ">
 <area shape="rect" id="node3" href="$classTransformMatrix.html#a52cd13a210fb835f8c39f82830780d08" title="Applies an Euler rotation around the local reference system z, y&#39;, z&#39;&#39; Applies three rotations around..." alt="" coords="259,50,437,97"/>
-<area shape="rect" id="node15" href="$classTransformDecorator.html#a0aa4971660b91bebb8ad53e682b00bd1" title="Default factory method." alt="" coords="279,138,417,185"/>
+<area shape="rect" id="node15" href="$classTransformDecorator.html#a0aa4971660b91bebb8ad53e682b00bd1" title="Default factory method." alt="" coords="279,263,417,310"/>
 <area shape="rect" id="node5" href="$classTransformMatrix.html#a4b15619b5a1a9e1236d25e570b11397a" title="Applies a rotation around current local z axis Applies a rotation around current z axis..." alt="" coords="485,5,672,35"/>
 <area shape="rect" id="node11" href="$classTransformMatrix.html#a15e0f3ce5ce669ae2894ec34f68a692e" title="Applies a rotation around current local y axis Applies a rotation around current y axis..." alt="" coords="485,59,672,88"/>
-<area shape="rect" id="node7" href="$Math_8h.html#a021636ed21e2cb128cb67fa392983ac0" title="deg2rad" alt="" coords="729,5,796,35"/>
-<area shape="rect" id="node9" href="$classMatrix.html#a820d3e49ffea766faf310729803e1df1" title="Matrix::set" alt="" coords="721,59,804,88"/>
-<area shape="rect" id="node17" href="$classTransformMatrix.html#ae53e1d2436656a41d8689cd818a05f88" title="checke if matrix equals identity" alt="" coords="489,112,668,141"/>
-<area shape="rect" id="node19" href="$classSharedPtr.html#ac747048e189c896c11f0b436d02fc5e1" title="Gets the pointer hold." alt="" coords="525,165,632,195"/>
-<area shape="rect" id="node21" href="$classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version." alt="" coords="508,219,649,248"/>
+<area shape="rect" id="node7" href="$Math_8h.html#a021636ed21e2cb128cb67fa392983ac0" title="deg2rad" alt="" coords="787,5,853,35"/>
+<area shape="rect" id="node9" href="$classMatrix.html#a820d3e49ffea766faf310729803e1df1" title="Matrix::set" alt="" coords="779,59,861,88"/>
+<area shape="rect" id="node17" href="$classTransformMatrix.html#ae53e1d2436656a41d8689cd818a05f88" title="checke if matrix equals identity" alt="" coords="489,501,668,531"/>
+<area shape="rect" id="node19" href="$classSharedPtr.html#ac747048e189c896c11f0b436d02fc5e1" title="Gets the pointer hold." alt="" coords="525,112,632,141"/>
+<area shape="rect" id="node21" href="$classRefSys.html#a964c20355e817d51cc44f4370f41056f" title="RefSys::relTransform" alt="" coords="505,219,652,248"/>
+<area shape="rect" id="node25" href="$classTransformMatrix.html#adb4b8dfd970e2970d393e045d1a41b70" title="TransformMatrix::getInv" alt="" coords="499,165,659,195"/>
+<area shape="rect" id="node28" href="$classRefSys.html#a257068ba4a052c855587d334edec48ff" title="Rotates the reference system This methods rotates the reference system with a rotational matrix..." alt="" coords="515,379,643,408"/>
+<area shape="rect" id="node32" href="$classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version." alt="" coords="508,272,649,301"/>
+<area shape="rect" id="node34" href="$classAbstractObject.html#afeb1ed691f3127374a16d0a3297f6917" title="Adds a Link to the system. System of the Link." alt="" coords="497,325,660,355"/>
+<area shape="rect" id="node36" href="$classTransformMatrix.html#a72b499093d75f6737660168c21b01a5b" title="Gets the rotation angles about the fixed axes x,y,z. Obtains the rotation angles about the fixed x..." alt="" coords="489,431,668,478"/>
+<area shape="rect" id="node23" href="$classTransformMatrix.html#a2b8dd01bc118116b0ca134643a4b8cc9" title="TransformMatrix::relTransform" alt="" coords="721,219,919,248"/>
+<area shape="rect" id="node30" href="$classTransformMatrix.html#ae5e480c59e5afd8367cc456789d5f79d" title="TransformMatrix::transform" alt="" coords="731,379,909,408"/>
+<area shape="rect" id="node38" href="$Math_8h.html#a638b7a3259334d9389d4dcb31cb7dfea" title="rad2deg" alt="" coords="787,440,853,469"/>
 </map>

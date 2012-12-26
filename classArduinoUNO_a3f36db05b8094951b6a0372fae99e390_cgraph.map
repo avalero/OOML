@@ -1,22 +1,30 @@
 <map id="ArduinoUNO::build" name="ArduinoUNO::build">
-<area shape="rect" id="node3" href="$classArduinoUNO.html#a2765f8e142d0668f66270d15dfb30296" title="returns a component only with the board" alt="" coords="185,297,340,327"/>
-<area shape="rect" id="node23" href="$classComponent.html#a2a09a1cc2732ab4ab42c10d36f6b8b6d" title="Color the component." alt="" coords="420,376,545,405"/>
-<area shape="rect" id="node29" href="$classComponent.html#a0df678527e9d0d65a749bbc5883a71af" title="Translate the component." alt="" coords="409,165,556,195"/>
-<area shape="rect" id="node33" href="$classComponent.html#a5d02f92e62bd7a142dcc9c0dae0c908d" title="Rotate the component." alt="" coords="197,217,328,247"/>
-<area shape="rect" id="node5" href="$classPolygon.html#a347b1c5820e9767fa4f4232c91ddcea7" title="Adds a new point to the polygon after the last." alt="" coords="419,323,547,352"/>
-<area shape="rect" id="node7" href="$classComponent.html#a871a9cc554e6c5bfa195215fa011e416" title="Translate the component." alt="" coords="391,269,575,299"/>
-<area shape="rect" id="node9" href="$classTransformMatrix.html#ae2b5dc7c41da84953f791e12e0b22964" title="performs a translation" alt="" coords="625,165,799,195"/>
-<area shape="rect" id="node13" href="$classComponent.html#a8775db6d1a2c1afc2e77cd3c8f39da6f" title="Default constructor." alt="" coords="631,288,793,317"/>
-<area shape="rect" id="node15" href="$classTransformDecorator.html#a0aa4971660b91bebb8ad53e682b00bd1" title="Default factory method." alt="" coords="643,218,781,265"/>
-<area shape="rect" id="node11" href="$classMatrix.html#a820d3e49ffea766faf310729803e1df1" title="Matrix::set" alt="" coords="896,112,979,141"/>
-<area shape="rect" id="node17" href="$classTransformMatrix.html#ae53e1d2436656a41d8689cd818a05f88" title="checke if matrix equals identity" alt="" coords="848,227,1027,256"/>
-<area shape="rect" id="node19" href="$classSharedPtr.html#ac747048e189c896c11f0b436d02fc5e1" title="Gets the pointer hold." alt="" coords="884,280,991,309"/>
-<area shape="rect" id="node21" href="$classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version." alt="" coords="867,173,1008,203"/>
-<area shape="rect" id="node25" href="$classAbstractObject.html#ab10fcc764ffe95d859beedaaf6b54a7e" title="AbstractObject::setLinks" alt="" coords="629,359,795,388"/>
-<area shape="rect" id="node27" href="$classColorDecorator.html#a74543bab1e3775280099b43d9d124c6a" title="Default factory method." alt="" coords="635,412,789,441"/>
-<area shape="rect" id="node35" href="$classTransformMatrix.html#a20910983db5e4e0574879dd86b4f8a3e" title="Applies a Roll&#45;Pitch&#45;Yaw rotation around the initial fixed x, y, z Applies three rotations around the..." alt="" coords="404,85,561,115"/>
-<area shape="rect" id="node37" href="$classTransformMatrix.html#ad94010aa2da239614efbfb4926d63c04" title="Applies a rotation around initial fixed x axis Applies a rotation around current x axis..." alt="" coords="629,59,795,88"/>
-<area shape="rect" id="node42" href="$classTransformMatrix.html#ac76ffec4c53cd0b70b0bc86a67f95ad0" title="Applies a rotation around initial fixed y axis Applies a rotation around current y axis..." alt="" coords="629,112,795,141"/>
-<area shape="rect" id="node46" href="$classTransformMatrix.html#a4b485e8c3d73e3b687b4859b4cc11408" title="Applies a rotation around initial fixed current z axis Applies a rotation around current z axis..." alt="" coords="629,5,795,35"/>
-<area shape="rect" id="node39" href="$Math_8h.html#a021636ed21e2cb128cb67fa392983ac0" title="deg2rad" alt="" coords="904,59,971,88"/>
+<area shape="rect" id="node3" href="$classArduinoUNO.html#a2765f8e142d0668f66270d15dfb30296" title="returns a component only with the board" alt="" coords="185,423,340,452"/>
+<area shape="rect" id="node42" href="$classComponent.html#a2a09a1cc2732ab4ab42c10d36f6b8b6d" title="Color the component." alt="" coords="420,528,545,557"/>
+<area shape="rect" id="node46" href="$classComponent.html#a0df678527e9d0d65a749bbc5883a71af" title="Translate the component." alt="" coords="409,368,556,397"/>
+<area shape="rect" id="node50" href="$classComponent.html#a5d02f92e62bd7a142dcc9c0dae0c908d" title="Rotate the component." alt="" coords="417,475,548,504"/>
+<area shape="rect" id="node5" href="$classPolygon.html#a347b1c5820e9767fa4f4232c91ddcea7" title="Adds a new point to the polygon after the last." alt="" coords="419,421,547,451"/>
+<area shape="rect" id="node7" href="$classComponent.html#a871a9cc554e6c5bfa195215fa011e416" title="Translate the component." alt="" coords="391,312,575,341"/>
+<area shape="rect" id="node9" href="$classTransformMatrix.html#ae2b5dc7c41da84953f791e12e0b22964" title="performs a translation" alt="" coords="625,372,799,401"/>
+<area shape="rect" id="node13" href="$classComponent.html#a8775db6d1a2c1afc2e77cd3c8f39da6f" title="Default constructor." alt="" coords="631,112,793,141"/>
+<area shape="rect" id="node17" href="$classTransformDecorator.html#a0aa4971660b91bebb8ad53e682b00bd1" title="Default factory method." alt="" coords="643,302,781,349"/>
+<area shape="rect" id="node11" href="$classMatrix.html#a820d3e49ffea766faf310729803e1df1" title="Matrix::set" alt="" coords="1147,552,1229,581"/>
+<area shape="rect" id="node15" href="$classAbstractObject.html#a5c6b81512c95f040f1d31dd65d4b3d57" title="AbstractObject::resetRefSys" alt="" coords="849,5,1039,35"/>
+<area shape="rect" id="node19" href="$classTransformMatrix.html#ae53e1d2436656a41d8689cd818a05f88" title="checke if matrix equals identity" alt="" coords="855,165,1033,195"/>
+<area shape="rect" id="node21" href="$classSharedPtr.html#ac747048e189c896c11f0b436d02fc5e1" title="Gets the pointer hold." alt="" coords="891,219,997,248"/>
+<area shape="rect" id="node23" href="$classRefSys.html#a964c20355e817d51cc44f4370f41056f" title="RefSys::relTransform" alt="" coords="871,59,1017,88"/>
+<area shape="rect" id="node27" href="$classTransformMatrix.html#adb4b8dfd970e2970d393e045d1a41b70" title="TransformMatrix::getInv" alt="" coords="864,448,1024,477"/>
+<area shape="rect" id="node30" href="$classRefSys.html#a257068ba4a052c855587d334edec48ff" title="Rotates the reference system This methods rotates the reference system with a rotational matrix..." alt="" coords="880,112,1008,141"/>
+<area shape="rect" id="node34" href="$classObjectDecorator.html#a0021fca00921a5a48b4507612dc65c74" title="Get the internally hold pointer. Const version." alt="" coords="873,341,1015,371"/>
+<area shape="rect" id="node36" href="$classAbstractObject.html#afeb1ed691f3127374a16d0a3297f6917" title="Adds a Link to the system. System of the Link." alt="" coords="863,395,1025,424"/>
+<area shape="rect" id="node38" href="$classTransformMatrix.html#a72b499093d75f6737660168c21b01a5b" title="Gets the rotation angles about the fixed axes x,y,z. Obtains the rotation angles about the fixed x..." alt="" coords="855,271,1033,318"/>
+<area shape="rect" id="node25" href="$classTransformMatrix.html#a2b8dd01bc118116b0ca134643a4b8cc9" title="TransformMatrix::relTransform" alt="" coords="1089,59,1287,88"/>
+<area shape="rect" id="node32" href="$classTransformMatrix.html#ae5e480c59e5afd8367cc456789d5f79d" title="TransformMatrix::transform" alt="" coords="1099,112,1277,141"/>
+<area shape="rect" id="node40" href="$Math_8h.html#a638b7a3259334d9389d4dcb31cb7dfea" title="rad2deg" alt="" coords="1155,280,1221,309"/>
+<area shape="rect" id="node44" href="$classColorDecorator.html#a74543bab1e3775280099b43d9d124c6a" title="Default factory method." alt="" coords="635,605,789,635"/>
+<area shape="rect" id="node52" href="$classTransformMatrix.html#a20910983db5e4e0574879dd86b4f8a3e" title="Applies a Roll&#45;Pitch&#45;Yaw rotation around the initial fixed x, y, z Applies three rotations around the..." alt="" coords="633,552,791,581"/>
+<area shape="rect" id="node54" href="$classTransformMatrix.html#ad94010aa2da239614efbfb4926d63c04" title="Applies a rotation around initial fixed x axis Applies a rotation around current x axis..." alt="" coords="861,659,1027,688"/>
+<area shape="rect" id="node59" href="$classTransformMatrix.html#ac76ffec4c53cd0b70b0bc86a67f95ad0" title="Applies a rotation around initial fixed y axis Applies a rotation around current y axis..." alt="" coords="861,552,1027,581"/>
+<area shape="rect" id="node63" href="$classTransformMatrix.html#a4b485e8c3d73e3b687b4859b4cc11408" title="Applies a rotation around initial fixed current z axis Applies a rotation around current z axis..." alt="" coords="861,605,1027,635"/>
+<area shape="rect" id="node56" href="$Math_8h.html#a021636ed21e2cb128cb67fa392983ac0" title="deg2rad" alt="" coords="1155,605,1221,635"/>
 </map>

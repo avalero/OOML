@@ -133,25 +133,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                _fourth_drill(fourth_hole)</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classAbstractPart.html#a06732798fd060a805f89e2a9a66e5368" title="Rebuild the part.">rebuild</a>();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  }</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="code" href="classArduinoUNO.html#a97c4e658b7897bbbbff4e19846b506c7">   60</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classArduinoUNO.html#a97c4e658b7897bbbbff4e19846b506c7" title="Default destructor.">~ArduinoUNO</a>() {}</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">static</span> <a class="code" href="classComponent.html" title="Component class.">Component</a> getBoard(<span class="keywordtype">double</span> height=2, <span class="keywordtype">double</span> holes_height=5, <span class="keywordtype">bool</span> fill_drills=<span class="keyword">true</span>, <span class="keywordtype">bool</span> fourth_hole=<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classComponent.html" title="Component class.">Component</a> <a class="code" href="classAbstractPart.html#ab239b352fcd9263304e0bb5543ad1009" title="Build the part.">build</a>();</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">bool</span> _fill_drills;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">double</span> _drills_height;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">bool</span> _fourth_drill;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif // ARDUINOUNO_H_INCLUDED</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="classComponent.html#ad4606b806f4e736f98fe6090702c6c25" title="Adds a Link to the system. System of the Link.">addLink</a>(<a class="code" href="classRefSys.html" title="3D point primitive object">RefSys</a>(13.97,2.54,0));</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="classComponent.html#ad4606b806f4e736f98fe6090702c6c25" title="Adds a Link to the system. System of the Link.">addLink</a>(<a class="code" href="classRefSys.html" title="3D point primitive object">RefSys</a>(66.04,7.62,0));</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="classComponent.html#ad4606b806f4e736f98fe6090702c6c25" title="Adds a Link to the system. System of the Link.">addLink</a>(<a class="code" href="classRefSys.html" title="3D point primitive object">RefSys</a>(66.04,35.56,0));</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="classComponent.html#ad4606b806f4e736f98fe6090702c6c25" title="Adds a Link to the system. System of the Link.">addLink</a>(<a class="code" href="classRefSys.html" title="3D point primitive object">RefSys</a>(15.24,50.8,0));</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="classArduinoUNO.html#a97c4e658b7897bbbbff4e19846b506c7">   64</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classArduinoUNO.html#a97c4e658b7897bbbbff4e19846b506c7" title="Default destructor.">~ArduinoUNO</a>() {}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <a class="code" href="classComponent.html" title="Component class.">Component</a> getBoard(<span class="keywordtype">double</span> height=2, <span class="keywordtype">double</span> holes_height=5, <span class="keywordtype">bool</span> fill_drills=<span class="keyword">true</span>, <span class="keywordtype">bool</span> fourth_hole=<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classComponent.html" title="Component class.">Component</a> <a class="code" href="classAbstractPart.html#ab239b352fcd9263304e0bb5543ad1009" title="Build the part.">build</a>();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">bool</span> _fill_drills;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">double</span> _drills_height;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">bool</span> _fourth_drill;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif // ARDUINOUNO_H_INCLUDED</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 10 2012 19:45:53 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2012 16:47:36 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

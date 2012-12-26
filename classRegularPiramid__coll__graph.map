@@ -1,5 +1,6 @@
 <map id="RegularPiramid" name="RegularPiramid">
-<area shape="rect" id="node2" href="$classComponent.html" title="Component class." alt="" coords="20,160,108,189"/>
-<area shape="rect" id="node4" href="$classObjectDecorator.html" title="Abstract object decorator interface." alt="" coords="5,83,123,112"/>
-<area shape="rect" id="node6" href="$classAbstractObject.html" title="Abstract object interface." alt="" coords="9,5,119,35"/>
+<area shape="rect" id="node2" href="$classComponent.html" title="Component class." alt="" coords="20,261,108,291"/>
+<area shape="rect" id="node4" href="$classObjectDecorator.html" title="Abstract object decorator interface." alt="" coords="5,181,123,211"/>
+<area shape="rect" id="node6" href="$classAbstractObject.html" title="Abstract object interface." alt="" coords="9,101,119,131"/>
+<area shape="rect" id="node8" href="$classRefSys.html" title="3D point primitive object" alt="" coords="31,5,97,35"/>
 </map>

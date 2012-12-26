@@ -1,9 +1,10 @@
 <map id="PolygonalPrism::build" name="PolygonalPrism::build">
 <area shape="rect" id="node3" href="$classPolygon2D.html#a3533360cc0a7a6fb4d4b84eaa55fdae4" title="Static factory method." alt="" coords="252,5,383,35"/>
-<area shape="rect" id="node5" href="$classComponent.html#ad852e5610c08ef185a620e07467eccd6" title="Try to cast the decorated pointer to a concrete type." alt="" coords="249,59,385,88"/>
+<area shape="rect" id="node5" href="$classComponent.html#ad852e5610c08ef185a620e07467eccd6" title="Returns if the Object has links." alt="" coords="249,59,385,88"/>
 <area shape="rect" id="node7" href="$classPolygon.html#a669eb7390e34ca3a7267b3329743abdc" title="Get the polygon points." alt="" coords="252,112,383,141"/>
 <area shape="rect" id="node9" href="$classPolygon2D.html#a443e2c80770749d0f1375ca5590be1b3" title="Adds a new point in the polygon 2D." alt="" coords="245,165,389,195"/>
 <area shape="rect" id="node11" href="$classComponent2D.html#af1a08fb02dcf5453904a94375a43d850" title="Linear extrude the component." alt="" coords="204,219,431,248"/>
 <area shape="rect" id="node13" href="$classComponent.html#a8775db6d1a2c1afc2e77cd3c8f39da6f" title="Default constructor." alt="" coords="481,188,644,217"/>
-<area shape="rect" id="node15" href="$classLinearExtrudeDecorator.html#a732c88a036070d2aba30296a03b9bbea" title="Default factory method." alt="" coords="484,241,641,287"/>
+<area shape="rect" id="node17" href="$classLinearExtrudeDecorator.html#a732c88a036070d2aba30296a03b9bbea" title="Default factory method." alt="" coords="484,241,641,287"/>
+<area shape="rect" id="node15" href="$classAbstractObject.html#a5c6b81512c95f040f1d31dd65d4b3d57" title="AbstractObject::resetRefSys" alt="" coords="695,188,884,217"/>
 </map>

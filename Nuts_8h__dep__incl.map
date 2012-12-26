@@ -1,5 +1,4 @@
-<map id="src/components/Nuts.h" name="src/components/Nuts.h">
-<area shape="rect" id="node3" href="$components_8h.html" title="src/components.h" alt="" coords="147,83,272,112"/>
-<area shape="rect" id="node7" href="$Nuts_8cpp.html" title="src/components/Nuts.cpp" alt="" coords="224,160,395,189"/>
-<area shape="rect" id="node5" href="$Bearings_8cpp.html" title="src/components/Bearings.cpp" alt="" coords="5,160,200,189"/>
+<map id="src/parts/Nuts.h" name="src/parts/Nuts.h">
+<area shape="rect" id="node3" href="$Nuts_8cpp.html" title="src/parts/Nuts.cpp" alt="" coords="5,83,136,112"/>
+<area shape="rect" id="node5" href="$parts_8h.html" title="src/parts.h" alt="" coords="160,83,243,112"/>
 </map>

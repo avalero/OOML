@@ -1,6 +1,7 @@
 <map id="src/components/RoundedCylinder.h" name="src/components/RoundedCylinder.h">
-<area shape="rect" id="node3" href="$components_8h.html" title="src/components.h" alt="" coords="143,83,268,112"/>
-<area shape="rect" id="node9" href="$RoundedCylinder_8cpp.html" title="src/components/RoundedCylinder.cpp" alt="" coords="292,83,535,112"/>
-<area shape="rect" id="node5" href="$Bearings_8cpp.html" title="src/components/Bearings.cpp" alt="" coords="5,160,200,189"/>
-<area shape="rect" id="node7" href="$Nuts_8cpp.html" title="src/components/Nuts.cpp" alt="" coords="224,160,395,189"/>
+<area shape="rect" id="node3" href="$RoundedCylinder_8cpp.html" title="src/components/RoundedCylinder.cpp" alt="" coords="5,83,248,112"/>
+<area shape="rect" id="node5" href="$components_8h.html" title="src/components.h" alt="" coords="272,83,397,112"/>
+<area shape="rect" id="node7" href="$Bearings_8cpp.html" title="src/parts/Bearings.cpp" alt="" coords="93,160,245,189"/>
+<area shape="rect" id="node9" href="$Nuts_8cpp.html" title="src/parts/Nuts.cpp" alt="" coords="269,160,400,189"/>
+<area shape="rect" id="node11" href="$StepperMotors_8cpp.html" title="src/parts/StepperMotors.cpp" alt="" coords="424,160,611,189"/>
 </map>

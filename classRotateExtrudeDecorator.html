@@ -109,7 +109,7 @@ Collaboration diagram for RotateExtrudeDecorator:</div>
 <div class="dyncontent">
 <div class="center"><img src="classRotateExtrudeDecorator__coll__graph.png" border="0" usemap="#RotateExtrudeDecorator_coll__map" alt="Collaboration graph"/></div>
 <map name="RotateExtrudeDecorator_coll__map" id="RotateExtrudeDecorator_coll__map">
-<area shape="rect" id="node2" href="classObjectDecorator.html" title="Abstract object decorator interface." alt="" coords="28,83,145,112"/><area shape="rect" id="node4" href="classAbstractObject.html" title="Abstract object interface." alt="" coords="32,5,141,35"/></map>
+<area shape="rect" id="node2" href="classObjectDecorator.html" title="Abstract object decorator interface." alt="" coords="28,181,145,211"/><area shape="rect" id="node4" href="classAbstractObject.html" title="Abstract object interface." alt="" coords="32,101,141,131"/><area shape="rect" id="node6" href="classRefSys.html" title="3D point primitive object" alt="" coords="53,5,120,35"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
@@ -141,6 +141,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afeb1ed691f3127374a16d0a3297f6917 inherit pub_methods_classAbstractObject"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractObject.html#afeb1ed691f3127374a16d0a3297f6917">addLink</a> (<a class="el" href="classRefSys.html">RefSys</a> rs)</td></tr>
 <tr class="memdesc:afeb1ed691f3127374a16d0a3297f6917 inherit pub_methods_classAbstractObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a <a class="el" href="classLink.html" title="link primitive object">Link</a> to the system. <a class="el" href="">System of the Link. </a> <a href="#afeb1ed691f3127374a16d0a3297f6917"></a><br/></td></tr>
 <tr class="memitem:ab10fcc764ffe95d859beedaaf6b54a7e inherit pub_methods_classAbstractObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractObject.html#ab10fcc764ffe95d859beedaaf6b54a7e">setLinks</a> (<a class="el" href="AbstractObject_8h.html#afbf2a7fd8545c773204ac992175ecf74">Links</a> l)</td></tr>
+<tr class="memitem:a4d03017dd1b6c73a08bfeba26b416005 inherit pub_methods_classAbstractObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractObject.html#a4d03017dd1b6c73a08bfeba26b416005">clearLinks</a> ()</td></tr>
+<tr class="memitem:a274595dc90ceaf2e675623b3d07a912c inherit pub_methods_classAbstractObject"><td class="memItemLeft" align="right" valign="top"><a class="el" href="AbstractObject_8h.html#afbf2a7fd8545c773204ac992175ecf74">Links</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractObject.html#a274595dc90ceaf2e675623b3d07a912c">links</a> ()</td></tr>
 <tr class="memitem:a6de1fc0280f41f68a486d255b4ec5444 inherit pub_methods_classAbstractObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractObject.html#a6de1fc0280f41f68a486d255b4ec5444">addLinks</a> (<a class="el" href="AbstractObject_8h.html#afbf2a7fd8545c773204ac992175ecf74">Links</a> l)</td></tr>
 <tr class="memdesc:a6de1fc0280f41f68a486d255b4ec5444 inherit pub_methods_classAbstractObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a vector of Links to the system.  <a class="el" href="classVector.html" title="Generic vector primitive object.">Vector</a> of Reference Systems of the Links.  <a href="#a6de1fc0280f41f68a486d255b4ec5444"></a><br/></td></tr>
 <tr class="memitem:ad6b31861029adf226524bbaf066ec7a6 inherit pub_methods_classAbstractObject"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractObject.html#ad6b31861029adf226524bbaf066ec7a6">hasLinks</a> () const </td></tr>
@@ -164,6 +166,7 @@ Protected Member Functions</h2></td></tr>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classAbstractObject"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classAbstractObject')"><img src="closed.png" alt="-"/>&nbsp;Protected Attributes inherited from <a class="el" href="classAbstractObject.html">AbstractObject</a></td></tr>
 <tr class="memitem:a9f5c5d48dfb61408a6ce957a336c84b8 inherit pro_attribs_classAbstractObject"><td class="memItemLeft" align="right" valign="top"><a class="el" href="AbstractObject_8h.html#afbf2a7fd8545c773204ac992175ecf74">Links</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractObject.html#a9f5c5d48dfb61408a6ce957a336c84b8">_links</a></td></tr>
+<tr class="memitem:a73e17412ccd12d00cdb73c3090ccf9f3 inherit pro_attribs_classAbstractObject"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRefSys.html">RefSys</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractObject.html#a73e17412ccd12d00cdb73c3090ccf9f3">_refsys</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Translate decorator. </p>
@@ -420,7 +423,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 10 2012 19:45:54 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2012 16:47:37 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

@@ -1,16 +1,13 @@
 <map id="TransformMatrix::rotate" name="TransformMatrix::rotate">
-<area shape="rect" id="node3" href="$classComponent.html#ad428061d4b1fbb0095b70cba6d8a5fd4" title="Rotate the component." alt="" coords="213,85,381,115"/>
-<area shape="rect" id="node11" href="$classComponent.html#a5d02f92e62bd7a142dcc9c0dae0c908d" title="Rotate the component." alt="" coords="232,245,363,275"/>
-<area shape="rect" id="node26" href="$classRefSys.html#af6bf58cbf4ee5d308bd05ab976562c56" title="Rotates the reference system This methods rotates the reference system The origin is kept unmoved..." alt="" coords="244,440,351,469"/>
-<area shape="rect" id="node5" href="$classBatteryHolder.html#a31b5756aae7816ef88986302ec12303c" title="Build the piece." alt="" coords="460,112,596,141"/>
-<area shape="rect" id="node7" href="$classBearing.html#acf031144883f9a2eb8db860d3391547e" title="Build the piece." alt="" coords="477,5,579,35"/>
-<area shape="rect" id="node9" href="$classSharpIRSensor.html#a9358ae89493f89e94ecf763fa4f2f542" title="Build the piece." alt="" coords="455,59,601,88"/>
-<area shape="rect" id="node13" href="$classRoundedCube.html#ad0ba2fd7d94c9b93a559bb36ab5787bf" title="Constructor." alt="" coords="431,165,625,195"/>
-<area shape="rect" id="node15" href="$classComponent.html#a90358faa491581771a2677e8cdc00bfd" title="Move To Link Function This method rotates and translates the component in order to place it at a link..." alt="" coords="444,219,612,248"/>
-<area shape="rect" id="node17" href="$classComponent.html#a229e816c0585cc4452b0200e0e842d1c" title="Attaches two components This method attaches attachment component to the componet, making the links fit together." alt="" coords="461,272,595,301"/>
-<area shape="rect" id="node21" href="$classArduinoUNO.html#a3f36db05b8094951b6a0372fae99e390" title="Build the piece." alt="" coords="463,325,593,355"/>
-<area shape="rect" id="node23" href="$classBallWheelHolder.html#a5fdc4b7a1f329bf9e136abb14ce79066" title="Build the piece." alt="" coords="451,379,605,408"/>
-<area shape="rect" id="node19" href="$globalfunctions_8h.html#a09e34955be2ae478ecf8ee52ce4cc741" title="Attaches two components This method attaches attachment component to base componet, making the links fit together." alt="" coords="675,272,733,301"/>
-<area shape="rect" id="node28" href="$classTransformDecorator.html#a5ecdeb6ea7f0a75928fcd5260378c6d8" title="TransformDecorator\l::getLinks" alt="" coords="459,431,597,478"/>
-<area shape="rect" id="node30" href="$classTransformDecorator.html#a2ef0f71beae424dd67ebbeb378015ee8" title="TransformDecorator\l::getLink" alt="" coords="459,501,597,547"/>
+<area shape="rect" id="node3" href="$classComponent.html#ad428061d4b1fbb0095b70cba6d8a5fd4" title="Rotate the component." alt="" coords="213,59,381,88"/>
+<area shape="rect" id="node9" href="$classComponent.html#a5d02f92e62bd7a142dcc9c0dae0c908d" title="Rotate the component." alt="" coords="232,165,363,195"/>
+<area shape="rect" id="node24" href="$classRefSys.html#af6bf58cbf4ee5d308bd05ab976562c56" title="Rotates the reference system This methods rotates the reference system The origin is kept unmoved..." alt="" coords="244,219,351,248"/>
+<area shape="rect" id="node5" href="$classBatteryHolder.html#a31b5756aae7816ef88986302ec12303c" title="Build the piece." alt="" coords="460,59,596,88"/>
+<area shape="rect" id="node7" href="$classSharpIRSensor.html#a9358ae89493f89e94ecf763fa4f2f542" title="Build the piece." alt="" coords="455,5,601,35"/>
+<area shape="rect" id="node11" href="$classRoundedCube.html#ad0ba2fd7d94c9b93a559bb36ab5787bf" title="Constructor." alt="" coords="431,112,625,141"/>
+<area shape="rect" id="node13" href="$classComponent.html#a90358faa491581771a2677e8cdc00bfd" title="Move To Link Function This method rotates and translates the component in order to place it at a link..." alt="" coords="444,165,612,195"/>
+<area shape="rect" id="node15" href="$classComponent.html#a229e816c0585cc4452b0200e0e842d1c" title="Attaches two components This method attaches attachment component to the componet, making the links fit together." alt="" coords="461,219,595,248"/>
+<area shape="rect" id="node19" href="$classArduinoUNO.html#a3f36db05b8094951b6a0372fae99e390" title="Build the piece." alt="" coords="463,272,593,301"/>
+<area shape="rect" id="node21" href="$classBallWheelHolder.html#a5fdc4b7a1f329bf9e136abb14ce79066" title="Build the piece." alt="" coords="451,325,605,355"/>
+<area shape="rect" id="node17" href="$globalfunctions_8h.html#a09e34955be2ae478ecf8ee52ce4cc741" title="Attaches two components This method attaches attachment component to base componet, making the links fit together." alt="" coords="675,219,733,248"/>
 </map>

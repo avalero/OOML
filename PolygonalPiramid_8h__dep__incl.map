@@ -1,6 +1,7 @@
 <map id="src/components/PolygonalPiramid.h" name="src/components/PolygonalPiramid.h">
-<area shape="rect" id="node3" href="$components_8h.html" title="src/components.h" alt="" coords="143,111,268,140"/>
-<area shape="rect" id="node9" href="$PolygonalPiramid_8cpp.html" title="src/components/Polygonal\lPiramid.cpp" alt="" coords="292,102,468,149"/>
-<area shape="rect" id="node5" href="$Bearings_8cpp.html" title="src/components/Bearings.cpp" alt="" coords="5,197,200,227"/>
-<area shape="rect" id="node7" href="$Nuts_8cpp.html" title="src/components/Nuts.cpp" alt="" coords="224,197,395,227"/>
+<area shape="rect" id="node3" href="$PolygonalPiramid_8cpp.html" title="src/components/Polygonal\lPiramid.cpp" alt="" coords="5,102,181,149"/>
+<area shape="rect" id="node5" href="$components_8h.html" title="src/components.h" alt="" coords="205,111,331,140"/>
+<area shape="rect" id="node7" href="$Bearings_8cpp.html" title="src/parts/Bearings.cpp" alt="" coords="27,197,179,227"/>
+<area shape="rect" id="node9" href="$Nuts_8cpp.html" title="src/parts/Nuts.cpp" alt="" coords="203,197,333,227"/>
+<area shape="rect" id="node11" href="$StepperMotors_8cpp.html" title="src/parts/StepperMotors.cpp" alt="" coords="357,197,544,227"/>
 </map>

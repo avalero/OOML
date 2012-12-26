@@ -1,0 +1,6 @@
+<map id="AbstractObject::hasRefSys" name="AbstractObject::hasRefSys">
+<area shape="rect" id="node3" href="$classComponent.html#a2de972147717f2555c25a4f71e478a1f" title="Component::getRefSys" alt="" coords="256,5,413,35"/>
+<area shape="rect" id="node7" href="$classCompositeObject.html#a9564aacd86b82a932e8bc703bc448b30" title="CompositeObject::getRefSys" alt="" coords="239,59,431,88"/>
+<area shape="rect" id="node9" href="$classTransformDecorator.html#ad08991f4615e7002544dbc97041990e4" title="TransformDecorator\l::getRefSys" alt="" coords="265,111,404,158"/>
+<area shape="rect" id="node5" href="$classRefSysView.html#a4f750fae643594a5914c732ea7ca2e8a" title="RefSysView::RefSysView" alt="" coords="480,5,656,35"/>
+</map>

@@ -1,3 +1,5 @@
 <map id="TransformDecorator::getRefSys" name="TransformDecorator::getRefSys">
-<area shape="rect" id="node3" href="$classRefSys.html#a6319bb44d168aefbb38d684853414cd8" title="RefSys::setTransformation\lMatrix" alt="" coords="192,5,371,51"/>
+<area shape="rect" id="node3" href="$classAbstractObject.html#ad07e9542a7f687f73ded66b40cbc380a" title="AbstractObject::hasRefSys" alt="" coords="193,5,375,35"/>
+<area shape="rect" id="node5" href="$classRefSys.html#a257068ba4a052c855587d334edec48ff" title="Rotates the reference system This methods rotates the reference system with a rotational matrix..." alt="" coords="220,59,348,88"/>
+<area shape="rect" id="node7" href="$classTransformMatrix.html#ae5e480c59e5afd8367cc456789d5f79d" title="TransformMatrix::transform" alt="" coords="425,59,604,88"/>
 </map>

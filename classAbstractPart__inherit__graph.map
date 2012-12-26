@@ -3,22 +3,22 @@
 <area shape="rect" id="node11" href="$classB608zz.html" title="B608zz" alt="" coords="639,59,705,88"/>
 <area shape="rect" id="node13" href="$classBallWheelHolder.html" title="Ball Wheel Holder primitive object." alt="" coords="613,112,731,141"/>
 <area shape="rect" id="node15" href="$classBatteryHolder.html" title="Battery holder primitive object." alt="" coords="621,165,723,195"/>
-<area shape="rect" id="node17" href="$classBearing.html" title="Bearing primitive object." alt="" coords="639,219,705,248"/>
-<area shape="rect" id="node19" href="$classFutabaS3003.html" title="Futaba S3003 Bounding Box." alt="" coords="623,272,721,301"/>
-<area shape="rect" id="node21" href="$classLink.html" title="link primitive object" alt="" coords="649,325,695,355"/>
-<area shape="rect" id="node23" href="$classLM8uu.html" title="LM8uu" alt="" coords="641,379,703,408"/>
-<area shape="rect" id="node25" href="$classNineVoltBattery.html" title="Futaba S3003 Bounding Box." alt="" coords="615,432,729,461"/>
-<area shape="rect" id="node27" href="$classNutShape.html" title="NutShape" alt="" coords="632,485,712,515"/>
-<area shape="rect" id="node29" href="$classPolygonalPiramid.html" title="Polygonal base piramid primitive object." alt="" coords="611,539,733,568"/>
-<area shape="rect" id="node31" href="$classPolygonalPrism.html" title="Polygonal base prism primitive object." alt="" coords="616,592,728,621"/>
-<area shape="rect" id="node33" href="$classSeeedUSSensor.html" title="Seeed Ultrasonic Sensor Model." alt="" coords="613,645,731,675"/>
-<area shape="rect" id="node35" href="$classSharpIRSensor.html" title="Shrap IR Analogic Sensor Model." alt="" coords="617,699,727,728"/>
-<area shape="rect" id="node37" href="$classSimpleAxe.html" title="Simple axe primitive object." alt="" coords="629,752,715,781"/>
-<area shape="rect" id="node39" href="$classSimpleWheel.html" title="Simple wheel primitive object." alt="" coords="623,805,721,835"/>
+<area shape="rect" id="node17" href="$classFutabaS3003.html" title="Futaba S3003 Bounding Box." alt="" coords="623,219,721,248"/>
+<area shape="rect" id="node19" href="$classLink.html" title="link primitive object" alt="" coords="649,272,695,301"/>
+<area shape="rect" id="node21" href="$classLMXuu.html" title="LMXuu" alt="" coords="641,325,703,355"/>
+<area shape="rect" id="node23" href="$classNineVoltBattery.html" title="Futaba S3003 Bounding Box." alt="" coords="615,379,729,408"/>
+<area shape="rect" id="node25" href="$classNutShape.html" title="NutShape" alt="" coords="632,432,712,461"/>
+<area shape="rect" id="node27" href="$classPolygonalPiramid.html" title="Polygonal base piramid primitive object." alt="" coords="611,485,733,515"/>
+<area shape="rect" id="node29" href="$classPolygonalPrism.html" title="Polygonal base prism primitive object." alt="" coords="616,539,728,568"/>
+<area shape="rect" id="node31" href="$classSeeedUSSensor.html" title="Seeed Ultrasonic Sensor Model." alt="" coords="613,592,731,621"/>
+<area shape="rect" id="node33" href="$classSharpIRSensor.html" title="Shrap IR Analogic Sensor Model." alt="" coords="617,645,727,675"/>
+<area shape="rect" id="node35" href="$classSimpleAxe.html" title="Simple axe primitive object." alt="" coords="629,699,715,728"/>
+<area shape="rect" id="node37" href="$classSimpleWheel.html" title="Simple wheel primitive object." alt="" coords="623,752,721,781"/>
+<area shape="rect" id="node43" href="$classStepperMotor.html" title="StepperMotor" alt="" coords="623,805,721,835"/>
 <area shape="rect" id="node45" href="$classToroid.html" title="Toroid primitive object." alt="" coords="643,859,701,888"/>
 <area shape="rect" id="node2" href="$classComponent.html" title="Component class." alt="" coords="329,432,417,461"/>
 <area shape="rect" id="node4" href="$classObjectDecorator.html" title="Abstract object decorator interface." alt="" coords="163,432,280,461"/>
 <area shape="rect" id="node6" href="$classAbstractObject.html" title="Abstract object interface." alt="" coords="5,432,115,461"/>
-<area shape="rect" id="node41" href="$classFutabaWheel.html" title="Futaba wheel primitive object." alt="" coords="781,779,880,808"/>
-<area shape="rect" id="node43" href="$classServoWheel.html" title="Servo wheel primitive object." alt="" coords="784,832,877,861"/>
+<area shape="rect" id="node39" href="$classFutabaWheel.html" title="Futaba wheel primitive object." alt="" coords="781,725,880,755"/>
+<area shape="rect" id="node41" href="$classServoWheel.html" title="Servo wheel primitive object." alt="" coords="784,779,877,808"/>
 </map>

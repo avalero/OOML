@@ -124,14 +124,40 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="classCompositeObject.html#a9564aacd86b82a932e8bc703bc448b30">   35</a></span>&#160;<a class="code" href="classRefSys.html" title="3D point primitive object">RefSys</a> <a class="code" href="classCompositeObject.html#a9564aacd86b82a932e8bc703bc448b30">CompositeObject::getRefSys</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classAbstractObject.html" title="Abstract object interface.">AbstractObject</a> * <span class="keywordtype">object</span> =  <span class="keyword">dynamic_cast&lt;</span><a class="code" href="classAbstractObject.html" title="Abstract object interface.">AbstractObject</a> *<span class="keyword">&gt;</span>(<a class="code" href="classCompositeObject.html#aa5e174d56407e7e7e4616990949553b3">_children</a>[0].get());</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">return</span> <span class="keywordtype">object</span>-&gt;<a class="code" href="classAbstractObject.html#a699b7bbe9185ea1695941ebce185a577">getRefSys</a>();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classAbstractObject.html#ad07e9542a7f687f73ded66b40cbc380a">hasRefSys</a>()){</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classCompositeObject.html#a9564aacd86b82a932e8bc703bc448b30">AbstractObject::getRefSys</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classCompositeObject.html#aa5e174d56407e7e7e4616990949553b3">_children</a>[0]-&gt;getRefSys();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="classCompositeObject.html#a0da4998d0228d003a6aaba650c5b89b7">   43</a></span>&#160;<a class="code" href="AbstractObject_8h.html#afbf2a7fd8545c773204ac992175ecf74">Links</a> <a class="code" href="classCompositeObject.html#a0da4998d0228d003a6aaba650c5b89b7">CompositeObject::getLinks</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classAbstractObject.html#ad6b31861029adf226524bbaf066ec7a6" title="Returns if the Object has links.">hasLinks</a>()){</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="AbstractObject_8h.html#afbf2a7fd8545c773204ac992175ecf74">Links</a> lks1 = <a class="code" href="classCompositeObject.html#a0da4998d0228d003a6aaba650c5b89b7">AbstractObject::getLinks</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="AbstractObject_8h.html#afbf2a7fd8545c773204ac992175ecf74">Links</a> lks2 = <a class="code" href="classCompositeObject.html#aa5e174d56407e7e7e4616990949553b3">_children</a>[0]-&gt;getLinks();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        lks1.insert( lks1.end(), lks2.begin(), lks2.end() );</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">return</span> lks1;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="comment">//return AbstractObject::getLinks();</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classCompositeObject.html#aa5e174d56407e7e7e4616990949553b3">_children</a>[0]-&gt;getLinks();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="classCompositeObject.html#a2bf26aaaf2d1b5c8fb73e6cbb482de0d">   55</a></span>&#160;<a class="code" href="classRefSys.html" title="3D point primitive object">RefSys</a> <a class="code" href="classCompositeObject.html#a2bf26aaaf2d1b5c8fb73e6cbb482de0d">CompositeObject::getLink</a>(<span class="keywordtype">int</span> i)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classAbstractObject.html#ad6b31861029adf226524bbaf066ec7a6" title="Returns if the Object has links.">hasLinks</a>()){</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="AbstractObject_8h.html#afbf2a7fd8545c773204ac992175ecf74">Links</a> lks1 = <a class="code" href="classCompositeObject.html#a0da4998d0228d003a6aaba650c5b89b7">AbstractObject::getLinks</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="AbstractObject_8h.html#afbf2a7fd8545c773204ac992175ecf74">Links</a> lks2 = <a class="code" href="classCompositeObject.html#aa5e174d56407e7e7e4616990949553b3">_children</a>[0]-&gt;getLinks();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        lks1.insert( lks1.end(), lks2.begin(), lks2.end() );</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> lks1[i];</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="comment">//return AbstractObject::getLink(i);</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classCompositeObject.html#aa5e174d56407e7e7e4616990949553b3">_children</a>[0]-&gt;getLink(i);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 10 2012 19:45:53 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2012 16:47:36 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

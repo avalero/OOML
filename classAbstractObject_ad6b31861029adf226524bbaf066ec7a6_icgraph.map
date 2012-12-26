@@ -1,0 +1,8 @@
+<map id="AbstractObject::hasLinks" name="AbstractObject::hasLinks">
+<area shape="rect" id="node3" href="$classCompositeObject.html#a0da4998d0228d003a6aaba650c5b89b7" title="CompositeObject::getLinks" alt="" coords="225,5,404,35"/>
+<area shape="rect" id="node5" href="$classCompositeObject.html#a2bf26aaaf2d1b5c8fb73e6cbb482de0d" title="CompositeObject::getLink" alt="" coords="453,32,627,61"/>
+<area shape="rect" id="node8" href="$classTransformDecorator.html#a5ecdeb6ea7f0a75928fcd5260378c6d8" title="TransformDecorator\l::getLinks" alt="" coords="245,109,384,155"/>
+<area shape="rect" id="node10" href="$classTransformDecorator.html#a2ef0f71beae424dd67ebbeb378015ee8" title="TransformDecorator\l::getLink" alt="" coords="471,154,609,201"/>
+<area shape="rect" id="node13" href="$classUnion.html#acdb69c983d0a7c549a213f381ed38abc" title="Union::getLinks" alt="" coords="259,229,371,259"/>
+<area shape="rect" id="node15" href="$classUnion.html#aabf9e6d1f9a183b008c45e471878bee5" title="Union::getLink" alt="" coords="487,245,593,275"/>
+</map>

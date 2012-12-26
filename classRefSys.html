@@ -124,8 +124,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa072538837bda40928c53d308298021d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the reference system This methods rotates the reference system with the Euler ZXZ angles. The origin is kept unmoved.  <a href="#aa072538837bda40928c53d308298021d"></a><br/></td></tr>
 <tr class="memitem:a665f74d330be2f94e8e29c186120b0ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRefSys.html">RefSys</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRefSys.html#a665f74d330be2f94e8e29c186120b0ea">relRotateEulerZYZ</a> (double z, double yp, double zpp)</td></tr>
 <tr class="memdesc:a665f74d330be2f94e8e29c186120b0ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the reference system This methods rotates the reference system with the Euler ZYZ angles. The origin is kept unmoved.  <a href="#a665f74d330be2f94e8e29c186120b0ea"></a><br/></td></tr>
+<tr class="memitem:a257068ba4a052c855587d334edec48ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRefSys.html">RefSys</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRefSys.html#a257068ba4a052c855587d334edec48ff">transform</a> (<a class="el" href="classTransformMatrix.html">TransformMatrix</a> tr)</td></tr>
+<tr class="memdesc:a257068ba4a052c855587d334edec48ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the reference system This methods rotates the reference system with a rotational matrix. The origin is kept unmoved.  <a href="#a257068ba4a052c855587d334edec48ff"></a><br/></td></tr>
+<tr class="memitem:a964c20355e817d51cc44f4370f41056f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRefSys.html">RefSys</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRefSys.html#a964c20355e817d51cc44f4370f41056f">relTransform</a> (<a class="el" href="classTransformMatrix.html">TransformMatrix</a> tr)</td></tr>
 <tr class="memitem:a242db8ba69ca79d31ab07793ad458ced"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTransformMatrix.html">TransformMatrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRefSys.html#a242db8ba69ca79d31ab07793ad458ced">getTransformMatrix</a> () const </td></tr>
-<tr class="memdesc:a242db8ba69ca79d31ab07793ad458ced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the reference system This methods rotates the reference system with a rotational matrix. The origin is kept unmoved.  <a href="#a242db8ba69ca79d31ab07793ad458ced"></a><br/></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>3D point primitive object </p>
@@ -285,15 +287,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Rotates the reference system This methods rotates the reference system with a rotational matrix. The origin is kept unmoved. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rot</td><td>Rotational <a class="el" href="classMatrix.html" title="Generic matrix primitive object.">Matrix</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="RefSys_8h_source.html#l00180">180</a> of file <a class="el" href="RefSys_8h_source.html">RefSys.h</a>.</p>
+<p>Definition at line <a class="el" href="RefSys_8h_source.html#l00183">183</a> of file <a class="el" href="RefSys_8h_source.html">RefSys.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -499,6 +493,42 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a964c20355e817d51cc44f4370f41056f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classRefSys.html">RefSys</a> RefSys::relTransform </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTransformMatrix.html">TransformMatrix</a>&#160;</td>
+          <td class="paramname"><em>tr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="RefSys_8cpp_source.html#l00072">72</a> of file <a class="el" href="RefSys_8cpp_source.html">RefSys.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRefSys_a964c20355e817d51cc44f4370f41056f_cgraph.png" border="0" usemap="#classRefSys_a964c20355e817d51cc44f4370f41056f_cgraph" alt=""/></div>
+<map name="classRefSys_a964c20355e817d51cc44f4370f41056f_cgraph" id="classRefSys_a964c20355e817d51cc44f4370f41056f_cgraph">
+<area shape="rect" id="node3" href="classTransformMatrix.html#a2b8dd01bc118116b0ca134643a4b8cc9" title="TransformMatrix::relTransform" alt="" coords="201,5,399,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRefSys_a964c20355e817d51cc44f4370f41056f_icgraph.png" border="0" usemap="#classRefSys_a964c20355e817d51cc44f4370f41056f_icgraph" alt=""/></div>
+<map name="classRefSys_a964c20355e817d51cc44f4370f41056f_icgraph" id="classRefSys_a964c20355e817d51cc44f4370f41056f_icgraph">
+<area shape="rect" id="node3" href="classTransformDecorator.html#a0aa4971660b91bebb8ad53e682b00bd1" title="Default factory method." alt="" coords="200,794,339,841"/><area shape="rect" id="node5" href="classComponent.html#ad428061d4b1fbb0095b70cba6d8a5fd4" title="Rotate the component." alt="" coords="415,107,583,136"/><area shape="rect" id="node11" href="classComponent.html#acaf3d36cfecfce9ac15e803f5d5d66d6" title="Rotate the component around its local reference system." alt="" coords="405,559,592,588"/><area shape="rect" id="node13" href="classComponent.html#a5d02f92e62bd7a142dcc9c0dae0c908d" title="Rotate the component." alt="" coords="433,267,564,296"/><area shape="rect" id="node28" href="classComponent.html#a2c3e5cf2bc1680e69b3268e7063cd1d8" title="Rotate the component around its local reference system." alt="" coords="424,612,573,641"/><area shape="rect" id="node30" href="classComponent.html#a65626ffdf954959a05120a15daf04219" title="Rotate the component with Euler Angles ZX&#39;Z&#39;&#39;." alt="" coords="407,665,591,695"/><area shape="rect" id="node32" href="classComponent.html#a29263e0bb90f81f656e96f2d32c7779a" title="Rotate the component with Euler Angles ZX&#39;Z&#39;&#39; around its local reference system." alt="" coords="396,719,601,748"/><area shape="rect" id="node34" href="classComponent.html#ab274194213390b91a710465d7c7c12ea" title="Rotate a copy of the component with Euler Angles ZX&#39;Z&#39;&#39;." alt="" coords="388,772,609,801"/><area shape="rect" id="node36" href="classComponent.html#a25028782df9545cded87db34bfd597e6" title="Rotate a copy of the component with Euler Angles ZX&#39;Z&#39;&#39; around its local reference system..." alt="" coords="405,825,592,871"/><area shape="rect" id="node38" href="classComponent.html#a495eab23b140a50437e90f84500803eb" title="Rotate the component with Euler Angles ZY&#39;Z&#39;&#39;." alt="" coords="407,895,591,924"/><area shape="rect" id="node40" href="classComponent.html#a04731b2276edc482d179889f9ac83a5a" title="Rotate the component with Euler Angles ZY&#39;Z&#39;&#39; around its local reference system." alt="" coords="396,948,601,977"/><area shape="rect" id="node42" href="classComponent.html#a0ec11e37ac626ea7ea2ce8019a828a16" title="Rotate a copy of the component with Euler Angles ZX&#39;Z&#39;&#39;." alt="" coords="388,1001,609,1031"/><area shape="rect" id="node44" href="classComponent.html#aae9aac84bce74a68c307c10cd2fd060e" title="Rotate a copy of the component with Euler Angles ZX&#39;Z&#39;&#39; around its local reference system..." alt="" coords="405,1054,592,1101"/><area shape="rect" id="node46" href="classComponent.html#a871a9cc554e6c5bfa195215fa011e416" title="Translate the component." alt="" coords="407,373,591,403"/><area shape="rect" id="node58" href="classComponent.html#a81714ef743a86f37f571a1f40af66770" title="Translate the component wrt. to its local reference system." alt="" coords="397,1124,600,1153"/><area shape="rect" id="node60" href="classComponent.html#abfdd7b2784ca975181f2f9391a7a3e50" title="Component::transform" alt="" coords="423,1177,575,1207"/><area shape="rect" id="node62" href="classComponent.html#a96438164cd3e438b3044c420c4bd2788" title="Component::relTransform" alt="" coords="413,1231,584,1260"/><area shape="rect" id="node64" href="classComponent.html#a0df678527e9d0d65a749bbc5883a71af" title="Translate the component." alt="" coords="425,505,572,535"/><area shape="rect" id="node95" href="classComponent.html#a9c77e890ea15db01c38273975f9a56ad" title="Translate the component wrt. to its local reference system." alt="" coords="416,1284,581,1313"/><area shape="rect" id="node7" href="classBatteryHolder.html#a31b5756aae7816ef88986302ec12303c" title="Build the piece." alt="" coords="695,53,831,83"/><area shape="rect" id="node9" href="classSharpIRSensor.html#a9358ae89493f89e94ecf763fa4f2f542" title="Build the piece." alt="" coords="689,107,836,136"/><area shape="rect" id="node15" href="classRoundedCube.html#ad0ba2fd7d94c9b93a559bb36ab5787bf" title="Constructor." alt="" coords="665,373,860,403"/><area shape="rect" id="node17" href="classComponent.html#a90358faa491581771a2677e8cdc00bfd" title="Move To Link Function This method rotates and translates the component in order to place it at a link..." alt="" coords="679,160,847,189"/><area shape="rect" id="node19" href="classComponent.html#a229e816c0585cc4452b0200e0e842d1c" title="Attaches two components This method attaches attachment component to the componet, making the links fit together." alt="" coords="696,320,829,349"/><area shape="rect" id="node23" href="classArduinoUNO.html#a3f36db05b8094951b6a0372fae99e390" title="Build the piece." alt="" coords="915,213,1045,243"/><area shape="rect" id="node25" href="classBallWheelHolder.html#a5fdc4b7a1f329bf9e136abb14ce79066" title="Build the piece." alt="" coords="685,267,840,296"/><area shape="rect" id="node21" href="globalfunctions_8h.html#a09e34955be2ae478ecf8ee52ce4cc741" title="Attaches two components This method attaches attachment component to base componet, making the links fit together." alt="" coords="951,320,1009,349"/><area shape="rect" id="node49" href="classRoundedTablet.html#acb7bd8292117dbfba2b14e928a5f1d1e" title="Constructor." alt="" coords="660,480,865,509"/><area shape="rect" id="node51" href="classArduinoUNO.html#a2765f8e142d0668f66270d15dfb30296" title="returns a component only with the board" alt="" coords="685,213,840,243"/><area shape="rect" id="node55" href="classFutabaS3003.html#a780e4ad25476f3d7962675c1b5e4fb03" title="Build the piece." alt="" coords="696,427,829,456"/><area shape="rect" id="node67" href="classRoundedCylinder.html#a71de022375f47005a38034c037d6dd2f" title="Static factory method." alt="" coords="672,583,853,630"/><area shape="rect" id="node70" href="classString.html#a9662ca94c4e2cd2a1b6fe723fd7ee6d7" title="String::String" alt="" coords="713,653,812,683"/><area shape="rect" id="node72" href="classToroid.html#a1f536ca45b977d2b16caddcfac37e8f2" title="Build the piece." alt="" coords="716,707,809,736"/><area shape="rect" id="node78" href="classBallWheelHolder.html#aa345c2a64731ffd98a8562c452b9115b" title="BallWheelHolder::getBall" alt="" coords="680,760,845,789"/><area shape="rect" id="node82" href="classFutabaWheel.html#a6dc7222f040225cbea58a7f52ab51bc1" title="Build the piece." alt="" coords="696,813,829,843"/><area shape="rect" id="node84" href="classNineVoltBattery.html#a47fdf8ed2d4de128b9acae2ced2cb9ef" title="Build the piece." alt="" coords="688,867,837,896"/><area shape="rect" id="node86" href="classSeeedUSSensor.html#a2a01659a5ec32083d7681150a7270a2f" title="Build the piece." alt="" coords="685,920,840,949"/><area shape="rect" id="node88" href="classServoWheel.html#a1c938e0a0aeac4b0cb9f31081cdbcc62" title="Build the piece." alt="" coords="699,973,827,1003"/><area shape="rect" id="node91" href="classSimpleWheel.html#a33754ed6566c483e50a13e3ab9ea1052" title="Build the piece." alt="" coords="696,1027,829,1056"/><area shape="rect" id="node93" href="classStepperMotor.html#ae2954c48b9c34762cfcd67720a72b710" title="Build the piece." alt="" coords="696,1080,829,1109"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a2369ded5f3d02e987c7f9c9c7a4d9147"></a>
 <div class="memitem">
 <div class="memproto">
@@ -600,15 +630,6 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classRefSys_af6bf58cbf4ee5d308bd05ab976562c56_cgraph.png" border="0" usemap="#classRefSys_af6bf58cbf4ee5d308bd05ab976562c56_cgraph" alt=""/></div>
 <map name="classRefSys_af6bf58cbf4ee5d308bd05ab976562c56_cgraph" id="classRefSys_af6bf58cbf4ee5d308bd05ab976562c56_cgraph">
 <area shape="rect" id="node3" href="classTransformMatrix.html#a20910983db5e4e0574879dd86b4f8a3e" title="Applies a Roll&#45;Pitch&#45;Yaw rotation around the initial fixed x, y, z Applies three rotations around the..." alt="" coords="161,59,319,88"/><area shape="rect" id="node5" href="classTransformMatrix.html#ad94010aa2da239614efbfb4926d63c04" title="Applies a rotation around initial fixed x axis Applies a rotation around current x axis..." alt="" coords="369,5,535,35"/><area shape="rect" id="node11" href="classTransformMatrix.html#ac76ffec4c53cd0b70b0bc86a67f95ad0" title="Applies a rotation around initial fixed y axis Applies a rotation around current y axis..." alt="" coords="369,59,535,88"/><area shape="rect" id="node15" href="classTransformMatrix.html#a4b485e8c3d73e3b687b4859b4cc11408" title="Applies a rotation around initial fixed current z axis Applies a rotation around current z axis..." alt="" coords="369,112,535,141"/><area shape="rect" id="node7" href="Math_8h.html#a021636ed21e2cb128cb67fa392983ac0" title="deg2rad" alt="" coords="593,32,660,61"/><area shape="rect" id="node9" href="classMatrix.html#a820d3e49ffea766faf310729803e1df1" title="Matrix::set" alt="" coords="585,85,668,115"/></map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classRefSys_af6bf58cbf4ee5d308bd05ab976562c56_icgraph.png" border="0" usemap="#classRefSys_af6bf58cbf4ee5d308bd05ab976562c56_icgraph" alt=""/></div>
-<map name="classRefSys_af6bf58cbf4ee5d308bd05ab976562c56_icgraph" id="classRefSys_af6bf58cbf4ee5d308bd05ab976562c56_icgraph">
-<area shape="rect" id="node3" href="classTransformDecorator.html#a5ecdeb6ea7f0a75928fcd5260378c6d8" title="TransformDecorator\l::getLinks" alt="" coords="160,5,299,51"/><area shape="rect" id="node5" href="classTransformDecorator.html#a2ef0f71beae424dd67ebbeb378015ee8" title="TransformDecorator\l::getLink" alt="" coords="160,74,299,121"/></map>
 </div>
 </p>
 
@@ -744,12 +765,47 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="RefSys_8h_source.html#l00080">80</a> of file <a class="el" href="RefSys_8h_source.html">RefSys.h</a>.</p>
 
+</div>
+</div>
+<a class="anchor" id="a257068ba4a052c855587d334edec48ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classRefSys.html">RefSys</a> RefSys::transform </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTransformMatrix.html">TransformMatrix</a>&#160;</td>
+          <td class="paramname"><em>tr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Rotates the reference system This methods rotates the reference system with a rotational matrix. The origin is kept unmoved. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rot</td><td>Rotational <a class="el" href="classMatrix.html" title="Generic matrix primitive object.">Matrix</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="RefSys_8cpp_source.html#l00067">67</a> of file <a class="el" href="RefSys_8cpp_source.html">RefSys.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRefSys_a257068ba4a052c855587d334edec48ff_cgraph.png" border="0" usemap="#classRefSys_a257068ba4a052c855587d334edec48ff_cgraph" alt=""/></div>
+<map name="classRefSys_a257068ba4a052c855587d334edec48ff_cgraph" id="classRefSys_a257068ba4a052c855587d334edec48ff_cgraph">
+<area shape="rect" id="node3" href="classTransformMatrix.html#ae5e480c59e5afd8367cc456789d5f79d" title="TransformMatrix::transform" alt="" coords="185,5,364,35"/></map>
+</div>
+</p>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classRefSys_a6319bb44d168aefbb38d684853414cd8_icgraph.png" border="0" usemap="#classRefSys_a6319bb44d168aefbb38d684853414cd8_icgraph" alt=""/></div>
-<map name="classRefSys_a6319bb44d168aefbb38d684853414cd8_icgraph" id="classRefSys_a6319bb44d168aefbb38d684853414cd8_icgraph">
-<area shape="rect" id="node3" href="classTransformDecorator.html#ad08991f4615e7002544dbc97041990e4" title="TransformDecorator\l::getRefSys" alt="" coords="232,5,371,51"/></map>
+<div class="center"><img src="classRefSys_a257068ba4a052c855587d334edec48ff_icgraph.png" border="0" usemap="#classRefSys_a257068ba4a052c855587d334edec48ff_icgraph" alt=""/></div>
+<map name="classRefSys_a257068ba4a052c855587d334edec48ff_icgraph" id="classRefSys_a257068ba4a052c855587d334edec48ff_icgraph">
+<area shape="rect" id="node3" href="classTransformDecorator.html#ad08991f4615e7002544dbc97041990e4" title="TransformDecorator\l::getRefSys" alt="" coords="184,725,323,771"/><area shape="rect" id="node5" href="classTransformDecorator.html#a0aa4971660b91bebb8ad53e682b00bd1" title="Default factory method." alt="" coords="184,794,323,841"/><area shape="rect" id="node7" href="classComponent.html#ad428061d4b1fbb0095b70cba6d8a5fd4" title="Rotate the component." alt="" coords="399,107,567,136"/><area shape="rect" id="node13" href="classComponent.html#acaf3d36cfecfce9ac15e803f5d5d66d6" title="Rotate the component around its local reference system." alt="" coords="389,559,576,588"/><area shape="rect" id="node15" href="classComponent.html#a5d02f92e62bd7a142dcc9c0dae0c908d" title="Rotate the component." alt="" coords="417,267,548,296"/><area shape="rect" id="node30" href="classComponent.html#a2c3e5cf2bc1680e69b3268e7063cd1d8" title="Rotate the component around its local reference system." alt="" coords="408,612,557,641"/><area shape="rect" id="node32" href="classComponent.html#a65626ffdf954959a05120a15daf04219" title="Rotate the component with Euler Angles ZX&#39;Z&#39;&#39;." alt="" coords="391,665,575,695"/><area shape="rect" id="node34" href="classComponent.html#a29263e0bb90f81f656e96f2d32c7779a" title="Rotate the component with Euler Angles ZX&#39;Z&#39;&#39; around its local reference system." alt="" coords="380,719,585,748"/><area shape="rect" id="node36" href="classComponent.html#ab274194213390b91a710465d7c7c12ea" title="Rotate a copy of the component with Euler Angles ZX&#39;Z&#39;&#39;." alt="" coords="372,772,593,801"/><area shape="rect" id="node38" href="classComponent.html#a25028782df9545cded87db34bfd597e6" title="Rotate a copy of the component with Euler Angles ZX&#39;Z&#39;&#39; around its local reference system..." alt="" coords="389,825,576,871"/><area shape="rect" id="node40" href="classComponent.html#a495eab23b140a50437e90f84500803eb" title="Rotate the component with Euler Angles ZY&#39;Z&#39;&#39;." alt="" coords="391,895,575,924"/><area shape="rect" id="node42" href="classComponent.html#a04731b2276edc482d179889f9ac83a5a" title="Rotate the component with Euler Angles ZY&#39;Z&#39;&#39; around its local reference system." alt="" coords="380,948,585,977"/><area shape="rect" id="node44" href="classComponent.html#a0ec11e37ac626ea7ea2ce8019a828a16" title="Rotate a copy of the component with Euler Angles ZX&#39;Z&#39;&#39;." alt="" coords="372,1001,593,1031"/><area shape="rect" id="node46" href="classComponent.html#aae9aac84bce74a68c307c10cd2fd060e" title="Rotate a copy of the component with Euler Angles ZX&#39;Z&#39;&#39; around its local reference system..." alt="" coords="389,1054,576,1101"/><area shape="rect" id="node48" href="classComponent.html#a871a9cc554e6c5bfa195215fa011e416" title="Translate the component." alt="" coords="391,373,575,403"/><area shape="rect" id="node60" href="classComponent.html#a81714ef743a86f37f571a1f40af66770" title="Translate the component wrt. to its local reference system." alt="" coords="381,1124,584,1153"/><area shape="rect" id="node62" href="classComponent.html#abfdd7b2784ca975181f2f9391a7a3e50" title="Component::transform" alt="" coords="407,1177,559,1207"/><area shape="rect" id="node64" href="classComponent.html#a96438164cd3e438b3044c420c4bd2788" title="Component::relTransform" alt="" coords="397,1231,568,1260"/><area shape="rect" id="node66" href="classComponent.html#a0df678527e9d0d65a749bbc5883a71af" title="Translate the component." alt="" coords="409,505,556,535"/><area shape="rect" id="node97" href="classComponent.html#a9c77e890ea15db01c38273975f9a56ad" title="Translate the component wrt. to its local reference system." alt="" coords="400,1284,565,1313"/><area shape="rect" id="node9" href="classBatteryHolder.html#a31b5756aae7816ef88986302ec12303c" title="Build the piece." alt="" coords="679,53,815,83"/><area shape="rect" id="node11" href="classSharpIRSensor.html#a9358ae89493f89e94ecf763fa4f2f542" title="Build the piece." alt="" coords="673,107,820,136"/><area shape="rect" id="node17" href="classRoundedCube.html#ad0ba2fd7d94c9b93a559bb36ab5787bf" title="Constructor." alt="" coords="649,373,844,403"/><area shape="rect" id="node19" href="classComponent.html#a90358faa491581771a2677e8cdc00bfd" title="Move To Link Function This method rotates and translates the component in order to place it at a link..." alt="" coords="663,160,831,189"/><area shape="rect" id="node21" href="classComponent.html#a229e816c0585cc4452b0200e0e842d1c" title="Attaches two components This method attaches attachment component to the componet, making the links fit together." alt="" coords="680,320,813,349"/><area shape="rect" id="node25" href="classArduinoUNO.html#a3f36db05b8094951b6a0372fae99e390" title="Build the piece." alt="" coords="899,213,1029,243"/><area shape="rect" id="node27" href="classBallWheelHolder.html#a5fdc4b7a1f329bf9e136abb14ce79066" title="Build the piece." alt="" coords="669,267,824,296"/><area shape="rect" id="node23" href="globalfunctions_8h.html#a09e34955be2ae478ecf8ee52ce4cc741" title="Attaches two components This method attaches attachment component to base componet, making the links fit together." alt="" coords="935,320,993,349"/><area shape="rect" id="node51" href="classRoundedTablet.html#acb7bd8292117dbfba2b14e928a5f1d1e" title="Constructor." alt="" coords="644,480,849,509"/><area shape="rect" id="node53" href="classArduinoUNO.html#a2765f8e142d0668f66270d15dfb30296" title="returns a component only with the board" alt="" coords="669,213,824,243"/><area shape="rect" id="node57" href="classFutabaS3003.html#a780e4ad25476f3d7962675c1b5e4fb03" title="Build the piece." alt="" coords="680,427,813,456"/><area shape="rect" id="node69" href="classRoundedCylinder.html#a71de022375f47005a38034c037d6dd2f" title="Static factory method." alt="" coords="656,583,837,630"/><area shape="rect" id="node72" href="classString.html#a9662ca94c4e2cd2a1b6fe723fd7ee6d7" title="String::String" alt="" coords="697,653,796,683"/><area shape="rect" id="node74" href="classToroid.html#a1f536ca45b977d2b16caddcfac37e8f2" title="Build the piece." alt="" coords="700,707,793,736"/><area shape="rect" id="node80" href="classBallWheelHolder.html#aa345c2a64731ffd98a8562c452b9115b" title="BallWheelHolder::getBall" alt="" coords="664,760,829,789"/><area shape="rect" id="node84" href="classFutabaWheel.html#a6dc7222f040225cbea58a7f52ab51bc1" title="Build the piece." alt="" coords="680,813,813,843"/><area shape="rect" id="node86" href="classNineVoltBattery.html#a47fdf8ed2d4de128b9acae2ced2cb9ef" title="Build the piece." alt="" coords="672,867,821,896"/><area shape="rect" id="node88" href="classSeeedUSSensor.html#a2a01659a5ec32083d7681150a7270a2f" title="Build the piece." alt="" coords="669,920,824,949"/><area shape="rect" id="node90" href="classServoWheel.html#a1c938e0a0aeac4b0cb9f31081cdbcc62" title="Build the piece." alt="" coords="683,973,811,1003"/><area shape="rect" id="node93" href="classSimpleWheel.html#a33754ed6566c483e50a13e3ab9ea1052" title="Build the piece." alt="" coords="680,1027,813,1056"/><area shape="rect" id="node95" href="classStepperMotor.html#ae2954c48b9c34762cfcd67720a72b710" title="Build the piece." alt="" coords="680,1080,813,1109"/></map>
 </div>
 </p>
 
@@ -806,15 +862,6 @@ Here is the call graph for this function:</div>
 </div>
 </p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classRefSys_a13d60d2bdaf80726fdd42694c1df98db_icgraph.png" border="0" usemap="#classRefSys_a13d60d2bdaf80726fdd42694c1df98db_icgraph" alt=""/></div>
-<map name="classRefSys_a13d60d2bdaf80726fdd42694c1df98db_icgraph" id="classRefSys_a13d60d2bdaf80726fdd42694c1df98db_icgraph">
-<area shape="rect" id="node3" href="classTransformDecorator.html#a5ecdeb6ea7f0a75928fcd5260378c6d8" title="TransformDecorator\l::getLinks" alt="" coords="179,5,317,51"/><area shape="rect" id="node5" href="classTransformDecorator.html#a2ef0f71beae424dd67ebbeb378015ee8" title="TransformDecorator\l::getLink" alt="" coords="179,74,317,121"/></map>
-</div>
-</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -824,7 +871,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 10 2012 19:45:54 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2012 16:47:37 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

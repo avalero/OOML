@@ -133,32 +133,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="classAbstractPart.html#a06732798fd060a805f89e2a9a66e5368">   52</a></span>&#160;        <span class="keywordtype">void</span> rebuild()</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keyword">set</span>(build().get());</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classObjectDecorator.html#a24d2b99d71b6d3dcbb5394a4ff75f6cd" title="Generate SCAD output for this object.">genScad</a>(<a class="code" href="classIndentWriter.html" title="Indented output writer.">IndentWriter</a>&amp; writer) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classObjectDecorator.html#a95f501ab7e9704d91983931949f77073" title="Generate AST output for this object.">printAst</a>(<a class="code" href="classIndentWriter.html" title="Indented output writer.">IndentWriter</a>&amp; writer) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="code" href="classAbstractPart.html#a780875bebfedef59b1c4d904bfcde838">   82</a></span>&#160;        <a class="code" href="classAbstractPart.html" title="Color decorator.">AbstractPart</a>() :</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                <a class="code" href="classComponent.html" title="Component class.">Component</a>()</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        {}</div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="code" href="classAbstractPart.html#a989bfca6169c8541e02a2c92c03b1065">   88</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classAbstractPart.html#a989bfca6169c8541e02a2c92c03b1065" title="Default destructor.">~AbstractPart</a>() {}</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classComponent.html" title="Component class.">Component</a> build() = 0;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor"></span><span class="keyword">private</span>:</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <a class="code" href="classAbstractPart.html" title="Color decorator.">AbstractPart</a>(<a class="code" href="classAbstractPart.html" title="Color decorator.">AbstractPart</a> <span class="keyword">const</span>&amp; other);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <a class="code" href="classAbstractPart.html" title="Color decorator.">AbstractPart</a> &amp; <a class="code" href="classComponent.html#a77773539ba9f9eb322b7ba88c61dcaf6" title="Default assignment operator.">operator=</a>(<a class="code" href="classAbstractPart.html" title="Color decorator.">AbstractPart</a> <span class="keyword">const</span>&amp; other);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;};</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor">#endif // ABSTRACTPART_H_INCLUDED</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="classAbstractObject.html#a5c6b81512c95f040f1d31dd65d4b3d57">resetRefSys</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classObjectDecorator.html#a24d2b99d71b6d3dcbb5394a4ff75f6cd" title="Generate SCAD output for this object.">genScad</a>(<a class="code" href="classIndentWriter.html" title="Indented output writer.">IndentWriter</a>&amp; writer) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classObjectDecorator.html#a95f501ab7e9704d91983931949f77073" title="Generate AST output for this object.">printAst</a>(<a class="code" href="classIndentWriter.html" title="Indented output writer.">IndentWriter</a>&amp; writer) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="code" href="classAbstractPart.html#a780875bebfedef59b1c4d904bfcde838">   83</a></span>&#160;        <a class="code" href="classAbstractPart.html" title="Color decorator.">AbstractPart</a>() :</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                <a class="code" href="classComponent.html" title="Component class.">Component</a>()</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        {}</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="code" href="classAbstractPart.html#a989bfca6169c8541e02a2c92c03b1065">   89</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classAbstractPart.html#a989bfca6169c8541e02a2c92c03b1065" title="Default destructor.">~AbstractPart</a>() {}</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classComponent.html" title="Component class.">Component</a> build() = 0;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor"></span><span class="keyword">private</span>:</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <a class="code" href="classAbstractPart.html" title="Color decorator.">AbstractPart</a>(<a class="code" href="classAbstractPart.html" title="Color decorator.">AbstractPart</a> <span class="keyword">const</span>&amp; other);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <a class="code" href="classAbstractPart.html" title="Color decorator.">AbstractPart</a> &amp; <a class="code" href="classComponent.html#a77773539ba9f9eb322b7ba88c61dcaf6" title="Default assignment operator.">operator=</a>(<a class="code" href="classAbstractPart.html" title="Color decorator.">AbstractPart</a> <span class="keyword">const</span>&amp; other);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;};</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">#endif // ABSTRACTPART_H_INCLUDED</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 10 2012 19:45:53 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 26 2012 16:47:36 for OOML by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

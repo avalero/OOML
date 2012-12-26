@@ -1,0 +1,44 @@
+<map id="AbstractObject::resetRefSys" name="AbstractObject::resetRefSys">
+<area shape="rect" id="node3" href="$classAbstractPart.html#a06732798fd060a805f89e2a9a66e5368" title="Rebuild the part." alt="" coords="257,528,399,557"/>
+<area shape="rect" id="node45" href="$classComponent.html#a8775db6d1a2c1afc2e77cd3c8f39da6f" title="Default constructor." alt="" coords="247,1323,409,1352"/>
+<area shape="rect" id="node5" href="$classPolygonalPiramid.html#a4f6eb13466f53fe7f4488feef7a4ecea" title="Default constructor." alt="" coords="481,767,668,814"/>
+<area shape="rect" id="node7" href="$classPolygonalPrism.html#ade8a8f3727734f69193ce138551e0bc7" title="Default constructor." alt="" coords="485,837,664,883"/>
+<area shape="rect" id="node9" href="$classToroid.html#a72f8eb10bf54ff1676908153c04a79f9" title="Default constructor." alt="" coords="524,907,625,936"/>
+<area shape="rect" id="node11" href="$classArduinoUNO.html#abe0b5d6abbe261f6b407bd0704e6c6cc" title="Default constructor." alt="" coords="485,960,664,989"/>
+<area shape="rect" id="node13" href="$classBallWheelHolder.html#a348d60d81cfddf39cd68552ae3e7521a" title="Default constructor." alt="" coords="481,1013,668,1059"/>
+<area shape="rect" id="node15" href="$classBatteryHolder.html#a299b7dd080abb2defb3f4328bea6a806" title="Default constructor." alt="" coords="480,5,669,35"/>
+<area shape="rect" id="node17" href="$classLMXuu.html#aa3a8c5d9004e2305cbe901382f16a348" title="LMXuu::LMXuu" alt="" coords="519,59,631,88"/>
+<area shape="rect" id="node19" href="$classB608zz.html#a003c3a9aad9bf8e67ef7680734c8db2f" title="B608zz::B608zz" alt="" coords="516,112,633,141"/>
+<area shape="rect" id="node21" href="$classFutabaS3003.html#a83db60aa551d0a2e1b3fb6c955267941" title="Default constructor." alt="" coords="483,165,667,195"/>
+<area shape="rect" id="node23" href="$classFutabaWheel.html#a66b9d234afa55569be4cb3704f9f5b96" title="Default constructor." alt="" coords="483,219,667,248"/>
+<area shape="rect" id="node25" href="$classLink.html#a141d8c99c09287bf78038a76bd04c8a7" title="Default parametrized constructor." alt="" coords="536,272,613,301"/>
+<area shape="rect" id="node27" href="$classNineVoltBattery.html#a101c892fd674f842c79263bd6e07e616" title="Default constructor." alt="" coords="489,325,660,371"/>
+<area shape="rect" id="node29" href="$classNutShape.html#a8e8df969d5821e187b5dbf6c34b8f5a0" title="NutShape::NutShape" alt="" coords="501,395,648,424"/>
+<area shape="rect" id="node31" href="$classSeeedUSSensor.html#a45e52fa7288b70fc37144a56a4a2261d" title="Default constructor." alt="" coords="463,448,687,477"/>
+<area shape="rect" id="node33" href="$classServoWheel.html#a34383fed97ca15f865e3cae7959686ea" title="Default constructor." alt="" coords="489,501,660,531"/>
+<area shape="rect" id="node35" href="$classSharpIRSensor.html#a14ccc78b56b66688e223f4db597fc016" title="Default constructor." alt="" coords="471,555,679,584"/>
+<area shape="rect" id="node37" href="$classSimpleAxe.html#a883c4f608769fb205a17f9ee19cd1fe4" title="Default constructor." alt="" coords="497,608,652,637"/>
+<area shape="rect" id="node39" href="$classSimpleWheel.html#a6389334cd0de50de44b30e28423d76c5" title="Default constructor." alt="" coords="483,661,667,691"/>
+<area shape="rect" id="node43" href="$classStepperMotor.html#ae24d601aad895acc3bb8511a9efd11d5" title="StepperMotor::StepperMotor" alt="" coords="481,715,668,744"/>
+<area shape="rect" id="node41" href="$classFutabaWheel.html#a6dc7222f040225cbea58a7f52ab51bc1" title="Build the piece." alt="" coords="776,661,909,691"/>
+<area shape="rect" id="node47" href="$classComponent.html#ad428061d4b1fbb0095b70cba6d8a5fd4" title="Rotate the component." alt="" coords="491,1189,659,1219"/>
+<area shape="rect" id="node53" href="$classComponent.html#acaf3d36cfecfce9ac15e803f5d5d66d6" title="Rotate the component around its local reference system." alt="" coords="481,1296,668,1325"/>
+<area shape="rect" id="node55" href="$classComponent.html#ab274194213390b91a710465d7c7c12ea" title="Rotate a copy of the component with Euler Angles ZX&#39;Z&#39;&#39;." alt="" coords="464,1349,685,1379"/>
+<area shape="rect" id="node57" href="$classComponent.html#a25028782df9545cded87db34bfd597e6" title="Rotate a copy of the component with Euler Angles ZX&#39;Z&#39;&#39; around its local reference system..." alt="" coords="481,1402,668,1449"/>
+<area shape="rect" id="node59" href="$classComponent.html#a0ec11e37ac626ea7ea2ce8019a828a16" title="Rotate a copy of the component with Euler Angles ZX&#39;Z&#39;&#39;." alt="" coords="464,1472,685,1501"/>
+<area shape="rect" id="node61" href="$classComponent.html#aae9aac84bce74a68c307c10cd2fd060e" title="Rotate a copy of the component with Euler Angles ZX&#39;Z&#39;&#39; around its local reference system..." alt="" coords="481,1525,668,1571"/>
+<area shape="rect" id="node63" href="$classComponent.html#aedfec2802a485ab9d0b6536cfaf72393" title="Scale the component." alt="" coords="492,1595,657,1624"/>
+<area shape="rect" id="node65" href="$classComponent.html#a871a9cc554e6c5bfa195215fa011e416" title="Translate the component." alt="" coords="483,1243,667,1272"/>
+<area shape="rect" id="node79" href="$classComponent.html#a81714ef743a86f37f571a1f40af66770" title="Translate the component wrt. to its local reference system." alt="" coords="473,1648,676,1677"/>
+<area shape="rect" id="node81" href="$classComponent2D.html#af1a08fb02dcf5453904a94375a43d850" title="Linear extrude the component." alt="" coords="461,1083,688,1112"/>
+<area shape="rect" id="node85" href="$classComponent2D.html#a198370c81a1f9f00aa14850baf89458f" title="Rotate extrude the component." alt="" coords="460,1136,689,1165"/>
+<area shape="rect" id="node49" href="$classBatteryHolder.html#a31b5756aae7816ef88986302ec12303c" title="Build the piece." alt="" coords="775,1216,911,1245"/>
+<area shape="rect" id="node51" href="$classSharpIRSensor.html#a9358ae89493f89e94ecf763fa4f2f542" title="Build the piece." alt="" coords="769,1163,916,1192"/>
+<area shape="rect" id="node67" href="$classRoundedCube.html#ad0ba2fd7d94c9b93a559bb36ab5787bf" title="Constructor." alt="" coords="745,1323,940,1352"/>
+<area shape="rect" id="node69" href="$classRoundedTablet.html#acb7bd8292117dbfba2b14e928a5f1d1e" title="Constructor." alt="" coords="740,1376,945,1405"/>
+<area shape="rect" id="node71" href="$classArduinoUNO.html#a2765f8e142d0668f66270d15dfb30296" title="returns a component only with the board" alt="" coords="765,1429,920,1459"/>
+<area shape="rect" id="node76" href="$classFutabaS3003.html#a780e4ad25476f3d7962675c1b5e4fb03" title="Build the piece." alt="" coords="776,1269,909,1299"/>
+<area shape="rect" id="node73" href="$classArduinoUNO.html#a3f36db05b8094951b6a0372fae99e390" title="Build the piece." alt="" coords="995,1429,1125,1459"/>
+<area shape="rect" id="node83" href="$classPolygonalPrism.html#a3915dd262cd305a5212b01dcb6494d04" title="Build the piece." alt="" coords="769,1056,916,1085"/>
+<area shape="rect" id="node87" href="$classToroid.html#a1f536ca45b977d2b16caddcfac37e8f2" title="Build the piece." alt="" coords="796,1109,889,1139"/>
+</map>

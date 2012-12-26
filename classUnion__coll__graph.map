@@ -1,4 +1,5 @@
 <map id="Union" name="Union">
-<area shape="rect" id="node2" href="$classCompositeObject.html" title="Composite object interface." alt="" coords="5,83,128,112"/>
-<area shape="rect" id="node4" href="$classAbstractObject.html" title="Abstract object interface." alt="" coords="12,5,121,35"/>
+<area shape="rect" id="node2" href="$classCompositeObject.html" title="Composite object interface." alt="" coords="5,181,128,211"/>
+<area shape="rect" id="node4" href="$classAbstractObject.html" title="Abstract object interface." alt="" coords="12,101,121,131"/>
+<area shape="rect" id="node6" href="$classRefSys.html" title="3D point primitive object" alt="" coords="33,5,100,35"/>
 </map>

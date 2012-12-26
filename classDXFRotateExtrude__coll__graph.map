@@ -1,3 +1,4 @@
 <map id="DXFRotateExtrude" name="DXFRotateExtrude">
-<area shape="rect" id="node2" href="$classAbstractObject.html" title="Abstract object interface." alt="" coords="17,5,127,35"/>
+<area shape="rect" id="node2" href="$classAbstractObject.html" title="Abstract object interface." alt="" coords="17,101,127,131"/>
+<area shape="rect" id="node4" href="$classRefSys.html" title="3D point primitive object" alt="" coords="39,5,105,35"/>
 </map>
