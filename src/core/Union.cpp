@@ -23,7 +23,7 @@
 #include <iostream>
 
 Links Union::getLinks() const {
-    std::cout << "I am here" << std::endl;
+    //std::cout << "I am here" << std::endl;
     Links lks1;
 
     if (hasLinks()){ //If the Union Component has links return all its links and all the children links
