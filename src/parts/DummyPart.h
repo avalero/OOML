@@ -53,9 +53,9 @@ public:
     /**
      * \brief Default parametrized constructor.
      *
-     * \param radius Wheel radius.
-     * \param axeRadius Wheel's axe radius.
-     * \param thickness Wheel thickness.
+     * \param sx x size(mm).
+     * \param sy y size(mm).
+     * \param sz z size(mm).
      */
     DummyPart(double sx, double sy, double sz):
         AbstractPart()
