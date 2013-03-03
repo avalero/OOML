@@ -74,3 +74,20 @@ Component B608zz::build(){
             ;
     return bearing;
 }
+
+B624zz::B624zz():AbstractPart()
+{
+    data.inner_diameter=4; //mm
+    data.ext_diameter=13; //mm
+    data.length = 5; //mm
+
+    //build the part
+    rebuild();
+}
+
+Component B624zz::build(){
+    Component bearing = Cylinder::create(data.ext_diameter/2,data.length,20,true)
+            - Cylinder::create(data.inner_diameter/2,data.length+1,20,true)
+            ;
+    return bearing;
+}

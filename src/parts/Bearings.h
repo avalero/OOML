@@ -121,5 +121,41 @@ private:
     Data data;
 };
 
+class OOMLParts_EXP_DEC B624zz : public AbstractPart
+{
+public:
+    /**
+      * Part Data
+      */
+    struct Data{
+        double inner_diameter; //<! the rod diameter (mm)
+        double ext_diameter; //<! the rod diameter (mm)
+        double length; //<! the rod lenght (mm)
+    };
+
+    /**
+      * Constructor
+      */
+    B624zz();
+
+    /**
+     * \breif returns part data
+     * \return part data
+     */
+    inline const Data getData() const{return data;}
+
+protected:
+  /**
+   * \brief Build the piece.
+   *
+   * This method build the piece from simpler objects.
+   *
+   * \return The piece built.
+   */
+  virtual Component build();
+
+private:
+    Data data;
+};
 
 #endif
