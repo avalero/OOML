@@ -33,6 +33,7 @@
 
 #include <core/AbstractPart.h>
 #include <components/Cube.h>
+#include <parts/USSensor.h>
 
 /**
  * \brief Seeed Ultrasonic Sensor Model
@@ -40,29 +41,16 @@
  * This class provides a Seeed Ultrasonic Sensor Model
  * http://www.seeedstudio.com
  */
-class OOMLParts_EXP_DEC SeeedUSSensor : public AbstractPart
+class OOMLParts_EXP_DEC SeeedUSSensor : public USSensor
 {
 public:
-
-	 struct Data{
-		  double sx; //!< x dimension
-		  double sy; //!< y dimension
-		  double sz;//!< z dimension
-
-		  double board_thickness; //!< thickness of the board
-		  double drills_x_dist; //!< x distance among drills
-		  double drills_y_dist; //!< y distance among drills
-		  double drills_radius; //!< drills radius
-		  double sensor_radius; //!< sensor radius
-		  double sensor_dist_to_center; //!< distance between the center of the sensor and center of the board
-	 };
 
   /**
 	* \brief Default constructor.
 	* \param fill_drills Fill Drill with Cylinder
 	*/
   SeeedUSSensor(bool fill_drills = true) :
-		AbstractPart(), _fill_drills(fill_drills)
+      USSensor(43,20,15,2,40,17,1,16.1/2,20-16.1/2,fill_drills)
   {
 	 rebuild();
   }
@@ -70,25 +58,6 @@ public:
 	* \brief Default destructor.
 	*/
   virtual ~SeeedUSSensor() {}
-
-  /**
-	 * \breif returns part data
-	 * \return part data
-	 */
-  inline const Data getData() const{ return data;}
-protected:
-  /**
-	* \brief Build the piece.
-	*
-	* This method build the piece from simpler objects.
-	*
-	* \return The piece built.
-	*/
-  virtual Component build();
-
-  bool _fill_drills;
-  Data data;
-
 };
 
 #endif

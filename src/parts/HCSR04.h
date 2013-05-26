@@ -17,11 +17,47 @@
 *
 */
 
-#include <parts/SeeedUSSensor.h>
+
+#ifndef HCSR04_H_INCLUDED
+#define HCSR04_H_INCLUDED
+
+#ifdef WIN32
+#ifdef OOMLParts_EXPORTS
+#define OOMLParts_EXP_DEC __declspec(dllexport)
+#else
+#define OOMLParts_EXP_DEC __declspec(dllimport)
+#endif
+#else
+#define OOMLParts_EXP_DEC
+#endif
+
+#include <core/AbstractPart.h>
 #include <components/Cube.h>
-#include <components/Cylinder.h>
-#include <core/Difference.h>
-#include <components/RoundedTablet.h>
-#include <core/Union.h>
+#include <parts/USSensor.h>
 
+/**
+ * \brief Seeed Ultrasonic Sensor Model
+ *
+ * This class provides a Seeed Ultrasonic Sensor Model
+ * http://www.seeedstudio.com
+ */
+class OOMLParts_EXP_DEC HCSR04USSensor : public USSensor
+{
+public:
 
+  /**
+	* \brief Default constructor.
+	* \param fill_drills Fill Drill with Cylinder
+	*/
+  HCSR04USSensor(bool fill_drills = false) :
+      USSensor(45,20,15,2,40,15,0.75,8.5,13.5,fill_drills)
+  {
+	 rebuild();
+  }
+  /**
+	* \brief Default destructor.
+	*/
+  virtual ~HCSR04USSensor() {}
+};
+
+#endif

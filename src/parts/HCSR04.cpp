@@ -17,7 +17,7 @@
 *
 */
 
-#include <parts/SeeedUSSensor.h>
+#include <parts/HCSR04.h>
 #include <components/Cube.h>
 #include <components/Cylinder.h>
 #include <core/Difference.h>
