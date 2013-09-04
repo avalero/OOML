@@ -44,7 +44,7 @@ public:
     /**
      * Crown type enumeration.
      */
-    enum BatteryType
+    enum CrownType
     {
             NONE = 0 /** Rounded crown type */
             , FOUR = 1 /** Four arms crown type */
