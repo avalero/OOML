@@ -34,13 +34,25 @@
 #include <components/Cube.h>
 
 /**
- * \brief Futaba S3003 Bounding Box
+ * \brief Nine volt Battery Model
  *
- * This class provides a Futaba S3003 Bounding Box.
+ * This class provides a Nine Volt Battery Model.
  */
 class OOMLParts_EXP_DEC NineVoltBattery : public AbstractPart
 {
 public:
+
+  struct Data{
+      double sx;
+      double sy;
+      double sz;
+
+      double connector_r;
+      double connector_lenght;
+      double connect_width;
+
+  };
+
   /**
    * \brief Default constructor.
    */
@@ -54,6 +66,9 @@ public:
    */
   virtual ~NineVoltBattery() {}
 
+
+  inline virtual Data getData(){ return _data; }
+
 protected:
   /**
    * \brief Build the piece.
@@ -63,6 +78,8 @@ protected:
    * \return The piece built.
    */
   virtual Component build();
+
+  Data _data;
 };
 
 #endif // NINEVOLT_H_INCLUDED

@@ -26,19 +26,18 @@
 
 Component NineVoltBattery::build()
 {
-	 double sx = 26.32; // 26.32;
-	 double sy = 17.26; // 17.26;
-	 double sz = 45.30; // 45.30;
+     _data.sx = 26.32; // 26.32;
+     _data.sy = 17.26; // 17.26;
+     _data.sz = 45.30; // 45.30;
 
-	 double connector_r = 5;
-	 double connector_lenght = 3.20;
-	 double connect_width = 22;
+     _data.connector_r = 5;
+     _data.connector_lenght = 3.20;
+     _data.connect_width = 22;
 
-	 Component battery = RoundedTablet(sx , sy , sz , 2);
-	 Component connector = RoundedTablet(connect_width , 2*connector_r , connector_lenght , 2*connector_r);
-	 connector.translate( 0 , 0 , sz/2 + connector_lenght/2);
+     Component battery = RoundedTablet(_data.sx , _data.sy , _data.sz , 2);
+     Component connector = RoundedTablet(_data.connect_width , 2*_data.connector_r , _data.connector_lenght , 2*_data.connector_r);
+     connector.translate( 0 , 0 , _data.sz/2 + _data.connector_lenght/2);
 	 battery = battery + connector;
-	 battery.color(0.7,0.7,0.7);
 
 	 return battery;
 }
