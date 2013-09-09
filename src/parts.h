@@ -15,4 +15,7 @@
 #include "parts/Nuts.h"
 #include "parts/Bearings.h"
 #include "parts/StepperMotors.h"
+#include "parts/GenericServo.h"
+#include "parts/SMS4303RServo.h"
+
 #endif // PARTS_H

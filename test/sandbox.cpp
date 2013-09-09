@@ -11,8 +11,10 @@ int main(int argc, char **argv)
 {
   IndentWriter writer;
 
-  Component cad = StepperMotor(Nema17);
+  Component cad = SMS4303RServo().getCrown(1);
+  cad.rotate(180,0,0);
   writer << cad;
+
 
   ofstream file("sandbox.scad");
   file << writer;
