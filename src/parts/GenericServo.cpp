@@ -178,7 +178,7 @@ Component GenericServo::build()
     Component holes_support = Cube(_data.total_lenght_with_holes , _data.width , _data.holes_support_thickness).translate(0,0,_data.holes_height);
 
 
-    Component cable_clearance = Cube(_data.cable_clearance_width, _data.cable_clearance_length,_data.holes_height).translate(- _data.length/2  - _data.cable_clearance_width/2 + COMPONENT_MARGIN , 0,  _data.holes_height / 2 );
+    Component cable_clearance = Cube(_data.cable_clearance_width, _data.cable_clearance_length,_data.holes_height).translate( _data.length/2  + _data.cable_clearance_width/2 - COMPONENT_MARGIN , 0,  _data.holes_height / 2 );
 
     servo = body
             + axis
