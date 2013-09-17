@@ -61,10 +61,11 @@ public:
 	 * \param base Polygon used as base of the prism.
 	 * \param height Prism height.
 	 */
-	PolygonalPrism(Polygon<Point2D> const& base, double height) :
+    PolygonalPrism(Polygon<Point2D> const& base, double height,bool centered=true) :
 		AbstractPart(),
 		_base(base),
-		_height(height)
+        _height(height),
+      _centered(centered)
 	{
 		rebuild();
 	}
@@ -86,6 +87,7 @@ protected:
 private:
     Polygon<Point2D> _base; /** Polygonal base of the prism */
 	double _height; /** Prism height */
+    bool _centered;
 };
 
 #endif // POLYGONALPRISM_H_INCLUDED

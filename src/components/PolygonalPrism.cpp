@@ -38,7 +38,11 @@ Component PolygonalPrism::build()
       }
    }
 
-    return (polygon.linearExtrudedCopy(_height));
+    Component cad = polygon.linearExtrudedCopy(_height);
+
+    if(_centered) cad.translate(0,0,-_height/2);
+
+    return cad;
 
     /*
 

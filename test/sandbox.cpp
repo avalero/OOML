@@ -1,6 +1,7 @@
 ﻿#include <components.h>
 #include <core.h>
 #include <parts.h>
+#include <components/CylindricalSection.h>
 
 #include <iostream>
 #include <fstream>
@@ -11,10 +12,9 @@ int main(int argc, char **argv)
 {
   IndentWriter writer;
 
-  Component cad = SMS4303RServo().getCrown(1);
-  cad.rotate(180,0,0);
-  writer << cad;
+  Component cad = CylindricalSection(30,40,85,10,100,false);
 
+  writer << cad;
 
   ofstream file("sandbox.scad");
   file << writer;

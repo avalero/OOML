@@ -165,7 +165,7 @@ Component GenericServo::build()
     Component axis = Cylinder(_data.axis_radius, _data.total_height_with_axis, 20, false).translate(_data.axis_position,0,0);
 
     // the drills for screwing the servo
-    Component holes_tpl = Cylinder(_data.holes_radius,10,10,true).translate(0,0, _data.holes_height);
+    Component holes_tpl = Cylinder(_data.holes_radius,30,10,true).translate(0,0, _data.holes_height);
 
 
     Component holes = holes_tpl.translatedCopy(_data.d_op_holes/2 , _data.d_cl_holes/2, 0)
