@@ -63,7 +63,7 @@ public:
 		 AbstractPart()
 	{
 		 data.radius=8;
-		 data.radius_inc=0.5;
+         data.radius_inc=0.8;
 		 data.wallThickness=2.5;
 		 data.gapWidth=5.;
 		 data.holeSize=3.;

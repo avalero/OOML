@@ -50,7 +50,7 @@ public:
 	* \param fill_drills Fill Drill with Cylinder
 	*/
   HCSR04USSensor(bool fill_drills = false) :
-      USSensor(45,20,15,2,40,15,0.75,8.5,13.5,fill_drills)
+  USSensor(45,20,15,2,40,15,0.75,8.4,13.5,fill_drills)
   {
 	 rebuild();
   }

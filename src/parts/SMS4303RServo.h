@@ -49,7 +49,7 @@ public:
      * @param cable_space
      * @param crown
      */
-    SMS4303RServo(bool fill = true, bool cable_space=true);
+    SMS4303RServo(bool fill = true, bool cable_space=true, double fill_length=10);
 
     /**
      * \brief Default destructor.

@@ -68,6 +68,7 @@ protected:
     Data _data; /// servo data
     bool _fill_hole; ///fill holes with screws
     bool _cable_space; ///make space for the cable;
+    double _fill_length;
 
 public:
 
@@ -80,8 +81,8 @@ public:
      * @param cable_space
      * @param crown
      */
-    GenericServo(Data data, bool fill = true, bool cable_space=true) :
-        AbstractPart(), _data(data), _fill_hole(fill), _cable_space(cable_space)
+    GenericServo(Data data, bool fill = true, bool cable_space=true, double fill_length = 10) :
+        AbstractPart(), _data(data), _fill_hole(fill), _cable_space(cable_space), _fill_length(fill_length)
     {
         rebuild();
     }
