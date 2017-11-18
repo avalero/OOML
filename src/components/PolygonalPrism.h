@@ -49,7 +49,8 @@ public:
 	PolygonalPrism() :
 		AbstractPart(),
 		_base(),
-		_height(0)
+                _height(0),
+                _centered(true)
 	{
 		rebuild();
 	}
