@@ -239,4 +239,25 @@ protected:
     double _z; /** Point position in the z axis. */
 };
 
+template<>
+struct std::hash<Point3D>
+{
+    std::size_t operator()(const Point3D& p) const
+    {
+      std::hash<double> hf;
+      return hf(p.getX()) ^ hf(p.getY()) ^ hf(p.getZ());
+    }
+};
+
+template<>
+struct std::equal_to<Point3D>
+{
+    bool operator()(const Point3D& a, const Point3D& b) const
+    {
+      return (a.getX() == b.getX() &&
+              a.getY() == b.getY() &&
+              a.getZ() == b.getZ());
+    }
+};
+
 #endif // POINT3D_H_INCLUDED

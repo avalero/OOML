@@ -34,7 +34,7 @@ void Polyhedron::genScad(IndentWriter& writer) const
 {
 	writer << "polyhedron(points=";
 	_point3DIndexMap.genScad(writer);
-	writer << ", triangles=[";
+	writer << ", faces=[";
 	for (Triangle3DVector::const_iterator it = _triangles.begin(); ; )
 	{
 		it->genScad(writer);
