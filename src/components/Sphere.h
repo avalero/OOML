@@ -48,14 +48,13 @@ public:
 	 *
 	 * Creates a sphere to use in other components.
 	 *
-	 * \param radius Cylinder radius.
-	 * \param faces Number of faces of the rendered cylinder.
-	 * \param center Centered cylinder flag.
+	 * \param radius Sphere radius.
+	 * \param faces Number of faces of the rendered sphere.
 	 *
 	 */
-	static Component create(double radius, unsigned int faces=100, bool center=true)
+	static Component create(double radius, unsigned int faces=100)
 	{
-        return SphereObject::create(radius,faces,center);
+        return SphereObject::create(radius,faces);
 	}
 
 	/**
@@ -64,26 +63,23 @@ public:
 	Sphere() :
         Component(),
 		_radius(1.0),
-		_faces(50),
-		_center(true)
+		_faces(50)
     {
-        Component sph = SphereObject::create(_radius,_faces,_center);
+        Component sph = SphereObject::create(_radius,_faces);
         set(sph.get());
     }
 	/**
 	 * \brief Default parametrized constructor.
 	 *
-	 * \param radius Cylinder radius.
-	 * \param faces Number of faces of the rendered cylinder.
-	 * \param center Centered cylinder flag.
+	 * \param radius Sphere radius.
+	 * \param faces Number of faces of the rendered sphere.
 	 */
-	Sphere(double radius, unsigned int faces=100, bool center=true) :
+	Sphere(double radius, unsigned int faces=100) :
         Component(),
 		_radius(radius),
-		_faces(faces),
-		_center(center)
+		_faces(faces)
     {
-        Component sph = SphereObject::create(_radius,_faces,_center);
+        Component sph = SphereObject::create(_radius,_faces);
         set(sph.get());
     }
 	/**
@@ -93,8 +89,7 @@ public:
 
 private:
 	double _radius; /** Sphere radius. */
-	unsigned int _faces; /** Number of faces of the rendered cylinder. */
-	bool _center; /** Centered cylinder flag. */
+	unsigned int _faces; /** Number of faces of the rendered sphere. */
 };
 
 

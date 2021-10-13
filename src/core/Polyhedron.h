@@ -244,7 +244,7 @@ private:
 			 * \param writer An instance of indent writer to write to.
 			 */
 			virtual void printAst(IndentWriter& writer) const;
-		
+
 		protected:
 			/**
 			 * \brief Default referenced constructor.

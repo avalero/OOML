@@ -36,9 +36,9 @@
 #include <core/IndentWriter.h>
 
 /**
- * \brief Union object.
+ * \brief Hull object.
  *
- * This class joins multiple objects into a union object.
+ * This class forms a convex hull object around multiple objects.
  */
 class OOMLCore_EXP_DEC Hull : public CompositeObject
 {
@@ -47,9 +47,9 @@ public:
   /**
    * \brief Static factory method.
    *
-   * Creates a union to use in other components.
+   * Creates a hull to use in other components.
    *
-   * \return A union component.
+   * \return A hull component.
    */
   static CompositeComponent create()
   {

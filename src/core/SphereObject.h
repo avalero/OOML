@@ -47,14 +47,13 @@ public:
      *
      * Creates a sphere to use in other components.
      *
-     * \param radius Cylinder radius.
-     * \param faces Number of faces of the rendered cylinder.
-     * \param center Centered cylinder flag.
+     * \param radius Sphere radius.
+     * \param faces Number of faces of the rendered sphere.
      *
      */
-    static Component create(double radius, unsigned int faces=100, bool center=true)
+    static Component create(double radius, unsigned int faces=100)
     {
-        return Component(SharedPtr<AbstractObject>(new SphereObject(radius, faces, center)));
+        return Component(SharedPtr<AbstractObject>(new SphereObject(radius, faces)));
     }
 
     /**
@@ -87,21 +86,18 @@ protected:
     SphereObject() :
         AbstractObject(),
         _radius(1.0),
-        _faces(50),
-        _center(true)
+        _faces(50)
     {}
     /**
      * \brief Default parametrized constructor.
      *
-     * \param radius Cylinder radius.
-     * \param faces Number of faces of the rendered cylinder.
-     * \param center Centered cylinder flag.
+     * \param radius Sphere radius.
+     * \param faces Number of faces of the rendered sphere.
      */
-    SphereObject(double radius, unsigned int faces=100, bool center=true) :
+    SphereObject(double radius, unsigned int faces=100) :
         AbstractObject(),
         _radius(radius),
-        _faces(faces),
-        _center(center)
+        _faces(faces)
     {}
     /**
      * \brief Default destructor.
@@ -110,8 +106,7 @@ protected:
 
 private:
     double _radius; /** Sphere radius. */
-    unsigned int _faces; /** Number of faces of the rendered cylinder. */
-    bool _center; /** Centered cylinder flag. */
+    unsigned int _faces; /** Number of faces of the rendered sphere. */
 };
 
 
