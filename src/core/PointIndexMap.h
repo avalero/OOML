@@ -170,13 +170,15 @@ private:
 template <typename T>
 void PointIndexMap<T>::genScad(IndentWriter& writer) const
 {
+	const char *comma = "";
+
 	writer << "[";
-	for (typename Vector::const_iterator it = _vector.begin(); ; )
+	for (typename Vector::const_iterator it = _vector.begin();
+	     it != _vector.end(); ++it )
 	{
+		writer << comma;
 		it->genScad(writer);
-		if (++it == _vector.end())
-			break;
-		writer << ", ";
+		comma = ", ";
 	}
 	writer << "]";
 }
@@ -184,13 +186,15 @@ void PointIndexMap<T>::genScad(IndentWriter& writer) const
 template <typename T>
 void PointIndexMap<T>::printAst(IndentWriter& writer) const
 {
+	const char *comma = "";
+
 	writer << "[";
-	for (typename Vector::const_iterator it = _vector.begin(); ; )
+	for (typename Vector::const_iterator it = _vector.begin();
+	     it != _vector.end(); ++it )
 	{
+		writer << comma;
 		it->printAst(writer);
-		if (++it == _vector.end())
-			break;
-		writer << ", ";
+		comma = ", ";
 	}
 	writer << "]";
 }

@@ -32,30 +32,32 @@ void Polyhedron::IndexedTriangle3D::printAst(IndentWriter& writer) const
 
 void Polyhedron::genScad(IndentWriter& writer) const
 {
+	const char *comma = "";
 	writer << "polyhedron(points=";
 	_point3DIndexMap.genScad(writer);
 	writer << ", faces=[";
-	for (Triangle3DVector::const_iterator it = _triangles.begin(); ; )
+	for (Triangle3DVector::const_iterator it = _triangles.begin();
+	     it != _triangles.end(); ++it )
 	{
+		writer << comma;
 		it->genScad(writer);
-		if (++it == _triangles.end())
-			break;
-		writer << ", ";
+		comma = ", ";
 	}
         writer << "]);" << std::endl;
 }
 
 void Polyhedron::printAst(IndentWriter& writer) const
 {
+	const char *comma = "";
 	writer << "POLYHEDRON(";
 	_point3DIndexMap.printAst(writer);
 	writer << ", [";
-	for (Triangle3DVector::const_iterator it = _triangles.begin(); ; )
+	for (Triangle3DVector::const_iterator it = _triangles.begin();
+	     it != _triangles.end(); ++it )
 	{
+		writer << comma;
 		it->printAst(writer);
-		if (++it == _triangles.end())
-			break;
-		writer << ", ";
+		comma = ", ";
 	}
 	writer << "])" << std::endl;
 }
