@@ -1,4 +1,4 @@
-﻿/*
+/*
 *    OOML : Object Oriented Mechanics Library
 *    Copyright (C) 2012  Alberto Valero Gomez, Juan González Gómez, Rafael Treviño
 *
@@ -33,7 +33,7 @@
 #include <core/AbstractObject.h>
 #include <core/IndentWriter.h>
 
-#include <map>
+#include <unordered_map>
 #include <vector>
 
 /**
@@ -90,11 +90,11 @@ public:
    */
   bool addPoint(T const& point)
   {
-    typename Map::iterator lb = _map.lower_bound(point);
-    /** Check if the point exists. */
-    if (lb == _map.end() || _map.key_comp()(point, lb->first))
+    typename Map::iterator it = _map.find(point);
+    /** Add point if it doesn't already exist. */
+    if (it == _map.end())
     {
-      _map.insert(lb, typename Map::value_type(point, _vector.size()));
+      _map.insert(typename Map::value_type(point, _vector.size()));
       _vector.push_back(typename Vector::value_type(point));
       return true;
     }
@@ -160,7 +160,8 @@ public:
 
 private:
   typedef std::vector<T> Vector; /** A vector of points. */
-  typedef std::map<T, unsigned int> Map; /** A map from points to its point index. */
+  typedef std::unordered_map<T, unsigned int, std::hash<T>, std::equal_to<T>> Map;
+      /** A map from points to its point index. */
 
   Vector _vector; /** Vector of points inside the index. */
   Map _map; /** Map of conversion from points to indexes. */
@@ -169,13 +170,15 @@ private:
 template <typename T>
 void PointIndexMap<T>::genScad(IndentWriter& writer) const
 {
+	const char *comma = "";
+
 	writer << "[";
-	for (typename Vector::const_iterator it = _vector.begin(); ; )
+	for (typename Vector::const_iterator it = _vector.begin();
+	     it != _vector.end(); ++it )
 	{
+		writer << comma;
 		it->genScad(writer);
-		if (++it == _vector.end())
-			break;
-		writer << ", ";
+		comma = ", ";
 	}
 	writer << "]";
 }
@@ -183,13 +186,15 @@ void PointIndexMap<T>::genScad(IndentWriter& writer) const
 template <typename T>
 void PointIndexMap<T>::printAst(IndentWriter& writer) const
 {
+	const char *comma = "";
+
 	writer << "[";
-	for (typename Vector::const_iterator it = _vector.begin(); ; )
+	for (typename Vector::const_iterator it = _vector.begin();
+	     it != _vector.end(); ++it )
 	{
+		writer << comma;
 		it->printAst(writer);
-		if (++it == _vector.end())
-			break;
-		writer << ", ";
+		comma = ", ";
 	}
 	writer << "]";
 }

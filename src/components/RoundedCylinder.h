@@ -127,7 +127,7 @@ public:
 			cornerRadius = height / 2;
 
 		Component cylinder(Cylinder(radius1 - cornerRadius, radius2 - cornerRadius, height - cornerRadius, faces, center));
-		Component sphere(Sphere(cornerRadius, faces, center));
+		Component sphere(Sphere(cornerRadius, faces));
 		sphere.translate(radius1 - cornerRadius, 0.0, height - cornerRadius);
 
 		set(MinkowskiDecorator::create(cylinder.get(), sphere.get()).get());

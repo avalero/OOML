@@ -24,11 +24,10 @@
 
 void SphereObject::genScad(IndentWriter& writer) const
 {
-    writer << "sphere(r=" << _radius << ", $fn=" << _faces
-        << ", center=" << _center << ");" << std::endl;
+    writer << "sphere(r=" << _radius << ", $fn=" << _faces << ");" << std::endl;
 }
 
 void SphereObject::printAst(IndentWriter& writer) const
 {
-    writer << "// SPHERE(" << _radius << ", " << _faces << ", " << _center << ")" << std::endl;
+    writer << "// SPHERE(" << _radius << ", " << _faces << ")" << std::endl;
 }

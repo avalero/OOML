@@ -228,4 +228,24 @@ private:
 	double _y; /** Point position in the y axis. */
 };
 
+template<>
+struct std::hash<Point2D>
+{
+    std::size_t operator()(const Point2D& p) const
+    {
+      std::hash<double> hf;
+      return hf(p.getX()) ^ hf(p.getY());
+    }
+};
+
+template<>
+struct std::equal_to<Point2D>
+{
+    bool operator()(const Point2D& a, const Point2D& b) const
+    {
+      return (a.getX() == b.getX() &&
+	      a.getY() == b.getY());
+    }
+};
+
 #endif // POINT2D_H_INCLUDED
